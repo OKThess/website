@@ -1,0 +1,32 @@
+body{
+	margin-bottom: 420px;
+}
+
+h3 {
+	font-weight: 300;
+}
+
+.form-control {
+	width: 80%;
+	color: grey;
+}
+#map-outer {
+	height: 70%;
+	padding: 10px;
+	border: 2px solid #CCC;
+	background-color:#FFF;
+}
+#map-container {
+		height: 420px;
+}
+
+.site-footer {
+  height: 420px;
+}
+
+#social img{
+	height: 57px !important;
+	width: auto;
+	margin-top: -29px;
+	margin-bottom: 20px;
+}

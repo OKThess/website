@@ -1,0 +1,37 @@
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+
+.marketing p {
+  
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+@media (max-width: 991px) {
+	.marketing h2 {
+		font-size: 22px;
+	}
+}
+
+
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+#circle-1 {
+	border: 1px solid #EE4031;
+}
+#circle-2 {
+	border: 1px solid #1C599B;
+}
+#circle-3 {
+	border: 1px solid #F9D94F;
+}
+#circle-4 {
+	border: 1px solid black;
+}

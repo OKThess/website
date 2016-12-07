@@ -1,0 +1,66 @@
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+.know h3 {
+  font-weight: 400;
+}
+
+.know p {
+  font-size: smaller;
+}
+
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  .scroll {
+    overflow-x: hidden; /* Prevent scroll on narrow devices */
+    overflow-y: hidden;
+  }
+
+  .know h3{
+    font-size: 15px;
+  }
+
+  .row-offcanvas {
+    font-size: smaller;
+  }
+
+  .row-offcanvas-right {
+    right: 5px;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.off {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.off {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}
