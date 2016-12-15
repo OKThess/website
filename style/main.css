@@ -107,8 +107,7 @@ a {
 }
 .jumbotron {
 	background: black;
-
-	background-image: url("http://www.okthess.gr/img/jump.png"), linear-gradient(to right, black 0%,white 100%);
+	background-image: url("http://www.okthess.gr/img/jump.png");
 	background-position: top left;
 	background-size: cover;
 	color: white;
