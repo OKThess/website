@@ -2,6 +2,6 @@
 
 ## Next-Up
 
-- Implement a calendar that publicly shows all events that take place at OK!Thess
+- Implement a calendar that publicly shows all events that take place in Thessaloniki
 - Integrate all css files into one and add reset.css
 - Add button that points to the website's English version
