@@ -12,7 +12,7 @@
       $to = 'apply@okthess.gr';
       $subject = '=?UTF-8?B?' . base64_encode('Νέα αίτηση συμμετοχής') . '?=';
 
-      $body = "From: $name\n E-Mail: $email\n Answer-1:\n $message1 Answer-2:\n $message2 Answer-3:\n $message3 Answer-4:\n $message4";
+      $body = "From: $name\n E-Mail: $email\n Answer-1: $message1\n Answer-2: $message2\n Answer-3: $message3\n Answer-4: $message4";
       if (!$_POST['name']) {
           $errName = 'Συμπλήρωσε το όνομα σου';
       }
@@ -20,7 +20,7 @@
           $errEmail = 'Η διεύθυνση email δεν είναι υπαρκτή';
       }
       if (!$_POST['phone']) {
-          $errPhone = 'Συμπλήρωσε το όνομα σου';
+          $errPhone = 'Συμπλήρωσε το τηλέφωνο σου';
       }
       if (!$_POST['message1']) {
           $errMessage1 = 'Υποχρεώτικό πεδίο';
@@ -118,6 +118,7 @@
    </ul>
   </div>
 </nav>
+<span id="lang"><a href="http://okthess.gr/eng/app.php">Eng</a></span>
 <section class="jumbotron">
  <div class="container">
    <h1>Αίτηση Συμμετοχής</h1>
@@ -127,7 +128,7 @@
 <div class="container">
   <p>Γίνονται δεκτές ανά πάσα στιγμή προτάσεις από άτομα ή ομάδες με καινοτόμες ιδέες, ανεξάρτητα του βαθμού ωρίμανσης, που θα ήθελαν να ωφεληθούν από τις υπηρεσίες της προ-θερμοκοιτίδας του OK!Thess ώστε να στήσουν μια επιχείρηση (startup) ή να ενισχύσουν μια startup που έχουν ήδη στήσει.</p>
   <p>Οι προτάσεις αξιολογούνται σε τακτά χρονικά διαστήματα, οι ακριβείς ημερομηνίες ανακοινώνονται στην παρούσα ιστοσελίδα. Η τελευταία περίοδος αξιολόγησης έκλεισε την 1η Δεκέμβρη 2016 και η επόμενη έχει προγραμματιστεί για τις αρχές του 2017. Η ακριβής ημερομηνία θα ανακοινωθεί στο αμέσως προσεχές μέλλον.</p>
-  <p>Για συμμετοχή συμπληρώστε την παρακάτω φόρμα συμμετοχής ή απαντήστε τις ερωτήσεις στο σώμα ενώς e-mail και στείλτε στο <strong><small>apply@okthess.gr</small></strong></p>
+  <p>Για συμμετοχή συμπληρώστε την παρακάτω φόρμα συμμετοχής ή απαντήστε τις ερωτήσεις στο σώμα ενός e-mail και στείλτε στο <strong><small>apply@okthess.gr</small></strong></p>
   <br>
   <a class="btn btn-primary" href="http://okthess.gr/pdf/website-open-call.pdf" role="button" target="_blank">Πληροφορίες</a>
   <a class="btn btn-primary" href="http://okthess.gr/under-construction.html" role="button" target="_blank">Eσωτερικός κανονισμός</a>

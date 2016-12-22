@@ -105,6 +105,17 @@ a {
 	padding: 3px;
 	border-radius: 5px;
 }
+#lang{
+	position: absolute;
+	top: 58.5px;
+	right: 8px;
+	background-color: white;
+	padding: 4px;
+	border-radius: 5px;
+	font-size: 12px;
+	font-weight: 300;
+	color: black;
+}
 .jumbotron {
 	background: black;
 	background-image: url("http://www.okthess.gr/img/jump.png");
