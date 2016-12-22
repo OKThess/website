@@ -173,23 +173,23 @@
 	</div>
 	<div class="row">
 		<div class="col-md-6 col-sm-6">
-		<h5>PARTNERS</h5><hr>
-			<a href="https://www.auth.gr/" target="_blank"><img src="/eng/img/AUTH.jpg" alt="Aristotle_University_Thessaloniki"></a>
-			<a href="http://www.thessaloniki.gr/" target="_blank"><img src="/eng/img/municipality.jpg" alt="Municipality_of_Thessaloniki"></a>
-			<a href="http://www.uom.gr/" target="_blank"><img src="/eng/img/UOM.png" alt="University_Of_Macedonia"></a>
-			<a href="http://www.thessinnozone.gr/" target="_blank"><img src="/eng/img/TIZ.jpg" alt="Thessaloniki_Innovation_Zone"></a>
-			<a href="http://www.teithe.gr/" target="_blank"><img src="/eng/img/ATEITH.jpg" alt="Alexander_Technological_Institute_Thessaloniki"></a>
-			<a href="http://www.sbbe.gr/" target="_blank"><img src="/eng/img/SBBE.jpg" alt="SBBE"></a>
-			<a href="http://www.ihu.edu.gr/" target="_blank"><img src="/eng/img/IHU.jpg" alt="International_Hellenic_University"></a>
-			<a href="http://www.seve.gr/" target="_blank"><img src="/eng/img/SEVE.jpg" alt="SEVE"></a>
+      <h5>MEMBERS</h5><hr>
+      <a href="https://www.auth.gr/en" target="_blank"><img src="/eng/img/AUTH.png" alt="Aristotle_University_Thessaloniki"></a>
+      <a href="http://www.thessaloniki.gr/portal/page/portal/EnglishPage" target="_blank"><img src="/eng/img/municipality.jpg" alt="Municipality_of_Thessaloniki"></a>
+      <a href="http://www.uom.gr/index.php?newlang=eng" target="_blank"><img src="/img/UOM.png" alt="University_Of_Macedonia"></a>
+      <a href="http://www.thessinnozone.gr/en/" target="_blank"><img src="/eng/img/TIZ.jpg" alt="Thessaloniki_Innovation_Zone"></a>
+      <a href="http://www.ihu.edu.gr/" target="_blank"><img src="/eng/img/IHU.jpg" alt="International_Hellenic_University"></a>
+      <a href="http://www.teithe.gr/index_en.html" target="_blank"><img src="/img/ATEITH.jpg" alt="Alexander_Technological_Institute_Thessaloniki"></a>
+      <a href="http://en.sbbe.gr/" target="_blank"><img src="/eng/img/SBBE.jpg" alt="SBBE"></a>
+      <a href="http://www.seve.gr/en/" target="_blank"><img src="/eng/img/SEVE.jpg" alt="SEVE"></a>
 		</div>
 		<div class="col-md-6 col-sm-6">
-		<h5>SPONSORS</h5><hr>
-			<a href="http://www.hcn.gr/" target="_blank"><img src="/img/hcn.jpg" alt="HCN"></a>
-			<a href="http://www.beetroot.gr/" target="_blank"><img src="/img/beetroot.png" alt="Beetroot"></a>
-			<a href="https://www.ast.gr/" target="_blank"><img src="/img/ast.png" alt="AST"></a>
-		<h5>DONOR</h5><hr>
-			<a href="http://www.snf.org/el/" target="_blank"><img src="/img/ISN.jpg" alt="ISN"></a>
+      <h5>SPONSORS</h5><hr>
+      <a href="http://www.hcn.gr/" target="_blank"><img src="/img/hcn.jpg" alt="HCN"></a>
+      <a href="http://www.beetroot.gr/" target="_blank"><img src="/img/beetroot.png" alt="Beetroot"></a>
+      <a href="https://www.ast.gr/en/" target="_blank"><img src="/img/ast.png" alt="AST"></a>
+      <h5>DONOR</h5><hr>
+      <a href="http://www.snf.org/en/" target="_blank"><img src="/img/ISN.jpg" alt="ISN"></a>
 		</div>
 	 </div>
  </div>
