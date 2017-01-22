@@ -1,5 +1,6 @@
+
 $(document).ready(function () {
   $('[data-toggle="offcanvas"]').click(function () {
-    $('.row-offcanvas').toggleClass('off')
+    $('.row-offcanvas').toggleClass('active')
   });
 });

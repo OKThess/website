@@ -52,6 +52,7 @@
   <meta charset="utf-8"/>
   <meta http-equiv="encoding" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="/img/favicon.png" type="image/png" sizes="32x32">
 
   <title>OK!Thess | Αίτηση Συμμετοχής</title>
   <meta http-equiv="Content-Type" content="text/html">
@@ -77,8 +78,7 @@
   <meta property="og:type" content="website">
 
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="/style/main.css">
-  <link rel="stylesheet" type="text/css" href="/style/app.css">
+  <link rel="stylesheet" type="text/css" href="http://okthess.gr/dev/style/main.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=greek,greek-ext" rel="stylesheet">
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -114,17 +114,18 @@
     <li><a href="knowledge-base.html">Γνωσιακή Βάση</a></li>
     <li class="active"><a href="app.php">Συμμετοχή</a></li>
     <li><a href="hi.php">Επικοινωνία</a></li>
-    <li><a href="under-construction.html">Μέλη</a></li>
    </ul>
   </div>
 </nav>
-<span id="lang"><a href="http://okthess.gr/eng/app.php">Eng</a></span>
-<section class="jumbotron">
- <div class="container">
-   <h1>Αίτηση Συμμετοχής</h1>
-   <p>Πληροφορίες και φόρμα συμμετοχής για το πρόγραμμα επιτάχυνσης του OK!Thess</p>
+<div class="container">
+ <div class="row text-center" id="teams">
+	<div class="text-center" id="call">
+		<h1><strong>Αίτηση Συμμετοχής</strong></h1>
+    <p>Πληροφορίες και φόρμα συμμετοχής για το πρόγραμμα επιτάχυνσης του OK!Thess.</p>
+		<br>
+	</div>
  </div>
-</section>
+</div>
 <div class="container">
   <p>Γίνονται δεκτές ανά πάσα στιγμή προτάσεις από άτομα ή ομάδες με καινοτόμες ιδέες, ανεξάρτητα του βαθμού ωρίμανσης, που θα ήθελαν να ωφεληθούν από τις υπηρεσίες της προ-θερμοκοιτίδας του OK!Thess ώστε να στήσουν μια επιχείρηση (startup) ή να ενισχύσουν μια startup που έχουν ήδη στήσει.</p>
   <p>Οι προτάσεις αξιολογούνται σε τακτά χρονικά διαστήματα, οι ακριβείς ημερομηνίες ανακοινώνονται στην παρούσα ιστοσελίδα. Η τελευταία περίοδος αξιολόγησης έκλεισε την 1η Δεκέμβρη 2016 και η επόμενη έχει προγραμματιστεί για τις αρχές του 2017. Η ακριβής ημερομηνία θα ανακοινωθεί στο αμέσως προσεχές μέλλον.</p>
@@ -200,9 +201,9 @@
 <footer class="site-footer">
 	<div class="container">
 		<div class="row" id="social">
-			<a href="mailto:mail@okthess.gr" target="_blank"><img social src="/img/email.png" alt="email"></a>
-			<a href="https://www.facebook.com/OKThess/" target="_blank"><img social src="/img/facebook.png" alt="facebook"></a>
-			<a href="https://twitter.com/okthess" target="_blank"><img social src="/img/twitter.png" alt="twitter"></a>
+			<a href="mailto:mail@okthess.gr" target="_blank"><img social src="http://okthess.gr/dev/img/email.png" alt="email"></a>
+			<a href="https://www.facebook.com/OKThess/" target="_blank"><img social src="http://okthess.gr/dev/img/facebook.png" alt="facebook"></a>
+			<a href="https://twitter.com/okthess" target="_blank"><img social src="http://okthess.gr/dev/img/twitter.png" alt="twitter"></a>
 		</div>
 		<div class="row">
 			<div class="col-md-4 col-sm-4">
@@ -215,22 +216,22 @@
 			</div>
 			<div class="col-md-4 col-sm-4">
 				<h5>ΣΥΝΕΡΓΑΤΕΣ</h5><hr>
-				<a href="https://www.auth.gr/" target="_blank"><img src="/img/AUTH.jpg" alt="Aristotle_University_Thessaloniki"></a>
-				<a href="http://www.thessaloniki.gr/" target="_blank"><img src="/img/municipality.jpg" alt="Municipality_of_Thessaloniki"></a>
-				<a href="http://www.uom.gr/" target="_blank"><img src="/img/UOM.png" alt="University_Of_Macedonia"></a>
-				<a href="http://www.thessinnozone.gr/" target="_blank"><img src="/img/TIZ.jpg" alt="Thessaloniki_Innovation_Zone"></a>
-				<a href="http://www.teithe.gr/" target="_blank"><img src="/img/ATEITH.jpg" alt="Alexander_Technological_Institute_Thessaloniki"></a>
-				<a href="http://www.sbbe.gr/" target="_blank"><img src="/img/SBBE.jpg" alt="SBBE"></a>
-				<a href="http://www.ihu.edu.gr/" target="_blank"><img src="/img/IHU.jpg" alt="International_Hellenic_University"></a>
-				<a href="http://www.seve.gr/" target="_blank"><img src="/img/SEVE.jpg" alt="SEVE"></a>
+  				<a href="https://www.auth.gr/" target="_blank"><img src="http://okthess.gr/dev/img/AUTH.jpg" alt="Aristotle_University_Thessaloniki"></a>
+  				<a href="http://www.thessaloniki.gr/" target="_blank"><img src="http://okthess.gr/dev/img/municipality.jpg" alt="Municipality_of_Thessaloniki"></a>
+  				<a href="http://www.uom.gr/" target="_blank"><img src="http://okthess.gr/dev/img/UOM.png" alt="University_Of_Macedonia"></a>
+  				<a href="http://www.thessinnozone.gr/" target="_blank"><img src="http://okthess.gr/dev/img/TIZ.jpg" alt="Thessaloniki_Innovation_Zone"></a>
+  				<a href="http://www.teithe.gr/" target="_blank"><img src="http://okthess.gr/dev/img/ATEITH.jpg" alt="Alexander_Technological_Institute_Thessaloniki"></a>
+  				<a href="http://www.sbbe.gr/" target="_blank"><img src="http://okthess.gr/dev/img/SBBE.jpg" alt="SBBE"></a>
+  				<a href="http://www.ihu.edu.gr/" target="_blank"><img src="http://okthess.gr/dev/img/IHU.jpg" alt="International_Hellenic_University"></a>
+  				<a href="http://www.seve.gr/" target="_blank"><img src="http://okthess.gr/dev/img/SEVE.jpg" alt="SEVE"></a>
 			</div>
 			<div class="col-md-4 col-sm-4">
 				<h5>ΥΠΟΣΤΗΡΙΚΤΕΣ</h5><hr>
-				<a href="http://www.hcn.gr/" target="_blank"><img src="/img/hcn.jpg" alt="HCN"></a>
-				<a href="http://www.beetroot.gr/" target="_blank"><img src="/img/beetroot.png" alt="Beetroot"></a>
-				<a href="https://www.ast.gr/" target="_blank"><img src="/img/ast.png" alt="AST"></a>
+				<a href="http://www.hcn.gr/" target="_blank"><img src="http://okthess.gr/dev/img/hcn.jpg" alt="HCN"></a>
+				<a href="http://www.beetroot.gr/" target="_blank"><img src="http://okthess.gr/dev/img/beetroot.png" alt="Beetroot"></a>
+				<a href="https://www.ast.gr/" target="_blank"><img src="http://okthess.gr/dev/img/ast.png" alt="AST"></a>
 				<h5>ΔΩΡΗΤΗΣ</h5><hr>
-				<a href="http://www.snf.org/el/" target="_blank"><img src="/img/ISN.jpg" alt="ISN"></a>
+				<a href="http://www.snf.org/el/" target="_blank"><img src="http://okthess.gr/dev/img/ISN.jpg" alt="ISN"></a>
 			</div>
 		</div>
 	</div>
