@@ -82,7 +82,7 @@
  </div>
  <div class="container">
  <div class="row" id="1">
-  <div class="col-md-7 slice">
+  <div class="col-md-6 slice">
 		<a class="w3-btn-floating w3-hover-dark-grey w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
 	  <a class="w3-btn-floating w3-hover-dark-grey w3-display-right" onclick="plusDivs(1)">&#10095;</a>
 	 	<div class="mySlides">
@@ -104,11 +104,12 @@
 	   </div>
 	  </div>
   </div>
-  <div class="col-md-5 text-center slice">
+  <div class="col-md-6 text-center slice">
 	 <div id="about">
-	  <h2>Τι κάνουμε</h2>
-	  <p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
-	  <p><a class="btn btn-secondary" href="http://okthess.gr/dev/about.html" role="button">Μάθε περισσότερα &raquo;</a></p>
+	  <h2><strong>Τι κάνουμε</strong></h2>
+	  <p id="teaser">Ο ευρύς στόχος του OK!Thess είναι η ουσιώδης συμβολή στην δημιουργία ενός οικοσυστήματος καινοτομίας που περιλαμβάνει όλους όσους είναι σε θέση και επιθυμούν να συμβάλλουν στην ανάπτυξη της καινοτομίας στην πόλη.</p>
+		<br>
+		<p><a class="btn btn-secondary" href="http://okthess.gr/dev/about.html" role="button">Μάθε περισσότερα &raquo;</a></p>
    </div>
   </div>
  </div>
@@ -123,7 +124,8 @@
 			  </div>
 			  <div class="media-body">
 			    <h3 class="media-heading">John Doe</h3>
-			    <p>Lorem ipsum dolor sit amet and do it again and why am I a Rastaman <a href="http://okthess.gr/dev/news.html">Περισσότερα &raquo;</a></p>
+					<p>Lorem ipsum dolor sit amet and do it again and why am I a Rastaman</p>
+						<a href="http://okthess.gr/dev/news.html">Περισσότερα &raquo;</a>
 			  </div>
 			</div>
     </div>
@@ -134,7 +136,8 @@
 			  </div>
 			  <div class="media-body">
 			    <h4 class="media-heading">John Doe</h4>
-			    <p>Lorem ipsum dolor sit amet and do it again and why am I a Rastaman <a href="http://okthess.gr/dev/news.html">Περισσότερα &raquo;</a></p>
+					<p>Lorem ipsum dolor sit amet and do it again and why am I a Rastaman</p>
+						<a href="http://okthess.gr/dev/news.html">Περισσότερα &raquo;</a>
 				</div>
 			</div>
     </div>
@@ -145,7 +148,8 @@
 			  </div>
 			  <div class="media-body">
 			    <h4 class="media-heading">John Doe</h4>
-			    <p>Lorem ipsum dolor sit amet and do it again and why am I a Rastaman <a href="http://okthess.gr/dev/news.html">Περισσότερα &raquo;</a></p>
+			    <p>Lorem ipsum dolor sit amet and do it again and why am I a Rastaman</p>
+						<a href="http://okthess.gr/dev/news.html">Περισσότερα &raquo;</a>
 			  </div>
 			</div>
  		</div>
@@ -155,17 +159,13 @@
   </div>
  </div>
  </div>
- <div class="container">
- <div class="slice" id="3">
-  <div class="row">
-   <div id="event">event 1 <hr></div>
-	 <div id="event">event 2 <hr></div>
-	 <div id="event">event 3 <hr></div>
-	 <div id="event">event 4 <hr></div>
-	</div>
- </div>
- </div>
-</div>
+ <div class="container" id="3">
+    <div class="row events text-center"></div>
+    <div class="row no-events text-center" style="display: none">No events currently</div>
+     <div class="row text-center">
+      <p><a class="btn btn-secondary" href="http://okthess.gr/dev/events.html" role="button">See all events &raquo;</a></p>
+     </div>
+  </div>
 <footer class="site-footer">
 	<div class="container">
 		<div class="row" id="social">
@@ -209,6 +209,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="http://www.okthess.gr/dev/js/slider.js"></script>
-</script>
+<script src="http://www.okthess.gr/dev/js/events.js"></script>
 </body>
 </html>
