@@ -14,14 +14,7 @@ body {
 .container{
 	margin-left: 0px;
 	margin-right: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	width: 100%;
-}
-.row{
-	margin-left: 0px;
-	margin-right: 0px;
-	width: 100%;
+	min-width: 100%;
 }
 .navbar {
 	z-index: +10;
@@ -123,7 +116,6 @@ body {
 	padding: 20px;
 	border-radius: 2px;
 }
-
 .btn-primary {
 	color: white;
 	background-color: black;
@@ -131,25 +123,32 @@ body {
 .btn-primary: hover {
 	background-color: #FFA500;
 }
+
 .mySlides{
-	width: 100%;
+	min-width: 100%;
 	height: 100%;
 }
+
 .mySlides img{
 	width: 100%;
 	min-height: 100%;
 	max-height: 100%;
 }
 #about{
-	background-color: #d3d3d3;
+	background-color: #EE4031;
 	width: 50%;
 	margin: 0 auto;
 	position: relative;
 	 top: 50%;
    transform: translateY(-50%);
 	border-radius: 5px;
-	padding: 10px;
+	padding: 25px !important;
 }
+
+#about > p{
+	font-size: 15px;
+}
+
 .btn-secondary {
 	color: black;
 	opacity: 0.7;
@@ -208,12 +207,29 @@ body {
 	 top: 10%;
 	 transform: translateY(-10%);
 }
-#event {
+
+.event {
 	height: 25vh;
 	min-width: 100%;
-	margin: 0px;
-	padding: 0px;
 }
+
+.eventName {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.eventDate {
+	color: grey;
+	font-size: 16px;
+}
+
+.eventDesc {
+	width: 80%;
+	margin: 0 auto;
+	font-size: 13px;
+}
+
+
 .site-footer {
 	position: absolute;
   bottom: 0;
