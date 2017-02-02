@@ -32,7 +32,7 @@ $.ajax({
 var renderEvents = function(gCalenderApiResponse) {
 
   var eventsList = gCalenderApiResponse.items
-    .filter(function(item) { return item.location === okThessLocationString })
+    .filter(filterOwnEvents)
     .map(constructEventElement);
 
   if (eventsList.length) {
@@ -42,13 +42,17 @@ var renderEvents = function(gCalenderApiResponse) {
   }
 }
 
+var filterOwnEvents = function(item) { return item.location === okThessLocationString };
+
 var constructEventElement = function(event) {
   var extendedInfo = parseDesc(event.description);
 
   var eventEl = document.createElement('div');
   eventEl.className = 'event';
 
-  var eventName = createElement('div', 'eventName', event.summary);
+  var eventLink = createElement('a', 'eventLink', event.summary);
+  eventLink.href = extendedInfo.infoUrl;
+  var eventName = createElement('div', 'eventName', eventLink);
 
   var eventDesc = createElement('div', 'eventDesc', extendedInfo.about);
 
