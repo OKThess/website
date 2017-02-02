@@ -494,3 +494,24 @@ a.click {
   margin-top: 30px;
   font-size: 100px;
 }
+
+.event {
+    height: 25vh;
+    min-width: 100%;
+}
+
+.eventName {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.eventDate {
+    color: grey;
+    font-size: 16px;
+}
+
+.eventDesc > p {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 13px;
+}
