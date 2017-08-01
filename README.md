@@ -1,7 +1,24 @@
-# OK!Thess website
+# OK!Thess
 
-## Next-Up
+Django application, powers [okthess.gr](http://okthess.gr/).
 
-- Implement a calendar that publicly shows all events that take place in Thessaloniki
-- Integrate all css files into one and add reset.css
-- Add sitemap.xml
+
+## Setup
+
+Install requirements:
+```
+pip3 install -r requirements.txt
+```
+
+Then, migrate your database:
+```
+python3 manage.py migrate
+```
+
+Finally, run the Django server:
+```
+python3 manage.py runserver
+```
+
+The Django project is `avocado`. There is one Django app, `main`, which includes
+all business logic.
