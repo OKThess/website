@@ -1,4 +1,4 @@
-body {
+html, body {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 300;
@@ -73,6 +73,10 @@ body {
   padding-right: 50px;
 }
 
+.panel-title > a {
+  font-size: 24px;
+}
+
 footer {
   background: #fff;
   margin-top: 50px;
@@ -98,8 +102,8 @@ footer {
 }
 
 .footer-content {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .footer-content-item {
