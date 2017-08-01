@@ -3,34 +3,6 @@
 {% load static %}
 
 {% block content %}
-    <nav class="navbar navbar-default">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/"><img src="{% static '/main/img/logo.png' %}" alt="Logo"></a>
-        </div>
-        <div id="navbar-collapse" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Σχετικά <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a tabindex="-1" href="/about#collapse0">Τι κάνουμε</a></li>
-                        <li><a tabindex="-1" href="/about#collapse1">Πως το κάνουμε</a></li>
-                        <li><a tabindex="-1" href="/about#collapse2">Πως συμμετέχω</a></li>
-                        <li><a tabindex="-1" href="/about#collapse3">Συνεργατικός χώρος</a></li>
-                    </ul>
-                </li>
-                <li><a href="#teams">Ομάδες</a></li>
-                <li><a href="#news">Νέα</a></li>
-                <li><a href="#knowledge-base">Γνωσιακή Βάση</a></li>
-                <li><a href="#apply">Συμμετοχή</a></li>
-                <li><a href="#hi">Επικοινωνία</a></li>
-            </ul>
-        </div>
-    </nav>
     <section class="jumbotron">
         <div class="container text-center">
             <h1>Συνεργάτης<br>στα πρώτα βήματα</h1>
@@ -56,97 +28,7 @@
                 <a class="btn btn-secondary" href="http://okthess.gr/news.html?showmodal=4" role="button">Περισσότερα &raquo;</a>
             </div>
     </section>
-    <footer class="container-fluid">
-        <div class="row social">
-            <div class="col-md-12">
-                <a href="mailto:mail@okthess.gr" target="_blank" class="social-item">
-                    <img src="{% static '/main/img/email.png' %}" alt="email">
-                </a>
-                <a href="https://www.facebook.com/OKThess/" target="_blank" class="social-item">
-                    <img src="{% static '/main/img/facebook.png' %}" alt="facebook">
-                </a>
-                <a href="https://twitter.com/okthess" target="_blank" class="social-item">
-                    <img src="{% static '/main/img/twitter.png' %}" alt="twitter">
-                </a>
-            </div>
-        </div>
-        <div class="row footer-content">
-            <div class="col-md-4 col-sm-4">
-                <h5 class="footer-content-item">Τοποθεσία</h5>
-                <div class="footer-content-map">
-                    <div id="footer-content-map-content"></div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-4">
-                <h5 class="footer-content-item">Συνεργάτες</h5>
-                <a href="https://www.auth.gr/" target="_blank">
-                    <img src="{% static '/main/img/footer/auth.jpg' %}" alt="Aristotle University Thessaloniki" class="footer-content-item-img">
-                </a>
-                <a href="http://www.thessaloniki.gr/" target="_blank">
-                    <img src="{% static '/main/img/footer/municipality.jpg' %}" alt="Municipality of Thessaloniki" class="footer-content-item-img">
-                </a>
-                <a href="http://www.uom.gr/" target="_blank">
-                    <img src="{% static '/main/img/footer/uom.png' %}" alt="University of Macedonia" class="footer-content-item-img">
-                </a>
-                <a href="http://www.thessinnozone.gr/" target="_blank">
-                    <img src="{% static '/main/img/footer/tiz.jpg' %}" alt="Thessaloniki Innovation Zone" class="footer-content-item-img">
-                </a>
-                <a href="http://www.teithe.gr/" target="_blank">
-                    <img src="{% static '/main/img/footer/ateith.jpg' %}" alt="Alexander Technological Institute Thessaloniki" class="footer-content-item-img">
-                </a>
-                <a href="http://www.sbbe.gr/" target="_blank">
-                    <img src="{% static '/main/img/footer/sbbe.jpg' %}" alt="SBBE" class="footer-content-item-img">
-                </a>
-                <a href="http://www.ihu.edu.gr/" target="_blank">
-                    <img src="{% static '/main/img/footer/ihu.jpg' %}" alt="International Hellenic University" class="footer-content-item-img">
-                </a>
-                <a href="http://www.seve.gr/" target="_blank">
-                    <img src="{% static '/main/img/footer/seve.jpg' %}" alt="SEVE" class="footer-content-item-img">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-4">
-                <h5 class="footer-content-item">Υποστηρικτές</h5>
-                <a href="http://www.hcn.gr/" target="_blank">
-                    <img src="{% static '/main/img/footer/hcn.jpg' %}" alt="HCN" class="footer-content-item-img">
-                </a>
-                <a href="http://www.beetroot.gr/" target="_blank">
-                    <img src="{% static '/main/img/footer/beetroot.png' %}" alt="Beetroot" class="footer-content-item-img">
-                </a>
-                <a href="https://www.ast.gr/" target="_blank">
-                    <img src="{% static '/main/img/footer/ast.png' %}" alt="AST" class="footer-content-item-img">
-                </a>
-
-                <h5 class="footer-content-item">Δωρητής</h5>
-                <a href="http://www.snf.org/el/" target="_blank">
-                    <img src="{% static '/main/img/footer/ISN.jpg' %}" alt="ISN" class="footer-content-item-img">
-                </a>
-            </div>
-        </div>
-        <div class="col-md-12 footer-content-love">
-            <p>Lovingly crafted by <a href="http://ntemposd.me" target="_blank">ntemposd</a></p>
-        </div>
-    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script>
-        function initMap() {
-            var myLatLng = {
-                lat: 40.595311,
-                lng: 22.950956,
-            };
-
-            var map = new google.maps.Map(document.getElementById('footer-content-map-content'), {
-                zoom: 12,
-                center: myLatLng
-            });
-
-            var marker = new google.maps.Marker({
-                position: myLatLng,
-                map: map,
-                title: 'OK!Thess',
-            });
-        }
-    </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7E2raajPS5-4vEpx-LBOV0XkItvWQRt8&callback=initMap"></script>
 {% endblock %}
