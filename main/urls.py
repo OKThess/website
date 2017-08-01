@@ -10,4 +10,7 @@ urlpatterns = [
 
     # /about/
     url(r'^about/$', views.get_about, name='about'),
+
+    # /teams/
+    url(r'^teams/$', views.get_teams, name='teams'),
 ]
