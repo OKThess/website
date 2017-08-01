@@ -78,11 +78,11 @@ footer {
   margin-top: 50px;
 }
 
-.footer-map {
+.footer-content-map {
   width: 100%;
 }
 
-#footer-map-content {
+#footer-content-map-content {
   height: 250px;
 }
 
@@ -97,7 +97,12 @@ footer {
   top: -40px;
 }
 
-.footer-item {
+.footer-content {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.footer-content-item {
   text-transform: uppercase;
   font-size: 18px;
   border-bottom: 1px solid #eee;
@@ -105,13 +110,13 @@ footer {
   margin-bottom: 20px;
 }
 
-.footer-item-img {
+.footer-content-item-img {
   height: 70px;
   margin-right: 4px;
   margin-bottom: 50px;
 }
 
-.footer-love {
+.footer-content-love {
   text-align: right;
   font-size: 10px;
   color: #2ecc40;

@@ -70,60 +70,60 @@
                 </a>
             </div>
         </div>
-        <div class="row">
+        <div class="row footer-content">
             <div class="col-md-4 col-sm-4">
-                <h5 class="footer-item">Τοποθεσία</h5>
-                <div class="footer-map">
-                    <div id="footer-map-content"></div>
+                <h5 class="footer-content-item">Τοποθεσία</h5>
+                <div class="footer-content-map">
+                    <div id="footer-content-map-content"></div>
                 </div>
             </div>
             <div class="col-md-4 col-sm-4">
-                <h5 class="footer-item">Συνεργάτες</h5>
+                <h5 class="footer-content-item">Συνεργάτες</h5>
                 <a href="https://www.auth.gr/" target="_blank">
-                    <img src="{% static '/main/img/footer/auth.jpg' %}" alt="Aristotle University Thessaloniki" class="footer-item-img">
+                    <img src="{% static '/main/img/footer/auth.jpg' %}" alt="Aristotle University Thessaloniki" class="footer-content-item-img">
                 </a>
                 <a href="http://www.thessaloniki.gr/" target="_blank">
-                    <img src="{% static '/main/img/footer/municipality.jpg' %}" alt="Municipality of Thessaloniki" class="footer-item-img">
+                    <img src="{% static '/main/img/footer/municipality.jpg' %}" alt="Municipality of Thessaloniki" class="footer-content-item-img">
                 </a>
                 <a href="http://www.uom.gr/" target="_blank">
-                    <img src="{% static '/main/img/footer/uom.png' %}" alt="University of Macedonia" class="footer-item-img">
+                    <img src="{% static '/main/img/footer/uom.png' %}" alt="University of Macedonia" class="footer-content-item-img">
                 </a>
                 <a href="http://www.thessinnozone.gr/" target="_blank">
-                    <img src="{% static '/main/img/footer/tiz.jpg' %}" alt="Thessaloniki Innovation Zone" class="footer-item-img">
+                    <img src="{% static '/main/img/footer/tiz.jpg' %}" alt="Thessaloniki Innovation Zone" class="footer-content-item-img">
                 </a>
                 <a href="http://www.teithe.gr/" target="_blank">
-                    <img src="{% static '/main/img/footer/ateith.jpg' %}" alt="Alexander Technological Institute Thessaloniki" class="footer-item-img">
+                    <img src="{% static '/main/img/footer/ateith.jpg' %}" alt="Alexander Technological Institute Thessaloniki" class="footer-content-item-img">
                 </a>
                 <a href="http://www.sbbe.gr/" target="_blank">
-                    <img src="{% static '/main/img/footer/sbbe.jpg' %}" alt="SBBE" class="footer-item-img">
+                    <img src="{% static '/main/img/footer/sbbe.jpg' %}" alt="SBBE" class="footer-content-item-img">
                 </a>
                 <a href="http://www.ihu.edu.gr/" target="_blank">
-                    <img src="{% static '/main/img/footer/ihu.jpg' %}" alt="International Hellenic University" class="footer-item-img">
+                    <img src="{% static '/main/img/footer/ihu.jpg' %}" alt="International Hellenic University" class="footer-content-item-img">
                 </a>
                 <a href="http://www.seve.gr/" target="_blank">
-                    <img src="{% static '/main/img/footer/seve.jpg' %}" alt="SEVE" class="footer-item-img">
+                    <img src="{% static '/main/img/footer/seve.jpg' %}" alt="SEVE" class="footer-content-item-img">
                 </a>
             </div>
             <div class="col-md-4 col-sm-4">
-                <h5 class="footer-item">Υποστηρικτές</h5>
+                <h5 class="footer-content-item">Υποστηρικτές</h5>
                 <a href="http://www.hcn.gr/" target="_blank">
-                    <img src="{% static '/main/img/footer/hcn.jpg' %}" alt="HCN" class="footer-item-img">
+                    <img src="{% static '/main/img/footer/hcn.jpg' %}" alt="HCN" class="footer-content-item-img">
                 </a>
                 <a href="http://www.beetroot.gr/" target="_blank">
-                    <img src="{% static '/main/img/footer/beetroot.png' %}" alt="Beetroot" class="footer-item-img">
+                    <img src="{% static '/main/img/footer/beetroot.png' %}" alt="Beetroot" class="footer-content-item-img">
                 </a>
                 <a href="https://www.ast.gr/" target="_blank">
-                    <img src="{% static '/main/img/footer/ast.png' %}" alt="AST" class="footer-item-img">
+                    <img src="{% static '/main/img/footer/ast.png' %}" alt="AST" class="footer-content-item-img">
                 </a>
 
-                <h5 class="footer-item">Δωρητής</h5>
+                <h5 class="footer-content-item">Δωρητής</h5>
                 <a href="http://www.snf.org/el/" target="_blank">
-                    <img src="{% static '/main/img/footer/ISN.jpg' %}" alt="ISN" class="footer-item-img">
+                    <img src="{% static '/main/img/footer/ISN.jpg' %}" alt="ISN" class="footer-content-item-img">
                 </a>
             </div>
         </div>
-        <div class="col-md-12">
-            <p class="footer-love">Lovingly crafted by <a href="http://ntemposd.me" target="_blank">ntemposd</a></p>
+        <div class="col-md-12 footer-content-love">
+            <p>Lovingly crafted by <a href="http://ntemposd.me" target="_blank">ntemposd</a></p>
         </div>
     </footer>
 
@@ -136,7 +136,7 @@
                 lng: 22.950956,
             };
 
-            var map = new google.maps.Map(document.getElementById('footer-map-content'), {
+            var map = new google.maps.Map(document.getElementById('footer-content-map-content'), {
                 zoom: 12,
                 center: myLatLng
             });
