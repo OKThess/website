@@ -1,7 +1,7 @@
 from django.test import TestCase
 from django.urls import reverse
 
-from .models import Team, Job
+from .models import Team, Job, Mentor, Meetup, Coworking
 
 
 class GetViewsTest(TestCase):
@@ -65,3 +65,48 @@ class TeamsViewTests(TestCase):
         self.assertContains(response, 'Φιλοξενούμενες ομάδες')
         self.assertContains(response, new_job.title)
         self.assertContains(response, new_job.apply_url)
+
+    def test_mentors(self):
+        """
+        The get_teams view.
+        """
+        new_mentor = Mentor.objects.create(
+            name = 'Mentor name',
+            description = 'The best mentor',
+        )
+        url = reverse('main:teams')
+        response = self.client.get(url)
+        self.assertContains(response, 'OK!Thess')
+        self.assertContains(response, 'Φιλοξενούμενες ομάδες')
+        self.assertContains(response, new_mentor.name)
+        self.assertContains(response, new_mentor.description)
+
+    def test_meetups(self):
+        """
+        The get_teams view.
+        """
+        new_meetup = Meetup.objects.create(
+            name = 'Node.js meetup',
+            description = 'The best meetup',
+        )
+        url = reverse('main:teams')
+        response = self.client.get(url)
+        self.assertContains(response, 'OK!Thess')
+        self.assertContains(response, 'Φιλοξενούμενες ομάδες')
+        self.assertContains(response, new_meetup.name)
+        self.assertContains(response, new_meetup.description)
+
+    def test_coworkings(self):
+        """
+        The get_teams view.
+        """
+        new_coworking = Coworking.objects.create(
+            name = 'Coho',
+            description = 'The best coworking',
+        )
+        url = reverse('main:teams')
+        response = self.client.get(url)
+        self.assertContains(response, 'OK!Thess')
+        self.assertContains(response, 'Φιλοξενούμενες ομάδες')
+        self.assertContains(response, new_coworking.name)
+        self.assertContains(response, new_coworking.description)
