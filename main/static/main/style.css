@@ -166,6 +166,10 @@ footer {
   margin-top: 50px;
 }
 
+footer a:hover {
+  text-decoration: none;
+}
+
 .footer-content-map {
   width: 100%;
   border: 2px solid #F9D94F;
