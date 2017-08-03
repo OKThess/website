@@ -4,7 +4,7 @@
 
 {% block content %}
     <section class="jumbotron">
-        <div class="container text-center">
+        <div class="jumbotron-cta">
             <h1>Φιλοξενούμενες ομάδες</h1>
             <p>Startups που συμμετέχουν στο πρόγραμμα επιτάχυνσης του OK!Thess.</p>
         </div>
@@ -13,68 +13,27 @@
         <div class="row">
             <div class="col-xs-12 col-sm-9">
                 <div class="row">
-                    <div class="col-xs-4 teams-item">
-                        <a href="http://www.k-invent.com/" target="_blank">
-                            <img src="{% static '/main/img/teams/kinvent.png' %}" alt="kinvent logo" class="teams-item-img">
-                        </a>
-                        <p class="teams-item-text">
-                            Στην KINVENT σχεδιάζουμε και δημιουργούμε καινοτόμα προϊόντα ανάλυσης
-                            και μέτρησης υψηλής ακρίβειας της ανθρώπινης κίνησης.
-                        </p>
-                    </div>
-                    <div class="col-xs-4 teams-item">
-                        <a href="https://elektroniowheels.gr/" target="_blank">
-                            <img src="{% static '/main/img/teams/electronio.png' %}" alt="electronio logo" class="teams-item-img">
-                        </a>
-                        <p class="teams-item-text">
-                            Το Elektronio είναι μία βραβευμένη startup, η οποία κατασκευάζει
-                            premium ηλεκτρικά ποδήλατα με έναν επαναστατικό σχεδιασμό.
-                        </p>
-                    </div>
-                    <div class="col-xs-4 teams-item">
-                        <a href="http://www.bio2chp.com/" target="_blank">
-                            <img src="{% static '/main/img/teams/bio2chp.png' %}" alt="bio2chp logo" class="teams-item-img">
-                        </a>
-                        <p class="teams-item-text">
-                            Η BIO2CHP προσφέρει σε επιχειρήσεις με οργανικά απόβλητα μια γεννήτρια
-                            η οποία μετατρέπει οργανική ύλη σε χαμηλού κόστους πράσινη ενέργεια.
-                        </p>
-                    </div>
-                    <div class="col-xs-4 teams-item">
-                        <a href="http://www.greektasty.com/" target="_blank">
-                            <img src="{% static '/main/img/teams/greek-tasty.png' %}" alt="greek-tasty logo" class="teams-item-img">
-                        </a>
-                        <p class="teams-item-text">
-                            Το Greek Tasty είναι ένα υπερσύγχρονο online store με εκλεκτά
-                            Ελληνικά τρόφιμα για την αγορά των Η.Π.Α.
-                        </p>
-                    </div>
-                    <div class="col-xs-4 teams-item">
-                        <a href="http://www.iboard-realtime.com/" target="_blank">
-                            <img src="{% static '/main/img/teams/iboard.png' %}" alt="iboard logo" class="teams-item-img">
-                        </a>
-                        <p class="teams-item-text">
-                            Το iboard είναι ένα ηλεκτρονικό βοήθημα για θαλάσσια σπορ, που
-                            συλλέγει real-time δεδομένα για την καλύτερη κατανόηση των πλεύσεων.
-                        </p>
-                    </div>
-                    <div class="col-xs-4 teams-item">
-                        <a href="http://www.doggo.gr/" target="_blank">
-                            <img src="{% static '/main/img/teams/doggo.png' %}" alt="doggo logo" class="teams-item-img">
-                        </a>
-                        <p class="teams-item-text">
-                            Το Doggo είναι το 1o ελληνικό mobile app που απευθύνεται σε ιδιοκτήτες
-                            σκύλων και συνδυάζει την κοινωνική δικτύωση με την πληροφόρηση!
-                        </p>
-                    </div>
+                    {% for single_team in teams %}
+                        <div class="col-xs-4 teams-item">
+                            <a href="{{ single_team.url }}" target="_blank">
+                                <img src="{% static single_team.image_url %}" alt="{{ single_team.name }} logo" class="teams-item-img">
+                            </a>
+                            <p class="teams-item-text">{{ single_team.description }}</p>
+                        </div>
+                    {% endfor %}
                 </div>
             </div>
             <div class="col-xs-6 col-sm-3">
-                <h4>Θέσεις Εργασίας <small>i-board</small></h4>
+                <h4>Θέσεις Εργασίας</h4>
                 <div class="list-group">
-                    <a href="http://www.iboard-realtime.com/jobs/electronics-engineer/" target="_blank" class="list-group-item">Electronics Engineer</a>
-                    <a href="http://www.iboard-realtime.com/jobs/web-designer/" target="_blank" class="list-group-item">Web Designer</a>
-                    <a href="http://www.iboard-realtime.com/jobs/web-developer/" target="_blank" class="list-group-item">Web Developer</a>
+                    {% for single_job in jobs %}
+                        <a href="{{ single_job.apply_url }}" target="_blank" class="list-group-item">
+                            {{ single_job.title }}
+                            <span class="label label-default pull-right"><small>{{ single_job.team }}</small></span>
+                        </a>
+                    {% empty %}
+                        <p>There are currently no jobs available.</p>
+                    {% endfor %}
                 </div>
             </div>
         </div>
