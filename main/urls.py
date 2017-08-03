@@ -1,9 +1,11 @@
 from django.conf.urls import url
+from django.contrib import admin
 
 from . import views
 
 
 app_name = 'main'
+admin.site.site_header = 'OK!Thess administration'
 urlpatterns = [
     # /
     url(r'^$', views.get_index, name='index'),
