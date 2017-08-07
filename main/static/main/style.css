@@ -11,6 +11,10 @@ p {
   font-size: 15px;
 }
 
+section {
+  margin-bottom: 60px;
+}
+
 /* general components */
 .btn-cta {
   color: #fff;
@@ -28,6 +32,12 @@ p {
 .media-object {
   max-width: 200px;
   max-height: 160px;
+}
+
+.section-title {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 /* layout:navbar */
@@ -140,8 +150,45 @@ p {
 }
 
 /* about page */
+.panel-group .panel {
+  border-radius: 0;
+}
+
+.panel-default {
+  border: none;
+}
+
+.panel-heading {
+  padding: 0;
+  border-radius: 0;
+  background: #eee;
+  transition: 0.4s;
+}
+
+.panel-heading:hover {
+  background: #ddd;
+}
+
+.panel-title::after {
+  content: '+';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  position: relative;
+  top: -34px;
+  right: 22px;
+}
+
+.panel-title-toggle::after {
+  content: '—';
+}
+
 .panel-title > a {
-  font-size: 24px;
+  display: block;
+  padding: 18px;
+  font-size: 15px;
+  font-weight: 300;
+  text-decoration: none;
 }
 
 /* teams page */
