@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 
 class Team(models.Model):
@@ -46,3 +47,20 @@ class Coworking(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Post(models.Model):
+    date = models.DateField()
+    title = models.CharField(max_length=200)
+    slug = models.CharField(max_length=100)
+    author = models.ForeignKey(
+        User,
+        on_delete=models.SET_NULL,
+        null=True,
+    )
+    teaser = models.TextField()
+    image = models.ImageField(upload_to='main/static/main/uploads/')
+    body = models.TextField()
+
+    def __str__(self):
+        return self.title
