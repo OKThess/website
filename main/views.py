@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from .models import Team, Job, Mentor, Meetup, Coworking
+from .models import Team, Job, Mentor, Meetup, Coworking, Post
 
 
 def get_index(request):
@@ -24,4 +24,16 @@ def get_teams(request):
         'mentors': mentors,
         'meetups': meetups,
         'coworkings': coworkings,
+    })
+
+def get_news(request):
+    posts = Post.objects.all()
+    return render(request, 'main/news.html', {
+        'posts': posts,
+    })
+
+def get_news_single(request, post_slug):
+    post = Post.objects.get(slug=post_slug)
+    return render(request, 'main/post.html', {
+        'post': post,
     })
