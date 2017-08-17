@@ -1,0 +1,23 @@
+{% extends 'main/layout.html' %}
+
+{% load static %}
+
+{% block content %}
+    <section class="jumbotron">
+        <div class="container">
+            <h1>Σχετικά με το OK!Thess</h1>
+        </div>
+    </section>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h2>{{ post.title }}</h2>
+                <p class="small">Αναρτήθηκε {{ post.date }}</p>
+                <p>{{ post.body }}</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{% endblock %}
