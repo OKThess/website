@@ -207,6 +207,15 @@ section {
   color: #777;
 }
 
+/* news */
+.news-item {
+  margin-bottom: 30px;
+}
+
+.sidebar-item {
+  margin-bottom: 20px;
+}
+
 /* layout:footer */
 footer {
   background: #fff;
