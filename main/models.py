@@ -65,3 +65,17 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Event(models.Model):
+    date = models.DateField()
+    title = models.CharField(max_length=200)
+    link = models.URLField()
+    time_start = models.TimeField()
+    time_end = models.TimeField()
+    organizer = models.CharField(max_length=200)
+    organizer_link = models.URLField()
+    description = models.TextField(blank=True)
+
+    def __str__(self):
+        return self.title
