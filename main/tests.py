@@ -1,7 +1,10 @@
+import datetime
+
 from django.test import TestCase
 from django.urls import reverse
+from django.contrib.auth.models import User
 
-from .models import Team, Job, Mentor, Meetup, Coworking
+from .models import Team, Job, Mentor, Meetup, Coworking, Post
 
 
 class GetViewsTest(TestCase):
@@ -110,3 +113,64 @@ class TeamsViewTests(TestCase):
         self.assertContains(response, 'Φιλοξενούμενες ομάδες')
         self.assertContains(response, new_coworking.name)
         self.assertContains(response, new_coworking.description)
+
+
+class NewsViewTests(TestCase):
+    def test_news(self):
+        new_user = User.objects.create(
+            username = 'tester',
+            password = 'qwe123!@#',
+        )
+        new_post = Post.objects.create(
+            date = datetime.datetime.now(),
+            title = 'New post title',
+            slug = 'new-post-slug',
+            author = new_user,
+            teaser = 'Teaser text',
+            body = 'Post body, lots of words',
+        )
+        url = reverse('main:news')
+        response = self.client.get(url)
+        self.assertContains(response, 'OK!Thess')
+        self.assertContains(response, new_post.title)
+        self.assertContains(response, new_post.slug)
+        self.assertContains(response, new_post.teaser)
+
+    def test_news_single(self):
+        new_user = User.objects.create(
+            username = 'tester',
+            password = 'qwe123!@#',
+        )
+        new_post = Post.objects.create(
+            date = datetime.datetime.now(),
+            title = 'New post title',
+            slug = 'new-post-slug',
+            author = new_user,
+            teaser = 'Teaser text',
+            body = 'Post body, lots of words',
+        )
+        url = reverse('main:news_single', args=[new_post.slug])
+        response = self.client.get(url)
+        self.assertContains(response, 'OK!Thess')
+        self.assertContains(response, new_post.title)
+        self.assertContains(response, new_post.body)
+
+    def test_featured_news(self):
+        new_user = User.objects.create(
+            username = 'tester',
+            password = 'qwe123!@#',
+        )
+        new_post = Post.objects.create(
+            date = datetime.datetime.now(),
+            title = 'New post title',
+            slug = 'new-post-slug',
+            author = new_user,
+            teaser = 'Teaser text',
+            body = 'Post body, lots of words',
+            is_featured = True,
+        )
+        url = reverse('main:index')
+        response = self.client.get(url)
+        self.assertContains(response, 'OK!Thess')
+        self.assertContains(response, new_post.title)
+        self.assertContains(response, new_post.teaser)

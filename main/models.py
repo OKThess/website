@@ -59,8 +59,23 @@ class Post(models.Model):
         null=True,
     )
     teaser = models.TextField()
-    image = models.ImageField(upload_to='main/static/main/uploads/')
+    image = models.ImageField(upload_to='main/static/main/uploads/', default='main/static/main/logo.png')
     body = models.TextField()
+    is_featured = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.title
+
+
+class Event(models.Model):
+    date = models.DateField()
+    title = models.CharField(max_length=200)
+    link = models.URLField()
+    time_start = models.TimeField()
+    time_end = models.TimeField()
+    organizer = models.CharField(max_length=200)
+    organizer_link = models.URLField()
+    description = models.TextField(blank=True)
 
     def __str__(self):
         return self.title

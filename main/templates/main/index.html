@@ -27,65 +27,43 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 col-sm-4">
-                <div class="media">
-			        <div class="media-left">
-			            <img src="http://www.okthess.gr/img/thumb.png" class="media-object">
-			        </div>
-			        <div class="media-body">
-                        <h3 class="media-heading">Call for Startups</h3>
-					    <p>
-                            Χρειάζεσαι βοήθεια στο επιχειρηματικό σου ξεκίνημα;
-                            Το OK!Thess είναι εδώ για να σου την προσφέρει!
-                            Συμπλήρωσε και κατάθεσε την αίτηση συμμετοχής τώρα ή
-                            και μέχρι τις 13 Σεπτεμβρίου του 2017.
-                        </p>
-						<a href="http://okthess.gr/dev/news.html">Περισσότερα »</a>
-			        </div>
-			    </div>
-            </div>
-            <div class="col-md-4 col-sm-4">
-                <div class="media">
-			        <div class="media-left">
-			            <img src="http://www.okthess.gr/img/thumb.png" class="media-object">
-			        </div>
-			        <div class="media-body">
-                        <h3 class="media-heading">Θέσεις Εργασίας</h3>
-					    <p>
-                            Η ομάδα του ΟΚ!Τhess μεγαλώνει και αναζητά νέους συνεργάτες.
-                            Οι υποψήφιοι καλούνται να εκδηλώσουν το ενδιαφέρον τους
-                            αποστέλλοντας αίτηση ηλεκτρονικά, μέχρι και τις 21 Αυγούστου 2017.
-                        </p>
-						<a href="http://okthess.gr/dev/news.html">Περισσότερα »</a>
-			        </div>
-			    </div>
-            </div>
-            <div class="col-md-4 col-sm-4">
-                <div class="media">
-			        <div class="media-left">
-			            <img src="http://www.okthess.gr/img/thumb.png" class="media-object">
-			        </div>
-			        <div class="media-body">
-                        <h3 class="media-heading">Startup Weekend</h3>
-					    <p>
-                            12-14 Μαίου 2017: 30 συμμετέχοντες ποικίλων ειδικοτήτων
-                            δημιούργουν 7 ομάδες και δουλεύουν στους χώρους του
-                            OK!Thess υποστηριζόμενοι απο 8 μέντορες. Δες το τριήμερο
-                            σε 5 φωτογραφίες.
-                        </p>
-						<a href="http://okthess.gr/dev/news.html">Περισσότερα »</a>
-			        </div>
-			    </div>
-            </div>
+            {% for post in featured_posts %}
+                <div class="col-md-4 col-sm-4">
+                    <div class="media">
+                        <div class="media-left">
+                            <img src="{{ post.image }}" class="media-object">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">{{ post.title }}</h3>
+                            <p>{{ post.teaser }}</p>
+                            <a href="{% url 'main:news_single' post.slug %}">Περισσότερα »</a>
+                        </div>
+                    </div>
+                </div>
+            {% empty %}
+                <p>No featured news.</p>
+            {% endfor %}
         </div>
     </section>
     <section class="section-events">
-         <div class="container" id="3">
-            <div class="row events text-center"></div>
-            <div class="row no-events text-center" style="display: none">No events currently</div>
+        <div class="container">
+            <div class="row events text-center">
+                {% for event in events %}
+                    <div class="event">
+                        <div class="event-name">
+                            <a class="event-link" href="{{ event.link }}">{{ event.title }}</a>
+                        </div>
+                        <div class="event-date">{{ event.date }} - {{ event.time_start }} to {{ event.time_end }}</div>
+                            <div class="event-desc">{{ event.description }}</div>
+                        <hr>
+                    </div>
+                {% empty %}
+                    <p>No events.</p>
+                {% endfor %}
+            </div>
         </div>
         <div class="container text-center">
-            <p><a class="btn" href="http://okthess.gr/dev/thessaloniki-events.html" role="button">See all events &raquo;</a></p>
+            <a class="btn" href="http://okthess.gr/dev/thessaloniki-events.html" role="button">See all events »</a>
         </div>
     </section>
 
