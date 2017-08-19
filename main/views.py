@@ -4,7 +4,10 @@ from .models import Team, Job, Mentor, Meetup, Coworking, Post
 
 
 def get_index(request):
-    return render(request, 'main/index.html')
+    featured_posts = Post.objects.filter(is_featured=True)
+    return render(request, 'main/index.html', {
+        'featured_posts': featured_posts,
+    })
 
 def get_about(request):
     return render(request, 'main/about.html', {
