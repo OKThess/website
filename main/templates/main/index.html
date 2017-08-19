@@ -46,12 +46,24 @@
         </div>
     </section>
     <section class="section-events">
-         <div class="container" id="3">
-            <div class="row events text-center"></div>
-            <div class="row no-events text-center" style="display: none">No events currently</div>
+        <div class="container">
+            <div class="row events text-center">
+                {% for event in events %}
+                    <div class="event">
+                        <div class="event-name">
+                            <a class="event-link" href="{{ event.link }}">{{ event.title }}</a>
+                        </div>
+                        <div class="event-date">{{ event.date }} - {{ event.time_start }} to {{ event.time_end }}</div>
+                            <div class="event-desc">{{ event.description }}</div>
+                        <hr>
+                    </div>
+                {% empty %}
+                    <p>No events.</p>
+                {% endfor %}
+            </div>
         </div>
         <div class="container text-center">
-            <p><a class="btn" href="http://okthess.gr/dev/thessaloniki-events.html" role="button">See all events &raquo;</a></p>
+            <a class="btn" href="http://okthess.gr/dev/thessaloniki-events.html" role="button">See all events »</a>
         </div>
     </section>
 
