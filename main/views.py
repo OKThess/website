@@ -1,12 +1,14 @@
 from django.shortcuts import render
 
-from .models import Team, Job, Mentor, Meetup, Coworking, Post
+from .models import Team, Job, Mentor, Meetup, Coworking, Post, Event
 
 
 def get_index(request):
     featured_posts = Post.objects.filter(is_featured=True)
+    events = Event.objects.all()
     return render(request, 'main/index.html', {
         'featured_posts': featured_posts,
+        'events': events,
     })
 
 def get_about(request):
