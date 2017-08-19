@@ -133,17 +133,17 @@ section {
 	min-width: 100%;
 }
 
-.eventName {
+.event-name {
 	font-size: 20px;
 	font-weight: bold;
 }
 
-.eventDate {
+.event-date {
 	color: #808080;
 	font-size: 12px;
 }
 
-.eventDesc {
+.event-desc {
 	width: 80%;
 	margin: 0 auto;
 	font-size: 13px;
