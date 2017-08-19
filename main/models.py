@@ -59,8 +59,9 @@ class Post(models.Model):
         null=True,
     )
     teaser = models.TextField()
-    image = models.ImageField(upload_to='main/static/main/uploads/')
+    image = models.ImageField(upload_to='main/static/main/uploads/', default='main/static/main/logo.png')
     body = models.TextField()
+    is_featured = models.BooleanField(default=False)
 
     def __str__(self):
         return self.title
