@@ -58,3 +58,6 @@ def apply(request):
     else:
         form = ApplicationForm()
         return render(request, 'main/apply.html', {'form': form})
+
+def contact(request):
+    return HttpResponseRedirect('/')
