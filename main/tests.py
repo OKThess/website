@@ -4,7 +4,7 @@ from django.test import TestCase
 from django.urls import reverse
 from django.contrib.auth.models import User
 
-from .models import Team, Job, Mentor, Meetup, Coworking, Post
+from .models import Team, Job, Mentor, Meetup, Coworking, Post, Event
 
 
 class GetViewsTest(TestCase):
@@ -174,3 +174,23 @@ class NewsViewTests(TestCase):
         self.assertContains(response, 'OK!Thess')
         self.assertContains(response, new_post.title)
         self.assertContains(response, new_post.teaser)
+
+
+class EventsViewTests(TestCase):
+    def test_events(self):
+        new_event = Event.objects.create(
+            date = datetime.datetime.now(),
+            title = 'Event title',
+            link = 'https://www.meetup.com/random-event',
+            time_start = datetime.datetime.now(),
+            time_end = datetime.datetime.now(),
+            organizer = 'OK!Thess',
+            organizer_link = 'http://okthess.gr',
+            description = 'The most interesting event.',
+        )
+        url = reverse('main:index')
+        response = self.client.get(url)
+        self.assertContains(response, 'OK!Thess')
+        self.assertContains(response, new_event.title)
+        self.assertContains(response, new_event.description)
+        self.assertContains(response, new_event.link)
