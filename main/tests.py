@@ -198,7 +198,7 @@ class EventsViewTests(TestCase):
 
 
 class ApplicationFormTests(TestCase):
-    def test_apply(self):
+    def test_form_valid(self):
         form_data = {
             'answer_1': 'one answer',
             'answer_2': 'two anwers',
@@ -217,3 +217,16 @@ class ApplicationFormTests(TestCase):
         self.assertEqual(form.cleaned_data['phonenumber'], form_data['phonenumber'])
         self.assertEqual(form.cleaned_data['email'], form_data['email'])
         self.assertEqual(form.cleaned_data['name'], form_data['name'])
+
+    def test_form_invalid_email(self):
+        form_data = {
+            'answer_1': 'one answer',
+            'answer_2': 'two anwers',
+            'answer_3': 'three anwers',
+            'answer_4': 'four anwers',
+            'phonenumber': '2310123456',
+            'email': 'okthess.gr',
+            'name': 'Tester',
+        }
+        form = ApplicationForm(data=form_data)
+        self.assertFalse(form.is_valid())
