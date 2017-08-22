@@ -1,0 +1,62 @@
+{% extends 'main/layout.html' %}
+
+{% load static %}
+
+{% block content %}
+    <section class="jumbotron">
+        <div class="jumbotron-cta">
+            <h1>Αίτηση Συμμετοχής</h1>
+            <p>Πληροφορίες και φόρμα συμμετοχής για το πρόγραμμα επιτάχυνσης του OK!Thess.</p>
+        </div>
+    </section>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                {% if messages %}
+                    <p class="alert alert-success">
+                        {% for message in messages %}
+                            {{ message }}
+                            <br>
+                        {% endfor %}
+                    </p>
+                {% endif %}
+                <p>
+                    Γίνονται δεκτές ανά πάσα στιγμή προτάσεις από άτομα ή ομάδες
+                    με καινοτόμες ιδέες, ανεξάρτητα του βαθμού ωρίμανσης, που θα
+                    ήθελαν να ωφεληθούν από τις υπηρεσίες της προ-θερμοκοιτίδας του
+                    OK!Thess ώστε να στήσουν μια επιχείρηση (startup) ή να ενισχύσουν
+                    μια startup που έχουν ήδη στήσει.
+                </p>
+                <p>
+                    Οι προτάσεις αξιολογούνται σε τακτά χρονικά διαστήματα, οι
+                    ακριβείς ημερομηνίες ανακοινώνονται στην παρούσα ιστοσελίδα.
+                    Η τελευταία περίοδος αξιολόγησης έκλεισε την 1η Δεκέμβρη 2016
+                    και η επόμενη έχει προγραμματιστεί για τις αρχές του 2017.
+                    Η ακριβής ημερομηνία θα ανακοινωθεί στο αμέσως προσεχές μέλλον.
+                </p>
+                <p>
+                    Για συμμετοχή συμπληρώστε την παρακάτω φόρμα συμμετοχής ή
+                    απαντήστε τις ερωτήσεις στο σώμα ενός e-mail και στείλτε
+                    στο apply@okthess.gr
+                </p>
+                <a href="http://okthess.gr/pdf/website-open-call.pdf" class="btn btn-primary">Πληροφορίες</a>
+                <h3>Φόρμα Συμμετοχής</h3>
+                <hr>
+                <form action="{% url 'main:apply' %}" method="post">
+                    {% csrf_token %}
+                    {{ form.non_field_errors }}
+                    {% for field in form %}
+                        <div class="form-group">
+                            {{ field.errors }}
+                            {{ field }}
+                        </div>
+                    {% endfor %}
+                    <button type="submit" class="btn btn-primary">Αποστολή</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{% endblock %}
