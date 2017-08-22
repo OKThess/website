@@ -6,6 +6,9 @@ from .models import Team, Job, Mentor, Meetup, Coworking, Post, Event
 from .forms import ApplicationForm
 
 
+def health(request):
+    return HttpResponse('Ok')
+
 def get_index(request):
     featured_posts = Post.objects.filter(is_featured=True)
     events = Event.objects.all()
