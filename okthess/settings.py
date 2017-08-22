@@ -26,6 +26,7 @@ SECRET_KEY = 'yh(su1dt&mt=vqcwonwa*zq(r$e$up*4(cuqy-br@6=85#4@mu'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    'localhost',
     'okthess.eu-central-1.elasticbeanstalk.com',
 ]
 
