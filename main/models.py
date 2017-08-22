@@ -79,3 +79,16 @@ class Event(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Application(models.Model):
+    phonenumber = models.CharField(max_length=100)
+    email = models.EmailField()
+    name = models.CharField(max_length=100)
+    answer_1 = models.TextField()
+    answer_2 = models.TextField()
+    answer_3 = models.TextField()
+    answer_4 = models.TextField()
+
+    def __str__(self):
+        return self.name
