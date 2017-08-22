@@ -1,6 +1,9 @@
 from django.shortcuts import render
+from django.http import HttpResponse, HttpResponseRedirect
+from django.contrib import messages
 
 from .models import Team, Job, Mentor, Meetup, Coworking, Post, Event
+from .forms import ApplicationForm
 
 
 def get_index(request):
@@ -42,3 +45,16 @@ def get_news_single(request, post_slug):
     return render(request, 'main/post.html', {
         'post': post,
     })
+
+def apply(request):
+    if request.method == 'POST':
+        form = ApplicationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.info(request, 'Thank you for applying!')
+            return HttpResponseRedirect('/apply')
+        else:
+            return HttpResponse('Application form submission is invalid.')
+    else:
+        form = ApplicationForm()
+        return render(request, 'main/apply.html', {'form': form})
