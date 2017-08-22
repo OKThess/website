@@ -7,6 +7,9 @@ from . import views
 app_name = 'main'
 admin.site.site_header = 'OK!Thess administration'
 urlpatterns = [
+    # /health
+    url(r'^health/$', views.health, name='health'),
+
     # /
     url(r'^$', views.get_index, name='index'),
 
