@@ -21,4 +21,10 @@ urlpatterns = [
 
     # eg. /news/the-first-blog-post
     url(r'^news/(?P<post_slug>[^/]*)', views.get_news_single, name='news_single'),
+
+    # /apply/
+    url(r'^apply/$', views.apply, name='apply'),
+
+    # /contact/
+    url(r'^contact/$', views.contact, name='contact'),
 ]
