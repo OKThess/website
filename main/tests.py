@@ -230,3 +230,17 @@ class ApplicationFormTests(TestCase):
         }
         form = ApplicationForm(data=form_data)
         self.assertFalse(form.is_valid())
+
+    def test_apply(self):
+        form_data = {
+            'answer_1': 'one answer',
+            'answer_2': 'two anwers',
+            'answer_3': 'three anwers',
+            'answer_4': 'four anwers',
+            'phonenumber': '2310123456',
+            'email': 'tester@okthess.gr',
+            'name': 'Tester',
+        }
+        url = reverse('main:apply')
+        response = self.client.post(url, form_data, follow=True)
+        self.assertContains(response, 'Thank you for applying!')
