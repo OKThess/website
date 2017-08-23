@@ -12,6 +12,14 @@ urlpatterns = [
 
     # /about/
     url(r'^about/$', views.get_about, name='about'),
+    # /program/
+    url(r'^program/$', views.get_program, name='program'),
+    # /events/
+    url(r'^events/$', views.get_events, name='events'),
+    # /blog/
+    url(r'^blog/$', views.get_blog, name='blog'),
+    # /contact/
+    url(r'^contact/$', views.get_contact, name='contact'),
 
     # /teams/
     url(r'^teams/$', views.get_teams, name='teams'),
@@ -24,7 +32,4 @@ urlpatterns = [
 
     # /apply/
     url(r'^apply/$', views.apply, name='apply'),
-
-    # /contact/
-    url(r'^contact/$', views.contact, name='contact'),
 ]
