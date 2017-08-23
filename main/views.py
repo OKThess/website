@@ -19,6 +19,18 @@ def get_about(request):
         'page_title': 'Σχετικά',
     })
 
+def get_program(request):
+    return render(request, 'main/program.html')
+
+def get_events(request):
+    return render(request, 'main/events.html')
+
+def get_blog(request):
+    return render(request, 'main/blog.html')
+
+def get_contact(request):
+    return render(request, 'main/contact.html')
+
 def get_teams(request):
     teams = Team.objects.order_by('name')
     jobs = Job.objects.all()
