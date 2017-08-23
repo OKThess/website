@@ -21,15 +21,6 @@ urlpatterns = [
     # /contact/
     url(r'^contact/$', views.get_contact, name='contact'),
 
-    # /teams/
-    url(r'^teams/$', views.get_teams, name='teams'),
-
-    # /news/
-    url(r'^news/$', views.get_news, name='news'),
-
-    # eg. /news/the-first-blog-post
-    url(r'^news/(?P<post_slug>[^/]*)', views.get_news_single, name='news_single'),
-
     # /apply/
     url(r'^apply/$', views.apply, name='apply'),
 ]
