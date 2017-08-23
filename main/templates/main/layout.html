@@ -49,7 +49,7 @@
     <nav class="navbar navbar-default">
         <div class="navbar-header">
             <a class="navbar-brand" href="/eng/index.html"><img src="{% static '/main/img/logo.png' %}" alt="Logo"></a>
-            <a class="" id="call" href="http://okthess.gr/dev/about.html" role="button"><span class="glyphicon glyphicon-exclamation-sign"></span><strong>Apply</strong> for Autumn'17</a>
+            <a class="" id="call" href="{% url 'main:apply' %}" role="button"><span class="glyphicon glyphicon-exclamation-sign"></span><strong>Apply</strong> for Autumn'17</a>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
