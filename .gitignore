@@ -58,3 +58,8 @@ ENV/
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+
+# Terraform
+infra/.terraform
+infra/terraform.tfstate
+infra/terraform.tfstate.backup
