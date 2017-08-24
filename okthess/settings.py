@@ -27,8 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'localhost',
+    '127.0.0.1',
     'okthess.eu-central-1.elasticbeanstalk.com',
-    '35.159.28.154',
+    'okthess-postgres.eu-central-1.elasticbeanstalk.com',
 ]
 
 
@@ -80,10 +81,26 @@ WSGI_APPLICATION = 'okthess.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'okthess',
+        'USER': 'okthess',
+        'PASSWORD': 'okthess',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
+
+if 'RDS_HOSTNAME' in os.environ:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': os.environ['RDS_DB_NAME'],
+            'USER': os.environ['RDS_USERNAME'],
+            'PASSWORD': os.environ['RDS_PASSWORD'],
+            'HOST': os.environ['RDS_HOSTNAME'],
+            'PORT': os.environ['RDS_PORT'],
+        }
+    }
 
 
 # Password validation
