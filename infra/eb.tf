@@ -84,8 +84,7 @@ resource "aws_elastic_beanstalk_environment" "beanstalk_application_environment"
 
   setting {
     namespace = "aws:elasticbeanstalk:application:environment"
-    name      = "RDS_DATABASE"
-    value     = "mydb"
+    name      = "RDS_DB_NAME"
     value     = "${aws_db_instance.beanstalk_rds.name}"
   }
 
