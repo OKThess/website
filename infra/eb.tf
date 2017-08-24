@@ -1,20 +1,3 @@
-# Security group for beanstalk env
-resource "aws_security_group" "beanstalk_sec_group" {
-  name        = "beanstalk_sec_group"
-  description = "OKThess beanstalk security group"
-
-  egress {
-    from_port   = 0
-    to_port     = 0
-    protocol    = "-1"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-
-  tags {
-    Name = "beanstalk_sec_group"
-  }
-}
-
 # Beanstalk Application
 resource "aws_elastic_beanstalk_application" "beanstalk_application" {
   name        = "${var.application_name}"
