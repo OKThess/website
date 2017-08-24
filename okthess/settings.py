@@ -102,6 +102,7 @@ if 'RDS_HOSTNAME' in os.environ:
         }
     }
 
+print('DATABASES:', DATABASES)
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
