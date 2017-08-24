@@ -42,18 +42,6 @@ resource "aws_elastic_beanstalk_environment" "beanstalk_application_environment"
   }
 
   setting {
-    namespace = "aws:rds:dbinstance"
-    name      = "DBEngine"
-    value     = "postgres"
-  }
-
-  setting {
-    namespace = "aws:rds:dbinstance"
-    name      = "DBEngineVersion"
-    value     = "9.4.9"
-  }
-
-  setting {
     namespace = "aws:elasticbeanstalk:application:environment"
     name      = "RDS_USERNAME"
     value     = "${aws_db_instance.beanstalk_rds.username}"
