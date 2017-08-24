@@ -8,6 +8,8 @@ resource "aws_db_instance" "beanstalk_rds" {
   name                    = "dbokthess"
   username                = "dbuser"
   password                = "dbpassword"
+  publicly_accessible     = true
+  skip_final_snapshot     = true
   vpc_security_group_ids  = ["${aws_security_group.rds_sec_group.id}"]
   multi_az                = "false"
   storage_type            = "gp2"
