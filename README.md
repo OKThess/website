@@ -28,8 +28,6 @@ This project uses PostgreSQL.
 
 ## Infrastructure
 
-> Notes for my future self
-
 This project is deployed to AWS Elastic Beanstalk using [Terraform](https://www.terraform.io/) (v0.10.2).
 The infrastructure resources are described at the [`infra`](/infra) directory.
 Those resource assume the default VPC exists (including subnets, route tables, ACLs, internet gateway, etc).
