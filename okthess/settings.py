@@ -113,7 +113,7 @@ if 'TRAVIS' in os.environ:
             'USER': 'postgres',
             'PASSWORD': '',
             'HOST': '127.0.0.1',
-            'PORT': '54321',
+            'PORT': '5432',
         }
     }
 
