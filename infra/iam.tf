@@ -7,20 +7,5 @@ resource "aws_iam_instance_profile" "okthess_beanstalk_ec2" {
 # Beanstalk IAM role
 resource "aws_iam_role" "okthess_beanstalk_ec2" {
   name = "okthess-beanstalk-ec2-role"
-
-  assume_role_policy = <<EOF
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Action": "sts:AssumeRole",
-      "Principal": {
-        "Service": "ec2.amazonaws.com"
-      },
-      "Effect": "Allow",
-      "Sid": ""
-    }
-  ]
-}
-EOF
+  assume_role_policy = "${file("aws_iam_role_policies/okthess-beanstalk-ec2-policy.json")}"
 }
