@@ -28,8 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    'okthess.eu-central-1.elasticbeanstalk.com',
-    'okthess-postgres.eu-central-1.elasticbeanstalk.com',
+    'okthess.absk3drrdz.eu-central-1.elasticbeanstalk.com',
 ]
 
 
@@ -91,17 +90,20 @@ DATABASES = {
 }
 
 if 'RDS_HOSTNAME' in os.environ:
+    # Shame on AWS, ding ding
+    hostname = os.environ['RDS_HOSTNAME'].split(':')[0]
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
             'NAME': os.environ['RDS_DB_NAME'],
             'USER': os.environ['RDS_USERNAME'],
             'PASSWORD': os.environ['RDS_PASSWORD'],
-            'HOST': os.environ['RDS_HOSTNAME'],
+            'HOST': hostname,
             'PORT': os.environ['RDS_PORT'],
         }
     }
 
+print('DATABASES:', DATABASES)
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
