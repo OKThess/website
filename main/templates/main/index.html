@@ -1,0 +1,72 @@
+{% extends 'main/layout.html' %}
+
+{% load static %}
+
+{% block content %}
+    <section class="jumbotron">
+        <div class="jumbotron-cta">
+            <h1>Συνεργάτης στα πρώτα βήματα</h1>
+            <p>To OK!Thess παρέχει χώρο και τεχνική υποστήριξη σε ομάδες ανθρώπων με καινοτόμες ιδέες.</p>
+            <a href="#" class="btn btn-lg btn-cta">Apply now &raquo;</a>
+        </div>
+    </section>
+    <section class="container-fluid infocomponent">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="infocomponent-main">
+                    <h2><strong>Τι κάνουμε</strong></h2>
+                    <p>
+                        Ο ευρύς στόχος του OK!Thess είναι η ουσιώδης συμβολή στην
+                        δημιουργία ενός οικοσυστήματος καινοτομίας που περιλαμβάνει
+                        όλους όσους είναι σε θέση και επιθυμούν να συμβάλλουν στην
+                        ανάπτυξη της καινοτομίας στην πόλη.
+                    </p>
+                    <br>
+                    <a class="btn btn-cta" href="http://okthess.gr/dev/about.html" role="button">Μάθε περισσότερα »</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {% for post in featured_posts %}
+                <div class="col-md-4 col-sm-4">
+                    <div class="media">
+                        <div class="media-left">
+                            <img src="{{ post.image }}" class="media-object">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">{{ post.title }}</h3>
+                            <p>{{ post.teaser }}</p>
+                            <a href="{% url 'main:news_single' post.slug %}">Περισσότερα »</a>
+                        </div>
+                    </div>
+                </div>
+            {% empty %}
+                <p>No featured news.</p>
+            {% endfor %}
+        </div>
+    </section>
+    <section class="section-events">
+        <div class="container">
+            <div class="row events text-center">
+                {% for event in events %}
+                    <div class="event">
+                        <div class="event-name">
+                            <a class="event-link" href="{{ event.link }}">{{ event.title }}</a>
+                        </div>
+                        <div class="event-date">{{ event.date }} - {{ event.time_start }} to {{ event.time_end }}</div>
+                            <div class="event-desc">{{ event.description }}</div>
+                        <hr>
+                    </div>
+                {% empty %}
+                    <p>No events.</p>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="container text-center">
+            <a class="btn" href="http://okthess.gr/dev/thessaloniki-events.html" role="button">See all events »</a>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{% endblock %}

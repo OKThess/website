@@ -1,0 +1,114 @@
+{% extends 'main/layout.html' %}
+
+{% load static %}
+
+{% block content %}
+    <section class="jumbotron">
+        <div class="jumbotron-cta">
+            <h1>Φιλοξενούμενες ομάδες</h1>
+            <p>Startups που συμμετέχουν στο πρόγραμμα επιτάχυνσης του OK!Thess.</p>
+        </div>
+    </section>
+    <section class="container-fluid teams">
+        <div class="row">
+            <div class="col-xs-12"><h2 class="section-title">Ομάδες</h2></div>
+            <div class="col-xs-12 col-sm-9">
+                <div class="row">
+                    {% for single_team in teams %}
+                        <div class="col-xs-4 teams-item">
+                            <a href="{{ single_team.url }}" target="_blank">
+                                <img src="{% static single_team.image_url %}" alt="{{ single_team.name }} logo" class="teams-item-img">
+                            </a>
+                            <p class="teams-item-text">{{ single_team.description }}</p>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <h4>Θέσεις Εργασίας</h4>
+                <div class="list-group">
+                    {% for single_job in jobs %}
+                        <a href="{{ single_job.apply_url }}" target="_blank" class="list-group-item">
+                            {{ single_job.title }}
+                            <span class="label label-default pull-right"><small>{{ single_job.team }}</small></span>
+                        </a>
+                    {% empty %}
+                        <p>There are currently no jobs available.</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-9">
+                <div class="row">
+                    <div class="col-xs-12"><h2 class="section-title">Mentors</h2></div>
+                    {% for single_mentor in mentors %}
+                    <div class="col-xs-6 col-md-4">
+                        <div class="media">
+                            <!-- <div class="media-left">
+                                <img src="http://www.okthess.gr/img/thumb.png" class="media-object">
+                            </div> -->
+                            <div class="media-body">
+                                <h3 class="media-heading">{{ single_mentor.name }}</h3>
+                                <p>{{ single_mentor.description }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-9">
+                <div class="row">
+                    <div class="col-xs-12"><h2 class="section-title">Hosted Meetups</h2></div>
+                    {% for single_meetup in meetups %}
+                    <div class="col-xs-6 col-md-4">
+                        <div class="media">
+                            <!-- <div class="media-left">
+                                <img src="http://www.okthess.gr/img/thumb.png" class="media-object">
+                            </div> -->
+                            <div class="media-body">
+                                <h3 class="media-heading">{{ single_meetup.name }}</h3>
+                                <p>{{ single_meetup.description }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-9">
+                <div class="row">
+                    <div class="col-xs-12"><h2 class="section-title">Coworking Spaces</h2></div>
+                    {% for single_coworking in coworkings %}
+                    <div class="col-xs-6 col-md-4">
+                        <div class="media">
+                            <!-- <div class="media-left">
+                                <img src="http://www.okthess.gr/img/thumb.png" class="media-object">
+                            </div> -->
+                            <div class="media-body">
+                                <h3 class="media-heading">{{ single_coworking.name }}</h3>
+                                <p>{{ single_coworking.description }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{% endblock %}

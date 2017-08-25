@@ -1,0 +1,268 @@
+/* html components */
+html, body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #000;
+  background-color: #fafafa;
+}
+
+p {
+  font-size: 15px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+/* general components */
+.btn-cta {
+  color: #fff;
+  border: 1px solid #0a3c59;
+  text-shadow: #1e4158 0 1px 0;
+  background: #1c599b;
+  background: linear-gradient(0deg, #1c599b, #1c599b);
+}
+
+.btn-cta:hover {
+  color: #fff;
+  background: linear-gradient(180deg, #65a9d7, #3e779d);
+}
+
+.media-object {
+  max-width: 200px;
+  max-height: 160px;
+}
+
+.section-title {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+/* layout:navbar */
+.navbar {
+  margin-bottom: 0;
+  border-bottom: 3px solid #222;
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-size: 14px;
+  font-weight: 100;
+  color: #000;
+}
+
+.navbar-nav > li:hover,
+.navbar-nav > li:focus {
+  background: #f9d94f;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+  background: #f9d94f;
+}
+
+.dropdown-menu > li > a:hover {
+  background: #f9d94f;
+}
+
+.navbar-brand {
+  padding-top: 8px;
+  padding-bottom: 0;
+}
+
+.navbar-brand > img {
+  height: 35px;
+}
+
+/* home page */
+.jumbotron {
+  background: url('/static/main/img/background-photo.jpg');
+  background-position: top left;
+  background-size: cover;
+  box-shadow: inset 0 0 300px 20px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  border-bottom: 3px solid #ee4031;
+  min-height: 500px;
+}
+
+.jumbotron-cta {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.8);
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 180px;
+  padding: 15px;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.jumbotron-cta h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.infocomponent {
+  padding-bottom: 40px;
+}
+
+.infocomponent-main {
+  background: rgba(28, 89, 155, 0.5);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
+.infocomponent-main h2 {
+  font-size: 20px;
+}
+
+.section-events {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.event {
+	min-width: 100%;
+}
+
+.event-name {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.event-date {
+	color: #808080;
+	font-size: 12px;
+}
+
+.event-desc {
+	width: 80%;
+	margin: 0 auto;
+	font-size: 13px;
+}
+
+/* about page */
+.panel-group .panel {
+  border-radius: 0;
+}
+
+.panel-default {
+  border: none;
+}
+
+.panel-heading {
+  padding: 0;
+  border-radius: 0;
+  background: #eee;
+  transition: 0.4s;
+}
+
+.panel-heading:hover {
+  background: #ddd;
+}
+
+.panel-title::after {
+  content: '+';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  position: relative;
+  top: -34px;
+  right: 22px;
+}
+
+.panel-title-toggle::after {
+  content: '—';
+}
+
+.panel-title > a {
+  display: block;
+  padding: 18px;
+  font-size: 15px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+/* teams page */
+.teams-item {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.teams-item-img {
+  height: 160px;
+  margin-bottom: 20px;
+}
+
+.teams-item-text {
+  font-size: 15px;
+  color: #777;
+}
+
+/* news */
+.news-item {
+  margin-bottom: 30px;
+}
+
+.sidebar-item {
+  margin-bottom: 20px;
+}
+
+/* layout:footer */
+footer {
+  background: #fff;
+  margin-top: 50px;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+.footer-content-map {
+  width: 100%;
+  border: 2px solid #F9D94F;
+}
+
+#footer-content-map-content {
+  height: 250px;
+}
+
+.social {
+  border-top: 3px solid #f9d94f;
+  padding-top: 9px;
+  padding-left: 60px;
+}
+
+.social-item {
+  position: relative;
+  top: -40px;
+}
+
+.footer-content-item {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-content-item-img {
+  height: 70px;
+  margin-right: 4px;
+  margin-bottom: 50px;
+}
+
+.footer-content-love p {
+  text-align: right;
+  font-size: 10px;
+  color: #2ecc40;
+}
