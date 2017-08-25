@@ -8,7 +8,6 @@ resource "aws_db_instance" "okthess_beanstalk_rds" {
   name                    = "dbokthess"
   username                = "${var.rds_username}"
   password                = "${var.rds_password}"
-  publicly_accessible     = true
   skip_final_snapshot     = true
   vpc_security_group_ids  = ["${aws_security_group.okthess_rds_sg.id}"]
   multi_az                = "false"
