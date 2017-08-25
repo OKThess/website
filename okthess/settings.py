@@ -115,6 +115,7 @@ if 'TRAVIS' in os.environ:
             'HOST': '127.0.0.1',
             'PORT': '54321',
         }
+    }
 
 
 # Password validation
