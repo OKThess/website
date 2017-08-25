@@ -13,3 +13,11 @@ variable "application_description" {
 variable "region" {
   description = "Defines at which AWS region your app will be deployed"
 }
+
+variable "rds_username" {
+  description = "Defines AWS RDS db username"
+}
+
+variable "rds_password" {
+  description = "Defines AWS RDS db password"
+}
