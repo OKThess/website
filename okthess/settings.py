@@ -30,6 +30,7 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
     'okthess.eu-central-1.elasticbeanstalk.com',
     'okthess-postgres.eu-central-1.elasticbeanstalk.com',
+    'okthess-terraform-production.pibk5t2kri.eu-central-1.elasticbeanstalk.com',
 ]
 
 
