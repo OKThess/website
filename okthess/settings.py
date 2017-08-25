@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    'okthess.eu-central-1.elasticbeanstalk.com',
+    'okthess.absk3drrdz.eu-central-1.elasticbeanstalk.com',
 ]
 
 
