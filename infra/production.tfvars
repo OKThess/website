@@ -5,6 +5,6 @@
 #
 
 profile="okthess"
-application_name="okthess-terraform"
+application_name="okthess"
 application_description="OKThess Django web app"
-application_environment="production"
+region="eu-central-1"
