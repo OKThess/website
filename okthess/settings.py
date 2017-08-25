@@ -89,6 +89,7 @@ DATABASES = {
     }
 }
 
+# AWS production
 if 'RDS_HOSTNAME' in os.environ:
     # Shame on AWS, ding ding
     hostname = os.environ['RDS_HOSTNAME'].split(':')[0]
@@ -103,7 +104,19 @@ if 'RDS_HOSTNAME' in os.environ:
         }
     }
 
-print('DATABASES:', DATABASES)
+# TravisCI testing
+if 'TRAVIS' in os.environ:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'okthess',
+            'USER': 'postgres',
+            'PASSWORD': '',
+            'HOST': '127.0.0.1',
+            'PORT': '5432',
+        }
+    }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators

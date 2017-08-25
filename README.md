@@ -20,7 +20,7 @@ Finally, run the Django server:
 python3 manage.py runserver
 ```
 
-The Django project is `avocado`. There is one Django app, `main`, which includes
+The Django project is `okthess`. There is one Django app, `main`, which includes
 all business logic.
 
 This project uses PostgreSQL.
