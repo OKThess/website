@@ -1,5 +1,5 @@
 # RDS db
-resource "aws_db_instance" "beanstalk_rds" {
+resource "aws_db_instance" "okthess_beanstalk_rds" {
   allocated_storage       = 5
   engine                  = "postgres"
   engine_version          = "9.4.9"
@@ -10,7 +10,7 @@ resource "aws_db_instance" "beanstalk_rds" {
   password                = "dbpassword"
   publicly_accessible     = true
   skip_final_snapshot     = true
-  vpc_security_group_ids  = ["${aws_security_group.rds_sec_group.id}"]
+  vpc_security_group_ids  = ["${aws_security_group.okthess_rds_sg.id}"]
   multi_az                = "false"
   storage_type            = "gp2"
   backup_retention_period = 30

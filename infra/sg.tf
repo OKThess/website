@@ -1,6 +1,6 @@
 # Beanstalk app security group
-resource "aws_security_group" "beanstalk_sec_group" {
-  name        = "beanstalk_sec_group"
+resource "aws_security_group" "okthess_beanstalk_sg" {
+  name        = "okthess_beanstalk_sg"
   description = "OKThess beanstalk security group"
 
   egress {
@@ -18,13 +18,13 @@ resource "aws_security_group" "beanstalk_sec_group" {
   }
 
   tags {
-    Name = "beanstalk_sec_group"
+    Name = "okthess_beanstalk_sg"
   }
 }
 
 # RDS security group
-resource "aws_security_group" "rds_sec_group" {
-  name        = "rds_sec_group"
+resource "aws_security_group" "okthess_rds_sg" {
+  name        = "okthess_rds_sg"
   description = "DB security group"
 
   egress {
@@ -39,10 +39,10 @@ resource "aws_security_group" "rds_sec_group" {
     from_port       = 5432
     to_port         = 5432
     protocol        = "tcp"
-    security_groups = ["${aws_security_group.beanstalk_sec_group.id}"]
+    security_groups = ["${aws_security_group.okthess_beanstalk_sg.id}"]
   }
 
   tags {
-    Name = "rds_sec_group"
+    Name = "okthess_rds_sg"
   }
 }

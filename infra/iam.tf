@@ -1,11 +1,12 @@
-# Beanstalk instance profile
-resource "aws_iam_instance_profile" "beanstalk_ec2" {
-  name = "beanstalk-ec2-user"
-  role = "${aws_iam_role.beanstalk_ec2.name}"
+# Beanstalk IAM instance profile
+resource "aws_iam_instance_profile" "okthess_beanstalk_ec2" {
+  name = "okthess-beanstalk-ec2-user"
+  role = "${aws_iam_role.okthess_beanstalk_ec2.name}"
 }
 
-resource "aws_iam_role" "beanstalk_ec2" {
-  name = "beanstalk-ec2-role"
+# Beanstalk IAM role
+resource "aws_iam_role" "okthess_beanstalk_ec2" {
+  name = "okthess-beanstalk-ec2-role"
 
   assume_role_policy = <<EOF
 {
