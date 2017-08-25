@@ -6,7 +6,7 @@ resource "aws_elastic_beanstalk_application" "beanstalk_application" {
 
 # Beanstalk Environment
 resource "aws_elastic_beanstalk_environment" "beanstalk_application_environment" {
-  name                = "${var.application_name}-${var.application_environment}"
+  name                = "${var.application_name}"
   application         = "${aws_elastic_beanstalk_application.beanstalk_application.name}"
   solution_stack_name = "64bit Amazon Linux 2017.03 v2.5.0 running Python 3.4"
   tier                = "WebServer"
@@ -14,13 +14,13 @@ resource "aws_elastic_beanstalk_environment" "beanstalk_application_environment"
   setting {
     namespace = "aws:autoscaling:launchconfiguration"
     name      = "InstanceType"
-    value     = "${var.instance_type}"
+    value     = "t2.micro"
   }
 
   setting {
     namespace = "aws:autoscaling:asg"
     name      = "MaxSize"
-    value     = "${var.autoscaling_size}"
+    value     = "2"
   }
 
   setting {
