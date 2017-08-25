@@ -18,6 +18,8 @@ urlpatterns = [
     url(r'^events/$', views.get_events, name='events'),
     # /blog/
     url(r'^blog/$', views.get_blog, name='blog'),
+    # e.g. /blog/sample-post
+    url(r'^blog/sample-post/$', views.get_blog_post_sample, name='post'),
     # /contact/
     url(r'^contact/$', views.get_contact, name='contact'),
 

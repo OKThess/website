@@ -28,6 +28,9 @@ def get_events(request):
 def get_blog(request):
     return render(request, 'main/blog.html')
 
+def get_blog_post_sample(request):
+    return render(request, 'main/post.html')
+
 def get_contact(request):
     return render(request, 'main/contact.html')
 
