@@ -38,8 +38,8 @@ Those resource assume the default VPC exists (including subnets, route tables, A
 cd infra
 terraform init  # initialize terraform project
 terraform validate -var-file terraform.tfvars  # validate tf files
-terraform validate -var-file production.tfvars  # validate tf files against production secret variables
 terraform fmt  # format tf files in the default, not very useful, way
 terraform plan  # see what will happen if you apply the infra now
+terraform plan -var-file production.tfvars  # plan against production secret variables
 terraform apply  # apply the infra now, aka make the current resources described in the tf files a reality
 ```
