@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 
 import os
 
+from okthess import helpers
+
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -19,17 +22,26 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'yh(su1dt&mt=vqcwonwa*zq(r$e$up*4(cuqy-br@6=85#4@mu'
-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+if helpers.is_ec2_linux():
+    DEBUG = False
 
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
     'okthess.absk3drrdz.eu-central-1.elasticbeanstalk.com',
 ]
+
+# ElasticBeanstalk healthcheck sends requests with host header = internal ip
+# So we detect if we are in elastic beanstalk, and add the instances private ip address
+private_ip = helpers.get_linux_ec2_private_ip()
+if private_ip:
+    ALLOWED_HOSTS.append(private_ip)
+
+
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = os.environ.get('SECRET_KEY', 'secret')
 
 
 # Application definition
@@ -156,3 +168,17 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = 'static'
+
+
+# Security middleware
+# https://docs.djangoproject.com/en/1.11/ref/middleware/#module-django.middleware.security
+if not DEBUG:
+    SECURE_CONTENT_TYPE_NOSNIFF = True
+    SECURE_BROWSER_XSS_FILTER = True
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
+    X_FRAME_OPTIONS = 'DENY'
+
+    # FIXME when SSL is live
+    # SECURE_SSL_REDIRECT = True
+    # SECURE_HSTS_SECONDS = 0
