@@ -48,7 +48,6 @@ def get_linux_ec2_private_ip():
     Get the private IP Address of the machine if running on an EC2 linux server
     See http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html#instancedata-data-retrieval
     """
-    import urllib2
     if not is_ec2_linux():
         return None
     try:
