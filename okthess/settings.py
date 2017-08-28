@@ -22,9 +22,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'yh(su1dt&mt=vqcwonwa*zq(r$e$up*4(cuqy-br@6=85#4@mu'
-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 if helpers.is_ec2_linux():
@@ -42,6 +39,9 @@ private_ip = helpers.get_linux_ec2_private_ip()
 if private_ip:
     ALLOWED_HOSTS.append(private_ip)
 
+
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = os.environ.get('SECRET_KEY', 'secret')
 
 
 # Application definition
