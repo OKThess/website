@@ -30,17 +30,18 @@ DEBUG = True
 if helpers.is_ec2_linux():
     DEBUG = False
 
-ALLOWED_HOSTS = [
-    'localhost',
-    '127.0.0.1',
-    'okthess.absk3drrdz.eu-central-1.elasticbeanstalk.com',
-]
+# ALLOWED_HOSTS = [
+#     'localhost',
+#     '127.0.0.1',
+#     'okthess.absk3drrdz.eu-central-1.elasticbeanstalk.com',
+# ]
+ALLOWED_HOSTS = ['*']
 
 # ElasticBeanstalk healthcheck sends requests with host header = internal ip
 # So we detect if we are in elastic beanstalk, and add the instances private ip address
-private_ip = helpers.get_linux_ec2_private_ip()
-if private_ip:
-    ALLOWED_HOSTS.append(private_ip)
+# private_ip = helpers.get_linux_ec2_private_ip()
+# if private_ip:
+#     ALLOWED_HOSTS.append(private_ip)
 
 
 # Application definition
