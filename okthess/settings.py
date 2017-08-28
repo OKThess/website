@@ -57,7 +57,7 @@ def get_linux_ec2_private_ip():
         return None
     finally:
         if response:
-    response.close()
+            response.close()
 
 # ElasticBeanstalk healthcheck sends requests with host header = internal ip
 # So we detect if we are in elastic beanstalk, and add the instances private ip address
