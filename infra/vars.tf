@@ -21,3 +21,7 @@ variable "rds_username" {
 variable "rds_password" {
   description = "Defines AWS RDS db password"
 }
+
+variable "secret_key" {
+  description = "Defines Django secret key"
+}
