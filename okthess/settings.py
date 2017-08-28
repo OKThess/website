@@ -50,6 +50,8 @@ def get_linux_ec2_private_ip():
     """
     if not is_ec2_linux():
         return None
+
+    response = None
     try:
         response = urllib.request.urlopen('http://169.254.169.254/latest/meta-data/local-ipv4')
         return response.read()
