@@ -168,3 +168,17 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = 'static'
+
+
+# Security middleware
+# https://docs.djangoproject.com/en/1.11/ref/middleware/#module-django.middleware.security
+if not DEBUG:
+    SECURE_CONTENT_TYPE_NOSNIFF = True
+    SECURE_BROWSER_XSS_FILTER = True
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
+    X_FRAME_OPTIONS = 'DENY'
+
+    # FIXME when SSL is live
+    # SECURE_SSL_REDIRECT = True
+    # SECURE_HSTS_SECONDS = 0
