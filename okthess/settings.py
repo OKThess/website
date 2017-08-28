@@ -10,7 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
-import os
+import os, urllib
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -51,7 +52,7 @@ def get_linux_ec2_private_ip():
     if not is_ec2_linux():
         return None
     try:
-        response = urllib2.urlopen('http://169.254.169.254/latest/meta-data/local-ipv4')
+        response = urllib.request.urlopen('http://169.254.169.254/latest/meta-data/local-ipv4')
         return response.read()
     except:
         return None
