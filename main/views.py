@@ -6,9 +6,6 @@ from .models import Team, Job, Mentor, Meetup, Coworking, Post, Event
 from .forms import ApplicationForm
 
 
-def health(request):
-    return HttpResponse('Ok')
-
 def get_index(request):
     featured_posts = Post.objects.filter(is_featured=True)
     events = Event.objects.all()
@@ -22,32 +19,20 @@ def get_about(request):
         'page_title': 'Σχετικά',
     })
 
-def get_teams(request):
-    teams = Team.objects.order_by('name')
-    jobs = Job.objects.all()
-    mentors = Mentor.objects.all()
-    coworkings = Coworking.objects.all()
-    meetups = Meetup.objects.all()
-    return render(request, 'main/teams.html', {
-        'page_title': 'Φιλοξενούμενες Ομάδες',
-        'teams': teams,
-        'jobs': jobs,
-        'mentors': mentors,
-        'meetups': meetups,
-        'coworkings': coworkings,
-    })
+def get_program(request):
+    return render(request, 'main/program.html')
 
-def get_news(request):
-    posts = Post.objects.all()
-    return render(request, 'main/news.html', {
-        'posts': posts,
-    })
+def get_events(request):
+    return render(request, 'main/events.html')
 
-def get_news_single(request, post_slug):
-    post = Post.objects.get(slug=post_slug)
-    return render(request, 'main/post.html', {
-        'post': post,
-    })
+def get_blog(request):
+    return render(request, 'main/blog.html')
+
+def get_blog_post_sample(request):
+    return render(request, 'main/post.html')
+
+def get_contact(request):
+    return render(request, 'main/contact.html')
 
 def apply(request):
     if request.method == 'POST':
