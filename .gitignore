@@ -53,3 +53,15 @@ db.sqlite3
 .venv
 venv/
 ENV/
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+# Terraform
+infra/.terraform
+infra/.terraform.tfstate.lock.info
+infra/terraform.tfstate
+infra/terraform.tfstate.backup
+infra/production.tfvars
