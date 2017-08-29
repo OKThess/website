@@ -12,6 +12,7 @@ deploy:
   region: eu-central-1
   app: okthess-front
   env: okthess-front-dev3
+  bucket_name: elasticbeanstalk-eu-central-1-084940027265
   on:
     repo: OKThess/website
     branch: aws-frontend-v2
