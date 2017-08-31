@@ -435,43 +435,6 @@ h5 {
 	color: green;
 }
 
-/* About */
-button.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-}
-
-button.accordion.active, button.accordion:hover {
-    background-color: #ddd;
-}
-
-button.accordion:after {
-    content: '\002B';
-    color: #777;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-}
-
-button.accordion.active:after {
-    content: "\2212";
-}
-
-div.panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
 
 /* Teams */
 #teams {
@@ -584,20 +547,97 @@ div.panel {
 }
 
 .sidebar-module.sidebar-module-inset ul {
-	list-style: none;
-	padding-left: 0px;
-	font-size: 10px !important;
+	list-style:armenian;
+	padding-left: 5px;
 }
 
 .sidebar-module.sidebar-module-inset ul li {
-	padding: 10px 0px;
+	padding: 5px 5px;
 }
 
 
 .sidebar-module.sidebar-module-inset ul li a {
-  font-size: 10px !important;
+  font-size: 13px !important;
+	text-decoration: none;
+	color: grey;
+	font-weight: 500;
 }
 
 .sidebar-module-inset p:last-child, .sidebar-module-inset ul:last-child, .sidebar-module-inset ol:last-child {
 	margin-bottom: 0;
+}
+
+section {
+  zoom: 1;
+  position: relative;
+  height: auto;
+}
+section:after,
+section:before {
+  content: "";
+  display: table;
+}
+section:after {
+  clear: both;
+}
+section h4 {
+  background: rgba(0,0,0,0.1);
+  cursor: pointer;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-top: none;
+  padding: 15px 20px;
+}
+section h4:first-child {
+  border-top: 1px solid rgba(0,0,0,0.2);
+}
+@media screen and (min-width: 600px) {
+  section h4 {
+    position: relative;
+    width: 33.333333333333336%;
+    height: 20%;
+    display: block;
+  }
+}
+section ul {
+  zoom: 1;
+  position: relative;
+  height: auto;
+  min-height: 100%;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-left: none;
+  display: none;
+}
+section ul:after,
+section ul:before {
+  content: "";
+  display: table;
+}
+section ul:after {
+  clear: both;
+}
+section ul li {
+  list-style: circle;
+}
+@media screen and (min-width: 600px) {
+  section ul {
+    position: absolute;
+    width: 66.66666666666667%;
+    right: 0;
+    top: 0;
+    padding: 15px 30px;
+  }
+}
+section .active {
+  cursor: default;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  border-right: none;
+}
+@media screen and (min-width: 600px) {
+  section .active {
+    background: rgba(0,0,0,0);
+    border-right: 1px solid rgba(0,0,0,0);
+  }
+}
+section .active + ul {
+  display: block;
 }
