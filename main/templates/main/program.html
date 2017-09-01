@@ -3,43 +3,89 @@
 {% load static %}
 
 {% block content %}
-    <div class="container land">
-        <div class="row">
-            <div class="col-md-5">
-                <h1>ΟΚ!Τhess</h1>
-                <h2>Your early stage partner</h2>
-                <p id="desc">OK!Thess provides space and technical support to teams of people with innovative ideas helping them to <strong>Validate a Business Model Fast</strong>, rather than hastily, and to <strong>Meet, Mix  and Connect</strong> with like-minded peers.</p>
-                <form>
-                    <input type="text" name="firstname" placeholder=" First name">
-                    <br>
-                    <input type="email" name="email" placeholder=" email">
-                </form>
-                <br>
-                <a id="yellowcall" href="http://okthess.gr/dev/about.html" role="button"><span class="glyphicon glyphicon-exclamation-sign"></span><strong>Get</strong> in the Loop!</a>
-            </div>
-            <div class="col-md-7">
-                <a class="w3-btn-floating w3-hover-dark-grey w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
-                <a class="w3-btn-floating w3-hover-dark-grey w3-display-right" onclick="plusDivs(1)">&#10095;</a>
-                <div class="mySlides">
-                    <img src="http://okthess.gr/dev/img/call.jpg"/>
-                    <div class="w3-display-bottomleft w3-large w3-padding-16 w3-black">
-                        Community Events
-                    </div>
-                </div>
-                <div class="mySlides">
-                    <img src="https://scontent-sof1-1.xx.fbcdn.net/v/t1.0-9/17457548_1889123364710078_5522191075335263056_n.jpg?oh=cd9d7391f8cdc50434a564faf5b57ecc&oe=5A2C7E98"/>
-                    <div class="w3-display-bottomright w3-large w3-padding-16 w3-black">
-                        Mentoring Sessions
-                    </div>
-                </div>
-                <div class="mySlides">
-                    <img src="http://okthess.gr/dev/v2/slide3.jpg">
-                    <div class="w3-display-topleft w3-large w3-padding-16 w3-black">
-                        Accelerator
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<h1>Vertical Tabs: Smart & Responsive</h1>
+<section>
+  <h4 class="active">Who?</h4>
+  <ul>
+    <li>Nam de isto magna dissensio est.</li>
+    <li>Quis istud possit, inquit, negare?</li>
+    <li>Quod mihi quidem visus est, cum sciret, velle tamen confitentem audire Torquatum.</li>
+    <li>Sic enim censent, oportunitatis esse beate vivere.</li>
+    <li>Nam de isto magna dissensio est.</li>
+    <li>Quis istud possit, inquit, negare?</li>
+    <li>Quod mihi quidem visus est, cum sciret, velle tamen confitentem audire Torquatum.</li>
+    <li>Sic enim censent, oportunitatis esse beate vivere.</li>
+    <li>I need to fix this... "section" should wrap around the "ul"</li>
+  </ul>
+  <h4>What?</h4>
+  <ul>
+    <li>Potius inflammat, ut coercendi magis quam dedocendi esse videantur.</li>
+    <li>Atqui reperies, inquit, in hoc quidem pertinacem;</li>
+    <li>Verba tu fingas et ea dicas, quae non sentias?</li>
+  </ul>
+  <h4>Where?</h4>
+  <ul>
+    <li>Qui autem de summo bono dissentit de tota philosophiae ratione dissentit.</li>
+    <li>Sed quanta sit alias, nunc tantum possitne esse tanta.</li>
+    <li>An est aliquid per se ipsum flagitiosum, etiamsi nulla comitetur infamia?</li>
+  </ul>
+  <h4>Where?</h4>
+  <ul>
+    <li>Omnes enim iucundum motum, quo sensus hilaretur.</li>
+    <li>Oratio me istius philosophi non offendit;</li>
+    <li>Ut pulsi recurrant?</li>
+    <li>Cur fortior sit, si illud, quod tute concedis, asperum et vix ferendum putabit?</li>
+  </ul>
+  <h4>Why?</h4>
+  <ul>
+    <li>Et ille ridens: Video, inquit, quid agas;</li>
+    <li>Sed tu istuc dixti bene Latine, parum plane.</li>
+    <li>Eorum enim omnium multa praetermittentium, dum eligant aliquid, quod sequantur, quasi curta sententia;</li>
+  </ul>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$('section h4').click(function(event) {
+event.preventDefault();
+$(this).addClass('active');
+$(this).siblings().removeClass('active');
 
+var ph = $(this).parent().height();
+var ch = $(this).next().height();
+
+if (ch > ph) {
+  $(this).parent().css({
+    'min-height': ch + 'px'
+  });
+} else {
+  $(this).parent().css({
+    'height': 'auto'
+  });
+}
+});
+
+function tabParentHeight() {
+var ph = $('section').height();
+var ch = $('section ul').height();
+if (ch > ph) {
+  $('section').css({
+    'height': ch + 'px'
+  });
+} else {
+  $(this).parent().css({
+    'height': 'auto'
+  });
+}
+}
+
+$(window).resize(function() {
+tabParentHeight();
+});
+
+$(document).resize(function() {
+tabParentHeight();
+});
+tabParentHeight();
+
+</script>
 {% endblock %}

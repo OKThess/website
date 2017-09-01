@@ -3,43 +3,56 @@
 {% load static %}
 
 {% block content %}
-    <div class="container land">
-        <div class="row">
-            <div class="col-md-5">
-                <h1>ΟΚ!Τhess</h1>
-                <h2>Your early stage partner</h2>
-                <p id="desc">OK!Thess provides space and technical support to teams of people with innovative ideas helping them to <strong>Validate a Business Model Fast</strong>, rather than hastily, and to <strong>Meet, Mix  and Connect</strong> with like-minded peers.</p>
-                <form>
-                    <input type="text" name="firstname" placeholder=" First name">
-                    <br>
-                    <input type="email" name="email" placeholder=" email">
-                </form>
-                <br>
-                <a id="yellowcall" href="http://okthess.gr/dev/about.html" role="button"><span class="glyphicon glyphicon-exclamation-sign"></span><strong>Get</strong> in the Loop!</a>
-            </div>
-            <div class="col-md-7">
-                <a class="w3-btn-floating w3-hover-dark-grey w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
-                <a class="w3-btn-floating w3-hover-dark-grey w3-display-right" onclick="plusDivs(1)">&#10095;</a>
-                <div class="mySlides">
-                    <img src="http://okthess.gr/dev/img/call.jpg"/>
-                    <div class="w3-display-bottomleft w3-large w3-padding-16 w3-black">
-                        Community Events
-                    </div>
-                </div>
-                <div class="mySlides">
-                    <img src="https://scontent-sof1-1.xx.fbcdn.net/v/t1.0-9/17457548_1889123364710078_5522191075335263056_n.jpg?oh=cd9d7391f8cdc50434a564faf5b57ecc&oe=5A2C7E98"/>
-                    <div class="w3-display-bottomright w3-large w3-padding-16 w3-black">
-                        Mentoring Sessions
-                    </div>
-                </div>
-                <div class="mySlides">
-                    <img src="http://okthess.gr/dev/v2/slide3.jpg">
-                    <div class="w3-display-topleft w3-large w3-padding-16 w3-black">
-                        Accelerator
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="container land">
+<div class="row">
+<div class="col-md-6">
+<h3>Διεύθυνση</h3>
+<address>
+ <abbr title="Οικοσύστημα Καινοτομίας Θεσσαλονίκης">OK!THESS</abbr><br>
+ <small>Αλληλογραφία:</small> Κομοτηνής 2, 54655<br>
+ <small>Είσοδος:</small> Γωνία Κυδωνιών &amp; Μαρίας Κάλλας<br>Θεσσαλονίκη, Ελλάδα.
+</address>
+<h3>Επικοινωνία μέσω e-mail</h3>
+ <form class="form-horizontal" role="form" method="post" action="hi.php">
+  <div class="form-group">
+   <div class="col-sm-10">
+    <textarea class="form-control" rows="1" name="message" placeholder="Γράψε την ερώτηση σου"></textarea>
+     <p class='text-danger'></p>       </div>
+  </div>
+  <div class="form-group">
+   <div class="col-sm-10">
+    <input type="email" class="form-control" id="email" name="email" placeholder="Τη διεύθυνση email σου" value="">
+     <p class='text-danger'></p>       </div>
+  </div>
+  <div class="form-group">
+   <div class="col-sm-10">
+    <input type="text" class="form-control" id="name" name="name" placeholder="Το όνομα σου" value="">
+     <p class='text-danger'></p>       </div>
+  </div>
+  <div class="form-group">
+   <div class="col-sm-10">
+    <input type="text" class="form-control" id="human" name="human" placeholder="Και το αποτέλεσμα της πράξης (2 + 3 = ?)">
+     <p class='text-danger'></p>       </div>
+  </div>
+  <div class="form-group">
+   <div class="col-sm-10">
+     <input id="submit" name="submit" type="submit" value="Στείλε!" class="btn btn-primary">
+   </div>
+  </div>
+  <div class="form-group">
+   <div class="col-sm-10">
+           </div>
+  </div>
+</form>
+</div>
+<div class="col-md-6">
+<h3>Τοποθεσία</h3>
+<div id="map-outer">
+  <div id="map-container"></div>
+    <script src="/js/map.js"></script>
+</div>
+</div>
+</div>
+</div>
 
 {% endblock %}
