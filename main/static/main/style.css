@@ -495,11 +495,12 @@ h6.blog-post-meta {
 
 /* About */
 button.accordion {
+	  display: inline;
+		width: 100%;
     background-color: #eee;
     color: #444;
     cursor: pointer;
     padding: 18px;
-    width: 100%;
     border: none;
     text-align: left;
     outline: none;
@@ -524,7 +525,7 @@ button.accordion.active:after {
 }
 
 div.panel {
-    padding: 0 18px;
+    padding: 2px 18px;
     background-color: white;
     max-height: 0;
     overflow: hidden;
@@ -641,4 +642,3 @@ section .active {
 section .active + ul {
   display: block;
 }
-
