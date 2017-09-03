@@ -46,9 +46,32 @@ h2{
 	font-weight: 500;
 }
 
+.apply{
+	max-width: 85%;
+}
+
+.form-control {
+	width: 95%;
+	margin: 20px 0px;
+}
+
 h3{
 	font-size: 22px;
 	font-weight: 500;
+	font-weight: 700;
+	color: white;
+	background: #231F20;
+	background: -webkit-gradient(linear, left top, left bottom, from(#231F20), to(#231F20));
+	background: -webkit-linear-gradient(top, #231F20, #231F20);
+	background: -moz-linear-gradient(top, #231F20, #231F20);
+	background: -ms-linear-gradient(top, #231F20, #231F20);
+	background: -o-linear-gradient(top, #231F20, #231F20);
+	background-image: -ms-linear-gradient(top, #231F20 0%, #231F20 100%);
+	padding: 10px 20px;
+	display: inline-block;
+	-webkit-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+	-moz-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+	box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
 }
 
 .navbar {
