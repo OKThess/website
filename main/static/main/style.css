@@ -34,7 +34,7 @@ h1{
 	background: -ms-linear-gradient(top, #231F20, #231F20);
 	background: -o-linear-gradient(top, #231F20, #231F20);
 	background-image: -ms-linear-gradient(top, #231F20 0%, #231F20 100%);
-	padding: 10px 20px;
+	padding: 15px 20px;
 	display: inline-block;
 	-webkit-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
 	-moz-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
@@ -46,19 +46,9 @@ h2{
 	font-weight: 500;
 }
 
-.apply{
-	max-width: 85%;
-}
-
-.form-control {
-	width: 95%;
-	margin: 20px 0px;
-}
-
 h3{
-	font-size: 22px;
+	font-size: 18px;
 	font-weight: 500;
-	font-weight: 700;
 	color: white;
 	background: #231F20;
 	background: -webkit-gradient(linear, left top, left bottom, from(#231F20), to(#231F20));
@@ -73,6 +63,17 @@ h3{
 	-moz-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
 	box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
 }
+
+
+.apply{
+	max-width: 85%;
+}
+
+.form-control {
+	width: 95%;
+	margin: 20px 0px;
+}
+
 
 .navbar {
 	font-weight: 100;
@@ -152,7 +153,7 @@ h3{
 	}
 
 #call {
-	color: black;
+	color: white;
 	background: #EE4031;
 	background: -webkit-gradient(linear, left top, left bottom, from(#EE4031), to(#EE4031));
 	background: -webkit-linear-gradient(top, #EE4031, #EE4031);
@@ -313,6 +314,7 @@ input{
    background-image: -ms-linear-gradient(top, #65a9d7 0%, #3e779d 100%);
    color: #fff;
    }
+
 .btn:active {
    text-shadow: #1e4158 0 1px 0;
    border: 1px solid #0a3c59;
@@ -335,7 +337,7 @@ input{
 
 .eventName {
 	font-size: 20px;
-	font-weight: 700 !important;
+	font-weight: 500 !important;
 	margin: 0 auto !important;
 	display: inline;
 }
@@ -353,7 +355,6 @@ input{
 	font-weight: 300;
 	font-size: 14px;
 }
-
 
 .site-footer {
 	position: absolute;
@@ -514,6 +515,54 @@ h6.blog-post-meta {
  font-size: 12px;
  margin: 2% 0%;
  font-weight: 300;
+}
+
+/* Events */
+
+.media {
+	margin-top: 10px;
+}
+
+.media:first-child {
+	margin-top: 10px;
+}
+
+.media-body {
+	font-size: 14px;
+	font-weight: 300;
+}
+
+ .event-teaser{
+	 margin-left: 5%;
+ }
+
+.event-data{
+	display: -webkit-flex; /* Safari */
+	display: flex;
+}
+
+.event-data p {
+	-webkit-flex: 1;  /* Safari 6.1+ */
+  -ms-flex: 1;  /* IE 10 */
+  flex: 1;
+	width: auto;
+}
+
+.event-time {
+ float: left;
+ background-color: grey;
+ padding: 2px 4px;
+ font-size: 12px !important;
+ font-weight: 300;
+}
+
+.event-day {
+	float: right;
+	text-align: right;
+	background-color: grey;
+  padding: 2px 4px;
+  font-size: 12px;
+  font-weight: 300;
 }
 
 /* About */
