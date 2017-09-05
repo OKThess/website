@@ -14,7 +14,10 @@ urlpatterns = [
     url(r'^about/$', views.get_about, name='about'),
 
     # /program/
-    url(r'^program/$', views.get_program, name='program'),
+    url(r'^program/$', views.program_redir, name='program_redir'),
+    url(r'^program/teams/$', views.get_program_teams, name='program_teams'),
+    url(r'^program/mentors/$', views.get_program_mentors, name='program_mentors'),
+    url(r'^program/alumni/$', views.get_program_alumni, name='program_alumni'),
 
     # /events/
     url(r'^events/$', views.get_events, name='events'),
