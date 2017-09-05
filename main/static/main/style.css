@@ -591,77 +591,91 @@ div.panel {
 	margin-bottom: 0;
 }
 
-section {
-  zoom: 1;
-  position: relative;
-  height: auto;
+/* program tabs */
+.btn-red {
+  background: #ee4031;
+  color: #fff;
+  padding: 7px 17px;
 }
-section:after,
-section:before {
-  content: "";
-  display: table;
+
+.btn-red:hover {
+  color: #fff;
+  text-decoration: none;
+  background: linear-gradient(to top, #ee4031, #ce382c);
 }
-section:after {
-  clear: both;
+
+.program-main-company {
+  margin-bottom: 40px;
 }
-section h4 {
-  background: rgba(0,0,0,0.1);
-  cursor: pointer;
-  border: 1px solid rgba(0,0,0,0.2);
-  border-top: none;
-  padding: 15px 20px;
+
+.program-main-company-name {
+  font-weight: 600;
+  margin-top: 6px;
+  margin-bottom: 3px;
+  font-size: 20px;
 }
-section h4:first-child {
-  border-top: 1px solid rgba(0,0,0,0.2);
+
+.program-sidebar-box {
+  border: 1px solid #000;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 10px;
+  border-radius: 2px;
+  box-shadow: 3px 3px #000;
 }
-@media screen and (min-width: 600px) {
-  section h4 {
-    position: relative;
-    width: 33.333333333333336%;
-    height: 20%;
-    display: block;
-  }
+
+.program-sidebar-regulation {
+  margin-top: 40px;
 }
-section ul {
-  zoom: 1;
-  position: relative;
-  height: auto;
-  min-height: 100%;
-  border: 1px solid rgba(0,0,0,0.2);
-  border-left: none;
-  display: none;
+
+.program-sidebar-tabs-list > li > a:hover,
+.program-sidebar-tabs-list > li > a:focus,
+.program-sidebar-tabs-list > li.active > a:focus,
+.program-sidebar-tabs-list > li.active > a:hover,
+.program-sidebar-tabs-list > li.active > a {
+  background: #f9d94f;
+  color: #000;
+  border-radius: 2px;
 }
-section ul:after,
-section ul:before {
-  content: "";
-  display: table;
+
+.program-sidebar-tabs-elem > a {
+  border-radius: 2px;
+  color: #000;
 }
-section ul:after {
-  clear: both;
+
+.separator {
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
-section ul li {
-  list-style: circle;
+
+.program-sidebar-regulation {
+  text-align: center;
 }
-@media screen and (min-width: 600px) {
-  section ul {
-    position: absolute;
-    width: 66.66666666666667%;
-    right: 0;
-    top: 0;
-    padding: 15px 30px;
-  }
+
+.program-sidebar-regulation > h4 > a {
+  color: #1c599b;
+  text-decoration: underline;
 }
-section .active {
-  cursor: default;
-  border-bottom: 1px solid rgba(0,0,0,0.2);
-  border-right: none;
+
+.program-main-mentor {
+  text-align: center;
+  margin-bottom: 50px;
 }
-@media screen and (min-width: 600px) {
-  section .active {
-    background: rgba(0,0,0,0);
-    border-right: 1px solid rgba(0,0,0,0);
-  }
+
+.program-main-mentor-name {
+  font-weight: 600;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
 }
-section .active + ul {
-  display: block;
+
+.program-main-mentor-image {
+  height: 100px;
+  border-radius: 10%;
+}
+
+.program-sidebar-about,
+.program-sidebar-contribute {
+  margin-top: 40px;
 }
