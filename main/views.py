@@ -1,6 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib import messages
+from django.urls import reverse
 
 from .models import Team, Job, Mentor, Meetup, Coworking, Post, Event
 from .forms import ApplicationForm
@@ -19,8 +20,17 @@ def get_about(request):
         'page_title': 'Σχετικά',
     })
 
-def get_program(request):
-    return render(request, 'main/program.html')
+def program_redir(request):
+    return redirect(reverse('main:program_teams'))
+
+def get_program_teams(request):
+    return render(request, 'main/program-teams.html')
+
+def get_program_mentors(request):
+    return render(request, 'main/program-mentors.html')
+
+def get_program_alumni(request):
+    return render(request, 'main/program-alumni.html')
 
 def get_events(request):
     return render(request, 'main/events.html')
