@@ -1,0 +1,100 @@
+{% extends 'main/layout.html' %}
+
+{% load static %}
+
+{% block content %}
+    <div class="container land">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="program-main">
+                    <h1>Mentors</h1>
+                    <div style="margin-bottom: 40px;"></div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="program-main-mentor">
+                                <img src="http://images.genius.com/b80655e79a7a893d176d51a4ed435ef8.1000x1000x1.jpg" class="program-main-mentor-image" alt="mentor image">
+                                <div class="program-main-mentor-name">Mentor Name</div>
+                                <p>{% lorem 20 w %}</p>
+                                <div class="program-main-mentor-links">
+                                    <a href="#">GitHub</a>,
+                                    <a href="#">Website</a>,
+                                    <a href="#">LinkedIn</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="program-main-mentor">
+                                <img src="http://images.genius.com/b80655e79a7a893d176d51a4ed435ef8.1000x1000x1.jpg" class="program-main-mentor-image" alt="mentor image">
+                                <div class="program-main-mentor-name">Mentor Name</div>
+                                <p>{% lorem 20 w %}</p>
+                                <div class="program-main-mentor-links">
+                                    <a href="#">GitHub</a>,
+                                    <a href="#">Website</a>,
+                                    <a href="#">LinkedIn</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="program-main-mentor">
+                                <img src="http://images.genius.com/b80655e79a7a893d176d51a4ed435ef8.1000x1000x1.jpg" class="program-main-mentor-image" alt="mentor image">
+                                <div class="program-main-mentor-name">Mentor Name</div>
+                                <p>{% lorem 20 w %}</p>
+                                <div class="program-main-mentor-links">
+                                    <a href="#">GitHub</a>,
+                                    <a href="#">Website</a>,
+                                    <a href="#">LinkedIn</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="program-main-mentor">
+                                <img src="http://images.genius.com/b80655e79a7a893d176d51a4ed435ef8.1000x1000x1.jpg" class="program-main-mentor-image" alt="mentor image">
+                                <div class="program-main-mentor-name">Mentor Name</div>
+                                <p>{% lorem 20 w %}</p>
+                                <div class="program-main-mentor-links">
+                                    <a href="#">GitHub</a>,
+                                    <a href="#">Website</a>,
+                                    <a href="#">LinkedIn</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="program-main-mentor">
+                                <img src="http://images.genius.com/b80655e79a7a893d176d51a4ed435ef8.1000x1000x1.jpg" class="program-main-mentor-image" alt="mentor image">
+                                <div class="program-main-mentor-name">Mentor Name</div>
+                                <p>{% lorem 20 w %}</p>
+                                <div class="program-main-mentor-links">
+                                    <a href="#">GitHub</a>,
+                                    <a href="#">Website</a>,
+                                    <a href="#">LinkedIn</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="program-sidebar">
+                    <div class="program-sidebar-tabs">
+                        <ul class="nav nav-pills nav-stacked program-sidebar-tabs-list">
+                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_teams' %}">Teams</a></li>
+                            <li class="program-sidebar-tabs-elem active"><a href="{% url 'main:program_mentors' %}">Mentors</a></li>
+                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_alumni' %}">Alumni</a></li>
+                        </ul>
+                    </div>
+                    <div class="program-sidebar-about">
+                        <h4>What is a mentor</h4>
+                        <div class="program-sidebar-box">
+                            {% lorem 1 p %}
+                        </div>
+                        <br>
+                    </div>
+                    <div class="program-sidebar-contribute">
+                        <h4>Why not contribute?</h4>
+                        <p>Want to help?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}

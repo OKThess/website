@@ -1,0 +1,68 @@
+{% extends 'main/layout.html' %}
+
+{% load static %}
+
+{% block content %}
+    <div class="container land">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="program-main">
+                    <h1>Hosted Teams</h1>
+                    <div style="margin-bottom: 40px;"></div>
+                    <div class="row">
+                        <div class="col-md-4 program-main-company">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzmm1cJ29DuTotHpjIJh4Fl0tVlUvJvF_lQCO7vRIKwkNK11v05g" alt="Logo">
+                            <div class="program-main-company-name">Company Name</div>
+                            <p>{% lorem 20 w %}</p>
+                        </div>
+                        <div class="col-md-4 program-main-company">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzmm1cJ29DuTotHpjIJh4Fl0tVlUvJvF_lQCO7vRIKwkNK11v05g" alt="Logo">
+                            <div class="program-main-company-name">Company Name</div>
+                            <p>{% lorem 20 w %}</p>
+                        </div>
+                        <div class="col-md-4 program-main-company">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzmm1cJ29DuTotHpjIJh4Fl0tVlUvJvF_lQCO7vRIKwkNK11v05g" alt="Logo">
+                            <div class="program-main-company-name">Company Name</div>
+                            <p>{% lorem 20 w %}</p>
+                        </div>
+                        <div class="col-md-4 program-main-company">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzmm1cJ29DuTotHpjIJh4Fl0tVlUvJvF_lQCO7vRIKwkNK11v05g" alt="Logo">
+                            <div class="program-main-company-name">Company Name</div>
+                            <p>{% lorem 20 w %}</p>
+                        </div>
+                        <div class="col-md-4 program-main-company">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzmm1cJ29DuTotHpjIJh4Fl0tVlUvJvF_lQCO7vRIKwkNK11v05g" alt="Logo">
+                            <div class="program-main-company-name">Company Name</div>
+                            <p>{% lorem 20 w %}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="program-sidebar">
+                    <div class="program-sidebar-tabs">
+                        <ul class="nav nav-pills nav-stacked program-sidebar-tabs-list">
+                            <li class="program-sidebar-tabs-elem active"><a href="{% url 'main:program_teams' %}">Teams</a></li>
+                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_mentors' %}">Mentors</a></li>
+                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_alumni' %}">Alumni</a></li>
+                        </ul>
+                    </div>
+                    <div class="program-sidebar-about">
+                        <h4>About</h4>
+                        <div class="program-sidebar-box">
+                            {% lorem 1 p %}
+                        </div>
+                        <br>
+                    </div>
+                    <div class="program-sidebar-regulation">
+                        <div class="separator"></div>
+                        <h4><a href="#">Internal Regulation</a></h4>
+                        <div class="separator"></div>
+                        <br>
+                        <a class="btn-red" href="/apply/" role="button">Apply now!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

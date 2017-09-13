@@ -1,0 +1,58 @@
+{% extends 'main/layout.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="container land">
+<div class="row">
+<div class="col-md-6">
+<h3>Διεύθυνση</h3>
+<address>
+ <abbr title="Οικοσύστημα Καινοτομίας Θεσσαλονίκης">OK!THESS</abbr><br>
+ <small>Αλληλογραφία:</small> Κομοτηνής 2, 54655<br>
+ <small>Είσοδος:</small> Γωνία Κυδωνιών &amp; Μαρίας Κάλλας<br>Θεσσαλονίκη, Ελλάδα.
+</address>
+<h3>Επικοινωνία μέσω e-mail</h3>
+ <form class="form-horizontal" role="form" method="post" action="hi.php">
+  <div class="form-group">
+   <div class="col-sm-10">
+    <textarea class="form-control" rows="1" name="message" placeholder="Γράψε την ερώτηση σου"></textarea>
+     <p class='text-danger'></p>       </div>
+  </div>
+  <div class="form-group">
+   <div class="col-sm-10">
+    <input type="email" class="form-control" id="email" name="email" placeholder="Τη διεύθυνση email σου" value="">
+     <p class='text-danger'></p>       </div>
+  </div>
+  <div class="form-group">
+   <div class="col-sm-10">
+    <input type="text" class="form-control" id="name" name="name" placeholder="Το όνομα σου" value="">
+     <p class='text-danger'></p>       </div>
+  </div>
+  <div class="form-group">
+   <div class="col-sm-10">
+    <input type="text" class="form-control" id="human" name="human" placeholder="Και το αποτέλεσμα της πράξης (2 + 3 = ?)">
+     <p class='text-danger'></p>       </div>
+  </div>
+  <div class="form-group">
+   <div class="col-sm-10">
+     <input id="submit" name="submit" type="submit" value="Στείλε!" class="btn btn-primary">
+   </div>
+  </div>
+  <div class="form-group">
+   <div class="col-sm-10">
+           </div>
+  </div>
+</form>
+</div>
+<div class="col-md-6">
+<h3>Τοποθεσία</h3>
+<div id="map-outer">
+  <div id="map-container"></div>
+    <script src="/js/map.js"></script>
+</div>
+</div>
+</div>
+</div>
+
+{% endblock %}
