@@ -6,15 +6,3 @@ services:
 cache: pip
 install: pip install -r requirements.txt
 script: python manage.py test
-deploy:
-  provider: elasticbeanstalk
-  access_key_id: AKIAIPDDJZXQPR23E5BQ
-  secret_access_key:
-    secure: HY+tAruZiyblxAKhxSivVLOJXWoOyH1dbk4oPCHEroP5LUqUJRtIRE2LtW0scOs8ZwqFKwv3LEvy3SOMS9LZf5owBDfkyPbLwveDsUzfbd+RWFAnGZX+hFt41DVZnw7CrAlfaNLHqqzZy/fk0TFu6okZtVa/88hU5koASH4cuP/MusjsoLkA+BGySQtVZ9DGhZqIxdOnYGkwZFJJXbGAtQMe45UzHxAJXw7ic269IwWLkBhffTWwvbWWvIztS9GXRtEHsh4Yno7ttqbfKoYAuSQ0S8t8xSpsATUIK9wWyPilGY5XtExcxvYE74jbq1kgne9EoCbcPgImFC/zfDpvo9UvyJ2M4IIxBLeXagvU+c/slpfAZPb42yNYA4R7/DG709sR7EwL4JLwbIt71p4ljs8Ucir38Tc2+yAyzjbufEfcaM4ox0AiCZn5CmCmxgZBdnlIyRQsOzwzmHA4IVOP68OYR1tCbtaK+RJ24ymhpslsRps2vePuVo5pFPoZmg7QsfMQVZ8oX0mDKJ9mIwwsgKM181Yg0P6AvxFnLEkeWfIZGgSyJnC2nQZ1rj2fCzKAGKDaIiBKYk3IcVpecsO7jlcFgcTapMPrK8AkenWE8Jcp/TH/TYICZfKmkeqhjBVPghuYgb/PM1kzU7z1AFL62ZieBEx1ebOP9jlAFip6Uks=
-  region: eu-central-1
-  app: okthess-front
-  env: okthess-front-dev3
-  bucket_name: elasticbeanstalk-eu-central-1-084940027265
-  on:
-    repo: OKThess/website
-    branch: aws-frontend-v2
