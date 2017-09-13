@@ -93,24 +93,24 @@ h3 {
   padding: 0 0px;
 }
 
-.navbar-brand>img {
+.navbar-brand > img {
   height: inherit;
 }
 
-.navbar-default .navbar-nav li#yell:hover {
+.navbar-default .navbar-nav > li > a {
+  color: #000;
+}
+
+.navbar-default .navbar-nav > li:nth-child(odd):hover {
   background-color: #f9d94f;
 }
 
-.navbar-default .navbar-nav li#blue:hover {
+.navbar-default .navbar-nav > li:nth-child(even):hover {
   background-color: #1c599b;
 }
 
-.navbar-default .navbar-nav li#blue>a:hover {
-  color: white;
-}
-
-.navbar-default .navbar-nav>li>a {
-  color: black;
+.navbar-default .navbar-nav > li:nth-child(even) > a:hover {
+  color: #fff
 }
 
 .navbar-default .navbar-nav>.active>a {

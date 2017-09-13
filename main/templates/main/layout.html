@@ -57,7 +57,7 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li id="yell" class="dropdown">
+                <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">About <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a tabindex="-1" href="{% url 'main:about' %}#collapse0">What we do</a></li>
@@ -66,10 +66,10 @@
                         <li><a tabindex="-1" href="{% url 'main:about' %}#collapse3">Coworking space</a></li>
                    </ul>
                 </li>
-                <li id="blue"><a href="{% url 'main:program_teams' %}">Program</a></li>
-                <li id="yell"><a href="{% url 'main:events' %}">Events</a></li>
-                <li id="blue"><a href="{% url 'main:blog' %}">Blog</a></li>
-                <li id="yell"><a href="{% url 'main:contact' %}">Contact</a></li>
+                <li><a href="{% url 'main:program_teams' %}">Program</a></li>
+                <li><a href="{% url 'main:events' %}">Events</a></li>
+                <li><a href="{% url 'main:blog' %}">Blog</a></li>
+                <li><a href="{% url 'main:contact' %}">Contact</a></li>
             </ul>
         </div>
         <hr>
