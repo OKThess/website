@@ -752,3 +752,17 @@ button.accordion.active:after {
 .program-sidebar-contribute {
   margin-top: 40px;
 }
+
+/* contact */
+.contact {
+  width: 90%;
+}
+
+#contact-map-outer {
+  border: 2px solid #f9d94f;
+  border-radius: 3px;
+}
+
+#contact-map-container {
+  height: 500px;
+}
