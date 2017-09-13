@@ -113,22 +113,22 @@ h3 {
   color: #fff
 }
 
-.navbar-default .navbar-nav>.active>a {
+.navbar-default .navbar-nav > .active > a {
   color: black;
   background-color: #f9d94f;
 }
 
-.navbar-default .navbar-nav>.active>a:hover {
+.navbar-default .navbar-nav > .active > a:hover {
   color: black;
   background-color: #f9d94f;
 }
 
-.navbar-default .navbar-nav>.active>a:focus {
+.navbar-default .navbar-nav > .active > a:focus {
   color: black;
   background-color: #f9d94f;
 }
 
-.dropdown-menu>li>a {
+.dropdown-menu > li > a {
   margin-top: 1px;
   padding: 3px 10px;
   color: black;
@@ -137,19 +137,19 @@ h3 {
   white-space: nowrap;
 }
 
-.dropdown-menu>li>a:hover {
+.dropdown-menu > li > a:hover {
   background-color: #f9d94f;
 }
 
-.navbar-default .navbar-nav>.open>a {
+.navbar-default .navbar-nav > .open > a {
   background-color: #f9d94f;
 }
 
-.navbar-default .navbar-nav>.open>a:focus {
+.navbar-default .navbar-nav > .open > a:focus {
   background-color: white;
 }
 
-.navbar-default .navbar-nav>.open>a:hover {
+.navbar-default .navbar-nav > .open > a:hover {
   background-color: #f9d94f;
 }
 
@@ -523,7 +523,7 @@ h5 {
   max-width: 100%;
 }
 
-.blog-post-teaser>p {
+.blog-post-teaser > p {
   font-size: 14px;
   margin-bottom: 1%;
 }
@@ -692,17 +692,17 @@ button.accordion.active:after {
   margin-top: 40px;
 }
 
-.program-sidebar-tabs-list>li>a:hover,
-.program-sidebar-tabs-list>li>a:focus,
-.program-sidebar-tabs-list>li.active>a:focus,
-.program-sidebar-tabs-list>li.active>a:hover,
-.program-sidebar-tabs-list>li.active>a {
+.program-sidebar-tabs-list > li > a:hover,
+.program-sidebar-tabs-list > li > a:focus,
+.program-sidebar-tabs-list > li.active > a:focus,
+.program-sidebar-tabs-list > li.active > a:hover,
+.program-sidebar-tabs-list > li.active > a {
   background: #f9d94f;
   color: #000;
   border-radius: 2px;
 }
 
-.program-sidebar-tabs-elem>a {
+.program-sidebar-tabs-elem > a {
   border-radius: 2px;
   color: #000;
 }
@@ -716,7 +716,7 @@ button.accordion.active:after {
   text-align: center;
 }
 
-.program-sidebar-regulation>h4>a {
+.program-sidebar-regulation > h4 > a {
   color: #1c599b;
   text-decoration: underline;
 }
