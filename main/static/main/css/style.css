@@ -437,7 +437,9 @@ h3 {
 
 .site-footer {
   width: 100%;
-  margin: auto;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
   height: 500px;
   background-color: white;
   border-top: 3px solid #f9d94f;
@@ -449,7 +451,6 @@ h3 {
 }
 
 #social {
-  margin-left: 20px;
   margin-bottom: 2px;
   margin-left: 5%;
 }
