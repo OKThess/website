@@ -242,6 +242,32 @@ h3 {
   margin-top: 10px;
 }
 
+.btn-form {
+  color: #fff;
+  background: #1c599b;
+  padding: 5px 15px;
+  font-size: 14px;
+  text-decoration: none;
+  border: none;
+}
+
+.btn-form:hover {
+  color: #fff;
+  text-decoration: none;
+  background: #0f4f92;
+}
+
+.form-control {
+  box-shadow: none;
+  border-color: #ddd;
+  border-radius: 0;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: 1px solid #f9d94f;
+}
+
 .desc {
   margin-top: 5%;
   font-size: 17px;
