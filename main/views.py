@@ -59,3 +59,6 @@ def apply(request):
 
 def contact(request):
     return HttpResponseRedirect('/')
+
+def health(request):
+    return HttpResponse('Ok')

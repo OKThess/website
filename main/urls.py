@@ -33,4 +33,7 @@ urlpatterns = [
 
     # /apply/
     url(r'^apply/$', views.apply, name='apply'),
+
+    # /health
+    url(r'^health/$', views.health, name='health'),
 ]
