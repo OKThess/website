@@ -97,7 +97,6 @@
                         <hr>
                             <div id="map-outer">
                                 <div id="map-container"></div>
-                                <script src="http://okthess.gr/js/map.js"></script>
                             </div>
                     </div>
                     <div class="col-md-4 col-sm-4">
@@ -146,11 +145,47 @@
                 </div>
             </div>
         </div>
-            <p id="copy">Lovingly crafted by <a href="http://ntemposd.me" target="_blank">ntemposd</a></p>
+        <div class="footer-content-author">
+            Lovingly crafted by <a href="http://ntemposd.me" target="_blank">ntemposd</a>
+        </div>
     </footer>
 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7E2raajPS5-4vEpx-LBOV0XkItvWQRt8&signed_in=true&callback=initMap"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        function initMap() {
+            var okthessLatLng = {
+                lat: 40.595311,
+                lng: 22.950956,
+            };
+
+            var footerMap = new google.maps.Map(document.getElementById('map-container'), {
+                zoom: 12,
+                center: okthessLatLng,
+            });
+
+            var footerMarker = new google.maps.Marker({
+                position: okthessLatLng,
+                map: footerMap,
+                title: 'OK!Thess'
+            });
+
+            // for contact page map
+            var contactMapElem = document.getElementById('contact-map-container');
+            if (contactMapElem) {
+                var contactMap = new google.maps.Map(document.getElementById('contact-map-container'), {
+                    zoom: 13,
+                    center: okthessLatLng,
+                });
+
+                var contactMarker = new google.maps.Marker({
+                    position: okthessLatLng,
+                    map: contactMap,
+                    title: 'OK!Thess'
+                });
+            }
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7E2raajPS5-4vEpx-LBOV0XkItvWQRt8&signed_in=true&callback=initMap"></script>
 </body>
 </html>
