@@ -3,93 +3,121 @@
 {% load static %}
 
 {% block content %}
-    <div class="container land">
+    <div class="container index-land">
         <div class="row">
             <div class="col-md-5">
                 <h1>ΟΚ!Τhess</h1>
                 <h2>Your early stage partner</h2>
-                <p id="desc">OK!Thess provides space and technical support to teams of people with innovative ideas helping them to <strong>Validate a Business Model Fast</strong>, rather than hastily, and to <strong>Meet, Mix  and Connect</strong> with like-minded peers.</p>
+                <p class="desc">
+                    OK!Thess provides space and technical support to teams of people
+                    with innovative ideas helping them to <strong>Validate a Business
+                    Model Fast</strong>, rather than hastily, and to <strong>Meet,
+                    Mix and Connect</strong> with like-minded peers.
+                </p>
                 <form>
-                    <input type="text" name="firstname" placeholder=" First name">
+                    <input type="text" name="firstname" placeholder="First name" class="input-small">
                     <br>
-                    <input type="email" name="email" placeholder=" email">
+                    <input type="email" name="email" placeholder="Email" class="input-small">
                 </form>
                 <br>
-                <a id="yellowcall" href="http://okthess.gr/dev/about.html" role="button"><span class="glyphicon glyphicon-exclamation-sign"></span><strong>Get</strong> in the Loop!</a>
+                <a class="btn-yellow btn-small" href="#" role="button">
+                    <span class="glyphicon glyphicon-exclamation-sign"></span><strong>Get</strong> in the Loop!
+                </a>
             </div>
             <div class="col-md-7">
-                <a class="w3-btn-floating w3-hover-dark-grey w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
-                <a class="w3-btn-floating w3-hover-dark-grey w3-display-right" onclick="plusDivs(1)">&#10095;</a>
-                <div class="mySlides">
-                    <img src="http://okthess.gr/dev/img/call.jpg"/>
-                    <div class="w3-display-bottomleft w3-large w3-padding-16 w3-black">
-                        Community Events
-                    </div>
+                <div onclick="plusDivs(-1)" class="slider-arrow-left">&#10094;</div>
+                <div onclick="plusDivs(1)" class="slider-arrow-right">&#10095;</div>
+                <div class="slider">
+                    <img src="{% static '/main/img/slider-1.jpg' %}" class="slider-img">
+                    <div class="slider-text">Community Events</div>
                 </div>
-                <div class="mySlides">
-                    <img src="https://scontent-sof1-1.xx.fbcdn.net/v/t1.0-9/17457548_1889123364710078_5522191075335263056_n.jpg?oh=cd9d7391f8cdc50434a564faf5b57ecc&oe=5A2C7E98"/>
-                    <div class="w3-display-bottomright w3-large w3-padding-16 w3-black">
-                        Mentoring Sessions
-                    </div>
+                <div class="slider">
+                    <img src="{% static '/main/img/slider-2.jpg' %}" class="slider-img">
+                    <div class="slider-text">Mentoring Sessions</div>
                 </div>
-                <div class="mySlides">
-                    <img src="http://okthess.gr/dev/v2/slide3.jpg">
-                    <div class="w3-display-topleft w3-large w3-padding-16 w3-black">
-                        Accelerator
-                    </div>
+                <div class="slider">
+                    <img src="{% static '/main/img/slider-3.jpg' %}" class="slider-img">
+                    <div class="slider-text">Accelerator</div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container blog">
+    <div class="container index-blog">
         <div class="row">
-                <div class="col-md-4 col-sm-4">
-                    <h3>Call for Startups</h3>
+            <div class="col-md-4 col-sm-4">
+                <h3>Call for Startups</h3>
+                <div class="blog-pinned-img">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzmm1cJ29DuTotHpjIJh4Fl0tVlUvJvF_lQCO7vRIKwkNK11v05g" alt="Logo">
-                    <p>Do you have a fresh idea and need some help to make it a business? OK!Thess is here to guide you through the process of making it. Fill in the application form until September the 13th, join us now!</p>
-                    <a id="bluebi" href="http://okthess.gr/eng/app.php" role="button"><span class="glyphicon glyphicon-exclamation-sign"></span><strong>Read</strong> more »</a>
                 </div>
-                <div class="col-md-4 col-sm-4">
-                    <h3>We are Hiring</h3>
+                <p>Do you have a fresh idea and need some help to make it a business? OK!Thess is here to guide you through the process of making it. Fill in the application form until September the 13th, join us now!</p>
+                <a class="btn-blue" href="http://okthess.gr/eng/app.php" role="button"><span class="glyphicon glyphicon-exclamation-sign"></span><strong>Read</strong> more »</a>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <h3>We are Hiring</h3>
+                <div class="blog-pinned-img">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDrcA7QXTjbPBNiVLeS6QRmBDyN4rlV4yYM7soUjYmKM-peuMWug" alt="Logo">
-                    <p>OK!Thess is constantly growing and is currently seeking for people able to cover the positions of Community/Event Manager, Program Manager/Coach and Caretaker. Applications deadline: August 21 2017.</p>
-                    <a id="call" href="http://okthess.gr/eng/news.html?showmodal=5" role="button"><span class="glyphicon glyphicon-exclamation-sign"></span><strong>Read</strong> more »</a>
                 </div>
-                <div class="col-md-4 col-sm-4">
-                    <h3>re:publica Thessaloniki</h3>
+                <p>OK!Thess is constantly growing and is currently seeking for people able to cover the positions of Community/Event Manager, Program Manager/Coach and Caretaker. Applications deadline: August 21 2017.</p>
+                <a class="btn-red" href="http://okthess.gr/eng/news.html?showmodal=5" role="button"><span class="glyphicon glyphicon-exclamation-sign"></span><strong>Read</strong> more »</a>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <h3>re:publica Thessaloniki</h3>
+                <div class="blog-pinned-img">
                     <a href="https://re-publica.com" title="re:publica connecting europe"><img src="https://re-publica.com/files/banner/rpEUR_Banner_300X125.gif" alt="re:publica connecting europe"></a>
-                    <p>re:publica Thessaloniki is an exciting international conference about the Internet and Digital Society in Europe. It brings together participants to discuss the issues of the contemporary digital society.</p>
-                    <a id="yellowcall" href="http://okthess.gr/eng/news.html?showmodal=4" role="button"><span class="glyphicon glyphicon-exclamation-sign"></span><strong>Read</strong> more »</a>
                 </div>
-              </div>
+                <p>re:publica Thessaloniki is an exciting international conference about the Internet and Digital Society in Europe. It brings together participants to discuss the issues of the contemporary digital society.</p>
+                <a class="btn-yellow" href="http://okthess.gr/eng/news.html?showmodal=4" role="button"><span class="glyphicon glyphicon-exclamation-sign"></span><strong>Read</strong> more »</a>
             </div>
-    <div class="container blog text-center">
-        <br>
-        <div id="black" href="http://okthess.gr/dev/about.html" role="button">
-            <span class="glyphicon glyphicon-calendar"></span>Upcoming Community <strong>Meetups</strong>
         </div>
+    </div>
+    <div class="container index-events">
         <div class="row">
-            <hr>
-            <div class="event">
-                <div id="bluebi" class="eventName">Python + "Tzatziki United"</div>
-                <div class="eventDate"><p>12-12-2012</p></div>
-                <div class="eventDesc"><p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</p></div>
+            <div class="col-md-8 col-md-offset-2">
+                <a class="btn-black" href="#" role="button">
+                    <span class="glyphicon glyphicon-calendar"></span>Upcoming Community <strong>Meetups</strong>
+                </a>
+                <div class="index-events-content">
+                    <div class="index-events-content-single">
+                        <a href="#" class="index-events-content-single-name">Python + "Tzatziki United"</a>
+                        <div class="index-events-content-single-date"><p>12-12-2012</p></div>
+                        <div class="index-events-content-single-desc"><p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</p></div>
+                    </div>
+                    <div class="index-events-content-single">
+                        <a href="#" class="index-events-content-single-name">Python + "Tzatziki United"</a>
+                        <div class="index-events-content-single-date"><p>12-12-2012</p></div>
+                        <div class="index-events-content-single-desc"><p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</p></div>
+                    </div>
+                    <div class="index-events-content-single">
+                        <a href="#" class="index-events-content-single-name">Python + "Tzatziki United"</a>
+                        <div class="index-events-content-single-date"><p>12-12-2012</p></div>
+                        <div class="index-events-content-single-desc"><p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</p></div>
+                    </div>
+                </div>
             </div>
-            <hr>
-            <div class="event">
-
-                <div id="call" class="eventName">Python + "Tzatziki United"</div>
-                <div class="eventDate"><p>12-12-2012</p></div>
-                <div class="eventDesc"><p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</p></div>
-            </div>
-            <hr>
-            <div class="event">
-                <div id="yellowcall" class="eventName">Python + "Tzatziki United"</div>
-                <div class="eventDate"><p>12-12-2012</p></div>
-                <div class="eventDesc"><p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</p></div>
-            </div>
-            <hr>
         </div>
     </div>
 
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var x = document.getElementsByClassName('slider');
+            if (n > x.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = x.length;
+            }
+            var i = 0;
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = 'none';
+            }
+            x[slideIndex-1].style.display = 'block';
+        }
+    </script>
 {% endblock %}
