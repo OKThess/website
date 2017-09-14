@@ -19,6 +19,15 @@ class Team(models.Model):
 class Mentor(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
+    image = models.ImageField(
+        upload_to='main/static/main/uploads/',
+        default='main/static/main/logo.png',
+        max_length=250,
+    )
+    twitter = models.URLField(null=True)
+    github = models.URLField(null=True)
+    linkedin = models.URLField(null=True)
+    website = models.URLField(null=True)
 
     def __str__(self):
         return self.name
