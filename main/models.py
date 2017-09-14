@@ -24,7 +24,6 @@ class Mentor(models.Model):
         default='main/static/main/logo.png',
         max_length=250,
     )
-    twitter = models.URLField(null=True)
     github = models.URLField(null=True)
     linkedin = models.URLField(null=True)
     website = models.URLField(null=True)
