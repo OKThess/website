@@ -6,7 +6,11 @@ class Team(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
     url = models.URLField()
-    image = models.ImageField(upload_to='main/static/main/uploads/', default='main/static/main/logo.png')
+    image = models.ImageField(
+        upload_to='main/static/main/uploads/',
+        default='main/static/main/logo.png',
+        max_length=250,
+    )
 
     def __str__(self):
         return self.name
@@ -46,7 +50,11 @@ class Post(models.Model):
         null=True,
     )
     teaser = models.TextField()
-    image = models.ImageField(upload_to='main/static/main/uploads/', default='main/static/main/logo.png')
+    image = models.ImageField(
+        upload_to='main/static/main/uploads/',
+        default='main/static/main/logo.png',
+        max_length=250,
+    )
     body = models.TextField()
     is_featured = models.BooleanField(default=False)
 
