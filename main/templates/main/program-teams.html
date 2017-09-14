@@ -10,31 +10,13 @@
                     <h1>Hosted Teams</h1>
                     <div style="margin-bottom: 40px;"></div>
                     <div class="row">
-                        <div class="col-md-4 program-main-company">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzmm1cJ29DuTotHpjIJh4Fl0tVlUvJvF_lQCO7vRIKwkNK11v05g" alt="Logo">
-                            <div class="program-main-company-name">Company Name</div>
-                            <p>{% lorem 20 w %}</p>
-                        </div>
-                        <div class="col-md-4 program-main-company">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzmm1cJ29DuTotHpjIJh4Fl0tVlUvJvF_lQCO7vRIKwkNK11v05g" alt="Logo">
-                            <div class="program-main-company-name">Company Name</div>
-                            <p>{% lorem 20 w %}</p>
-                        </div>
-                        <div class="col-md-4 program-main-company">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzmm1cJ29DuTotHpjIJh4Fl0tVlUvJvF_lQCO7vRIKwkNK11v05g" alt="Logo">
-                            <div class="program-main-company-name">Company Name</div>
-                            <p>{% lorem 20 w %}</p>
-                        </div>
-                        <div class="col-md-4 program-main-company">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzmm1cJ29DuTotHpjIJh4Fl0tVlUvJvF_lQCO7vRIKwkNK11v05g" alt="Logo">
-                            <div class="program-main-company-name">Company Name</div>
-                            <p>{% lorem 20 w %}</p>
-                        </div>
-                        <div class="col-md-4 program-main-company">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzmm1cJ29DuTotHpjIJh4Fl0tVlUvJvF_lQCO7vRIKwkNK11v05g" alt="Logo">
-                            <div class="program-main-company-name">Company Name</div>
-                            <p>{% lorem 20 w %}</p>
-                        </div>
+                        {% for team in teams %}
+                            <div class="col-md-4 program-main-company">
+                                <a href="{{ team.link }}"><img src="{{ team.image }}" alt="team logo"></a>
+                                <div class="program-main-company-name"><a href="{{ team.link }}" >{{ team.name }}</a></div>
+                                <p class="program-main-company-desc">{{ team.description }}</p>
+                            </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
