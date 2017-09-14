@@ -36,7 +36,7 @@ def get_program_mentors(request):
     })
 
 def get_program_alumni(request):
-    teams = Team.objects.filter(alumni=False).order_by('name')
+    teams = Team.objects.filter(alumni=True).order_by('name')
     return render(request, 'main/program-alumni.html', {
         'teams': teams,
     })
