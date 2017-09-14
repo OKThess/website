@@ -10,66 +10,26 @@
                     <h1>Mentors</h1>
                     <div style="margin-bottom: 40px;"></div>
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="program-main-mentor">
-                                <img src="http://images.genius.com/b80655e79a7a893d176d51a4ed435ef8.1000x1000x1.jpg" class="program-main-mentor-image" alt="mentor image">
-                                <div class="program-main-mentor-name">Mentor Name</div>
-                                <p>{% lorem 20 w %}</p>
-                                <div class="program-main-mentor-links">
-                                    <a href="#">GitHub</a>,
-                                    <a href="#">Website</a>,
-                                    <a href="#">LinkedIn</a>
+                        {% for mentor in mentors %}
+                            <div class="col-md-4">
+                                <div class="program-main-mentor">
+                                    <img src="{{ mentor.image }}" class="program-main-mentor-image" alt="mentor image">
+                                    <div class="program-main-mentor-name">{{ mentor.name }}</div>
+                                    <p>{{ mentor.name }}</p>
+                                    <div class="program-main-mentor-links">
+                                        {% if mentor.github %}
+                                            <a href="{{ mentor.github }}">GitHub</a>
+                                        {% endif %}
+                                        {% if mentor.website %}
+                                            <a href="{{ mentor.website }}">Website</a>
+                                        {% endif %}
+                                        {% if mentor.linkedin %}
+                                            <a href="{{ mentor.linkedin }}">LinkedIn</a>
+                                        {% endif %}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="program-main-mentor">
-                                <img src="http://images.genius.com/b80655e79a7a893d176d51a4ed435ef8.1000x1000x1.jpg" class="program-main-mentor-image" alt="mentor image">
-                                <div class="program-main-mentor-name">Mentor Name</div>
-                                <p>{% lorem 20 w %}</p>
-                                <div class="program-main-mentor-links">
-                                    <a href="#">GitHub</a>,
-                                    <a href="#">Website</a>,
-                                    <a href="#">LinkedIn</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="program-main-mentor">
-                                <img src="http://images.genius.com/b80655e79a7a893d176d51a4ed435ef8.1000x1000x1.jpg" class="program-main-mentor-image" alt="mentor image">
-                                <div class="program-main-mentor-name">Mentor Name</div>
-                                <p>{% lorem 20 w %}</p>
-                                <div class="program-main-mentor-links">
-                                    <a href="#">GitHub</a>,
-                                    <a href="#">Website</a>,
-                                    <a href="#">LinkedIn</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="program-main-mentor">
-                                <img src="http://images.genius.com/b80655e79a7a893d176d51a4ed435ef8.1000x1000x1.jpg" class="program-main-mentor-image" alt="mentor image">
-                                <div class="program-main-mentor-name">Mentor Name</div>
-                                <p>{% lorem 20 w %}</p>
-                                <div class="program-main-mentor-links">
-                                    <a href="#">GitHub</a>,
-                                    <a href="#">Website</a>,
-                                    <a href="#">LinkedIn</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="program-main-mentor">
-                                <img src="http://images.genius.com/b80655e79a7a893d176d51a4ed435ef8.1000x1000x1.jpg" class="program-main-mentor-image" alt="mentor image">
-                                <div class="program-main-mentor-name">Mentor Name</div>
-                                <p>{% lorem 20 w %}</p>
-                                <div class="program-main-mentor-links">
-                                    <a href="#">GitHub</a>,
-                                    <a href="#">Website</a>,
-                                    <a href="#">LinkedIn</a>
-                                </div>
-                            </div>
-                        </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
