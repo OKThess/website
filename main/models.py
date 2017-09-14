@@ -11,6 +11,7 @@ class Team(models.Model):
         default='main/static/main/logo.png',
         max_length=250,
     )
+    alumni = models.BooleanField(default=False)
 
     def __str__(self):
         return self.name
