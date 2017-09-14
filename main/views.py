@@ -3,7 +3,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib import messages
 from django.urls import reverse
 
-from .models import Team, Job, Mentor, Meetup, Coworking, Post, Event
+from .models import Team, Mentor, Meetup, Coworking, Post, Event
 from .forms import ApplicationForm
 
 
