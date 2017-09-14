@@ -669,10 +669,6 @@ button.accordion.active:after {
   box-shadow: 3px 3px #000;
 }
 
-.program-sidebar-regulation {
-  margin-top: 40px;
-}
-
 .program-sidebar-tabs-list > li > a:hover,
 .program-sidebar-tabs-list > li > a:focus,
 .program-sidebar-tabs-list > li.active > a:focus,
@@ -694,12 +690,12 @@ button.accordion.active:after {
 }
 
 .program-sidebar-regulation {
+  margin-top: 40px;
   text-align: center;
 }
 
 .program-sidebar-regulation > h4 > a {
-  color: #1c599b;
-  text-decoration: underline;
+  color: #000;
 }
 
 .program-main-mentor {
