@@ -24,7 +24,7 @@ def program_redir(request):
     return redirect(reverse('main:program_teams'))
 
 def get_program_teams(request):
-    teams = Team.objects.order_by('name')
+    teams = Team.objects.filter(alumni=False).order_by('name')
     return render(request, 'main/program-teams.html', {
         'teams': teams,
     })
@@ -36,7 +36,10 @@ def get_program_mentors(request):
     })
 
 def get_program_alumni(request):
-    return render(request, 'main/program-alumni.html')
+    teams = Team.objects.filter(alumni=False).order_by('name')
+    return render(request, 'main/program-alumni.html', {
+        'teams': teams,
+    })
 
 def get_events(request):
     return render(request, 'main/events.html')
