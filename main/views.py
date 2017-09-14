@@ -24,7 +24,10 @@ def program_redir(request):
     return redirect(reverse('main:program_teams'))
 
 def get_program_teams(request):
-    return render(request, 'main/program-teams.html')
+    teams = Team.objects.order_by('name')
+    return render(request, 'main/program-teams.html', {
+        'teams': teams,
+    })
 
 def get_program_mentors(request):
     return render(request, 'main/program-mentors.html')
