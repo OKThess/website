@@ -201,6 +201,8 @@ h3 {
 .btn-small {
   padding: 3px 13px;
   font-size: 12px;
+  border: none;
+  margin-top: 10px;
 }
 
 .btn-header {
