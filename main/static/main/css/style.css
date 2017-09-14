@@ -637,10 +637,21 @@ button.accordion.active:after {
   margin-top: 6px;
   margin-bottom: 3px;
   font-size: 20px;
+  text-align: center;
 }
 
 .program-main-company-name a {
   color: #000;
+}
+
+.program-main-company-image {
+  text-align: center;
+  height: 200px;
+  overflow-y: hidden;
+}
+
+.program-main-company-image img {
+  max-width: 100%;
 }
 
 .program-main-company-desc {

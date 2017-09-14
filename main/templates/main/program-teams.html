@@ -12,7 +12,9 @@
                     <div class="row">
                         {% for team in teams %}
                             <div class="col-md-4 program-main-company">
-                                <a href="{{ team.link }}"><img src="{{ team.image }}" alt="team logo"></a>
+                                <div class="program-main-company-image">
+                                    <a href="{{ team.link }}"><img src="{{ team.image }}" alt="team logo"></a>
+                                </div>
                                 <div class="program-main-company-name"><a href="{{ team.link }}" >{{ team.name }}</a></div>
                                 <p class="program-main-company-desc">{{ team.description }}</p>
                             </div>
