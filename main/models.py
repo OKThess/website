@@ -6,7 +6,7 @@ class Team(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
     url = models.URLField()
-    image_url = models.CharField(max_length=500)
+    image = models.ImageField(upload_to='main/static/main/uploads/', default='main/static/main/logo.png')
 
     def __str__(self):
         return self.name
