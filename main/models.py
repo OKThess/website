@@ -54,6 +54,7 @@ class Event(models.Model):
         Meetup,
         on_delete=models.SET_NULL,
         null=True,
+        blank=True,
     )
 
     def __str__(self):
