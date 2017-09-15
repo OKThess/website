@@ -35,6 +35,7 @@ class Mentor(models.Model):
 
 class Meetup(models.Model):
     name = models.CharField(max_length=100)
+    link = models.URLField()
     description = models.TextField()
 
     def __str__(self):
