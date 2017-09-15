@@ -520,22 +520,40 @@ h6.blog-post-meta {
   font-size: 12px;
 }
 
+.events-single-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.events-single-title > a {
+  font-size: 20px;
+  color: #000;
+}
+
 .events-single-data-date,
-.events-single-data-time,
-.events-single-data-place,
-.events-single-data-info {
-  width: max-content;
-  color: #fff;
-  background-color: #000;
+.events-single-data-organizer,
+.events-single-data-start,
+.events-single-data-end {
+  display: inline-block;
   padding: 1px 4px;
   font-size: 12px;
 }
 
 .events-single-data-date,
-.events-single-data-place {
+.events-single-data-start {
+  background: #000;
+  color: #fff;
+}
+
+.events-single-data-organizer,
+.events-single-data-end {
   background: #bbb;
   color: #000;
   float: right;
+}
+
+.events-single-data-organizer > a {
+  color: #000;
 }
 
 /* about */
@@ -593,12 +611,25 @@ button.accordion.active:after {
   margin: 0px;
 }
 
+.sidebar-module > .panel {
+  padding-top: 0;
+  padding-bottom: 0px;
+  padding-left: 0;
+  padding-right: 20px;
+  border: none;
+}
+
+.sidebar-module > .panel > .panel-inner {
+  padding-top: 20px;
+}
+
 .sidebar-module-inset {
   padding: 0px;
-  max-height: 300px;
+  max-height: 305px;
   background-color: #f5f5f5;
   border-radius: 4px;
   overflow-y: scroll;
+  margin-bottom: 30px;
 }
 
 .sidebar-module.sidebar-module-inset ul {
@@ -613,7 +644,7 @@ button.accordion.active:after {
 .sidebar-module.sidebar-module-inset ul li a {
   font-size: 13px !important;
   text-decoration: none;
-  color: grey;
+  color: 808080;
   font-weight: 500;
 }
 
