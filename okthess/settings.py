@@ -170,8 +170,16 @@ STATIC_URL = '/static/'
 STATIC_ROOT = 'static'
 
 
+# Media (user uploaded content)
+# https://docs.djangoproject.com/en/1.11/ref/settings/#media-root
+
+MEDIA_ROOT = os.getcwd()
+MEDIA_URL = '/uploads/'
+
+
 # Security middleware
 # https://docs.djangoproject.com/en/1.11/ref/middleware/#module-django.middleware.security
+
 if not DEBUG:
     SECURE_CONTENT_TYPE_NOSNIFF = True
     SECURE_BROWSER_XSS_FILTER = True
