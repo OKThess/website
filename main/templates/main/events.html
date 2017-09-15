@@ -1,249 +1,142 @@
 {% extends 'main/layout.html' %}
 
 {% load static %}
+{% load app_filters %}
 
 {% block content %}
     <div class="container-fluid events">
         <div class="row">
             <div class="col-md-9">
-                <div class="events-single">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="https://i.imgur.com/YkXx0rE.jpg">
-                        </div>
-                        <div class="col-md-9">
-                            <div class="events-single-data">
-                                <div class="events-single-data-date">12-12-2012</div>
-                                <div class="events-single-data-time">When: Friday 22 Sept</div>
+                {% for event in events %}
+                    <div class="events-single">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <a href="{{ event.link }}"><img src="{{ event.image|prepend_media }}"></a>
                             </div>
-                            <h4>.NET + QA & Testing United. Creating a Test Automation Framework</h4>
-                            <p>
-                                What is the purpose of a Test Automation Framework? What challenges does it solve for the development team?
-                                Learning how to use a tool like Selenium to create automated tests is not enough to be successful with
-                                an automation effort. You also need to know how to build an automation framework that can support creating
-                                tests that are not so fragile that they constantly break. This is the real key to success in any automation
-                                effort.In this meetup we'll find out how to create a test automation framework using selenium & .NET
-                                following the page pattern.
-                            </p>
-                            <div class="events-single-data">
-                                <div class="events-single-data-place">12-12-2012</div>
-                                <div class="events-single-data-info">When: Friday 22 Sept</div>
+                            <div class="col-md-9">
+                                <div class="events-single-data">
+                                    <div class="events-single-data-date">{{ event.date }}</div>
+                                    <div class="events-single-data-organizer"><a href="{{ event.organizer_link }}">{{ event.organizer }}</a></div>
+                                </div>
+                                <div class="events-single-title">
+                                    <a href="{{ event.link }}">{{ event.title }}</a>
+                                </div>
+                                <p>{{ event.description }}</p>
+                                <div class="events-single-data">
+                                    <div class="events-single-data-start">Starts: {{ event.time_start }}</div>
+                                    <div class="events-single-data-end">Ends: {{ event.time_end }}</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="events-single">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="https://i.imgur.com/YkXx0rE.jpg">
-                        </div>
-                        <div class="col-md-9">
-                            <div class="events-single-data">
-                                <div class="events-single-data-date">12-12-2012</div>
-                                <div class="events-single-data-time">When: Friday 22 Sept</div>
-                            </div>
-                            <h4>.NET + QA & Testing United. Creating a Test Automation Framework</h4>
-                            <p>
-                                What is the purpose of a Test Automation Framework? What challenges does it solve for the development team?
-                                Learning how to use a tool like Selenium to create automated tests is not enough to be successful with
-                                an automation effort. You also need to know how to build an automation framework that can support creating
-                                tests that are not so fragile that they constantly break. This is the real key to success in any automation
-                                effort.In this meetup we'll find out how to create a test automation framework using selenium & .NET
-                                following the page pattern.
-                            </p>
-                            <div class="events-single-data">
-                                <div class="events-single-data-place">12-12-2012</div>
-                                <div class="events-single-data-info">When: Friday 22 Sept</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="events-single">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="https://i.imgur.com/YkXx0rE.jpg">
-                        </div>
-                        <div class="col-md-9">
-                            <div class="events-single-data">
-                                <div class="events-single-data-date">12-12-2012</div>
-                                <div class="events-single-data-time">When: Friday 22 Sept</div>
-                            </div>
-                            <h4>.NET + QA & Testing United. Creating a Test Automation Framework</h4>
-                            <p>
-                                What is the purpose of a Test Automation Framework? What challenges does it solve for the development team?
-                                Learning how to use a tool like Selenium to create automated tests is not enough to be successful with
-                                an automation effort. You also need to know how to build an automation framework that can support creating
-                                tests that are not so fragile that they constantly break. This is the real key to success in any automation
-                                effort.In this meetup we'll find out how to create a test automation framework using selenium & .NET
-                                following the page pattern.
-                            </p>
-                            <div class="events-single-data">
-                                <div class="events-single-data-place">12-12-2012</div>
-                                <div class="events-single-data-info">When: Friday 22 Sept</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="events-single">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="https://i.imgur.com/YkXx0rE.jpg">
-                        </div>
-                        <div class="col-md-9">
-                            <div class="events-single-data">
-                                <div class="events-single-data-date">12-12-2012</div>
-                                <div class="events-single-data-time">When: Friday 22 Sept</div>
-                            </div>
-                            <h4>.NET + QA & Testing United. Creating a Test Automation Framework</h4>
-                            <p>
-                                What is the purpose of a Test Automation Framework? What challenges does it solve for the development team?
-                                Learning how to use a tool like Selenium to create automated tests is not enough to be successful with
-                                an automation effort. You also need to know how to build an automation framework that can support creating
-                                tests that are not so fragile that they constantly break. This is the real key to success in any automation
-                                effort.In this meetup we'll find out how to create a test automation framework using selenium & .NET
-                                following the page pattern.
-                            </p>
-                            <div class="events-single-data">
-                                <div class="events-single-data-place">12-12-2012</div>
-                                <div class="events-single-data-info">When: Friday 22 Sept</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="events-single">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="https://i.imgur.com/YkXx0rE.jpg">
-                        </div>
-                        <div class="col-md-9">
-                            <div class="events-single-data">
-                                <div class="events-single-data-date">12-12-2012</div>
-                                <div class="events-single-data-time">When: Friday 22 Sept</div>
-                            </div>
-                            <h4>.NET + QA & Testing United. Creating a Test Automation Framework</h4>
-                            <p>
-                                What is the purpose of a Test Automation Framework? What challenges does it solve for the development team?
-                                Learning how to use a tool like Selenium to create automated tests is not enough to be successful with
-                                an automation effort. You also need to know how to build an automation framework that can support creating
-                                tests that are not so fragile that they constantly break. This is the real key to success in any automation
-                                effort.In this meetup we'll find out how to create a test automation framework using selenium & .NET
-                                following the page pattern.
-                            </p>
-                            <div class="events-single-data">
-                                <div class="events-single-data-place">12-12-2012</div>
-                                <div class="events-single-data-info">When: Friday 22 Sept</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
             <div class="col-md-3">
                 <h3>Hosted Meetups</h3>
                 <div class="sidebar-module sidebar-module-inset">
                     <ul>
-                        <li><a href="#" target="_blank">Pythess</a></li>
-                        <li><a href="#" target="_blank">SKGNode</a></li>
-                        <li><a href="#" target="_blank">.NET meetup</a></li>
-                        <li><a href="#" target="_blank">Toastmasters</a></li>
-                        <li><a href="#" target="_blank">React SKG</a></li>
-                        <li><a href="#" target="_blank">Bitcoin Meetup</a></li>
-                        <li><a href="#" target="_blank">Pythess</a></li>
-                        <li><a href="#" target="_blank">Pythess</a></li>
-                        <li><a href="#" target="_blank">Pythess</a></li>
-                        <li><a href="#" target="_blank">Pythess</a></li>
-                        <li><a href="#" target="_blank">Pythess</a></li>
-                        <li><a href="#" target="_blank">Pythess</a></li>
-                        <li><a href="#" target="_blank">Pythess</a></li>
-                        <li><a href="#" target="_blank">Pythess</a></li>
+                        {% for meetup in meetups %}
+                            <li><a href="{{ meetup.link }}" target="_blank">{{ meetup.name }}</a></li>
+                        {% endfor %}
                     </ul>
                 </div>
 
                 <h3>Past Events</h3>
-
-                <h5>2017</h5>
-                <button class="accordion">Winter</button>
-                <div class="panel">
-                    <ul>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                    </ul>
-                </div>
-                <button class="accordion">Spring</button>
-                <div class="panel">
-                    <ul>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                    </ul>
-                </div>
-                <button class="accordion">Summer</button>
-                <div class="panel">
-                    <ul>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                    </ul>
-                </div>
-                <button class="accordion">Fall</button>
-                <div class="panel">
-                    <ul>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                        <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                    </ul>
+                <div class="sidebar-module">
+                    <h5>2017</h5>
+                    <br>
+                    <button class="accordion">Winter</button>
+                    <div class="panel">
+                        <div class="panel-inner">
+                            <ul>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="accordion">Spring</button>
+                    <div class="panel">
+                        <div class="panel-inner">
+                            <ul>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="accordion">Summer</button>
+                    <div class="panel">
+                        <div class="panel-inner">
+                            <ul>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="accordion">Fall</button>
+                    <div class="panel">
+                        <div class="panel-inner">
+                            <ul>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="sidebar-module">
-                    <h4>Elsewhere</h4>
+                    <h3>Elsewhere</h3>
                     <ul class="list-unstyled">
-                        <li><a href="#">GitHub</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Facebook</a></li>
+                        <li><a href="https://github.com/OKThess">GitHub</a></li>
+                        <li><a href="https://twitter.com/okthess">Twitter</a></li>
+                        <li><a href="https://www.facebook.com/OKThess/">Facebook</a></li>
                     </ul>
                 </div>
             </div>
