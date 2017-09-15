@@ -8,7 +8,7 @@ class Team(models.Model):
     url = models.URLField()
     image = models.ImageField(
         upload_to='main/static/main/uploads/',
-        default='main/static/main/logo.png',
+        default='/static/main/img/logo.png',
         max_length=250,
     )
     alumni = models.BooleanField(default=False)
@@ -22,7 +22,7 @@ class Mentor(models.Model):
     description = models.TextField()
     image = models.ImageField(
         upload_to='main/static/main/uploads/',
-        default='main/static/main/logo.png',
+        default='/static/main/img/logo.png',
         max_length=250,
     )
     github = models.URLField(null=True)
@@ -50,6 +50,11 @@ class Event(models.Model):
     organizer = models.CharField(max_length=200)
     organizer_link = models.URLField()
     description = models.TextField(blank=True)
+    image = models.ImageField(
+        upload_to='main/static/main/uploads/',
+        default='/static/main/img/logo.png',
+        max_length=250,
+    )
     meetup = models.ForeignKey(
         Meetup,
         on_delete=models.SET_NULL,
@@ -81,7 +86,7 @@ class Post(models.Model):
     teaser = models.TextField()
     image = models.ImageField(
         upload_to='main/static/main/uploads/',
-        default='main/static/main/logo.png',
+        default='/static/main/img/logo.png',
         max_length=250,
     )
     body = models.TextField()
