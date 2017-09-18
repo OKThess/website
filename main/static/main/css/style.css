@@ -318,6 +318,10 @@ h3 {
   padding-right: 5%;
 }
 
+.index-blog-img > img {
+  width: 300px;
+}
+
 .index-events {
   text-align: center;
   margin-top: 100px;
@@ -500,6 +504,28 @@ h6.blog-post-meta {
   font-size: 12px;
   margin: 2% 0%;
   font-weight: 300;
+}
+
+/* blog:post  */
+.post {
+  width: 90%
+}
+
+.post-content-body {
+  margin-top: 20px;
+}
+
+.post-content-meta {
+  font-size: 12px;
+}
+
+.post-content-body {
+  font-size: 19px;
+}
+
+.post-content-image {
+  float: right;
+  width: 300px;
 }
 
 /* events */
