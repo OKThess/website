@@ -3,7 +3,7 @@
 {% load static %}
 
 {% block content %}
-    <section class="container apply land">
+    <section class="container apply">
         <div class="row">
             <div class="col-md-12">
                 {% if messages %}
@@ -32,8 +32,8 @@
                     Για συμμετοχή, διαβάστε τις <a href="http://okthess.gr/pdf/website-open-call.pdf" target="_blank">οδηγίες υποβολής</a> και συμπληρώστε την παρακάτω φόρμα συμμετοχής ή
                     απαντήστε τις ερωτήσεις στο σώμα ενός e-mail και στείλτε στο apply@okthess.gr
                 </p>
-                <h3>Application form</h3>
 
+                <h3>Application form</h3>
                 <form action="{% url 'main:apply' %}" method="post">
                     {% csrf_token %}
                     {{ form.non_field_errors }}
@@ -43,12 +43,9 @@
                             {{ field }}
                         </div>
                     {% endfor %}
-                    <button type="submit" class="btn btn-primary">Αποστολή</button>
+                    <button type="submit" class="btn-form">Αποστολή</button>
                 </form>
             </div>
         </div>
     </section>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 {% endblock %}
