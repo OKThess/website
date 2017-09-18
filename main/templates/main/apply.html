@@ -3,15 +3,9 @@
 {% load static %}
 
 {% block content %}
-    <section class="jumbotron">
-        <div class="jumbotron-cta">
-            <h1>Αίτηση Συμμετοχής</h1>
-            <p>Πληροφορίες και φόρμα συμμετοχής για το πρόγραμμα επιτάχυνσης του OK!Thess.</p>
-        </div>
-    </section>
-    <section class="container-fluid">
+    <section class="container apply">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 {% if messages %}
                     <p class="alert alert-success">
                         {% for message in messages %}
@@ -21,7 +15,7 @@
                     </p>
                 {% endif %}
                 <p>
-                    Γίνονται δεκτές ανά πάσα στιγμή προτάσεις από άτομα ή ομάδες
+                    Γίνονται δεκτές <strong>ανά πάσα στιγμή</strong> προτάσεις από άτομα ή ομάδες
                     με καινοτόμες ιδέες, ανεξάρτητα του βαθμού ωρίμανσης, που θα
                     ήθελαν να ωφεληθούν από τις υπηρεσίες της προ-θερμοκοιτίδας του
                     OK!Thess ώστε να στήσουν μια επιχείρηση (startup) ή να ενισχύσουν
@@ -30,18 +24,16 @@
                 <p>
                     Οι προτάσεις αξιολογούνται σε τακτά χρονικά διαστήματα, οι
                     ακριβείς ημερομηνίες ανακοινώνονται στην παρούσα ιστοσελίδα.
-                    Η τελευταία περίοδος αξιολόγησης έκλεισε την 1η Δεκέμβρη 2016
-                    και η επόμενη έχει προγραμματιστεί για τις αρχές του 2017.
-                    Η ακριβής ημερομηνία θα ανακοινωθεί στο αμέσως προσεχές μέλλον.
+                    Η τρέχουσα περίοδος κατάθεσης προτάσεων κλείνει στις <strong>13 Σεπτεμβρίου</strong> του 2017.
+                    Τα αποτελέσματα της αξιολόγησης θα ανακοινωθούν στις <strong>19 Σεπτεμβρίου</strong>.
+                    Η περίοδος θερμοκοίτησης περιλαμβάνει <strong>υποχρεωτικές παρακολουθήσεις από τις 2 έως και τις 13 Οκτωβρίου</strong>.
                 </p>
                 <p>
-                    Για συμμετοχή συμπληρώστε την παρακάτω φόρμα συμμετοχής ή
-                    απαντήστε τις ερωτήσεις στο σώμα ενός e-mail και στείλτε
-                    στο apply@okthess.gr
+                    Για συμμετοχή, διαβάστε τις <a href="http://okthess.gr/pdf/website-open-call.pdf" target="_blank">οδηγίες υποβολής</a> και συμπληρώστε την παρακάτω φόρμα συμμετοχής ή
+                    απαντήστε τις ερωτήσεις στο σώμα ενός e-mail και στείλτε στο apply@okthess.gr
                 </p>
-                <a href="http://okthess.gr/pdf/website-open-call.pdf" class="btn btn-primary">Πληροφορίες</a>
-                <h3>Φόρμα Συμμετοχής</h3>
-                <hr>
+
+                <h3>Application form</h3>
                 <form action="{% url 'main:apply' %}" method="post">
                     {% csrf_token %}
                     {{ form.non_field_errors }}
@@ -51,12 +43,9 @@
                             {{ field }}
                         </div>
                     {% endfor %}
-                    <button type="submit" class="btn btn-primary">Αποστολή</button>
+                    <button type="submit" class="btn-form">Αποστολή</button>
                 </form>
             </div>
         </div>
     </section>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 {% endblock %}

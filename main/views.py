@@ -1,15 +1,13 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib import messages
+from django.urls import reverse
 
-from .models import Team, Job, Mentor, Meetup, Coworking, Post, Event
+from .models import Team, Mentor, Meetup, Coworking, Post, Event
 from .forms import ApplicationForm
 
 
-def health(request):
-    return HttpResponse('Ok')
-
-def get_index(request):
+def index(request):
     featured_posts = Post.objects.filter(is_featured=True)
     events = Event.objects.all()
     return render(request, 'main/index.html', {
@@ -17,37 +15,64 @@ def get_index(request):
         'events': events,
     })
 
-def get_about(request):
+
+def about(request):
     return render(request, 'main/about.html', {
         'page_title': 'Σχετικά',
     })
 
-def get_teams(request):
-    teams = Team.objects.order_by('name')
-    jobs = Job.objects.all()
-    mentors = Mentor.objects.all()
-    coworkings = Coworking.objects.all()
-    meetups = Meetup.objects.all()
-    return render(request, 'main/teams.html', {
-        'page_title': 'Φιλοξενούμενες Ομάδες',
+
+def program_redir(request):
+    return redirect(reverse('main:program_teams'))
+
+
+def program_teams(request):
+    teams = Team.objects.filter(alumni=False).order_by('name')
+    return render(request, 'main/program-teams.html', {
         'teams': teams,
-        'jobs': jobs,
+    })
+
+
+def program_mentors(request):
+    mentors = Mentor.objects.order_by('name')
+    return render(request, 'main/program-mentors.html', {
         'mentors': mentors,
+    })
+
+
+def program_alumni(request):
+    teams = Team.objects.filter(alumni=True).order_by('name')
+    return render(request, 'main/program-alumni.html', {
+        'teams': teams,
+    })
+
+
+def events(request):
+    events = Event.objects.order_by('-date')[:10]
+    meetups = Meetup.objects.order_by('name')
+    return render(request, 'main/events.html', {
+        'events': events,
         'meetups': meetups,
-        'coworkings': coworkings,
     })
 
-def get_news(request):
-    posts = Post.objects.all()
-    return render(request, 'main/news.html', {
-        'posts': posts,
+
+def blog(request):
+    posts_list = Post.objects.order_by('-date')[:10]
+    return render(request, 'main/blog.html', {
+        'posts_list': posts_list,
     })
 
-def get_news_single(request, post_slug):
+
+def blog_post(request, post_slug):
     post = Post.objects.get(slug=post_slug)
     return render(request, 'main/post.html', {
         'post': post,
     })
+
+
+def contact(request):
+    return render(request, 'main/contact.html')
+
 
 def apply(request):
     if request.method == 'POST':
@@ -62,5 +87,6 @@ def apply(request):
         form = ApplicationForm()
         return render(request, 'main/apply.html', {'form': form})
 
-def contact(request):
-    return HttpResponseRedirect('/')
+
+def health(request):
+    return HttpResponse('Ok')

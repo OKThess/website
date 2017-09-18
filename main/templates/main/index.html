@@ -3,70 +3,122 @@
 {% load static %}
 
 {% block content %}
-    <section class="jumbotron">
-        <div class="jumbotron-cta">
-            <h1>Συνεργάτης στα πρώτα βήματα</h1>
-            <p>To OK!Thess παρέχει χώρο και τεχνική υποστήριξη σε ομάδες ανθρώπων με καινοτόμες ιδέες.</p>
-            <a href="#" class="btn btn-lg btn-cta">Apply now &raquo;</a>
-        </div>
-    </section>
-    <section class="container-fluid infocomponent">
+    <div class="container index-land">
         <div class="row">
-            <div class="col-md-4 col-md-offset-4">
-                <div class="infocomponent-main">
-                    <h2><strong>Τι κάνουμε</strong></h2>
-                    <p>
-                        Ο ευρύς στόχος του OK!Thess είναι η ουσιώδης συμβολή στην
-                        δημιουργία ενός οικοσυστήματος καινοτομίας που περιλαμβάνει
-                        όλους όσους είναι σε θέση και επιθυμούν να συμβάλλουν στην
-                        ανάπτυξη της καινοτομίας στην πόλη.
-                    </p>
-                    <br>
-                    <a class="btn btn-cta" href="http://okthess.gr/dev/about.html" role="button">Μάθε περισσότερα »</a>
+            <div class="col-md-5">
+                <h1>ΟΚ!Τhess</h1>
+                <h2>Your early stage partner</h2>
+                <p class="desc">
+                    OK!Thess provides space and technical support to teams of people
+                    with innovative ideas helping them to <strong>Validate a Business
+                    Model Fast</strong>, rather than hastily, and to <strong>Meet,
+                    Mix and Connect</strong> with like-minded peers.
+                </p>
+                <div id="mc_embed_signup">
+                    <form action="//okthess.us15.list-manage.com/subscribe/post?u=e5030558dd0a4f89aeed05a0d&amp;id=a3d8e08f2a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                            <div class="mc-field-group">
+                                <input type="text" value="" name="FNAME" class="input-small" id="mce-FNAME" placeholder="First name">
+                            </div>
+                            <div class="mc-field-group">
+                                <input type="email" value="" name="EMAIL" class="input-small" id="mce-EMAIL" placeholder="Email">
+                            </div>
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e5030558dd0a4f89aeed05a0d_a3d8e08f2a" tabindex="-1" value=""></div>
+                            <div class="clear">
+                                <input type="submit" value="Get in the loop!" name="subscribe" id="mc-embedded-subscribe" class="btn-yellow btn-small">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div onclick="plusDivs(-1)" class="slider-arrow-left">&#10094;</div>
+                <div onclick="plusDivs(1)" class="slider-arrow-right">&#10095;</div>
+                <div class="slider">
+                    <img src="{% static '/main/img/slider-1.jpg' %}" class="slider-img">
+                    <div class="slider-text">Community Events</div>
+                </div>
+                <div class="slider">
+                    <img src="{% static '/main/img/slider-2.jpg' %}" class="slider-img">
+                    <div class="slider-text">Mentoring Sessions</div>
+                </div>
+                <div class="slider">
+                    <img src="{% static '/main/img/slider-3.jpg' %}" class="slider-img">
+                    <div class="slider-text">Accelerator</div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container index-blog">
         <div class="row">
             {% for post in featured_posts %}
                 <div class="col-md-4 col-sm-4">
-                    <div class="media">
-                        <div class="media-left">
-                            <img src="{{ post.image }}" class="media-object">
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">{{ post.title }}</h3>
-                            <p>{{ post.teaser }}</p>
-                            <a href="{% url 'main:news_single' post.slug %}">Περισσότερα »</a>
-                        </div>
+                    <a href="{% url 'main:blog_post' post.slug %}" class="index-blog-title">
+                        <h3>{{ post.title }}</h3>
+                    </a>
+                    <div class="index-blog-img">
+                        <img src="{{ post.image }}" alt="post image">
                     </div>
+                    <p>{{ post.teaser }}</p>
+                    <a class="btn-blue" href="{% url 'main:blog_post' post.slug %}" role="button">
+                        <span class="glyphicon glyphicon-exclamation-sign"></span><strong>Read</strong> more »
+                    </a>
                 </div>
-            {% empty %}
-                <p>No featured news.</p>
             {% endfor %}
         </div>
-    </section>
-    <section class="section-events">
-        <div class="container">
-            <div class="row events text-center">
-                {% for event in events %}
-                    <div class="event">
-                        <div class="event-name">
-                            <a class="event-link" href="{{ event.link }}">{{ event.title }}</a>
-                        </div>
-                        <div class="event-date">{{ event.date }} - {{ event.time_start }} to {{ event.time_end }}</div>
-                            <div class="event-desc">{{ event.description }}</div>
-                        <hr>
+    </div>
+    <div class="container index-events">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <a class="btn-black" href="#" role="button">
+                    <span class="glyphicon glyphicon-calendar"></span>Upcoming Community <strong>Meetups</strong>
+                </a>
+                <div class="index-events-content">
+                    <div class="index-events-content-single">
+                        <a href="#" class="index-events-content-single-name">Python + "Tzatziki United"</a>
+                        <div class="index-events-content-single-date"><p>12-12-2012</p></div>
+                        <div class="index-events-content-single-desc"><p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</p></div>
                     </div>
-                {% empty %}
-                    <p>No events.</p>
-                {% endfor %}
+                    <div class="index-events-content-single">
+                        <a href="#" class="index-events-content-single-name">Python + "Tzatziki United"</a>
+                        <div class="index-events-content-single-date"><p>12-12-2012</p></div>
+                        <div class="index-events-content-single-desc"><p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</p></div>
+                    </div>
+                    <div class="index-events-content-single">
+                        <a href="#" class="index-events-content-single-name">Python + "Tzatziki United"</a>
+                        <div class="index-events-content-single-date"><p>12-12-2012</p></div>
+                        <div class="index-events-content-single-desc"><p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</p></div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="container text-center">
-            <a class="btn" href="http://okthess.gr/dev/thessaloniki-events.html" role="button">See all events »</a>
-        </div>
-    </section>
+    </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var x = document.getElementsByClassName('slider');
+            if (n > x.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = x.length;
+            }
+            var i = 0;
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = 'none';
+            }
+            x[slideIndex-1].style.display = 'block';
+        }
+    </script>
 {% endblock %}

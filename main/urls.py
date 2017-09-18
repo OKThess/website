@@ -1,4 +1,6 @@
+from django.conf import settings
 from django.conf.urls import url
+from django.conf.urls.static import static
 from django.contrib import admin
 
 from . import views
@@ -7,27 +9,34 @@ from . import views
 app_name = 'main'
 admin.site.site_header = 'OK!Thess administration'
 urlpatterns = [
-    # /health
-    url(r'^health/$', views.health, name='health'),
-
     # /
-    url(r'^$', views.get_index, name='index'),
+    url(r'^$', views.index, name='index'),
 
     # /about/
-    url(r'^about/$', views.get_about, name='about'),
+    url(r'^about/$', views.about, name='about'),
 
-    # /teams/
-    url(r'^teams/$', views.get_teams, name='teams'),
+    # /program/
+    url(r'^program/$', views.program_redir, name='program_redir'),
+    url(r'^program/teams/$', views.program_teams, name='program_teams'),
+    url(r'^program/mentors/$', views.program_mentors, name='program_mentors'),
+    url(r'^program/alumni/$', views.program_alumni, name='program_alumni'),
 
-    # /news/
-    url(r'^news/$', views.get_news, name='news'),
+    # /events/
+    url(r'^events/$', views.events, name='events'),
 
-    # eg. /news/the-first-blog-post
-    url(r'^news/(?P<post_slug>[^/]*)', views.get_news_single, name='news_single'),
+    # /blog/
+    url(r'^blog/$', views.blog, name='blog'),
+
+    # e.g. /blog/sample-post
+    url(r'^blog/(?P<post_slug>[^/]*)/$', views.blog_post, name='blog_post'),
+
+    # /contact/
+    url(r'^contact/$', views.contact, name='contact'),
 
     # /apply/
     url(r'^apply/$', views.apply, name='apply'),
 
-    # /contact/
-    url(r'^contact/$', views.contact, name='contact'),
-]
+    # /health
+    url(r'^health/$', views.health, name='health'),
+
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

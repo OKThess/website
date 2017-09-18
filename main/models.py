@@ -6,28 +6,28 @@ class Team(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
     url = models.URLField()
-    image_url = models.CharField(max_length=500)
+    image = models.ImageField(
+        upload_to='main/static/main/uploads/',
+        default='/static/main/img/logo.png',
+        max_length=250,
+    )
+    alumni = models.BooleanField(default=False)
 
     def __str__(self):
         return self.name
 
 
-class Job(models.Model):
-    team = models.ForeignKey(
-        Team,
-        on_delete=models.SET_NULL,
-        null=True,
-    )
-    title = models.CharField(max_length=100)
-    apply_url = models.URLField()
-
-    def __str__(self):
-        return self.title
-
-
 class Mentor(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
+    image = models.ImageField(
+        upload_to='main/static/main/uploads/',
+        default='/static/main/img/logo.png',
+        max_length=250,
+    )
+    github = models.URLField(null=True)
+    linkedin = models.URLField(null=True)
+    website = models.URLField(null=True)
 
     def __str__(self):
         return self.name
@@ -35,10 +35,36 @@ class Mentor(models.Model):
 
 class Meetup(models.Model):
     name = models.CharField(max_length=100)
+    link = models.URLField()
     description = models.TextField()
 
     def __str__(self):
         return self.name
+
+
+class Event(models.Model):
+    date = models.DateField()
+    title = models.CharField(max_length=200)
+    link = models.URLField()
+    time_start = models.TimeField()
+    time_end = models.TimeField()
+    organizer = models.CharField(max_length=200)
+    organizer_link = models.URLField()
+    description = models.TextField(blank=True)
+    image = models.ImageField(
+        upload_to='main/static/main/uploads/',
+        default='/static/main/img/logo.png',
+        max_length=250,
+    )
+    meetup = models.ForeignKey(
+        Meetup,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+    )
+
+    def __str__(self):
+        return self.title
 
 
 class Coworking(models.Model):
@@ -59,23 +85,13 @@ class Post(models.Model):
         null=True,
     )
     teaser = models.TextField()
-    image = models.ImageField(upload_to='main/static/main/uploads/', default='main/static/main/logo.png')
+    image = models.ImageField(
+        upload_to='main/static/main/uploads/',
+        default='/static/main/img/logo.png',
+        max_length=250,
+    )
     body = models.TextField()
     is_featured = models.BooleanField(default=False)
-
-    def __str__(self):
-        return self.title
-
-
-class Event(models.Model):
-    date = models.DateField()
-    title = models.CharField(max_length=200)
-    link = models.URLField()
-    time_start = models.TimeField()
-    time_end = models.TimeField()
-    organizer = models.CharField(max_length=200)
-    organizer_link = models.URLField()
-    description = models.TextField(blank=True)
 
     def __str__(self):
         return self.title

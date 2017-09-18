@@ -4,5 +4,5 @@ python:
 services:
   - postgresql
 cache: pip
-install: "pip install -r requirements.txt"
-script: python manage.py test
+install: pip install -r requirements.txt
+script: python -Wall manage.py test
