@@ -55,30 +55,20 @@
     </div>
     <div class="container index-blog">
         <div class="row">
-            <div class="col-md-4 col-sm-4">
-                <h3>Call for Startups</h3>
-                <div class="blog-pinned-img">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzmm1cJ29DuTotHpjIJh4Fl0tVlUvJvF_lQCO7vRIKwkNK11v05g" alt="Logo">
+            {% for post in featured_posts %}
+                <div class="col-md-4 col-sm-4">
+                    <a href="{% url 'main:blog_post' post.id %}" class="index-blog-title">
+                        <h3>{{ post.title }}</h3>
+                    </a>
+                    <div class="index-blog-img">
+                        <img src="{{ post.image }}" alt="post image">
+                    </div>
+                    <p>{{ post.teaser }}</p>
+                    <a class="btn-blue" href="{% url 'main:blog_post' post.id %}" role="button">
+                        <span class="glyphicon glyphicon-exclamation-sign"></span><strong>Read</strong> more »
+                    </a>
                 </div>
-                <p>Do you have a fresh idea and need some help to make it a business? OK!Thess is here to guide you through the process of making it. Fill in the application form until September the 13th, join us now!</p>
-                <a class="btn-blue" href="http://okthess.gr/eng/app.php" role="button"><span class="glyphicon glyphicon-exclamation-sign"></span><strong>Read</strong> more »</a>
-            </div>
-            <div class="col-md-4 col-sm-4">
-                <h3>We are Hiring</h3>
-                <div class="blog-pinned-img">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDrcA7QXTjbPBNiVLeS6QRmBDyN4rlV4yYM7soUjYmKM-peuMWug" alt="Logo">
-                </div>
-                <p>OK!Thess is constantly growing and is currently seeking for people able to cover the positions of Community/Event Manager, Program Manager/Coach and Caretaker. Applications deadline: August 21 2017.</p>
-                <a class="btn-red" href="http://okthess.gr/eng/news.html?showmodal=5" role="button"><span class="glyphicon glyphicon-exclamation-sign"></span><strong>Read</strong> more »</a>
-            </div>
-            <div class="col-md-4 col-sm-4">
-                <h3>re:publica Thessaloniki</h3>
-                <div class="blog-pinned-img">
-                    <a href="https://re-publica.com" title="re:publica connecting europe"><img src="https://re-publica.com/files/banner/rpEUR_Banner_300X125.gif" alt="re:publica connecting europe"></a>
-                </div>
-                <p>re:publica Thessaloniki is an exciting international conference about the Internet and Digital Society in Europe. It brings together participants to discuss the issues of the contemporary digital society.</p>
-                <a class="btn-yellow" href="http://okthess.gr/eng/news.html?showmodal=4" role="button"><span class="glyphicon glyphicon-exclamation-sign"></span><strong>Read</strong> more »</a>
-            </div>
+            {% endfor %}
         </div>
     </div>
     <div class="container index-events">
