@@ -7,7 +7,7 @@ from .models import Team, Mentor, Meetup, Coworking, Post, Event
 from .forms import ApplicationForm
 
 
-def get_index(request):
+def index(request):
     featured_posts = Post.objects.filter(is_featured=True)
     events = Event.objects.all()
     return render(request, 'main/index.html', {
@@ -15,33 +15,39 @@ def get_index(request):
         'events': events,
     })
 
-def get_about(request):
+
+def about(request):
     return render(request, 'main/about.html', {
         'page_title': 'Σχετικά',
     })
 
+
 def program_redir(request):
     return redirect(reverse('main:program_teams'))
 
-def get_program_teams(request):
+
+def program_teams(request):
     teams = Team.objects.filter(alumni=False).order_by('name')
     return render(request, 'main/program-teams.html', {
         'teams': teams,
     })
 
-def get_program_mentors(request):
+
+def program_mentors(request):
     mentors = Mentor.objects.order_by('name')
     return render(request, 'main/program-mentors.html', {
         'mentors': mentors,
     })
 
-def get_program_alumni(request):
+
+def program_alumni(request):
     teams = Team.objects.filter(alumni=True).order_by('name')
     return render(request, 'main/program-alumni.html', {
         'teams': teams,
     })
 
-def get_events(request):
+
+def events(request):
     events = Event.objects.order_by('-date')[:10]
     meetups = Meetup.objects.order_by('name')
     return render(request, 'main/events.html', {
@@ -49,14 +55,24 @@ def get_events(request):
         'meetups': meetups,
     })
 
-def get_blog(request):
-    return render(request, 'main/blog.html')
 
-def get_blog_post_sample(request):
-    return render(request, 'main/post.html')
+def blog(request):
+    posts_list = Post.objects.order_by('-date')[:10]
+    return render(request, 'main/blog.html', {
+        'posts_list': posts_list,
+    })
 
-def get_contact(request):
+
+def blog_post(request, post_id):
+    post = Post.objects.get(id=post_id)
+    return render(request, 'main/post.html', {
+        'post': post,
+    })
+
+
+def contact(request):
     return render(request, 'main/contact.html')
+
 
 def apply(request):
     if request.method == 'POST':
@@ -71,8 +87,6 @@ def apply(request):
         form = ApplicationForm()
         return render(request, 'main/apply.html', {'form': form})
 
-def contact(request):
-    return HttpResponseRedirect('/')
 
 def health(request):
     return HttpResponse('Ok')
