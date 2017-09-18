@@ -63,8 +63,8 @@ def blog(request):
     })
 
 
-def blog_post(request, post_id):
-    post = Post.objects.get(id=post_id)
+def blog_post(request, post_slug):
+    post = Post.objects.get(slug=post_slug)
     return render(request, 'main/post.html', {
         'post': post,
     })
