@@ -16,7 +16,7 @@
                                 <h4 class="blog-post-title">{{ post.title }}</h4>
                                 <h6 class="blog-post-meta text-muted">Αναρτήθηκε: {{ post.date }}</h6>
                                 <p>{{ post.teaser }}</p>
-                                <a class="btn-yellow" href="{% url 'main:blog_post' post.id %}" role="button">
+                                <a class="btn-yellow" href="{% url 'main:blog_post' post.slug %}" role="button">
                                     <span class="glyphicon glyphicon-exclamation-sign"></span><strong>Read</strong> more »
                                 </a>
                             </div>

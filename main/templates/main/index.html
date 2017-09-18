@@ -57,14 +57,14 @@
         <div class="row">
             {% for post in featured_posts %}
                 <div class="col-md-4 col-sm-4">
-                    <a href="{% url 'main:blog_post' post.id %}" class="index-blog-title">
+                    <a href="{% url 'main:blog_post' post.slug %}" class="index-blog-title">
                         <h3>{{ post.title }}</h3>
                     </a>
                     <div class="index-blog-img">
                         <img src="{{ post.image }}" alt="post image">
                     </div>
                     <p>{{ post.teaser }}</p>
-                    <a class="btn-blue" href="{% url 'main:blog_post' post.id %}" role="button">
+                    <a class="btn-blue" href="{% url 'main:blog_post' post.slug %}" role="button">
                         <span class="glyphicon glyphicon-exclamation-sign"></span><strong>Read</strong> more »
                     </a>
                 </div>

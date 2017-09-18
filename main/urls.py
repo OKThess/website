@@ -28,7 +28,7 @@ urlpatterns = [
     url(r'^blog/$', views.blog, name='blog'),
 
     # e.g. /blog/sample-post
-    url(r'^blog/(?P<post_id>[^/]*)/$', views.blog_post, name='blog_post'),
+    url(r'^blog/(?P<post_slug>[^/]*)/$', views.blog_post, name='blog_post'),
 
     # /contact/
     url(r'^contact/$', views.contact, name='contact'),
