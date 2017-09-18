@@ -52,10 +52,6 @@ h3 {
   box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
 }
 
-.apply {
-  max-width: 85%;
-}
-
 .navbar {
   font-weight: 100;
   width: 90%;
