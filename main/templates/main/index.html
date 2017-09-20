@@ -78,21 +78,15 @@
                     <span class="glyphicon glyphicon-calendar"></span>Upcoming Community <strong>Meetups</strong>
                 </a>
                 <div class="index-events-content">
-                    <div class="index-events-content-single">
-                        <a href="#" class="index-events-content-single-name">Python + "Tzatziki United"</a>
-                        <div class="index-events-content-single-date"><p>12-12-2012</p></div>
-                        <div class="index-events-content-single-desc"><p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</p></div>
-                    </div>
-                    <div class="index-events-content-single">
-                        <a href="#" class="index-events-content-single-name">Python + "Tzatziki United"</a>
-                        <div class="index-events-content-single-date"><p>12-12-2012</p></div>
-                        <div class="index-events-content-single-desc"><p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</p></div>
-                    </div>
-                    <div class="index-events-content-single">
-                        <a href="#" class="index-events-content-single-name">Python + "Tzatziki United"</a>
-                        <div class="index-events-content-single-date"><p>12-12-2012</p></div>
-                        <div class="index-events-content-single-desc"><p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</p></div>
-                    </div>
+                    {% for event in events_list %}
+                        <div class="index-events-content-single">
+                            <a href="#" class="index-events-content-single-name">{{ event.title }}</a>
+                            <div class="index-events-content-single-date"><p>{{ event.date }}</p></div>
+                            <div class="index-events-content-single-desc">
+                                <p>{{ event.description }}</p>
+                            </div>
+                        </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
