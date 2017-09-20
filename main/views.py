@@ -57,9 +57,16 @@ def events(request):
 
 
 def blog(request):
+    posts_list_all = Post.objects.all()
     posts_list = Post.objects.order_by('-date')[:10]
+    archives_list = []
+    for post in posts_list_all:
+        post_date = post.date.replace(day=1)
+        if not post_date in archives_list:
+            archives_list.append(post_date)
     return render(request, 'main/blog.html', {
         'posts_list': posts_list,
+        'archives_list': archives_list,
     })
 
 
@@ -67,6 +74,20 @@ def blog_post(request, post_slug):
     post = Post.objects.get(slug=post_slug)
     return render(request, 'main/post.html', {
         'post': post,
+    })
+
+
+def blog_archives(request, archive_year, archive_month):
+    posts_list_all = Post.objects.all()
+    posts_list = Post.objects.filter(date__year=archive_year, date__month=archive_month)
+    archives_list = []
+    for post in posts_list_all:
+        post_date = post.date.replace(day=1)
+        if not post_date in archives_list:
+            archives_list.append(post_date)
+    return render(request, 'main/blog-archive.html', {
+        'posts_list': posts_list,
+        'archives_list': archives_list,
     })
 
 
