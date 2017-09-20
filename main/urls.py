@@ -30,6 +30,9 @@ urlpatterns = [
     # e.g. /blog/sample-post
     url(r'^blog/(?P<post_slug>[^/]*)/$', views.blog_post, name='blog_post'),
 
+    # e.g. /blog/archives/2016/3
+    url(r'^blog/archives/(?P<archive_year>[^/]*)/(?P<archive_month>[^/]*)/$', views.blog_archives, name='blog_archives'),
+
     # /contact/
     url(r'^contact/$', views.contact, name='contact'),
 

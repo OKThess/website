@@ -475,10 +475,11 @@ h5 {
 }
 
 .blog-post {
+  display: inline-block;
+  width: 100%;
   margin-bottom: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  display: inline-block;
 }
 
 .blog-post-image {
