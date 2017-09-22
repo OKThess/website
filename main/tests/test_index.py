@@ -1,5 +1,6 @@
 from django.test import TestCase
 from django.urls import reverse
+from django.utils.translation import activate
 
 
 class IndexViewsTest(TestCase):
@@ -7,6 +8,7 @@ class IndexViewsTest(TestCase):
         """
         The index view.
         """
+        activate('en')
         url = reverse('main:index')
         response = self.client.get(url)
         self.assertContains(response, 'OK!Thess')
@@ -15,6 +17,7 @@ class IndexViewsTest(TestCase):
         """
         The about view.
         """
+        activate('en')
         url = reverse('main:about')
         response = self.client.get(url)
         self.assertContains(response, 'OK!Thess')
@@ -24,6 +27,7 @@ class IndexViewsTest(TestCase):
         """
         The contact view.
         """
+        activate('en')
         url = reverse('main:contact')
         response = self.client.get(url)
         self.assertContains(response, 'OK!Thess')
