@@ -106,8 +106,6 @@ def apply(request):
             return HttpResponse('Application form submission is invalid.')
     else:
         form = ApplicationForm()
-        return render(request, 'main/apply.html', {'form': form})
-
-
-def health(request):
-    return HttpResponse('Ok')
+        return render(request, 'main/apply.html', {
+            'form': form,
+        })
