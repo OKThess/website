@@ -1,5 +1,6 @@
 from django.test import TestCase
 from django.urls import reverse
+from django.utils.translation import activate
 
 from ..forms import ApplicationForm
 
@@ -48,6 +49,7 @@ class ApplicationFormTests(TestCase):
             'email': 'tester@okthess.gr',
             'name': 'Tester',
         }
+        activate('en')
         url = reverse('main:apply')
         response = self.client.post(url, form_data, follow=True)
         self.assertContains(response, 'Thank you for applying!')
