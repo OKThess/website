@@ -3,7 +3,6 @@ import datetime
 from django.test import TestCase
 from django.urls import reverse
 from django.core.files.uploadedfile import SimpleUploadedFile
-from django.utils.translation import activate
 
 from ..models import Event, Meetup
 
@@ -18,7 +17,6 @@ class EventsViewTests(TestCase):
             description = 'The best meetup',
             link = 'https://meetup.com/SKGNode',
         )
-        activate('en')
         url = reverse('main:events')
         response = self.client.get(url)
         self.assertContains(response, 'OK!Thess')
@@ -44,7 +42,6 @@ class EventsViewTests(TestCase):
                 content_type='image/jpeg'
             ),
         )
-        activate('en')
         url = reverse('main:events')
         response = self.client.get(url)
         self.assertContains(response, 'OK!Thess')

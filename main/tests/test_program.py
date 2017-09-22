@@ -1,7 +1,6 @@
 from django.test import TestCase
 from django.urls import reverse
 from django.core.files.uploadedfile import SimpleUploadedFile
-from django.utils.translation import activate
 
 from ..models import Team, Mentor, Meetup
 
@@ -21,7 +20,6 @@ class ProgramViewTests(TestCase):
                 content_type='image/jpeg'
             ),
         )
-        activate('en')
         url = reverse('main:program_teams')
         response = self.client.get(url)
         self.assertContains(response, 'OK!Thess')
@@ -45,7 +43,6 @@ class ProgramViewTests(TestCase):
             linkedin = 'https://www.linkedin.com/in/bill',
             website = 'https://billgates.com',
         )
-        activate('en')
         url = reverse('main:program_mentors')
         response = self.client.get(url)
         self.assertContains(response, 'OK!Thess')

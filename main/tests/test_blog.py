@@ -3,7 +3,6 @@ import datetime
 from django.test import TestCase
 from django.urls import reverse
 from django.contrib.auth.models import User
-from django.utils.translation import activate
 
 from ..models import Post
 
@@ -22,7 +21,6 @@ class BlogViewTests(TestCase):
             teaser = 'Teaser text',
             body = 'Post body, lots of words',
         )
-        activate('en')
         url = reverse('main:blog')
         response = self.client.get(url)
         self.assertContains(response, 'OK!Thess')
@@ -43,7 +41,6 @@ class BlogViewTests(TestCase):
             teaser = 'Teaser text',
             body = 'Post body, lots of words',
         )
-        activate('en')
         url = reverse('main:blog_post', args=[new_post.slug])
         response = self.client.get(url)
         self.assertContains(response, 'OK!Thess')
@@ -64,7 +61,6 @@ class BlogViewTests(TestCase):
             body = 'Post body, lots of words',
             is_featured = True,
         )
-        activate('en')
         url = reverse('main:index')
         response = self.client.get(url)
         self.assertContains(response, 'OK!Thess')
