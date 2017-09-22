@@ -1,18 +1,20 @@
 {% extends 'main/layout.html' %}
 
 {% load static %}
+{% load i18n %}
 
 {% block content %}
     <div class="container index-land">
         <div class="row">
             <div class="col-md-5">
                 <h1>ΟΚ!Τhess</h1>
-                <h2>Your early stage partner</h2>
+                <h2>{% trans 'Your early stage partner' %}</h2>
                 <p class="desc">
-                    OK!Thess provides space and technical support to teams of people
-                    with innovative ideas helping them to <strong>Validate a Business
-                    Model Fast</strong>, rather than hastily, and to <strong>Meet,
-                    Mix and Connect</strong> with like-minded peers.
+{% blocktrans %}OK!Thess provides space and technical support to teams of people
+with innovative ideas helping them to <strong>Validate a Business
+Model Fast</strong>, rather than hastily, and to <strong>Meet,
+Mix and Connect</strong> with like-minded peers.
+{% endblocktrans %}
                 </p>
                 <div id="mc_embed_signup">
                     <form action="//okthess.us15.list-manage.com/subscribe/post?u=e5030558dd0a4f89aeed05a0d&amp;id=a3d8e08f2a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -56,15 +58,15 @@
     <div class="container index-blog">
         <div class="row">
             {% for post in featured_posts %}
-                <div class="col-md-4 col-sm-4">
-                    <a href="{% url 'main:blog_post' post.slug %}" class="index-blog-title">
+                <div class="col-md-4 col-sm-4 index-blog-item">
+                    <a href="{% url 'main:blog_post' post.slug %}" class="index-blog-item-title">
                         <h3>{{ post.title }}</h3>
                     </a>
-                    <div class="index-blog-img">
+                    <div class="index-blog-item-img">
                         <img src="{{ post.image }}" alt="post image">
                     </div>
                     <p>{{ post.teaser }}</p>
-                    <a class="btn-blue" href="{% url 'main:blog_post' post.slug %}" role="button">
+                    <a class="index-blog-item-btn" href="{% url 'main:blog_post' post.slug %}" role="button">
                         <span class="glyphicon glyphicon-exclamation-sign"></span><strong>Read</strong> more »
                     </a>
                 </div>
@@ -78,21 +80,15 @@
                     <span class="glyphicon glyphicon-calendar"></span>Upcoming Community <strong>Meetups</strong>
                 </a>
                 <div class="index-events-content">
-                    <div class="index-events-content-single">
-                        <a href="#" class="index-events-content-single-name">Python + "Tzatziki United"</a>
-                        <div class="index-events-content-single-date"><p>12-12-2012</p></div>
-                        <div class="index-events-content-single-desc"><p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</p></div>
-                    </div>
-                    <div class="index-events-content-single">
-                        <a href="#" class="index-events-content-single-name">Python + "Tzatziki United"</a>
-                        <div class="index-events-content-single-date"><p>12-12-2012</p></div>
-                        <div class="index-events-content-single-desc"><p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</p></div>
-                    </div>
-                    <div class="index-events-content-single">
-                        <a href="#" class="index-events-content-single-name">Python + "Tzatziki United"</a>
-                        <div class="index-events-content-single-date"><p>12-12-2012</p></div>
-                        <div class="index-events-content-single-desc"><p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</p></div>
-                    </div>
+                    {% for event in events_list %}
+                        <div class="index-events-content-single">
+                            <a href="#" class="index-events-content-single-name">{{ event.title }}</a>
+                            <div class="index-events-content-single-date"><p>{{ event.date }}</p></div>
+                            <div class="index-events-content-single-desc">
+                                <p>{{ event.description }}</p>
+                            </div>
+                        </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>

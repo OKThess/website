@@ -136,6 +136,27 @@ h3 {
   margin-right: 4px;
 }
 
+.navbar-default .navbar-nav > .navbar-language > a {
+  background: #c7549c;
+  color: #fff;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 8px;
+  margin-left: 10px;
+}
+
+.navbar-default .navbar-nav > .navbar-language > a:hover,
+.navbar-default .navbar-nav > .navbar-language > a:focus {
+  background: #aa3c82;
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > li.navbar-language:nth-child(even):hover {
+  background: inherit;
+}
+
 .btn-red {
   display: inline-block;
   color: #fff;
@@ -314,8 +335,31 @@ h3 {
   padding-right: 5%;
 }
 
-.index-blog-img > img {
+.index-blog-item-img > img {
   width: 300px;
+}
+
+.index-blog-item-btn {
+  color: #fff;
+  background: #1c599b;
+  padding: 5px 15px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.index-blog-item:nth-child(1) .index-blog-item-btn {
+  color: #fff;
+  background: #1c599b;
+}
+
+.index-blog-item:nth-child(2) .index-blog-item-btn {
+  color: #fff;
+  background: #ee4031;
+}
+
+.index-blog-item:nth-child(3) .index-blog-item-btn {
+  color: #000;
+  background: #ecc732;
 }
 
 .index-events {
@@ -656,18 +700,29 @@ button.accordion.active:after {
 }
 
 .sidebar-module.sidebar-module-inset ul {
-  list-style: armenian;
-  padding-left: 5px;
+  list-style: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
 }
 
 .sidebar-module.sidebar-module-inset ul li {
-  padding: 5px 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+  border-bottom: 1px solid #441040;
 }
 
 .sidebar-module.sidebar-module-inset ul li a {
-  font-size: 13px !important;
+  font-size: 14px;
   text-decoration: none;
-  color: 808080;
+  font-weight: 300;
+}
+
+.sidebar-module.sidebar-module-inset .sidebar-meetups ul li a {
+  font-size: 14px;
+  text-decoration: none;
   font-weight: 500;
 }
 

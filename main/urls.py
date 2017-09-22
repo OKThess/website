@@ -39,7 +39,4 @@ urlpatterns = [
     # /apply/
     url(r'^apply/$', views.apply, name='apply'),
 
-    # /health
-    url(r'^health/$', views.health, name='health'),
-
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

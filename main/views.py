@@ -9,10 +9,10 @@ from .forms import ApplicationForm
 
 def index(request):
     featured_posts = Post.objects.filter(is_featured=True)
-    events = Event.objects.all()
+    events_list = Event.objects.order_by('-date')[:3]
     return render(request, 'main/index.html', {
         'featured_posts': featured_posts,
-        'events': events,
+        'events_list': events_list,
     })
 
 
@@ -106,8 +106,6 @@ def apply(request):
             return HttpResponse('Application form submission is invalid.')
     else:
         form = ApplicationForm()
-        return render(request, 'main/apply.html', {'form': form})
-
-
-def health(request):
-    return HttpResponse('Ok')
+        return render(request, 'main/apply.html', {
+            'form': form,
+        })

@@ -26,6 +26,22 @@ all business logic.
 This project uses PostgreSQL.
 
 
+## Create new i18n strings
+
+Add new strings (with `trans` and `blocktrans` on templates).
+Then run this to parse the new strings:
+```
+python3 manage.py makemessages -i venv -l el
+```
+
+Translate them in [`django.po`](/locale/el/LC_MESSAGES/django.po).
+
+Once finished, run this to compile them into the binary file named [`django.mo`](/locale/el/LC_MESSAGES/django.mo).
+```
+python3 manage.py compilemessages
+```
+
+
 ## Infrastructure
 
 This project is deployed to AWS Elastic Beanstalk using [Terraform](https://www.terraform.io/) (v0.10.2).

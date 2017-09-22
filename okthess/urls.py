@@ -14,9 +14,24 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url, include
+from django.conf.urls.i18n import i18n_patterns
 from django.contrib import admin
 
+
+def health(request):
+    return HttpResponse('Ok')
+
 urlpatterns = [
-    url(r'^', include('main.urls')),
+    # i18n switch route
+    url(r'^i18n/', include('django.conf.urls.i18n')),
+
+    # admin site
     url(r'^admin/', admin.site.urls),
+
+    # /health
+    url(r'^health/$', health, name='health'),
 ]
+
+urlpatterns += i18n_patterns(
+    url(r'^', include('main.urls')),
+)

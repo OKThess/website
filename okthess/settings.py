@@ -64,6 +64,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
 ]
 
 ROOT_URLCONF = 'okthess.urls'
@@ -190,3 +191,10 @@ if not DEBUG:
     # FIXME when SSL is live
     # SECURE_SSL_REDIRECT = True
     # SECURE_HSTS_SECONDS = 0
+
+
+# Internationalization and Translation
+# https://docs.djangoproject.com/en/1.11/topics/i18n
+LOCALE_PATHS = [
+    'locale',
+]

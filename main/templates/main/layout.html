@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 
 <!DOCTYPE html>
 <html lang="en" itemscope itemtype="https://schema.org/ProfessionalService">
@@ -75,6 +76,16 @@
                 <li><a href="{% url 'main:events' %}">Events</a></li>
                 <li><a href="{% url 'main:blog' %}">Blog</a></li>
                 <li><a href="{% url 'main:contact' %}">Contact</a></li>
+                <li class="navbar-language">
+                    {% csrf_token %}
+                    {% get_current_language as LANGUAGE_CODE %}
+                    <div class="hidden" id="current-language">{{ LANGUAGE_CODE }}</div>
+                    {% if LANGUAGE_CODE == 'en' %}
+                        <a href="#" id="switch-language" title="Switch to Greek language">gr</a>
+                    {% else %}
+                        <a href="#" id="switch-language" title="Switch to English language">en</a>
+                    {% endif %}
+                </li>
             </ul>
         </div>
         <hr>
@@ -152,7 +163,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <script>
+        // show footer and contact map
         function initMap() {
             var okthessLatLng = {
                 lat: 40.595311,
@@ -185,6 +198,49 @@
                 });
             }
         }
+    </script>
+
+    <script>
+        // get csrf from the html
+        function getCsrf() {
+            var inputElems = document.querySelectorAll('input');
+            var csrfToken = '';
+            for (i = 0; i < inputElems.length; ++i) {
+                if (inputElems[i].name === 'csrfmiddlewaretoken') {
+                    csrfToken = inputElems[i].value;
+                    break;
+                }
+            }
+            return csrfToken;
+        };
+
+        // change language button
+        var languageSwitch = document.getElementById('switch-language');
+        languageSwitch.addEventListener('click', function (event) {
+            event.preventDefault();
+
+            csrfToken = getCsrf();
+            var currentLang = document.getElementById('current-language').textContent;
+            var newLang = 'el';
+            if (currentLang === 'el') {
+                newLang = 'en';
+            }
+
+            $.ajax({
+                method: 'POST',
+                url: '/i18n/setlang/',
+                beforeSend: function (request) {
+                    request.setRequestHeader('X-CSRFToken', csrfToken);
+                },
+                data: {
+                    'language': newLang,
+                },
+            })
+                .done(function () {
+                    // redirect from eg. '/en/blog/' to '/blog' so Django will re-redirect to already set lang
+                    window.location.pathname = document.location.pathname.slice(3);
+                });
+        });
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7E2raajPS5-4vEpx-LBOV0XkItvWQRt8&signed_in=true&callback=initMap"></script>
 </body>

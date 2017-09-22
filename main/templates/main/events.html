@@ -33,7 +33,7 @@
             </div>
             <div class="col-md-3">
                 <h3>Hosted Meetups</h3>
-                <div class="sidebar-module sidebar-module-inset">
+                <div class="sidebar-module sidebar-module-inset sidebar-meetups">
                     <ul>
                         {% for meetup in meetups %}
                             <li><a href="{{ meetup.link }}" target="_blank">{{ meetup.name }}</a></li>
@@ -129,15 +129,6 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-
-                <div class="sidebar-module">
-                    <h3>Elsewhere</h3>
-                    <ul class="list-unstyled">
-                        <li><a href="https://github.com/OKThess">GitHub</a></li>
-                        <li><a href="https://twitter.com/okthess">Twitter</a></li>
-                        <li><a href="https://www.facebook.com/OKThess/">Facebook</a></li>
-                    </ul>
                 </div>
             </div>
         </div>
