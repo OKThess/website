@@ -136,6 +136,27 @@ h3 {
   margin-right: 4px;
 }
 
+.navbar-default .navbar-nav > .navbar-language > a {
+  background: #c7549c;
+  color: #fff;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 8px;
+  margin-left: 10px;
+}
+
+.navbar-default .navbar-nav > .navbar-language > a:hover,
+.navbar-default .navbar-nav > .navbar-language > a:focus {
+  background: #aa3c82;
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > li.navbar-language:nth-child(even):hover {
+  background: inherit;
+}
+
 .btn-red {
   display: inline-block;
   color: #fff;
