@@ -5,6 +5,7 @@ from django.contrib.auth.models import User
 class Team(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
+    description_el = models.TextField()
     url = models.URLField()
     image = models.ImageField(
         upload_to='main/static/main/uploads/',
@@ -20,6 +21,7 @@ class Team(models.Model):
 class Mentor(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
+    description_el = models.TextField()
     image = models.ImageField(
         upload_to='main/static/main/uploads/',
         default='/static/main/img/logo.png',
@@ -85,12 +87,14 @@ class Post(models.Model):
         null=True,
     )
     teaser = models.TextField()
+    teaser_el = models.TextField()
     image = models.ImageField(
         upload_to='main/static/main/uploads/',
         default='/static/main/img/logo.png',
         max_length=250,
     )
     body = models.TextField()
+    body_el = models.TextField()
     is_featured = models.BooleanField(default=False)
 
     def __str__(self):
