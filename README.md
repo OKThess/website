@@ -49,11 +49,13 @@ The infrastructure resources are described at the [`infra`](/infra) directory.
 Those resource assume the default VPC exists (including subnets, route tables, ACLs, internet gateway, etc).
 
 ```sh
-cd infra
+cd infra/
 terraform init  # initialize terraform project
 terraform validate -var-file terraform.tfvars  # validate tf files
 terraform fmt  # format tf files in the default, not very useful, way
 terraform plan  # see what will happen if you apply the infra now
 terraform plan -var-file production.tfvars  # plan against production secret variables
-terraform apply  # apply the infra now, aka make the current resources described in the tf files a reality
+
+# apply the infra now and make the current resources described in the tf files reality
+terraform apply -var-file production.tfvars
 ```
