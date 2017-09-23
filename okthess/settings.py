@@ -210,3 +210,28 @@ LOCALE_PATHS = [
 RAVEN_CONFIG = {
     'dsn': os.environ.get('SENTRY_DSN', ''),
 }
+
+
+# Logging
+# https://docs.djangoproject.com/en/1.11/topics/logging/
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+        'file': {
+            'class': 'logging.FileHandler',
+            'filename': 'debug.log',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console', 'file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+    },
+}
