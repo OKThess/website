@@ -25,3 +25,7 @@ variable "rds_password" {
 variable "secret_key" {
   description = "Defines Django secret key"
 }
+
+variable "sentry_dsn" {
+  description = "Defines Sentry data source name"
+}

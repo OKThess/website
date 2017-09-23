@@ -76,4 +76,10 @@ resource "aws_elastic_beanstalk_environment" "okthess_beanstalk_application_envi
     name      = "SECRET_KEY"
     value     = "${var.secret_key}"
   }
+
+  setting {
+    namespace = "aws:elasticbeanstalk:application:environment"
+    name      = "SENTRY_DSN"
+    value     = "${var.sentry_dsn}"
+  }
 }
