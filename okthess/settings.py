@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
-import os
+import os, raven
 
 from okthess import helpers
 
@@ -55,6 +55,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+
+if not DEBUG:
+    INSTALLED_APPS.append('raven.contrib.django.raven_compat')
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -195,6 +198,16 @@ if not DEBUG:
 
 # Internationalization and Translation
 # https://docs.djangoproject.com/en/1.11/topics/i18n
+
 LOCALE_PATHS = [
     'locale',
 ]
+
+
+# Sentry
+# https://docs.sentry.io/clients/python/integrations/django/
+
+RAVEN_CONFIG = {
+    'dsn': os.environ.get('SENTRY_DSN', ''),
+    'release': raven.fetch_git_sha(os.path.dirname(os.pardir)),
+}
