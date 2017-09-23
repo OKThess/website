@@ -34,7 +34,6 @@ def program_teams(request):
 
 
 def program_mentors(request):
-    1/0
     mentors = Mentor.objects.order_by('name')
     return render(request, 'main/program-mentors.html', {
         'mentors': mentors,
