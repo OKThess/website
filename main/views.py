@@ -47,6 +47,10 @@ def program_alumni(request):
     })
 
 
+def program_meetup(request):
+    return render(request, 'main/program-meetup.html')
+
+
 def events(request):
     events = Event.objects.order_by('-date')[:10]
     meetups = Meetup.objects.order_by('name')
