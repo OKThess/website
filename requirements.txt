@@ -6,10 +6,10 @@
 #
 awsebcli==3.10.6
 blessed==1.14.2           # via awsebcli
-botocore==1.7.16          # via awsebcli
+botocore==1.7.14          # via awsebcli
 cement==2.8.2             # via awsebcli
 colorama==0.3.7           # via awsebcli
-django==1.11.5
+django==1.11.4
 docker-py==1.7.2          # via awsebcli
 dockerpty==0.4.1          # via awsebcli
 docopt==0.6.2             # via awsebcli
