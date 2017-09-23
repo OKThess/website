@@ -224,7 +224,7 @@ LOGGING = {
         },
         'file': {
             'class': 'logging.FileHandler',
-            'filename': 'debug.log',
+            'filename': 'info.log',
         },
     },
     'loggers': {
