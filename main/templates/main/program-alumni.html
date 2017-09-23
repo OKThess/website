@@ -24,12 +24,17 @@
             </div>
             <div class="col-md-3">
                 <div class="program-sidebar">
-                    <div class="program-sidebar-tabs">
-                        <ul class="nav nav-pills nav-stacked program-sidebar-tabs-list">
-                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_teams' %}">Teams</a></li>
-                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_mentors' %}">Mentors</a></li>
-                            <li class="program-sidebar-tabs-elem active"><a href="{% url 'main:program_alumni' %}">Alumni</a></li>
-                        </ul>
+                    <div class="program-sidebar-meetup">
+                        <a href="{% url 'main:program_meetup' %}">
+                            <h4>
+                                OK!Thess Meetup
+                                <i class="glyphicon glyphicon-console"></i>
+                            </h4>
+                            <div class="program-sidebar-meetup-content">
+                                The meetup of OK!Thess is the new thing in town.
+                                Click here to learn more
+                            </div>
+                        </a>
                     </div>
                     <div class="program-sidebar-about">
                         <h4>About alumni</h4>
@@ -37,6 +42,13 @@
                             {% lorem 1 p %}
                         </div>
                         <br>
+                    </div>
+                    <div class="program-sidebar-tabs">
+                        <ul class="nav nav-pills nav-stacked program-sidebar-tabs-list">
+                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_teams' %}">Teams</a></li>
+                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_mentors' %}">Mentors</a></li>
+                            <li class="program-sidebar-tabs-elem active"><a href="{% url 'main:program_alumni' %}">Alumni</a></li>
+                        </ul>
                     </div>
                     <div class="program-sidebar-regulation">
                         <div class="separator"></div>
