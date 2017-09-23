@@ -20,6 +20,7 @@ urlpatterns = [
     url(r'^program/teams/$', views.program_teams, name='program_teams'),
     url(r'^program/mentors/$', views.program_mentors, name='program_mentors'),
     url(r'^program/alumni/$', views.program_alumni, name='program_alumni'),
+    url(r'^program/meetup/$', views.program_meetup, name='program_meetup'),
 
     # /events/
     url(r'^events/$', views.events, name='events'),

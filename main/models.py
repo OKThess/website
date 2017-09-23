@@ -7,6 +7,7 @@ class Team(models.Model):
     description = models.TextField()
     description_el = models.TextField()
     url = models.URLField()
+    industry = models.CharField(max_length=200)
     image = models.ImageField(
         upload_to='main/static/main/uploads/',
         default='/static/main/img/logo.png',
@@ -27,6 +28,13 @@ class Mentor(models.Model):
         default='/static/main/img/logo.png',
         max_length=250,
     )
+    email = models.EmailField()
+    phone = models.CharField(max_length=20, null=True, default=None)
+    current_title = models.CharField(max_length=100, null=True, default=None)
+    current_company = models.CharField(max_length=100, null=True, default=None)
+    expertise = models.CharField(max_length=200)
+    industry = models.CharField(max_length=200)
+    yearsExp = models.PositiveSmallIntegerField(null=True, default=None)
     github = models.URLField(null=True)
     linkedin = models.URLField(null=True)
     website = models.URLField(null=True)
