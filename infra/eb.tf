@@ -8,7 +8,7 @@ resource "aws_elastic_beanstalk_application" "okthess_beanstalk_application" {
 resource "aws_elastic_beanstalk_environment" "okthess_beanstalk_application_environment" {
   name                = "${var.application_name}"
   application         = "${aws_elastic_beanstalk_application.okthess_beanstalk_application.name}"
-  solution_stack_name = "64bit Amazon Linux 2017.03 v2.5.0 running Python 3.4"
+  solution_stack_name = "64bit Amazon Linux 2017.03 v2.5.1 running Python 3.4"
   tier                = "WebServer"
 
   setting {
