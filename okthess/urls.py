@@ -16,6 +16,7 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.conf.urls.i18n import i18n_patterns
 from django.contrib import admin
+from django.http import HttpResponse
 
 
 def health(request):
