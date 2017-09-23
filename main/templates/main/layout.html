@@ -239,10 +239,6 @@
                 .done(function () {
                     // redirect from eg. '/en/blog/' to '/blog' so Django will re-redirect to already set lang
                     window.location.pathname = document.location.pathname.slice(3);
-                })
-                .fail(function (jqXHR, textStatus) {
-                    console.log('jqXHR:', jqXHR);
-                    console.log('textStatus:', textStatus);
                 });
 
         });
