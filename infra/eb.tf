@@ -44,7 +44,7 @@ resource "aws_elastic_beanstalk_environment" "okthess_beanstalk_application_envi
   setting {
     namespace = "aws:elasticbeanstalk:cloudwatch:logs"
     name      = "StreamLogs"
-    value     = true
+    value     = "true"
   }
 
   setting {
