@@ -6,7 +6,7 @@ resource "aws_elastic_beanstalk_application" "okthess_beanstalk_application" {
 
 # Beanstalk Environment
 resource "aws_elastic_beanstalk_environment" "okthess_beanstalk_application_environment" {
-  name                = "production"
+  name                = "okthess-prod"
   application         = "${aws_elastic_beanstalk_application.okthess_beanstalk_application.name}"
   solution_stack_name = "64bit Amazon Linux 2017.03 v2.5.1 running Python 3.4"
   tier                = "WebServer"
