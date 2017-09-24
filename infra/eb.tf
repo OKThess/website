@@ -42,6 +42,24 @@ resource "aws_elastic_beanstalk_environment" "okthess_beanstalk_application_envi
   }
 
   setting {
+    namespace = "aws:elasticbeanstalk:cloudwatch:logs"
+    name      = "StreamLogs"
+    value     = true
+  }
+
+  setting {
+    namespace = "aws:elasticbeanstalk:cloudwatch:logs"
+    name      = "DeleteOnTerminate"
+    value     = false
+  }
+
+  setting {
+    namespace = "aws:elasticbeanstalk:cloudwatch:logs"
+    name      = "RetentionInDays"
+    value     = 3
+  }
+
+  setting {
     namespace = "aws:elasticbeanstalk:application:environment"
     name      = "RDS_USERNAME"
     value     = "${aws_db_instance.okthess_beanstalk_rds.username}"
