@@ -1,3 +1,5 @@
+from datetime import date
+
 from django.db import models
 from django.contrib.auth.models import User
 
@@ -72,6 +74,10 @@ class Event(models.Model):
         null=True,
         blank=True,
     )
+
+    @property
+    def is_old(self):
+        return date.today() > self.date
 
     def __str__(self):
         return self.title
