@@ -53,9 +53,10 @@ cd infra/
 terraform init  # initialize terraform project
 terraform validate -var-file terraform.tfvars  # validate tf files
 terraform fmt  # format tf files in the default, not very useful, way
-terraform plan  # see what will happen if you apply the infra now
-terraform plan -var-file production.tfvars  # plan against production secret variables
+
+# plan against production secret variables
+terraform plan -var-file production.tfvars -state=terraform.tfstate -refresh=true -out=terraform.tfplan
 
 # apply the infra now and make the current resources described in the tf files reality
-terraform apply -var-file production.tfvars
+terraform apply  -var-file production.tfvars -backup=terraform.tfstate.backup -state=terraform.tfstate terraform.tfplan
 ```
