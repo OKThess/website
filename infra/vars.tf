@@ -29,3 +29,11 @@ variable "secret_key" {
 variable "sentry_dsn" {
   description = "Defines Sentry data source name"
 }
+
+variable "aws_access_key_id" {
+  description = "Defines AWS access key id"
+}
+
+variable "aws_secret_access_key" {
+  description = "Defines AWS secret access key"
+}

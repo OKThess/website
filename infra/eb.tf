@@ -82,4 +82,16 @@ resource "aws_elastic_beanstalk_environment" "okthess_beanstalk_application_envi
     name      = "SENTRY_DSN"
     value     = "${var.sentry_dsn}"
   }
+
+  setting {
+    namespace = "aws:elasticbeanstalk:application:environment"
+    name      = "AWS_ACCESS_KEY_ID"
+    value     = "${var.aws_access_key_id}"
+  }
+
+  setting {
+    namespace = "aws:elasticbeanstalk:application:environment"
+    name      = "AWS_SECRET_ACCESS_KEY"
+    value     = "${var.aws_secret_access_key}"
+  }
 }
