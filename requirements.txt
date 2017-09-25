@@ -6,15 +6,17 @@
 #
 awsebcli==3.10.6
 blessed==1.14.2           # via awsebcli
-botocore==1.7.16          # via awsebcli
+boto3==1.4.7
+botocore==1.7.16          # via awsebcli, boto3, s3transfer
 cement==2.8.2             # via awsebcli
 colorama==0.3.7           # via awsebcli
-django==1.11.5
+django-s3direct==1.0.3
+django==1.11.5            # via django-s3direct
 docker-py==1.7.2          # via awsebcli
 dockerpty==0.4.1          # via awsebcli
 docopt==0.6.2             # via awsebcli
 docutils==0.14            # via botocore
-jmespath==0.9.3           # via botocore
+jmespath==0.9.3           # via boto3, botocore
 olefile==0.44             # via pillow
 pathspec==0.5.0           # via awsebcli
 pillow==4.2.1
@@ -24,6 +26,7 @@ pytz==2017.2              # via django
 pyyaml==3.12              # via awsebcli
 raven==6.2.1
 requests==2.9.1           # via awsebcli, docker-py
+s3transfer==0.1.11        # via boto3
 semantic_version==2.5.0   # via awsebcli
 six==1.11.0               # via blessed, docker-py, dockerpty, python-dateutil, websocket-client
 tabulate==0.7.5           # via awsebcli

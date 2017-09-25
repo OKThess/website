@@ -3,3 +3,5 @@ psycopg2
 Pillow
 awsebcli
 raven
+boto3
+django-s3direct
