@@ -1,0 +1,16 @@
+{
+    "Version": "2012-10-17",
+    "Id": "Policy1506352433449",
+    "Statement": [
+        {
+            "Sid": "Stmt1506352431494",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": [
+                "arn:aws:s3:::okthess-static/*",
+                "arn:aws:s3:::okthess-static"
+            ]
+        }
+    ]
+}
