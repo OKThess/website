@@ -692,7 +692,6 @@ button.accordion.active:after {
   max-height: 305px;
   background-color: #f5f5f5;
   border-radius: 4px;
-  overflow-y: scroll;
   margin-bottom: 30px;
 }
 
@@ -762,7 +761,6 @@ button.accordion.active:after {
 
 .program-main-company-desc {
   height: 100px;
-  overflow-y: scroll;
 }
 
 .program-sidebar-meetup {
