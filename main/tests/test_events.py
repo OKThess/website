@@ -2,7 +2,6 @@ import datetime
 
 from django.test import TestCase
 from django.urls import reverse
-from django.core.files.uploadedfile import SimpleUploadedFile
 from django.utils.translation import activate
 
 from ..models import Event, Meetup
@@ -38,11 +37,7 @@ class EventsViewTests(TestCase):
             organizer = 'OK!Thess',
             organizer_link = 'http://okthess.gr',
             description = 'The most interesting event.',
-            image = SimpleUploadedFile(
-                name='mock.jpg',
-                content=open('./main/tests/mock.jpg', 'rb').read(),
-                content_type='image/jpeg'
-            ),
+            image = 'https://s3-eu-central-1.amazonaws.com/okthess-static/sample.jpg',
         )
         activate('en')
         url = reverse('main:events')
