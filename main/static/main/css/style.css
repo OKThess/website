@@ -693,6 +693,7 @@ button.accordion.active:after {
   background-color: #f5f5f5;
   border-radius: 4px;
   margin-bottom: 30px;
+  overflow-y: scroll;
 }
 
 .sidebar-module.sidebar-module-inset ul {
