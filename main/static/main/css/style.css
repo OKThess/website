@@ -708,7 +708,11 @@ button.accordion.active:after {
   padding-bottom: 10px;
   padding-right: 5px;
   padding-left: 5px;
-  border-bottom: 1px solid #441040;
+  border-bottom: 1px solid #cacaca;
+}
+
+.sidebar-module.sidebar-module-inset ul li:last-child {
+  border-bottom: none;
 }
 
 .sidebar-module.sidebar-module-inset ul li a {
