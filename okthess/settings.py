@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    's3direct',
 ]
 
 if not DEBUG:
@@ -170,8 +171,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
-STATIC_URL = '/static/'
 STATIC_ROOT = 'static'
+STATIC_URL = '/static/'
 
 
 # Media (user uploaded content)
@@ -179,6 +180,23 @@ STATIC_ROOT = 'static'
 
 MEDIA_ROOT = os.getcwd()
 MEDIA_URL = '/uploads/'
+
+
+# s3direct - AWS S3 admin upload
+# https://github.com/bradleyg/django-s3direct
+
+AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID', '')
+AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY', '')
+AWS_STORAGE_BUCKET_NAME = 'okthess-static'
+S3DIRECT_REGION = 'eu-central-1'
+S3DIRECT_DESTINATIONS = {
+    'uploads': {
+        'key': 'uploads',
+        'allowed': ['image/jpeg', 'image/png'],
+        'cache_control': 'max-age=86400',
+        'content_length_range': (5000, 20000000),
+    }
+}
 
 
 # Security middleware
