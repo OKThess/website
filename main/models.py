@@ -2,6 +2,7 @@ from datetime import date
 
 from django.db import models
 from django.contrib.auth.models import User
+from s3direct.fields import S3DirectField
 
 
 class Team(models.Model):
@@ -10,11 +11,7 @@ class Team(models.Model):
     description_el = models.TextField()
     url = models.URLField()
     industry = models.CharField(max_length=200)
-    image = models.ImageField(
-        upload_to='main/static/main/uploads/',
-        default='/static/main/img/logo.png',
-        max_length=250,
-    )
+    image = S3DirectField(dest='uploads')
     alumni = models.BooleanField(default=False)
 
     def __str__(self):
@@ -25,11 +22,7 @@ class Mentor(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
     description_el = models.TextField()
-    image = models.ImageField(
-        upload_to='main/static/main/uploads/',
-        default='/static/main/img/logo.png',
-        max_length=250,
-    )
+    image = S3DirectField()
     email = models.EmailField()
     phone = models.CharField(max_length=20, null=True, default=None)
     current_title = models.CharField(max_length=100, null=True, default=None)
@@ -63,11 +56,7 @@ class Event(models.Model):
     organizer = models.CharField(max_length=200)
     organizer_link = models.URLField()
     description = models.TextField(blank=True)
-    image = models.ImageField(
-        upload_to='main/static/main/uploads/',
-        default='/static/main/img/logo.png',
-        max_length=250,
-    )
+    image = S3DirectField(dest='uploads')
     meetup = models.ForeignKey(
         Meetup,
         on_delete=models.SET_NULL,
@@ -102,11 +91,7 @@ class Post(models.Model):
     )
     teaser = models.TextField()
     teaser_el = models.TextField()
-    image = models.ImageField(
-        upload_to='main/static/main/uploads/',
-        default='/static/main/img/logo.png',
-        max_length=250,
-    )
+    image = S3DirectField(dest='uploads')
     body = models.TextField()
     body_el = models.TextField()
     is_featured = models.BooleanField(default=False)

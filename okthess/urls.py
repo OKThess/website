@@ -16,23 +16,21 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.conf.urls.i18n import i18n_patterns
 from django.contrib import admin
-from django.http import HttpResponse
 
-
-def health(request):
-    return HttpResponse('Ok')
 
 urlpatterns = [
+    url(r'^', include('main.urls')),
+
     # i18n switch route
     url(r'^i18n/', include('django.conf.urls.i18n')),
 
     # admin site
     url(r'^admin/', admin.site.urls),
 
-    # /health
-    url(r'^health/$', health, name='health'),
+    # s3direct for AWS S3 uploads from admin
+    url(r'^s3direct/', include('s3direct.urls')),
 ]
 
 urlpatterns += i18n_patterns(
-    url(r'^', include('main.urls')),
+    url(r'^', include('main.content_urls')),
 )

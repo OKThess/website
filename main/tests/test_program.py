@@ -1,6 +1,5 @@
 from django.test import TestCase
 from django.urls import reverse
-from django.core.files.uploadedfile import SimpleUploadedFile
 from django.utils.translation import activate
 
 from ..models import Team, Mentor, Meetup
@@ -15,11 +14,7 @@ class ProgramViewTests(TestCase):
             name = 'OK!Thess',
             description = 'The best team.',
             url = 'http://www.okthess.gr/',
-            image = SimpleUploadedFile(
-                name='mock.jpg',
-                content=open('./main/tests/mock.jpg', 'rb').read(),
-                content_type='image/jpeg'
-            ),
+            image = '',
         )
         activate('en')
         url = reverse('main:program_teams')
@@ -36,11 +31,7 @@ class ProgramViewTests(TestCase):
         new_mentor = Mentor.objects.create(
             name = 'Bill Gates',
             description = 'Microsoft Founder',
-            image = SimpleUploadedFile(
-                name='mock.jpg',
-                content=open('./main/tests/mock.jpg', 'rb').read(),
-                content_type='image/jpeg'
-            ),
+            image = 'https://s3-eu-central-1.amazonaws.com/okthess-static/sample.jpg',
             github = 'https://github.com/vasilis',
             linkedin = 'https://www.linkedin.com/in/bill',
             website = 'https://billgates.com',
