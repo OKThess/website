@@ -62,8 +62,8 @@ ENV/
 # Terraform
 infra/.terraform
 infra/.terraform.tfstate.lock.info
-infra/terraform.tfstate
-infra/terraform.tfstate.backup
+infra/terraform.tfstate*
+infra/terraform.tfplan
 infra/production.tfvars
 
 # Uploads from dev
