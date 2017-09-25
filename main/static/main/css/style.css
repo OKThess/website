@@ -319,8 +319,15 @@ h3 {
   padding-right: 5%;
 }
 
+.index-blog-item-para {
+  min-height: 100px;
+  margin-bottom: 20px;
+}
+
 .index-blog-item-img > img {
   width: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .index-blog-item-btn {
