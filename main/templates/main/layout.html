@@ -2,7 +2,8 @@
 {% load i18n %}
 
 <!DOCTYPE html>
-<html lang="en" itemscope itemtype="https://schema.org/ProfessionalService">
+{% get_current_language as LANGUAGE_CODE %}
+<html lang="{{ LANGUAGE_CODE }}" itemscope itemtype="https://schema.org/ProfessionalService">
 
 <head>
 	<meta charset="utf-8"/>
@@ -78,7 +79,6 @@
                 <li><a href="{% url 'main:contact' %}">Contact</a></li>
                 <li class="navbar-language">
                     {% csrf_token %}
-                    {% get_current_language as LANGUAGE_CODE %}
                     <div class="hidden" id="current-language">{{ LANGUAGE_CODE }}</div>
                     {% if LANGUAGE_CODE == 'en' %}
                         <a href="#" id="switch-language" title="Switch to Greek language">gr</a>
