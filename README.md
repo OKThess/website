@@ -58,5 +58,5 @@ terraform fmt  # format tf files in the default, not very useful, way
 terraform plan -var-file production.tfvars -state=terraform.tfstate -refresh=true -out=terraform.tfplan
 
 # apply the infra now and make the current resources described in the tf files reality
-terraform apply  -var-file production.tfvars -backup=terraform.tfstate.backup -state=terraform.tfstate terraform.tfplan
+terraform apply -var-file production.tfvars -backup=terraform.tfstate.backup -state=terraform.tfstate terraform.tfplan
 ```
