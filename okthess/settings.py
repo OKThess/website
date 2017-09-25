@@ -185,8 +185,8 @@ MEDIA_URL = '/uploads/'
 # s3direct - AWS S3 admin upload
 # https://github.com/bradleyg/django-s3direct
 
-AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID', '')
-AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY', '')
+AWS_ACCESS_KEY_ID = os.environ.get('OKTHESS_AWS_ACCESS_KEY_ID', '')
+AWS_SECRET_ACCESS_KEY = os.environ.get('OKTHESS_AWS_SECRET_ACCESS_KEY', '')
 AWS_STORAGE_BUCKET_NAME = 'okthess-static'
 S3DIRECT_REGION = 'eu-central-1'
 S3DIRECT_DESTINATIONS = {
