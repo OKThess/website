@@ -85,13 +85,13 @@ resource "aws_elastic_beanstalk_environment" "okthess_beanstalk_application_envi
 
   setting {
     namespace = "aws:elasticbeanstalk:application:environment"
-    name      = "AWS_ACCESS_KEY_ID"
-    value     = "${var.aws_access_key_id}"
+    name      = "OKTHESS_AWS_ACCESS_KEY_ID"
+    value     = "${var.okthess_aws_access_key_id}"
   }
 
   setting {
     namespace = "aws:elasticbeanstalk:application:environment"
-    name      = "AWS_SECRET_ACCESS_KEY"
-    value     = "${var.aws_secret_access_key}"
+    name      = "OKTHESS_AWS_SECRET_ACCESS_KEY"
+    value     = "${var.okthess_aws_secret_access_key}"
   }
 }
