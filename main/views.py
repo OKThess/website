@@ -27,16 +27,22 @@ def program_redir(request):
 
 
 def program_teams(request):
-    teams = Team.objects.filter(alumni=False).order_by('name')
+    teams_list = Team.objects.filter(alumni=False).order_by('name')
+    for team in teams_list:
+        if request.LANGUAGE_CODE == 'el':
+            team.description = team.description_el
     return render(request, 'main/program-teams.html', {
-        'teams': teams,
+        'teams_list': teams_list,
     })
 
 
 def program_mentors(request):
-    mentors = Mentor.objects.order_by('name')
+    mentors_list = Mentor.objects.order_by('name')
+    for mentor in mentors_list:
+        if request.LANGUAGE_CODE == 'el':
+            mentor.description = mentor.description_el
     return render(request, 'main/program-mentors.html', {
-        'mentors': mentors,
+        'mentors_list': mentors_list,
     })
 
 
@@ -61,8 +67,12 @@ def events(request):
 
 
 def blog(request):
-    posts_list_all = Post.objects.all()
     posts_list = Post.objects.order_by('-date')[:10]
+    for post in posts_list:
+        if request.LANGUAGE_CODE == 'el':
+            post.title = post.title_el
+            post.teaser = post.teaser_el
+    posts_list_all = Post.objects.all()
     archives_list = []
     for post in posts_list_all:
         post_date = post.date.replace(day=1)
@@ -76,14 +86,21 @@ def blog(request):
 
 def blog_post(request, post_slug):
     post = Post.objects.get(slug=post_slug)
+    if request.LANGUAGE_CODE == 'el':
+        post.title = post.title_el
+        post.body = post.body_el
     return render(request, 'main/post.html', {
         'post': post,
     })
 
 
 def blog_archives(request, archive_year, archive_month):
-    posts_list_all = Post.objects.all()
     posts_list = Post.objects.filter(date__year=archive_year, date__month=archive_month)
+    for post in posts_list:
+        if request.LANGUAGE_CODE == 'el':
+            post.title = post.title_el
+            post.teaser = post.teaser_el
+    posts_list_all = Post.objects.all()
     archives_list = []
     for post in posts_list_all:
         post_date = post.date.replace(day=1)

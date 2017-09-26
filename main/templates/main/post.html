@@ -11,7 +11,7 @@
                         <div class="post-content-meta text-muted">Αναρτήθηκε: {{ post.date }}</div>
                         <p class="post-content-body">
                             <img class="post-content-image" src="{{ post.image }}">
-                            {{ post.body }}
+                            {{ post.body|safe }}
                         </p>
                     </div>
                 </div>

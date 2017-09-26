@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     's3direct',
+    'ckeditor',
 ]
 
 if not DEBUG:
