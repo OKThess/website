@@ -10,7 +10,10 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
-import os, raven
+import os
+
+import raven
+from django.utils.translation import ugettext_lazy as _
 
 from okthess import helpers
 
@@ -168,6 +171,10 @@ USE_L10N = True
 
 USE_TZ = True
 
+LANGUAGES = [
+    ('el', _('Greek')),
+    ('en', _('English')),
+]
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
