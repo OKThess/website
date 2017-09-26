@@ -16,19 +16,19 @@ class BlogViewTests(TestCase):
         )
         new_post = Post.objects.create(
             date = datetime.datetime.now(),
-            title = 'New post title',
+            title_en = 'New post title',
             slug = 'new-post-slug',
             author = new_user,
-            teaser = 'Teaser text',
-            body = 'Post body, lots of words',
+            teaser_en = 'Teaser text',
+            body_en = 'Post body, lots of words',
         )
         activate('en')
         url = reverse('main:blog')
         response = self.client.get(url)
         self.assertContains(response, 'OK!Thess')
-        self.assertContains(response, new_post.title)
+        self.assertContains(response, new_post.title_en)
         self.assertContains(response, new_post.slug)
-        self.assertContains(response, new_post.teaser)
+        self.assertContains(response, new_post.teaser_en)
 
     def test_blog_post(self):
         new_user = User.objects.create(
@@ -37,18 +37,18 @@ class BlogViewTests(TestCase):
         )
         new_post = Post.objects.create(
             date = datetime.datetime.now(),
-            title = 'New post title',
+            title_en = 'New post title',
             slug = 'new-post-slug',
             author = new_user,
-            teaser = 'Teaser text',
-            body = 'Post body, lots of words',
+            teaser_en = 'Teaser text',
+            body_en = 'Post body, lots of words',
         )
         activate('en')
         url = reverse('main:blog_post', args=[new_post.slug])
         response = self.client.get(url)
         self.assertContains(response, 'OK!Thess')
-        self.assertContains(response, new_post.title)
-        self.assertContains(response, new_post.body)
+        self.assertContains(response, new_post.title_en)
+        self.assertContains(response, new_post.body_en)
 
     def test_featured_blog_post(self):
         new_user = User.objects.create(
@@ -57,16 +57,16 @@ class BlogViewTests(TestCase):
         )
         new_post = Post.objects.create(
             date = datetime.datetime.now(),
-            title = 'New post title',
+            title_en = 'New post title',
             slug = 'new-post-slug',
             author = new_user,
-            teaser = 'Teaser text',
-            body = 'Post body, lots of words',
+            teaser_en = 'Teaser text',
+            body_en = 'Post body, lots of words',
             is_featured = True,
         )
         activate('en')
         url = reverse('main:index')
         response = self.client.get(url)
         self.assertContains(response, 'OK!Thess')
-        self.assertContains(response, new_post.title)
-        self.assertContains(response, new_post.teaser)
+        self.assertContains(response, new_post.title_en)
+        self.assertContains(response, new_post.teaser_en)
