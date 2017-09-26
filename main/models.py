@@ -94,7 +94,7 @@ class Event(models.Model):
         return date.today() > self.date
 
     def __str__(self):
-        return self.title
+        return self.title_en
 
 
 class Coworking(models.Model):
