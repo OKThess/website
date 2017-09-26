@@ -5,3 +5,4 @@ awsebcli
 raven
 boto3
 django-s3direct
+django-ckeditor

@@ -10,8 +10,10 @@ boto3==1.4.7
 botocore==1.7.16          # via awsebcli, boto3, s3transfer
 cement==2.8.2             # via awsebcli
 colorama==0.3.7           # via awsebcli
+django-ckeditor==5.3.0
+django-js-asset==0.1.1    # via django-ckeditor
 django-s3direct==1.0.3
-django==1.11.5            # via django-s3direct
+django==1.11.5
 docker-py==1.7.2          # via awsebcli
 dockerpty==0.4.1          # via awsebcli
 docopt==0.6.2             # via awsebcli
