@@ -147,7 +147,7 @@ class Post(models.Model):
     en_objects = EnPostManager()
 
     def __str__(self):
-        return self.title
+        return self.title_en
 
 
 class Application(models.Model):
