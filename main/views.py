@@ -8,10 +8,21 @@ from .forms import ApplicationForm
 
 
 def index(request):
-    featured_posts = Post.objects.filter(is_featured=True)
+    if request.LANGUAGE_CODE == 'en':
+        featured_posts_list = Post.en_objects.filter(is_featured=True)
+        for post in featured_posts_list:
+            post.title = post.title_en
+            post.teaser = post.teaser_en
+            post.body = post.body_en
+    else:
+        featured_posts_list = Post.el_objects.filter(is_featured=True)
+        for post in featured_posts_list:
+            post.title = post.title_el
+            post.teaser = post.teaser_el
+            post.body = post.body_el
     events_list = Event.objects.order_by('-date')[:3]
     return render(request, 'main/index.html', {
-        'featured_posts': featured_posts,
+        'featured_posts_list': featured_posts_list,
         'events_list': events_list,
     })
 
@@ -27,9 +38,13 @@ def program_redir(request):
 
 
 def program_teams(request):
-    teams_list = Team.objects.filter(alumni=False).order_by('name')
-    for team in teams_list:
-        if request.LANGUAGE_CODE == 'el':
+    if request.LANGUAGE_CODE == 'en':
+        teams_list = Team.en_objects.filter(alumni=False).order_by('name')
+        for team in teams_list:
+            team.description = team.description_en
+    else:
+        teams_list = Team.el_objects.filter(alumni=False).order_by('name')
+        for team in teams_list:
             team.description = team.description_el
     return render(request, 'main/program-teams.html', {
         'teams_list': teams_list,
@@ -37,9 +52,13 @@ def program_teams(request):
 
 
 def program_mentors(request):
-    mentors_list = Mentor.objects.order_by('name')
-    for mentor in mentors_list:
-        if request.LANGUAGE_CODE == 'el':
+    if request.LANGUAGE_CODE == 'en':
+        mentors_list = Mentor.en_objects.order_by('name')
+        for mentor in mentors_list:
+            mentor.description = mentor.description_en
+    else:
+        mentors_list = Mentor.el_objects.order_by('name')
+        for mentor in mentors_list:
             mentor.description = mentor.description_el
     return render(request, 'main/program-mentors.html', {
         'mentors_list': mentors_list,
@@ -47,9 +66,16 @@ def program_mentors(request):
 
 
 def program_alumni(request):
-    teams = Team.objects.filter(alumni=True).order_by('name')
+    if request.LANGUAGE_CODE == 'en':
+        teams_list = Team.en_objects.filter(alumni=True).order_by('name')
+        for team in teams_list:
+            team.description = team.description_el
+    else:
+        teams_list = Team.el_objects.filter(alumni=True).order_by('name')
+        for team in teams_list:
+            team.description = team.description_el
     return render(request, 'main/program-alumni.html', {
-        'teams': teams,
+        'teams_list': teams_list,
     })
 
 
@@ -67,12 +93,30 @@ def events(request):
 
 
 def blog(request):
-    posts_list = Post.objects.order_by('-date')[:10]
-    for post in posts_list:
-        if request.LANGUAGE_CODE == 'el':
+    if request.LANGUAGE_CODE == 'en':
+        posts_list = Post.en_objects.order_by('-date')[:10]
+        for post in posts_list:
+            post.title = post.title_en
+            post.teaser = post.teaser_en
+            post.body = post.body_en
+    else:
+        posts_list = Post.el_objects.order_by('-date')[:10]
+        for post in posts_list:
             post.title = post.title_el
             post.teaser = post.teaser_el
-    posts_list_all = Post.objects.all()
+            post.body = post.body_el
+    if request.LANGUAGE_CODE == 'en':
+        posts_list_all = Post.en_objects.all()
+        for post in posts_list_all:
+            post.title = post.title_en
+            post.teaser = post.teaser_en
+            post.body = post.body_en
+    else:
+        posts_list_all = Post.el_objects.all()
+        for post in posts_list_all:
+            post.title = post.title_el
+            post.teaser = post.teaser_el
+            post.body = post.body_el
     archives_list = []
     for post in posts_list_all:
         post_date = post.date.replace(day=1)
@@ -85,9 +129,15 @@ def blog(request):
 
 
 def blog_post(request, post_slug):
-    post = Post.objects.get(slug=post_slug)
-    if request.LANGUAGE_CODE == 'el':
+    if request.LANGUAGE_CODE == 'en':
+        post = Post.en_objects.get(slug=post_slug)
+        post.title = post.title_en
+        post.teaser = post.teaser_en
+        post.body = post.body_en
+    else:
+        post = Post.el_objects.get(slug=post_slug)
         post.title = post.title_el
+        post.teaser = post.teaser_el
         post.body = post.body_el
     return render(request, 'main/post.html', {
         'post': post,
@@ -95,11 +145,18 @@ def blog_post(request, post_slug):
 
 
 def blog_archives(request, archive_year, archive_month):
-    posts_list = Post.objects.filter(date__year=archive_year, date__month=archive_month)
-    for post in posts_list:
-        if request.LANGUAGE_CODE == 'el':
+    if request.LANGUAGE_CODE == 'en':
+        posts_list = Post.en_objects.filter(date__year=archive_year, date__month=archive_month)
+        for post in posts_list:
+            post.title = post.title_en
+            post.teaser = post.teaser_en
+            post.body = post.body_en
+    else:
+        posts_list = Post.el_objects.filter(date__year=archive_year, date__month=archive_month)
+        for post in posts_list:
             post.title = post.title_el
             post.teaser = post.teaser_el
+            post.body = post.body_el
     posts_list_all = Post.objects.all()
     archives_list = []
     for post in posts_list_all:

@@ -58,7 +58,7 @@ Mix and Connect</strong> with like-minded peers.
     </div>
     <div class="container index-blog">
         <div class="row">
-            {% for post in featured_posts %}
+            {% for post in featured_posts_list %}
                 <div class="col-md-4 col-sm-4 index-blog-item">
                     <a href="{% url 'main:blog_post' post.slug %}" class="index-blog-item-title">
                         <h3>{{ post.title }}</h3>

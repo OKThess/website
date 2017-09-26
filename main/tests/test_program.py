@@ -12,7 +12,7 @@ class ProgramViewTests(TestCase):
         """
         new_team = Team.objects.create(
             name = 'OK!Thess',
-            description = 'The best team.',
+            description_en = 'The best team.',
             url = 'http://www.okthess.gr/',
             image = '',
         )
@@ -21,7 +21,7 @@ class ProgramViewTests(TestCase):
         response = self.client.get(url)
         self.assertContains(response, 'OK!Thess')
         self.assertContains(response, new_team.name)
-        self.assertContains(response, new_team.description)
+        self.assertContains(response, new_team.description_en)
         self.assertContains(response, new_team.url)
 
     def test_mentors(self):
@@ -30,7 +30,7 @@ class ProgramViewTests(TestCase):
         """
         new_mentor = Mentor.objects.create(
             name = 'Bill Gates',
-            description = 'Microsoft Founder',
+            description_en = 'Microsoft Founder',
             image = 'https://s3-eu-central-1.amazonaws.com/okthess-static/sample.jpg',
             github = 'https://github.com/vasilis',
             linkedin = 'https://www.linkedin.com/in/bill',
@@ -41,4 +41,4 @@ class ProgramViewTests(TestCase):
         response = self.client.get(url)
         self.assertContains(response, 'OK!Thess')
         self.assertContains(response, new_mentor.name)
-        self.assertContains(response, new_mentor.description)
+        self.assertContains(response, new_mentor.description_en)
