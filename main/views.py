@@ -55,7 +55,7 @@ def program_mentors(request):
     if request.LANGUAGE_CODE == 'en':
         mentors_list = Mentor.en_objects.order_by('name')
         for mentor in mentors_list:
-            mentor.description = mentor.description_el
+            mentor.description = mentor.description_en
     else:
         mentors_list = Mentor.el_objects.order_by('name')
         for mentor in mentors_list:
@@ -129,9 +129,15 @@ def blog(request):
 
 
 def blog_post(request, post_slug):
-    post = Post.objects.get(slug=post_slug)
-    if request.LANGUAGE_CODE == 'el':
+    if request.LANGUAGE_CODE == 'en':
+        post = Post.en_objects.get(slug=post_slug)
+        post.title = post.title_en
+        post.teaser = post.teaser_en
+        post.body = post.body_en
+    else:
+        post = Post.el_objects.get(slug=post_slug)
         post.title = post.title_el
+        post.teaser = post.teaser_el
         post.body = post.body_el
     return render(request, 'main/post.html', {
         'post': post,
@@ -139,11 +145,18 @@ def blog_post(request, post_slug):
 
 
 def blog_archives(request, archive_year, archive_month):
-    posts_list = Post.objects.filter(date__year=archive_year, date__month=archive_month)
-    for post in posts_list:
-        if request.LANGUAGE_CODE == 'el':
+    if request.LANGUAGE_CODE == 'en':
+        posts_list = Post.en_objects.filter(date__year=archive_year, date__month=archive_month)
+        for post in posts_list:
+            post.title = post.title_en
+            post.teaser = post.teaser_en
+            post.body = post.body_en
+    else:
+        posts_list = Post.el_objects.filter(date__year=archive_year, date__month=archive_month)
+        for post in posts_list:
             post.title = post.title_el
             post.teaser = post.teaser_el
+            post.body = post.body_el
     posts_list_all = Post.objects.all()
     archives_list = []
     for post in posts_list_all:
