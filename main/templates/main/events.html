@@ -7,7 +7,7 @@
     <div class="container-fluid events">
         <div class="row">
             <div class="col-md-9">
-                {% for event in events %}
+                {% for event in events_list %}
                     <div class="events-single {% if event.is_old %} events-single-dimmed {% endif %}">
                         <div class="row">
                             <div class="col-md-3">
@@ -47,92 +47,26 @@
 
                 <h3>Past Events</h3>
                 <div class="sidebar-module">
-                    <h5>2017</h5>
-                    <br>
-                    <button class="accordion">Winter</button>
-                    <div class="panel">
-                        <div class="panel-inner">
-                            <ul>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <button class="accordion">Spring</button>
-                    <div class="panel">
-                        <div class="panel-inner">
-                            <ul>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <button class="accordion">Summer</button>
-                    <div class="panel">
-                        <div class="panel-inner">
-                            <ul>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <button class="accordion">Fall</button>
-                    <div class="panel">
-                        <div class="panel-inner">
-                            <ul>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                                <li><a href="#" target="_blank">QA Testing United. Creating a Test Automation Framework</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    {% for year, year_obj in events_archive.items %}
+                        <h5>{{ year }}</h5>
+                        <br>
+                        {% for month_triad, triad_obj in year_obj.items %}
+                            <button class="accordion">{{ month_triad }}</button>
+                            <div class="panel">
+                                <div class="panel-inner">
+                                    <ul>
+                                        {% for event in triad_obj %}
+                                            <li>
+                                                <a href="{{ event.link }}" target="_blank">
+                                                    {{ event.title }}
+                                                </a>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    {% endfor %}
                 </div>
             </div>
         </div>
