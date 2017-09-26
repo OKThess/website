@@ -3,6 +3,7 @@ from datetime import date
 from django.db import models
 from django.contrib.auth.models import User
 from s3direct.fields import S3DirectField
+from ckeditor.fields import RichTextField
 
 
 class Team(models.Model):
@@ -83,6 +84,7 @@ class Coworking(models.Model):
 class Post(models.Model):
     date = models.DateField()
     title = models.CharField(max_length=200)
+    title_el = models.CharField(max_length=200)
     slug = models.CharField(max_length=100)
     author = models.ForeignKey(
         User,
@@ -92,8 +94,8 @@ class Post(models.Model):
     teaser = models.TextField()
     teaser_el = models.TextField()
     image = S3DirectField(dest='uploads')
-    body = models.TextField()
-    body_el = models.TextField()
+    body = RichTextField()
+    body_el = RichTextField()
     is_featured = models.BooleanField(default=False)
 
     def __str__(self):
