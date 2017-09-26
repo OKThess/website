@@ -1,3 +1,5 @@
+from collections import OrderedDict
+
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib import messages
@@ -84,11 +86,26 @@ def program_meetup(request):
 
 
 def events(request):
-    events = Event.objects.order_by('-date')[:10]
+    events_list = Event.objects.order_by('-date')[:10]
+    events_list_all = Event.objects.all()
+    events_archive = {}
+    for event in events_list_all:
+        if event.date.year not in events_archive:
+            events_archive[event.date.year] = {}
+        if event.date.month >= 1 and event.date.month <= 3:
+            events_archive[event.date.year].setdefault('Jan-Feb-Mar', []).append(event)
+        elif event.date.month >= 4 and event.date.month <= 6:
+            events_archive[event.date.year].setdefault('Apr-May-Jun', []).append(event)
+        elif event.date.month >= 7 and event.date.month <= 9:
+            events_archive[event.date.year].setdefault('Jul-Aug-Sep', []).append(event)
+        elif event.date.month >= 10 and event.date.month <= 12:
+            events_archive[event.date.year].setdefault('Oct-Nov-Dev', []).append(event)
+    events_archive = OrderedDict(reversed(sorted(events_archive.items())))
     meetups = Meetup.objects.order_by('name')
     return render(request, 'main/events.html', {
-        'events': events,
+        'events_list': events_list,
         'meetups': meetups,
+        'events_archive': events_archive,
     })
 
 
