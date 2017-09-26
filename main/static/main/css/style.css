@@ -662,29 +662,21 @@ button.accordion.active:after {
 }
 
 .panel {
-  padding: 2px 18px;
-  background-color: #fff;
-  max-height: 0;
   overflow: hidden;
+  border: none;
+  max-height: 0;
   transition: max-height 0.2s ease-out;
+}
+
+.panel > .panel-inner {
+  padding: 20px;
+  border: 1px solid #eee;
 }
 
 /* sidebar modules for boxing content */
 .sidebar-module {
   padding: 0px;
   margin: 0px;
-}
-
-.sidebar-module > .panel {
-  padding-top: 0;
-  padding-bottom: 0px;
-  padding-left: 0;
-  padding-right: 20px;
-  border: none;
-}
-
-.sidebar-module > .panel > .panel-inner {
-  padding-top: 20px;
 }
 
 .sidebar-module-inset {
@@ -696,14 +688,14 @@ button.accordion.active:after {
   overflow-y: scroll;
 }
 
-.sidebar-module.sidebar-module-inset ul {
+.sidebar-module-inset ul {
   list-style: none;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 5px;
 }
 
-.sidebar-module.sidebar-module-inset ul li {
+.sidebar-module-inset ul li {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 5px;
@@ -711,17 +703,17 @@ button.accordion.active:after {
   border-bottom: 1px solid #cacaca;
 }
 
-.sidebar-module.sidebar-module-inset ul li:last-child {
+.sidebar-module-inset ul li:last-child {
   border-bottom: none;
 }
 
-.sidebar-module.sidebar-module-inset ul li a {
+.sidebar-module-inset ul li a {
   font-size: 14px;
   text-decoration: none;
   font-weight: 300;
 }
 
-.sidebar-module.sidebar-module-inset .sidebar-meetups ul li a {
+.sidebar-module-inset .sidebar-meetups ul li a {
   font-size: 14px;
   text-decoration: none;
   font-weight: 500;
@@ -731,6 +723,11 @@ button.accordion.active:after {
 .sidebar-module-inset ul:last-child,
 .sidebar-module-inset ol:last-child {
   margin-bottom: 0;
+}
+
+.sidebar-module .panel ul {
+  list-style-type: circle;
+  padding-left: 35px;
 }
 
 /* program tabs */
