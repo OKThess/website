@@ -186,6 +186,7 @@ def blog_archives(request, archive_year, archive_month):
     return render(request, 'main/blog-archive.html', {
         'posts_list': posts_list,
         'archives_list': archives_list,
+        'archive_year': archive_year,
     })
 
 
