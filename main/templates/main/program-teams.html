@@ -8,14 +8,25 @@
             <div class="col-md-9">
                 <div class="program-main">
                     <h1>Hosted Teams</h1>
-                    <div style="margin-bottom: 40px;"></div>
                     <div class="row">
+                        <div class="col-md-12">
+                            <div class="program-main-filter">
+                                <button class="btn-simple" id="industry-filter">
+                                    Filter industry
+                                    <i class="glyphicon glyphicon-th"></i>
+                                </button>
+                                <div class="program-main-filter-industries hidden" id="industry-filter-container">
+                                    <!-- <div class="program-main-filter-industries-item">sample industry</div> -->
+                                </div>
+                            </div>
+                        </div>
                         {% for team in teams_list %}
                             <div class="col-md-4 program-main-company">
                                 <div class="program-main-company-image">
                                     <a href="{{ team.link }}"><img src="{{ team.image }}" alt="{{ team.name }} logo"></a>
                                 </div>
                                 <div class="program-main-company-name"><a href="{{ team.link }}" >{{ team.name }}</a></div>
+                                <div class="program-main-company-industry hidden">{{ team.industry }}</div>
                                 <p class="program-main-company-desc">{{ team.description }}</p>
                             </div>
                         {% endfor %}
@@ -61,4 +72,55 @@
             </div>
         </div>
     </div>
+    <script>
+        // make button to show/hide industries
+        var filterBtn = document.getElementById('industry-filter');
+        filterBtn.addEventListener('click', function (event) {
+            document.getElementById('industry-filter-container').classList.toggle('hidden');
+        });
+
+        // get values of all teams
+        var industriesElems = document.querySelectorAll('.program-main-company-industry');
+        var industriesValues = [];
+        var i = 0;
+        for (i = 0; i < industriesElems.length; i++) {
+            var value = industriesElems[i].innerText;
+            if (industriesValues.indexOf(value) === -1) {
+                industriesValues.push(value);
+            }
+        }
+
+        var industriesContainerElem = document.getElementById('industry-filter-container');
+        industriesValues.forEach(function (item) {
+
+            // create industry clickable element
+            var newIndustryElem = document.createElement('div');
+            newIndustryElem.classList.add('program-main-filter-industries-item');
+
+            // add content to the industry clickable element
+            var newIndustryElemContent = document.createTextNode(item);
+            newIndustryElem.appendChild(newIndustryElemContent);
+
+            // add event listener to industry clickable element
+            newIndustryElem.addEventListener('click', function (event) {
+                var targetElem = event.target;
+                var industry = event.target.innerText;
+                var industriesElems = document.querySelectorAll('.program-main-company-industry');
+                var i = 0;
+                for (i = 0; i < industriesElems.length; i++) {
+                    if (industriesElems[i].innerText === industry) {
+                        if (industriesElems[i].parentNode.classList.contains('hidden')) {
+                            targetElem.style.backgroundColor = '#fff';
+                        } else {
+                            targetElem.style.backgroundColor = '#eee';
+                        }
+                        industriesElems[i].parentNode.classList.toggle('hidden');
+                    }
+                }
+            });
+
+            // add industry element in industries container element
+            industriesContainerElem.appendChild(newIndustryElem);
+        });
+    </script>
 {% endblock %}
