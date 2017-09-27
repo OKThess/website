@@ -579,8 +579,10 @@ h6.blog-post-meta {
 }
 
 .post-content-image {
-  float: right;
   width: 300px;
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 20px;
 }
 
 /* events */
