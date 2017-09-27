@@ -95,19 +95,34 @@ address > abbr {
   color: #fff
 }
 
-.navbar-default .navbar-nav > .active > a {
+.navbar-default .navbar-nav > li:nth-child(odd).active > a {
   color: #000;
   background-color: #f9d94f;
 }
 
-.navbar-default .navbar-nav > .active > a:hover {
+.navbar-default .navbar-nav > li:nth-child(even).active > a {
+  color: #fff;
+  background-color: #1c599b;
+}
+
+.navbar-default .navbar-nav > li:nth-child(odd).active > a:hover {
   color: #000;
   background-color: #f9d94f;
 }
 
-.navbar-default .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav > li:nth-child(even).active > a:hover {
+  color: #fff;
+  background-color: #1c599b;
+}
+
+.navbar-default .navbar-nav > li:nth-child(odd).active > a:focus {
   color: #000;
   background-color: #f9d94f;
+}
+
+.navbar-default .navbar-nav > li:nth-child(even).active > a:focus {
+  color: #fff;
+  background-color: #1c599b;
 }
 
 .dropdown-menu > li > a {
