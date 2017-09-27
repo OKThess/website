@@ -11,9 +11,9 @@ class ProgramViewTests(TestCase):
         The program_teams view.
         """
         new_team = Team.objects.create(
-            name = 'OK!Thess',
+            name = 'Best Team',
             description_en = 'The best team.',
-            url = 'http://www.okthess.gr/',
+            url = 'http://best.team/',
             image = '',
         )
         activate('en')

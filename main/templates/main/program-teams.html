@@ -23,9 +23,9 @@
                         {% for team in teams_list %}
                             <div class="col-md-4 program-main-company">
                                 <div class="program-main-company-image">
-                                    <a href="{{ team.link }}"><img src="{{ team.image }}" alt="{{ team.name }} logo"></a>
+                                    <a href="{{ team.url }}"><img src="{{ team.image }}" alt="{{ team.name }} logo"></a>
                                 </div>
-                                <div class="program-main-company-name"><a href="{{ team.link }}" >{{ team.name }}</a></div>
+                                <div class="program-main-company-name"><a href="{{ team.url }}" >{{ team.name }}</a></div>
                                 <div class="program-main-company-industry hidden">{{ team.industry }}</div>
                                 <p class="program-main-company-desc">{{ team.description }}</p>
                             </div>
