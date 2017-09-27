@@ -245,6 +245,19 @@
                     window.location.pathname = document.location.pathname.slice(3);
                 });
         });
+
+        // test other language if exists, if not hide the switch button
+        var langCode = "{{ LANGUAGE_CODE }}";
+        var newLangCode = 'en';
+        if (langCode === 'en') {
+            var newLangCode = 'el';
+        }
+        var currentPath = document.location.pathname.slice(3);
+        var testLangPath = '/' + newLangCode + currentPath;
+        $.ajax(testLangPath)
+            .fail(function () {
+                languageSwitch.classList.add('hidden');
+            });
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7E2raajPS5-4vEpx-LBOV0XkItvWQRt8&signed_in=true&callback=initMap"></script>
 </body>
