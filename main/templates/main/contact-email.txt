@@ -1,0 +1,14 @@
+This email contains a contact form submission from okthess.gr.
+
+===
+
+From:
+{{ name }} <{{ email }}>
+
+Message:
+{{ message }}
+
+===
+
+Kisses,
+OK!Thess Robot
