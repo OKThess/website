@@ -1,7 +1,6 @@
 {% extends 'main/layout.html' %}
 
 {% load static %}
-{% load app_filters %}
 
 {% block title %}Events | OK!Thess{% endblock %}
 
@@ -13,7 +12,7 @@
                     <div class="events-single {% if event.is_old %} events-single-dimmed {% endif %}">
                         <div class="row">
                             <div class="col-md-3">
-                                <a href="{{ event.link }}"><img src="{{ event.image|prepend_media }}"></a>
+                                <a href="{{ event.link }}"><img src="{{ event.image }}"></a>
                             </div>
                             <div class="col-md-9">
                                 <div class="events-single-data">
