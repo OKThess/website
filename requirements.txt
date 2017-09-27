@@ -4,7 +4,7 @@
 #
 #    pip-compile --output-file requirements.txt requirements.in
 #
-awsebcli==3.10.6
+awsebcli==3.11.0
 blessed==1.14.2           # via awsebcli
 boto3==1.4.7
 botocore==1.7.16          # via awsebcli, boto3, s3transfer
