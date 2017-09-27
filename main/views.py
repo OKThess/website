@@ -4,9 +4,12 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib import messages
 from django.urls import reverse
+from django.core.mail import send_mail
+from django.template.loader import render_to_string
 
+from okthess import settings
 from .models import Team, Mentor, Meetup, Coworking, Post, Event
-from .forms import ApplicationForm
+from .forms import ApplicationForm, ContactForm
 
 
 def index(request):
@@ -187,7 +190,26 @@ def blog_archives(request, archive_year, archive_month):
 
 
 def contact(request):
-    return render(request, 'main/contact.html')
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            content_vars = {
+                'name': form.cleaned_data['name'],
+                'email': form.cleaned_data['email'],
+                'message': form.cleaned_data['message'],
+            }
+            send_mail(
+                'Contact form submission from okthess.gr',
+                render_to_string('main/contact-email.txt', content_vars),
+                settings.DEFAULT_FROM_EMAIL,
+                [settings.CONTACT_TO_EMAIL],
+            )
+            messages.info(request, "Thank you for contacting us! We'll answer ASAP.")
+            return HttpResponseRedirect(reverse('main:contact'))
+        else:
+            return HttpResponse('Contact form is invalid.')
+    else:
+        return render(request, 'main/contact.html')
 
 
 def apply(request):
@@ -196,7 +218,7 @@ def apply(request):
         if form.is_valid():
             form.save()
             messages.info(request, 'Thank you for applying!')
-            return HttpResponseRedirect('/apply')
+            return HttpResponseRedirect(reverse('main:apply'))
         else:
             return HttpResponse('Application form submission is invalid.')
     else:
