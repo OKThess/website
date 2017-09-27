@@ -207,6 +207,7 @@ S3DIRECT_DESTINATIONS = {
         'key': 'uploads',
         'allowed': ['image/jpeg', 'image/png'],
         'cache_control': 'max-age=86400',
+        'content_disposition': 'inline',
         'content_length_range': (5000, 20000000),
     }
 }
