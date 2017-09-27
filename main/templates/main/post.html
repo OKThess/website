@@ -29,6 +29,17 @@
     <meta name="twitter:image:src" content="{{ post.image }}">
 {% endblock %}
 
+{% block comments %}
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/gx_GR/sdk.js#xfbml=1&version=v2.10&appId=XXXXX";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+{% endblock %}
+
 {% block content %}
     <div class="container post">
         <div class="row">
@@ -47,6 +58,7 @@
                             <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=okthess.gr{% url 'main:blog_post' post.slug %}&title={{ post.title }}&summary={{ post.title }} okthess.gr{% url 'main:blog_post' post.slug %} {{ post.teaser }}&source=okthess.gr{% url 'main:blog_post' post.slug %}" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="{% static '/main/img/social-share/linkedin.svg' %}"></a></li>
                             <li><a href="mailto:?subject={{ post.title }}&body={{ post.teaser }} : okthess.gr{% url 'main:blog_post' post.slug %}" target="_blank" title="Send email"><img alt="Send email" src="{% static '/main/img/social-share/email.svg' %}"></a></li>
                         </ul>
+                        <div class="fb-comments" data-href="{{ url 'main:blog_post' post.slug }}" data-width="100%" data-numposts="5"></div>
                     </div>
                 </div>
             </div>
