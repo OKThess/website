@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="{% static '/main/img/favicon.png' %}" type="image/png" sizes="32x32">
 
-    <title>OK!Thess | {{ page_title|default:"Thessaloniki's Innovation Ecosystem" }}</title>
+    <title>{% block title %}OK!Thess | Thessaloniki's Innovation Ecosystem{% endblock %}</title>
 
 	<meta http-equiv="Content-Type" content="text/html">
 	<meta name="description" content="OK!Thess provides space and technical support to teams with innovative ideas.">
@@ -22,18 +22,22 @@
 	<meta itemprop="description" content="OK!Thess provides space and technical support to teams with innovative ideas.">
 	<meta itemprop="image" content="https://s3.eu-central-1.amazonaws.com/okthess-static/uploads/logo.png">
 
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="@okthess">
-	<meta name="twitter:creator" content="@ntemposd">
-	<meta name="twitter:title" content="OK!Thess">
-	<meta name="twitter:description" content="OK!Thess provides space and technical support to teams with innovative ideas.">
-	<meta name="twitter:image" content="https://s3.eu-central-1.amazonaws.com/okthess-static/uploads/logo.png">
+    {% block og %}
+        <meta property="og:title" content="OK!Thess">
+        <meta property="og:description" content="OK!Thess provides space and technical support to teams with innovative ideas.">
+        <meta property="og:url" content="http://okthess.gr">
+        <meta property="og:image" content="https://s3.eu-central-1.amazonaws.com/okthess-static/uploads/logo.png">
+        <meta property="og:type" content="website">
+    {% endblock %}
 
-	<meta property="og:title" content="ΟΚ!Thess">
-	<meta property="og:description" content="OK!Thess provides space and technical support to teams with innovative ideas.">
-	<meta property="og:url" content="http://okthess.gr">
-	<meta property="og:image" content="https://s3.eu-central-1.amazonaws.com/okthess-static/uploads/logo.png">
-	<meta property="og:type" content="website">
+    {% block twitter %}
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@okthess">
+        <meta name="twitter:creator" content="@ntemposd">
+        <meta name="twitter:title" content="OK!Thess">
+        <meta name="twitter:description" content="OK!Thess provides space and technical support to teams with innovative ideas.">
+        <meta name="twitter:image" content="https://s3.eu-central-1.amazonaws.com/okthess-static/uploads/logo.png">
+    {% endblock %}
 
 	<link rel="stylesheet" href="{% static '/main/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static '/main/css/style.css' %}">
