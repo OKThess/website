@@ -844,8 +844,7 @@ button.accordion.active:after {
 }
 
 .program-sidebar-meetup a:hover {
-  text-decoration: none;
-  color: #d82c20;
+  text-decoration: underline;
 }
 
 .program-sidebar-box {
