@@ -12,7 +12,6 @@ env/
 build/
 develop-eggs/
 dist/
-static/
 downloads/
 eggs/
 .eggs/
@@ -54,6 +53,9 @@ db.sqlite3
 .venv
 venv/
 ENV/
+
+# collectstatic
+/static/
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
