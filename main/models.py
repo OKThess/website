@@ -156,6 +156,14 @@ class Post(models.Model):
                 return self.title_el
         return 'no_title'
 
+
+class ImageMedia(models.Model):
+    image = S3DirectField(dest='uploads')
+
+    def __str__(self):
+        return self.image
+
+
 class Application(models.Model):
     phonenumber = models.CharField(max_length=100)
     email = models.EmailField()
