@@ -23,7 +23,7 @@
     <meta name="twitter:site" content="@okthess">
     <meta name="twitter:creator" content="@ntemposd">
     <meta name="twitter:title" content="OK!Thess">
-    <meta name="twitter:description" content="OK!Thess provides space and technical support to teams with innovative ideas.">
+    <meta name="twitter:description" content="{{ post.teaser }}">
     <meta name="twitter:image" content="{{ post.image }}">
     <meta name="twitter:text:title" content="{{ post.teaser }}">
     <meta name="twitter:image:src" content="{{ post.image }}" />
@@ -31,17 +31,17 @@
 
 {% block content %}
     <div class="container post">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <div class="post-content">
-                        <h1 class="post-content-title">{{ post.title }}</h1>
-                        <div class="post-content-meta text-muted">Αναρτήθηκε: {{ post.date }}</div>
-                        <p class="post-content-body">
-                            <img class="post-content-image" src="{{ post.image }}">
-                            {{ post.body|safe }}
-                        </p>
-                    </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="post-content">
+                    <h1 class="post-content-title">{{ post.title }}</h1>
+                    <div class="post-content-meta text-muted">Αναρτήθηκε: {{ post.date }}</div>
+                    <p class="post-content-body">
+                        <img class="post-content-image" src="{{ post.image }}">
+                        {{ post.body|safe }}
+                    </p>
                 </div>
             </div>
         </div>
+    </div>
 {% endblock %}
