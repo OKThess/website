@@ -94,4 +94,16 @@ resource "aws_elastic_beanstalk_environment" "okthess_beanstalk_application_envi
     name      = "OKTHESS_AWS_SECRET_ACCESS_KEY"
     value     = "${var.okthess_aws_secret_access_key}"
   }
+
+  setting {
+    namespace = "aws:elasticbeanstalk:application:environment"
+    name      = "OKTHESS_AWS_SES_USER"
+    value     = "${var.okthess_aws_ses_user}"
+  }
+
+  setting {
+    namespace = "aws:elasticbeanstalk:application:environment"
+    name      = "OKTHESS_AWS_SES_PASSWORD"
+    value     = "${var.okthess_aws_ses_password}"
+  }
 }
