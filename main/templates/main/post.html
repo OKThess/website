@@ -26,7 +26,7 @@
     <meta name="twitter:description" content="{{ post.teaser }}">
     <meta name="twitter:image" content="{{ post.image }}">
     <meta name="twitter:text:title" content="{{ post.teaser }}">
-    <meta name="twitter:image:src" content="{{ post.image }}" />
+    <meta name="twitter:image:src" content="{{ post.image }}">
 {% endblock %}
 
 {% block content %}
@@ -40,6 +40,14 @@
                         <img class="post-content-image" src="{{ post.image }}">
                         {{ post.body|safe }}
                     </p>
+                    <div class="post-content-body-meta">
+                        <ul class="share-buttons">
+                            <li><a href="https://www.facebook.com/sharer/sharer.php?u=okthess.gr{% url 'main:blog_post' post.slug %}&t=OK!Thess" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="{% static '/main/img/social-share/facebook.svg' %}"></a></li>
+                            <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fokthess.gr&text={{ post.title }} okthess.gr{% url 'main:blog_post' post.slug %}&via=okthess" target="_blank" title="Tweet"><img alt="Tweet" src="{% static '/main/img/social-share/twitter.svg' %}"></a></li>
+                            <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=okthess.gr{% url 'main:blog_post' post.slug %}&title={{ post.title }}&summary={{ post.title }} okthess.gr{% url 'main:blog_post' post.slug %} {{ post.teaser }}&source=okthess.gr{% url 'main:blog_post' post.slug %}" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="{% static '/main/img/social-share/linkedin.svg' %}"></a></li>
+                            <li><a href="mailto:?subject={{ post.title }}&body={{ post.teaser }} : okthess.gr{% url 'main:blog_post' post.slug %}" target="_blank" title="Send email"><img alt="Send email" src="{% static '/main/img/social-share/email.svg' %}"></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
