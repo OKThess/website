@@ -161,6 +161,18 @@ address > abbr {
   background: inherit;
 }
 
+.btn-simple {
+  background-color: #eee;
+  color: #444;
+  padding: 14px;
+  border: none;
+  outline: 0;
+}
+
+.btn-simple:hover {
+  background-color: #e8e8e8;
+}
+
 .btn-red {
   display: inline-block;
   color: #fff;
@@ -266,6 +278,7 @@ address > abbr {
 
 .slider-img {
   width: 100%;
+  user-select: none;
 }
 
 .slider-arrow-right {
@@ -280,6 +293,7 @@ address > abbr {
   padding-left: 15px;
   padding-right: 15px;
   transition: 0.1s;
+  user-select: none;
 }
 
 .slider-arrow-right:hover {
@@ -743,6 +757,39 @@ button.accordion.active:after {
   width: 90%;
 }
 
+.program-main-filter {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.program-main-filter i {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.program-main-filter-industries {
+  margin-top: 30px;
+  user-select: none;
+}
+
+.program-main-filter-industries-item {
+  display: inline-block;
+  color: #666;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: #fff;
+  user-select: none;
+}
+
+.program-main-filter-industries-item:hover {
+  cursor: pointer;
+  color: #000;
+  text-decoration: underline;
+}
+
 .program-main-company {
   margin-bottom: 40px;
 }
@@ -776,10 +823,10 @@ button.accordion.active:after {
 .program-sidebar-meetup {
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 15px;
   text-align: center;
-  border: 1px solid #d82c20;
+  border: 2px solid #d82c20;
 }
 
 .program-sidebar-meetup h4 {
