@@ -5,6 +5,16 @@
 {% block content %}
     <div class="container contact">
         <div class="row">
+            {% if messages %}
+                <div class="col-md-12">
+                    <p class="alert alert-success text-center">
+                        {% for message in messages %}
+                            {{ message }}
+                            <br>
+                        {% endfor %}
+                    </p>
+                </div>
+            {% endif %}
             <div class="col-md-6">
                 <h3>Τοποθεσία</h3>
                 <div id="contact-map-outer">
@@ -18,15 +28,16 @@
                     <small>Είσοδος:</small> Γωνία Κυδωνιών &amp; Μαρίας Κάλλας<br>Θεσσαλονίκη, Ελλάδα.
                 </address>
                 <h3>Επικοινωνία μέσω e-mail</h3>
-                <form role="form" method="post" action="/contact">
+                <form action="{% url 'main:contact' %}" method="post">
+                    {% csrf_token %}
                     <div class="form-group">
                         <textarea class="form-control" rows="4" name="message" placeholder="Γράψε την ερώτηση σου"></textarea>
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" id="contact-email" placeholder="Τη διεύθυνση email σου">
+                        <input type="email" class="form-control" name="email" placeholder="Τη διεύθυνση email σου">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="contact-name" placeholder="Το όνομα σου">
+                        <input type="text" class="form-control" name="name" placeholder="Το όνομα σου">
                     </div>
                     <button type="submit" class="btn-form">Στείλε!</button>
                 </form>

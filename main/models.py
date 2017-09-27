@@ -147,8 +147,14 @@ class Post(models.Model):
     en_objects = EnPostManager()
 
     def __str__(self):
-        return self.title_en
-
+        if not self.title_en and not self.title_el:
+            return date.strftime('%x')
+        else:
+            if self.title_en:
+                return self.title_en
+            else:
+                return self.title_el
+        return 'no_title'
 
 class Application(models.Model):
     phonenumber = models.CharField(max_length=100)

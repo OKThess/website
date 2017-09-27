@@ -36,3 +36,9 @@ class ApplicationForm(forms.ModelForm):
             'email': forms.EmailInput(attrs={'placeholder': 'Email', 'class': 'form-control'}),
             'name': forms.TextInput(attrs={'placeholder': 'Ονοματεπώνυμο', 'class': 'form-control'}),
         }
+
+
+class ContactForm(forms.Form):
+    name = forms.CharField(max_length=200)
+    message = forms.CharField(max_length=20000)
+    email = forms.EmailField()

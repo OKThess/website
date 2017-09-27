@@ -37,3 +37,11 @@ variable "okthess_aws_access_key_id" {
 variable "okthess_aws_secret_access_key" {
   description = "Defines AWS secret access key"
 }
+
+variable "okthess_aws_ses_user" {
+  description = "Defines AWS SMTP username"
+}
+
+variable "okthess_aws_ses_password" {
+  description = "Defines AWS SMTP password"
+}

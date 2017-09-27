@@ -212,6 +212,19 @@ S3DIRECT_DESTINATIONS = {
 }
 
 
+# Email
+# https://docs.djangoproject.com/en/1.11/topics/email/
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'email-smtp.eu-west-1.amazonaws.com'
+EMAIL_HOST_USER = os.getenv('OKTHESS_AWS_SES_USER', '')
+EMAIL_HOST_PASSWORD = os.getenv('OKTHESS_AWS_SES_PASSWORD', '')
+EMAIL_PORT = 587
+DEFAULT_FROM_EMAIL = 'webmaster@okthess.gr'
+CONTACT_TO_EMAIL = 'admin@okthess.gr'
+
+
 # Security middleware
 # https://docs.djangoproject.com/en/1.11/ref/middleware/#module-django.middleware.security
 
