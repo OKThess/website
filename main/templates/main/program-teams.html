@@ -110,13 +110,16 @@
                 var industriesElems = document.querySelectorAll('.program-main-company-industry');
                 var i = 0;
                 for (i = 0; i < industriesElems.length; i++) {
-                    if (industriesElems[i].innerText === industry) {
-                        if (industriesElems[i].parentNode.classList.contains('hidden')) {
-                            targetElem.style.backgroundColor = '#fff';
-                        } else {
-                            targetElem.style.backgroundColor = '#eee';
-                        }
-                        industriesElems[i].parentNode.classList.toggle('hidden');
+                    var allIndustryElems = document.querySelectorAll('.program-main-filter-industries-item');
+                    var j = 0;
+                    for (j = 0; j < allIndustryElems.length; j++) {
+                        allIndustryElems[j].style.background = '#fff';
+                    }
+                    targetElem.style.background = '#eee';
+                    if (industriesElems[i].innerText !== industry) {
+                        industriesElems[i].parentNode.classList.add('hidden');
+                    } else {
+                        industriesElems[i].parentNode.classList.remove('hidden');
                     }
                 }
             });
