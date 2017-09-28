@@ -10,9 +10,11 @@ class EnTeamManager(models.Manager):
     def get_queryset(self):
         return super(EnTeamManager, self).get_queryset().exclude(description_en=u'').exclude(description_en=None)
 
+
 class ElTeamManager(models.Manager):
     def get_queryset(self):
         return super(ElTeamManager, self).get_queryset().exclude(description_el=u'').exclude(description_el=None)
+
 
 class Team(models.Model):
     name = models.CharField(max_length=100)
@@ -35,9 +37,11 @@ class EnMentorManager(models.Manager):
     def get_queryset(self):
         return super(EnMentorManager, self).get_queryset().exclude(description_en=u'').exclude(description_en=None)
 
+
 class ElMentorManager(models.Manager):
     def get_queryset(self):
         return super(ElMentorManager, self).get_queryset().exclude(description_el=u'').exclude(description_el=None)
+
 
 class Mentor(models.Model):
     name = models.CharField(max_length=100)
@@ -115,6 +119,7 @@ class EnPostManager(models.Manager):
             .exclude(body_en=u'') \
             .exclude(body_en=None)
 
+
 class ElPostManager(models.Manager):
     def get_queryset(self):
         return super(ElPostManager, self).get_queryset() \
@@ -124,6 +129,7 @@ class ElPostManager(models.Manager):
             .exclude(teaser_el=None) \
             .exclude(body_el=u'') \
             .exclude(body_el=None)
+
 
 class Post(models.Model):
     date = models.DateField()
