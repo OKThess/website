@@ -1,6 +1,7 @@
 import os
 from urllib import request
 
+
 def is_ec2_linux():
     """
     Detect if we are running on an EC2 Linux Instance.
@@ -12,6 +13,7 @@ def is_ec2_linux():
             uuid = f.read()
             return uuid.startswith('ec2')
     return False
+
 
 def get_linux_ec2_private_ip():
     """
