@@ -2,6 +2,7 @@ Django
 psycopg2
 Pillow
 awsebcli
+flake8
 raven
 boto3
 django-s3direct
