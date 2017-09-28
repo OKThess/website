@@ -624,20 +624,21 @@ h6.blog-post-meta {
 
 .post-content-body {
   margin-top: 20px;
+  font-size: 19px;
 }
 
 .post-content-meta {
   font-size: 12px;
 }
 
-.post-content-body {
-  font-size: 19px;
-}
-
 .post-content-image {
   width: 80%;
   padding-right: 20px;
   padding-bottom: 20px;
+}
+
+.post-content-image img {
+  max-width: 100%;
 }
 
 @media (min-width: 768px) {
