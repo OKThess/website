@@ -10,6 +10,7 @@ from . import views
 def health(request):
     return HttpResponse('Ok')
 
+
 app_name = 'mainapp'
 admin.site.site_header = 'OK!Thess administration'
 urlpatterns = [
