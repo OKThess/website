@@ -7,13 +7,13 @@
 {% block content %}
     <div class="container program">
         <div class="row">
-            <div class="col-md-9">
+            <div class="col-sm-9">
                 <div class="program-main">
                     <h1>Alumni</h1>
                     <div style="margin-bottom: 40px;"></div>
                     <div class="row">
                         {% for team in teams_list %}
-                            <div class="col-md-4 program-main-company">
+                            <div class="col-sm-4 col-sm-6 program-main-company">
                                 <div class="program-main-company-image">
                                     <a href="{{ team.link }}"><img src="{{ team.image }}" alt="team logo"></a>
                                 </div>
@@ -24,7 +24,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-sm-3">
                 <div class="program-sidebar">
                     <div class="program-sidebar-meetup">
                         <a href="{% url 'main:program_meetup' %}">
