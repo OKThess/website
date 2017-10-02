@@ -84,7 +84,7 @@ def program_alumni(request):
     })
 
 
-def program_meetup(request):
+def meetup(request):
     return render(request, 'main/program-meetup.html')
 
 
