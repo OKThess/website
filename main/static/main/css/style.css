@@ -869,8 +869,8 @@ button.accordion.active:after {
 }
 
 .program-main-filter {
-  text-align: center;
-  margin-top: 20px;
+  float: right;
+  text-align: right;
   margin-bottom: 50px;
 }
 
@@ -918,7 +918,6 @@ button.accordion.active:after {
 }
 
 .program-main-company-image {
-  text-align: center;
   height: 200px;
   overflow-y: hidden;
 }
