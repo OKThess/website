@@ -34,6 +34,7 @@ ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
     'okthess-prod.ggj4bxeh2q.eu-central-1.elasticbeanstalk.com',
+    '.okthess.gr',
 ]
 
 # ElasticBeanstalk healthcheck sends requests with host header = internal ip
