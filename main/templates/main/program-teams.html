@@ -11,10 +11,10 @@
                 <div class="program-main">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1>Hosted Teams</h1>
+                            <h1>{% trans 'Hosted Teams' %}</h1>
                             <div class="program-main-filter">
                                 <button class="btn-simple" id="industry-filter">
-                                    Filter by industry
+                                    {% trans 'Filter by industry' %}
                                     <i class="glyphicon glyphicon-th"></i>
                                 </button>
                                 <div class="program-main-filter-industries hidden" id="industry-filter-container">
@@ -37,25 +37,27 @@
             <div class="col-sm-3">
                 <div class="program-sidebar">
                     <div class="program-sidebar-about">
-                        <h4>About</h4>
+                        <h4>{% trans 'About' %}</h4>
                         <div class="program-sidebar-box">
-                            {% lorem 1 p %}
+{% blocktrans %}
+program about sidebar description
+{% endblocktrans %}
                         </div>
                         <br>
                     </div>
                     <div class="program-sidebar-tabs">
                         <ul class="nav nav-pills nav-stacked program-sidebar-tabs-list">
-                            <li class="program-sidebar-tabs-elem active"><a href="{% url 'main:program_teams' %}">Teams</a></li>
-                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_mentors' %}">Mentors</a></li>
-                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_alumni' %}">Alumni</a></li>
+                            <li class="program-sidebar-tabs-elem active"><a href="{% url 'main:program_teams' %}">{% trans 'Teams' %}</a></li>
+                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_mentors' %}">{% trans 'Mentors' %}</a></li>
+                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_alumni' %}">{% trans 'Alumni' %}</a></li>
                         </ul>
                     </div>
                     <div class="program-sidebar-regulation">
                         <div class="separator"></div>
-                        <h4><a href="{% static '/main/files/okthess-internal-regulation.pdf' %}">Internal Regulation</a></h4>
+                        <h4><a href="{% static '/main/files/okthess-internal-regulation.pdf' %}">{% trans 'Internal Regulation' %}</a></h4>
                         <div class="separator"></div>
                         <br>
-                        <a class="btn-red" href="/apply/" role="button">Apply now!</a>
+                        <a class="btn-red" href="/apply/" role="button">{% trans 'Apply now!' %}</a>
                     </div>
                 </div>
             </div>

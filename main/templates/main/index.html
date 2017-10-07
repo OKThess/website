@@ -11,11 +11,11 @@
                     <h1>ΟΚ!Τhess</h1>
                     <h2>{% trans 'Your early stage partner' %}</h2>
                     <p class="desc">
-    {% blocktrans %}OK!Thess provides space and technical support to teams of people
-    with innovative ideas helping them to <strong>Validate a Business
-    Model Fast</strong>, rather than hastily, and to <strong>Meet,
-    Mix and Connect</strong> with like-minded peers.
-    {% endblocktrans %}
+{% blocktrans %}OK!Thess provides space and technical support to teams of people
+with innovative ideas helping them to <strong>Validate a Business
+Model Fast</strong>, rather than hastily, and to <strong>Meet,
+Mix and Connect</strong> with like-minded peers.
+{% endblocktrans %}
                     </p>
                     <div id="mc_embed_signup">
                         <form action="//okthess.us15.list-manage.com/subscribe/post?u=e5030558dd0a4f89aeed05a0d&amp;id=a3d8e08f2a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -45,15 +45,15 @@
                 </div>
                 <div class="slider">
                     <img src="{% static '/main/img/slider-1.jpg' %}" class="slider-img">
-                    <div class="slider-text">Community Events</div>
+                    <div class="slider-text">{% trans 'Community Events' %}</div>
                 </div>
                 <div class="slider">
                     <img src="{% static '/main/img/slider-2.jpg' %}" class="slider-img">
-                    <div class="slider-text">Mentoring Sessions</div>
+                    <div class="slider-text">{% trans 'Mentoring Sessions' %}</div>
                 </div>
                 <div class="slider">
                     <img src="{% static '/main/img/slider-3.jpg' %}" class="slider-img">
-                    <div class="slider-text">Accelerator</div>
+                    <div class="slider-text">{% trans 'Accelerator' %}</div>
                 </div>
             </div>
         </div>
@@ -70,7 +70,7 @@
                     </div>
                     <p class="index-blog-item-para">{{ post.teaser }}</p>
                     <a class="index-blog-item-btn" href="{% url 'main:blog_post' post.slug %}" role="button">
-                        <span class="glyphicon glyphicon-exclamation-sign"></span><strong>Read</strong> more »
+                        <span class="glyphicon glyphicon-exclamation-sign"></span>{% trans '<strong>Read</strong> more »' %}
                     </a>
                 </div>
             {% endfor %}
@@ -80,7 +80,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <a class="btn-black" href="{% url 'main:events' %}" role="button">
-                    <span class="glyphicon glyphicon-calendar"></span>Upcoming Community <strong>Meetups</strong>
+                    <span class="glyphicon glyphicon-calendar"></span>{% trans 'Upcoming Community <strong>Meetups</strong>' %}
                 </a>
                 <div class="index-events-content">
                     {% for event in events_list %}

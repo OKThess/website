@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col-sm-9">
                 <div class="program-main">
-                    <h1>Alumni</h1>
+                    <h1>{% trans 'Alumni' %}</h1>
                     <div style="margin-bottom: 40px;"></div>
                     <div class="row">
                         {% for team in teams_list %}
@@ -26,17 +26,19 @@
             <div class="col-sm-3">
                 <div class="program-sidebar">
                     <div class="program-sidebar-about">
-                        <h4>About alumni</h4>
+                        <h4>{% trans 'About alumni' %}</h4>
                         <div class="program-sidebar-box">
-                            {% lorem 1 p %}
+{% blocktrans %}
+program alumni sidebar
+{% endblocktrans %}
                         </div>
                         <br>
                     </div>
                     <div class="program-sidebar-tabs">
                         <ul class="nav nav-pills nav-stacked program-sidebar-tabs-list">
-                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_teams' %}">Teams</a></li>
-                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_mentors' %}">Mentors</a></li>
-                            <li class="program-sidebar-tabs-elem active"><a href="{% url 'main:program_alumni' %}">Alumni</a></li>
+                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_teams' %}">{% trans 'Teams' %}</a></li>
+                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_mentors' %}">{% trans 'Mentors' %}</a></li>
+                            <li class="program-sidebar-tabs-elem active"><a href="{% url 'main:program_alumni' %}">{% trans 'Alumni' %}</a></li>
                         </ul>
                     </div>
                     <div class="program-sidebar-regulation">
