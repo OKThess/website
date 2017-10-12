@@ -33,7 +33,12 @@ def index(request):
 
 
 def about(request):
-    about_texts = About.objects.all()[0]
+    try:
+        about_texts = About.objects.all()[0]
+    except IndexError:
+        return render(request, 'main/about.html', {
+            'about_texts': {},
+        })
     if request.LANGUAGE_CODE == 'en':
         about_texts.what_text = about_texts.what_text_en
         about_texts.how_text = about_texts.how_text_en
