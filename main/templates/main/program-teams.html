@@ -83,6 +83,26 @@ program about sidebar description
         }
 
         var industriesContainerElem = document.getElementById('industry-filter-container');
+
+        // add 'all' filter first
+        var allIndustryElem = document.createElement('div');
+        allIndustryElem.classList.add('program-main-filter-industries-item')
+        var allIndustryElemContent = document.createTextNode('all');
+        allIndustryElem.appendChild(allIndustryElemContent);
+        allIndustryElem.addEventListener('click', function (event) {
+            var industriesElems = document.querySelectorAll('.program-main-company-industry');
+            var i = 0;
+            for (i = 0; i < industriesElems.length; i++) {
+                var allIndustryElems = document.querySelectorAll('.program-main-filter-industries-item');
+                var j = 0;
+                for (j = 0; j < allIndustryElems.length; j++) {
+                    allIndustryElems[j].style.background = '#fff';
+                }
+                industriesElems[i].parentNode.classList.remove('hidden');
+            }
+        })
+        industriesContainerElem.appendChild(allIndustryElem);
+
         industriesValues.forEach(function (item) {
 
             // create industry clickable element
