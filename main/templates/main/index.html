@@ -85,7 +85,7 @@ Mix and Connect</strong> with like-minded peers.
                 <div class="index-events-content">
                     {% for event in events_list %}
                         <div class="index-events-content-single">
-                            <a href="#" class="index-events-content-single-name">{{ event.title }}</a>
+                            <a href="{{ event.link }}" class="index-events-content-single-name">{{ event.title }}</a>
                             <div class="index-events-content-single-date"><p>{{ event.date }}</p></div>
                             <div class="index-events-content-single-desc">
                                 <p>{{ event.description }}</p>
