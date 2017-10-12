@@ -871,6 +871,8 @@ button.accordion.active:after {
 .program-main-filter {
   float: right;
   text-align: right;
+  width: 100%;
+  margin-top: -65px;
   margin-bottom: 50px;
 }
 
