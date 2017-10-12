@@ -371,6 +371,12 @@ address > abbr {
   margin-bottom: 20px;
 }
 
+.index-blog-item-img {
+  height: 228px;
+  display: flex;
+  align-items: center;
+}
+
 .index-blog-item-img > img {
   width: 300px;
   margin-top: 20px;
@@ -380,6 +386,12 @@ address > abbr {
 @media (min-width: 768px) {
   .index-blog-item-img > img {
     width: 210px;
+  }
+}
+
+@media (min-width: 992px) {
+  .index-blog-item-img > img {
+    width: 300px;
   }
 }
 
