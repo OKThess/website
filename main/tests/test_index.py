@@ -21,7 +21,6 @@ class IndexViewsTest(TestCase):
         url = reverse('main:about')
         response = self.client.get(url)
         self.assertContains(response, 'OK!Thess')
-        self.assertContains(response, 'Τι κάνουμε')
 
     def test_contact(self):
         """
