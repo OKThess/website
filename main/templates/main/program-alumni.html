@@ -26,6 +26,13 @@
             </div>
             <div class="col-sm-3">
                 <div class="program-sidebar">
+                    <div class="program-sidebar-tabs">
+                        <ul class="nav nav-pills nav-stacked program-sidebar-tabs-list">
+                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_teams' %}">{% trans 'Teams' %}</a></li>
+                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_mentors' %}">{% trans 'Mentors' %}</a></li>
+                            <li class="program-sidebar-tabs-elem active"><a href="{% url 'main:program_alumni' %}">{% trans 'Alumni' %}</a></li>
+                        </ul>
+                    </div>
                     <div class="program-sidebar-about">
                         <h4>{% trans 'About alumni' %}</h4>
                         <div class="program-sidebar-box">
@@ -34,13 +41,6 @@ program alumni sidebar
 {% endblocktrans %}
                         </div>
                         <br>
-                    </div>
-                    <div class="program-sidebar-tabs">
-                        <ul class="nav nav-pills nav-stacked program-sidebar-tabs-list">
-                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_teams' %}">{% trans 'Teams' %}</a></li>
-                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_mentors' %}">{% trans 'Mentors' %}</a></li>
-                            <li class="program-sidebar-tabs-elem active"><a href="{% url 'main:program_alumni' %}">{% trans 'Alumni' %}</a></li>
-                        </ul>
                     </div>
                     <div class="program-sidebar-regulation">
                         <div class="separator"></div>
