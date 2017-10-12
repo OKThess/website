@@ -1,6 +1,7 @@
 {% extends 'main/layout.html' %}
 
 {% load static %}
+{% load i18n %}
 
 {% block title %}Contact us | OK!Thess{% endblock %}
 
@@ -18,18 +19,20 @@
                 </div>
             {% endif %}
             <div class="col-md-6">
-                <h3>Τοποθεσία</h3>
+                <h3>{% trans 'Location' %}</h3>
                 <div id="contact-map-outer">
                     <div id="contact-map-container"></div>
                 </div>
             </div>
             <div class="col-md-6">
-                <address>
-                    <abbr title="Οικοσύστημα Καινοτομίας Θεσσαλονίκης">OK!THESS</abbr><br>
-                    <small>Αλληλογραφία:</small> Κομοτηνής 2, 54655<br>
-                    <small>Είσοδος:</small> Γωνία Κυδωνιών &amp; Μαρίας Κάλλας<br>Θεσσαλονίκη, Ελλάδα.
-                </address>
-                <h3>Επικοινωνία μέσω e-mail</h3>
+{% blocktrans %}<address>
+<abbr title="Thessaloniki's Innovation Ecosystem">OK!THESS</abbr><br>
+<small>Address:</small> Komotinis 2, 54655<br>
+<small>Entrance from:</small> Kidonion &amp; Maria Kallas
+<br>Thessaloniki, Greece.
+</address>
+{% endblocktrans %}
+                <h3>{% trans 'Email us' %}</h3>
                 <form action="{% url 'main:contact' %}" method="post">
                     {% csrf_token %}
                     <div class="form-group">
@@ -41,7 +44,7 @@
                     <div class="form-group">
                         <input type="text" class="form-control" name="name" placeholder="Το όνομα σου">
                     </div>
-                    <button type="submit" class="btn-form">Στείλε!</button>
+                    <button type="submit" class="btn-form">{% trans 'Send it!' %}</button>
                 </form>
             </div>
         </div>

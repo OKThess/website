@@ -1,6 +1,7 @@
 {% extends 'main/layout.html' %}
 
 {% load static %}
+{% load i18n %}
 
 {% block title %}Apply at OK!Thess{% endblock %}
 
@@ -16,26 +17,17 @@
                         {% endfor %}
                     </p>
                 {% endif %}
-                <p>
-                    Γίνονται δεκτές <strong>ανά πάσα στιγμή</strong> προτάσεις από άτομα ή ομάδες
-                    με καινοτόμες ιδέες, ανεξάρτητα του βαθμού ωρίμανσης, που θα
-                    ήθελαν να ωφεληθούν από τις υπηρεσίες της προ-θερμοκοιτίδας του
-                    OK!Thess ώστε να στήσουν μια επιχείρηση (startup) ή να ενισχύσουν
-                    μια startup που έχουν ήδη στήσει.
-                </p>
-                <p>
-                    Οι προτάσεις αξιολογούνται σε τακτά χρονικά διαστήματα, οι
-                    ακριβείς ημερομηνίες ανακοινώνονται στην παρούσα ιστοσελίδα.
-                    Η τρέχουσα περίοδος κατάθεσης προτάσεων κλείνει στις <strong>13 Σεπτεμβρίου</strong> του 2017.
-                    Τα αποτελέσματα της αξιολόγησης θα ανακοινωθούν στις <strong>19 Σεπτεμβρίου</strong>.
-                    Η περίοδος θερμοκοίτησης περιλαμβάνει <strong>υποχρεωτικές παρακολουθήσεις από τις 2 έως και τις 13 Οκτωβρίου</strong>.
-                </p>
-                <p>
-                    Για συμμετοχή, διαβάστε τις <a href="http://okthess.gr/pdf/website-open-call.pdf" target="_blank">οδηγίες υποβολής</a> και συμπληρώστε την παρακάτω φόρμα συμμετοχής ή
-                    απαντήστε τις ερωτήσεις στο σώμα ενός e-mail και στείλτε στο apply@okthess.gr
-                </p>
-
-                <h3>Application form</h3>
+{% blocktrans %}<p>
+We accept <strong>proposals</strong> etc
+</p>
+<p>
+Currently <strong>13 Sep</strong> 2017.
+</p>
+<p>
+Read this <a href="http://okthess.gr/pdf/website-open-call.pdf" target="_blank">open call</a> and send it to apply@okthess.gr.
+</p>
+{% endblocktrans %}
+                <h3>{% trans 'Application form' %}</h3>
                 <form action="{% url 'main:apply' %}" method="post">
                     {% csrf_token %}
                     {{ form.non_field_errors }}
@@ -45,7 +37,7 @@
                             {{ field }}
                         </div>
                     {% endfor %}
-                    <button type="submit" class="btn-form">Αποστολή</button>
+                    <button type="submit" class="btn-form">{% trans 'Submit' %}</button>
                 </form>
             </div>
         </div>

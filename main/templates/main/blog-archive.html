@@ -1,6 +1,7 @@
 {% extends 'main/layout.html' %}
 
 {% load static %}
+{% load i18n %}
 
 {% block title %}Posts from {{ archive_year }} | OK!Thess blog{% endblock %}
 
@@ -16,10 +17,10 @@
                         <div class="col-md-9">
                             <div class="blog-post-teaser">
                                 <h4 class="blog-post-title">{{ post.title }}</h4>
-                                <h6 class="blog-post-meta text-muted">Αναρτήθηκε: {{ post.date }}</h6>
+                                <h6 class="blog-post-meta text-muted">{% trans 'Posted' %} {{ post.date }}</h6>
                                 <p>{{ post.teaser }}</p>
                                 <a class="btn-yellow" href="{% url 'main:blog_post' post.slug %}" role="button">
-                                    <span class="glyphicon glyphicon-exclamation-sign"></span><strong>Read</strong> more »
+                                    <span class="glyphicon glyphicon-exclamation-sign"></span>{% trans '<strong>Read</strong> more »' %}
                                 </a>
                             </div>
                         </div>
@@ -27,7 +28,7 @@
                 {% endfor %}
             </div>
             <div class="col-md-4">
-                <h3>Resources</h3>
+                <h3>{% trans 'Resources' %}</h3>
                 <div class="sidebar-module sidebar-module-inset">
                     <ul>
                         <li><a href="http://www.investopedia.com/advisor-network/articles/business-owner-compensation-marathon-or-sprint/"
@@ -65,20 +66,12 @@
                     </ul>
                 </div>
                 <div class="sidebar-module">
-                    <h3>Archives</h3>
+                    <h3>{% trans 'Archives' %}</h3>
                     <ol class="list-unstyled">
                         {% for entry in archives_list %}
                             <li><a href="{% url 'main:blog_archives' entry.year entry.month %}">{{ entry|date:"F Y" }}</a></li>
                         {% endfor %}
                     </ol>
-                </div>
-                <div class="sidebar-module">
-                    <h3>Elsewhere</h3>
-                    <ul class="list-unstyled">
-                        <li><a href="https://github.com/OKThess">GitHub</a></li>
-                        <li><a href="https://twitter.com/okthess">Twitter</a></li>
-                        <li><a href="https://www.facebook.com/OKThess/">Facebook</a></li>
-                    </ul>
                 </div>
             </div>
         </div>

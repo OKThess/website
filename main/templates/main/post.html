@@ -35,7 +35,7 @@
             <div class="col-md-8 col-md-offset-2">
                 <div class="post-content">
                     <h1 class="post-content-title">{{ post.title }}</h1>
-                    <div class="post-content-meta text-muted">Αναρτήθηκε: {{ post.date }}</div>
+                    <div class="post-content-meta text-muted">{% trans 'Posted' %} {{ post.date }}</div>
                     <p class="post-content-body">
                         <img class="post-content-image" src="{{ post.image }}">
                         {{ post.body|safe }}

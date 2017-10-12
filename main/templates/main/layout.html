@@ -59,7 +59,7 @@
         <div class="navbar-header">
             <a class="navbar-brand" href="{% url 'main:index' %}"><img src="{% static '/main/img/logo.png' %}" alt="Logo"></a>
             <a class="btn-red btn-header" href="{% url 'main:apply' %}" role="button">
-                <span class="glyphicon glyphicon-exclamation-sign"></span><strong>Apply</strong> for Autumn'17
+                <span class="glyphicon glyphicon-exclamation-sign"></span>{% trans "<strong>Apply</strong> for Autumn '17" %}
             </a>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
                 <span class="icon-bar"></span>
@@ -70,18 +70,18 @@
         <div class="collapse navbar-collapse" id="navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown {% active 'about' %}">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">About <b class="caret"></b></a>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">{% trans 'About' %} <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a tabindex="-1" href="{% url 'main:about' %}#what">What we do</a></li>
-                        <li><a tabindex="-1" href="{% url 'main:about' %}#how">How do we do it?</a></li>
-                        <li><a tabindex="-1" href="{% url 'main:about' %}#participate">How do I participate?</a></li>
-                        <li><a tabindex="-1" href="{% url 'main:about' %}#coworking">Coworking space</a></li>
+                        <li><a tabindex="-1" href="{% url 'main:about' %}#what">{% trans 'What we do' %}</a></li>
+                        <li><a tabindex="-1" href="{% url 'main:about' %}#how">{% trans 'How we do it' %}</a></li>
+                        <li><a tabindex="-1" href="{% url 'main:about' %}#participate">{% trans 'How do I participate?' %}</a></li>
+                        <li><a tabindex="-1" href="{% url 'main:about' %}#coworking">{% trans 'Coworking space' %}</a></li>
                    </ul>
                 </li>
-                <li class="{% active 'program' %}"><a href="{% url 'main:program_teams' %}">Program</a></li>
-                <li class="{% active 'event' %}"><a href="{% url 'main:events' %}">Events</a></li>
-                <li class="{% active 'blog' %}"><a href="{% url 'main:blog' %}">Blog</a></li>
-                <li class="{% active 'contact' %}"><a href="{% url 'main:contact' %}">Contact</a></li>
+                <li class="{% active 'program' %}"><a href="{% url 'main:program_teams' %}">{% trans 'Program' %}</a></li>
+                <li class="{% active 'event' %}"><a href="{% url 'main:events' %}">{% trans 'Events' %}</a></li>
+                <li class="{% active 'blog' %}"><a href="{% url 'main:blog' %}">{% trans 'Blog' %}</a></li>
+                <li class="{% active 'contact' %}"><a href="{% url 'main:contact' %}">{% trans 'Contact' %}</a></li>
                 <li class="navbar-language">
                     {% csrf_token %}
                     <div class="hidden" id="current-language">{{ LANGUAGE_CODE }}</div>
@@ -109,14 +109,14 @@
             <div class="row">
                 <div class="site-footer-content">
                     <div class="col-md-4 col-sm-4">
-                        <h5>LOCATION</h5>
+                        <h5>{% trans 'LOCATION' %}</h5>
                         <hr>
                             <div id="map-outer">
                                 <div id="map-container"></div>
                             </div>
                     </div>
                     <div class="col-md-4 col-sm-4">
-                        <h5>MEMBERS</h5><hr>
+                        <h5>{% trans 'MEMBERS' %}</h5><hr>
                         <a href="https://www.auth.gr/" target="_blank">
                             <img src="{% static '/main/img/footer/auth.jpg' %}" alt="Aristotle University Thessaloniki" class="footer-content-item-img">
                         </a>
@@ -143,7 +143,7 @@
                         </a>
                         </div>
                     <div class="col-md-4 col-sm-4">
-                        <h5>SPONSORS</h5><hr>
+                        <h5>{% trans 'SPONSORS' %}</h5><hr>
                         <a href="http://www.hcn.gr/" target="_blank">
                             <img src="{% static '/main/img/footer/hcn.jpg' %}" alt="HCN" class="footer-content-item-img">
                         </a>
@@ -153,7 +153,7 @@
                         <a href="https://www.ast.gr/" target="_blank">
                             <img src="{% static '/main/img/footer/ast.png' %}" alt="AST" class="footer-content-item-img">
                         </a>
-                        <h5>DONOR</h5><hr>
+                        <h5>{% trans 'DONOR' %}</h5><hr>
                         <a href="http://www.snf.org/el/" target="_blank">
                             <img src="{% static '/main/img/footer/isn.jpg' %}" alt="ISN" class="footer-content-item-img">
                         </a>
