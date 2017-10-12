@@ -8,7 +8,7 @@ from django.core.mail import send_mail
 from django.template.loader import render_to_string
 
 from okthess import settings
-from .models import Team, Mentor, Meetup, Coworking, Post, Event
+from .models import Team, Mentor, Meetup, Coworking, Post, Event, About
 from .forms import ApplicationForm, ContactForm
 
 
@@ -33,8 +33,19 @@ def index(request):
 
 
 def about(request):
+    about_texts = About.objects.all()[0]
+    if request.LANGUAGE_CODE == 'en':
+        about_texts.what_text = about_texts.what_text_en
+        about_texts.how_text = about_texts.how_text_en
+        about_texts.participate_text = about_texts.participate_text_en
+        about_texts.coworking_text = about_texts.coworking_text_en
+    else:
+        about_texts.what_text = about_texts.what_text_el
+        about_texts.how_text = about_texts.how_text_el
+        about_texts.participate_text = about_texts.participate_text_el
+        about_texts.coworking_text = about_texts.coworking_text_el
     return render(request, 'main/about.html', {
-        'page_title': 'Σχετικά',
+        'about_texts': about_texts,
     })
 
 
