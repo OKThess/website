@@ -1038,20 +1038,24 @@ button.accordion.active:after {
   margin-top: 40px;
 }
 
-/* program:meetup */
-.program-meetup {
+/* meetup */
+.meetup {
+  width: 90%;
+}
+
+.meetup-body {
   padding-left: 60px;
   padding-right: 60px;
 }
 
 @media (max-width: 768px) {
-  .program-meetup {
+  .meetup-body {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
-.program-meetup-jumbotron {
+.meetup-body-jumbotron {
   background-image: url(/static/main/img/okthess-meetup.jpg);
   background-size: 1000px;
   background-position: center;
@@ -1059,14 +1063,14 @@ button.accordion.active:after {
   text-align: center;
 }
 
-.program-meetup-jumbotron > h1 {
+.meetup-body-jumbotron > h1 {
   background: #fff;
   color: #000;
   font-size: 48px;
   margin-top: 10%;
 }
 
-.program-meetup-jumbotron-subtitle-line {
+.meetup-body-jumbotron-subtitle-line {
   background: #fff;
   display: inline-block;
   font-size: 20px;
@@ -1076,16 +1080,16 @@ button.accordion.active:after {
   padding-right: 10px;
 }
 
-.program-meetup-content {
+.meetup-body-content {
   margin-top: 40px;
 }
 
-.program-meetup-content-body,
-.program-meetup-content-body > p {
+.meetup-body-content-body,
+.meetup-body-content-body > p {
   font-size: 18px;
 }
 
-.program-meetup-content-side {
+.meetup-body-content-side {
   background: #d82c20;
   color: #fff;
   padding-left: 20px;
@@ -1094,11 +1098,11 @@ button.accordion.active:after {
   padding-bottom: 20px;
 }
 
-.program-meetup-content-side-title > i {
+.meetup-body-content-side-title > i {
   font-size: 20px;
 }
 
-.program-meetup-content-side-title {
+.meetup-body-content-side-title {
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 10px;

@@ -38,6 +38,13 @@
             </div>
             <div class="col-md-3">
                 <div class="program-sidebar">
+                    <div class="program-sidebar-tabs">
+                        <ul class="nav nav-pills nav-stacked program-sidebar-tabs-list">
+                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_teams' %}">{% trans 'Teams' %}</a></li>
+                            <li class="program-sidebar-tabs-elem active"><a href="{% url 'main:program_mentors' %}">{% trans 'Mentors' %}</a></li>
+                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_alumni' %}">{% trans 'Alumni' %}</a></li>
+                        </ul>
+                    </div>
                     <div class="program-sidebar-about">
                         <h4>{% trans 'How you can be a mentor' %}</h4>
                         <div class="program-sidebar-box">
@@ -46,13 +53,6 @@ program mentors sidebar how to be a mentor
 {% endblocktrans %}
                         </div>
                         <br>
-                    </div>
-                    <div class="program-sidebar-tabs">
-                        <ul class="nav nav-pills nav-stacked program-sidebar-tabs-list">
-                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_teams' %}">{% trans 'Teams' %}</a></li>
-                            <li class="program-sidebar-tabs-elem active"><a href="{% url 'main:program_mentors' %}">{% trans 'Mentors' %}</a></li>
-                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_alumni' %}">{% trans 'Alumni' %}</a></li>
-                        </ul>
                     </div>
                 </div>
             </div>
