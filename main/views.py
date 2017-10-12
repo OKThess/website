@@ -101,7 +101,7 @@ def program_alumni(request):
 
 
 def meetup(request):
-    return render(request, 'main/program-meetup.html')
+    return render(request, 'main/meetup.html')
 
 
 def events(request):
