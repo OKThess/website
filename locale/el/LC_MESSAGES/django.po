@@ -1,14 +1,11 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# OKThess Greek language translation strings
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-07 13:46+0000\n"
+"POT-Creation-Date: 2017-10-12 16:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,226 +15,32 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: main/templates/main/about.html:12
-msgid "Τι κάνουμε"
-msgstr ""
+#: main/templates/main/about.html:13 main/templates/main/layout.html:75
+msgid "What we do"
+msgstr "Τι κάνουμε"
 
-#: main/templates/main/about.html:15
-msgid ""
-"<p>\n"
-"Ο ευρύς στόχος του OK!Thess είναι η ουσιώδης συμβολή στην δημιουργία ενός "
-"οικοσυστήματος καινοτομίας. Ένα\n"
-"τέτοιο οικοσύστημα θα περιλάμβανε αφ’ ενός όλους όσους είναι σε θέση και "
-"επιθυμούν να συμβάλλουν στην\n"
-"ανάπτυξη της καινοτομίας στην πόλη και αφ’ ετέρου όλες τις λειτουργίες που "
-"είναι απαραίτητες για την\n"
-"υγιή μεγέθυνση του οικοσυστήματος του ίδιου. Ένα τέτοιο οικοσύστημα θα "
-"περιλάμβανε τα εξής:</p>\n"
-"<ul>\n"
-"<li>\n"
-"<strong>Πηγές ανθρώπων με υποσχόμενες καινοτόμες ιδέες:</strong> Τέτοιες "
-"πηγές είναι τα πανεπιστήμια\n"
-"και τα ΤΕΙ αλλά και η κοινωνία γενικότερα καθώς λαμπρές ιδέες μπορούν να "
-"ξεκινήσουν από οπουδήποτε.\n"
-"</li>\n"
-"<li>\n"
-"<strong>Διαδικασίες που συμβάλλουν στην μετατροπή πρωτόλειων ιδεών σε "
-"βιώσιμες προτάσεις:</strong> Αυτές\n"
-"μπορεί να περιλαμβάνουν συμβουλευτική, διαλέξεις, διαγωνισμούς, κατάρτιση, "
-"συναναστροφές και δημιουργία\n"
-"καινοτόμων κοινοτήτων και ό,τι άλλο συμβάλλει με αυτό τον τρόπο.\n"
-"</li>\n"
-"<li>\n"
-"<strong>Υποδομές:</strong> Αυτές θα στηρίξουν διαδικασίες όπως αυτές που "
-"περιγράφηκαν αλλά και θα δώσουν\n"
-"την δυνατότητα σε νεοφυείς οντότητες να «δοκιμαστούν» και πολλές από αυτές "
-"να «επιζήσουν» πριν καταλήξουν,\n"
-"έτοιμες, σε κάποιον από τους προορισμούς του οικοσυστήματος.\n"
-"</li>\n"
-"<li>\n"
-"<strong>Προορισμούς των δοκιμασμένων και υποσχόμενων νεοφυών οντοτήτων:</"
-"strong> Αυτοί οι προορισμοί\n"
-"περιλαμβάνουν κατά κύριο λόγο το πάντρεμα των καλυτέρων ιδεών με επενδυτικά "
-"κεφάλαια που θα αναπτυχθούν\n"
-"παραπάνω σε τεχνολογικά πάρκα, αλλά και αυτοτελώς.\n"
-"</li>\n"
-"</ul>\n"
-"<br>\n"
-"<p>Το οικοσύστημα αυτό θα είναι ανοικτό σε όλους τους επιχειρηματικούς και "
-"εκπαιδευτικούς φορείς της πόλης για\n"
-"να εγκολπώσει όλες τις προσπάθειες που κινούνται στην κατεύθυνση της "
-"καινοτομίας και της επιχειρηματικότητας.\n"
-"Για την στήριξη του οικοσυστήματος, θα δημιουργηθούν συνθήκες χώρου και "
-"υπηρεσιών που να επιτρέπουν σε\n"
-"έναν αριθμό οντοτήτων με νέες και δυνητικά εμπορεύσιμες επιχειρηματικές "
-"ιδέες – είτε προϊόντα έρευνας\n"
-"είτε όχι – να τις επεξεργαστούν για ένα διάστημα απαλλαγμένες από άλλα βάρη "
-"στην προσπάθεια τους.</p>\n"
-"<br>\n"
-"<p>\n"
-"<strong>\n"
-"Η προσπάθεια υλοποίησης του στόχου ξεκινάει με το άνοιγμα της προ-"
-"θερμοκοιτίδας του\n"
-"OK!Thess, η οποία προσφέρει τις παρακάτω υπηρεσίες:\n"
-"</strong>\n"
-"</p>\n"
-"<ul>\n"
-"<li>Διάθεση χώρου που να μπορεί να συναντιέται και να συνεργάζεται μια ομάδα "
-"έως 5 ατόμων.</li>\n"
-"<li>Πρόσβαση σε δίκτυο Wi-Fi υψηλής ταχύτητας.</li>\n"
-"<li>Συμμετοχή σε σεμινάρια και διαλέξεις σχετικά με την καινοτομία στον χώρο "
-"του ΟΚ!Thess.</li>\n"
-"<li>Καθημερινή δυνατότητα καθοδήγησης από έναν coach εξειδικευμένο σε θέματα "
-"startups.</li>\n"
-"<li>Στήριξη από έναν μέντορα του οικονομικού χώρου όπου δραστηριοποιείται η "
-"startup ή δυνητική startup.</li>\n"
-"<li>Χώρο κοινωνικής συναναστροφής με άλλες ομάδες που συστεγάζονται.</li>\n"
-"<li>Ευκαιρίες συνάντησης με δυνητικούς επενδυτές.</li>\n"
-"</ul>\n"
-msgstr ""
+#: main/templates/main/about.html:19 main/templates/main/layout.html:76
+msgid "How we do it"
+msgstr "Πώς το κάνουμε"
 
-#: main/templates/main/about.html:66
-msgid "Πως το κάνουμε"
-msgstr ""
+#: main/templates/main/about.html:25
+msgid "How I can participate"
+msgstr "Πώς συμμετέχω"
 
-#: main/templates/main/about.html:69
-msgid ""
-"<h4><strong>Σύνδεση ομάδων με Μέντορες</strong></h4>\n"
-"<p>\n"
-"Σε ετήσια βάση προβλέπεται η διεξαγωγή 30 συναντήσεων τέτοιου είδους οι "
-"οποίες στοχεύουν στην υιοθέτηση νεοφυών\n"
-"οµάδων από µέντορες. Ως Mentoring ορίζεται η συχνή διάδραση των ομάδων του "
-"οικοσυστήματος με ανθρώπους\n"
-"που φέρουν εξειδικευμένη εμπειρία της αγοράς στόχου της ομάδας που έχουν "
-"αναλάβει. Μέσα απο την συναναστροφή\n"
-"με τους μέντορες, η ομάδα ωριμάζει και ιδανικά αποφεύγει καταστάσεις που "
-"καθυστερούνε την επίτευξη στόχων\n"
-"και οροσήμων κατά την επιχειρηματική της ανάπτυξη.\n"
-"</p>\n"
-"<br>\n"
-"<h4><strong>Συνεργατικές τεχνικές συναντήσεις</strong></h4>\n"
-"<p>\n"
-"Το OK!Thess θα απευθυνθεί στο ευρύτερο οικοσύστηµα της περιοχής και θα "
-"συνεργαστεί µε φορείς εξειδικευµένης\n"
-"θεµατολογίας ή / και γεωγραφικής εµβέλειας. Με αυτό το σκεπτικό, προβλέπεται "
-"η συνδιοργάνωση διαφόρων\n"
-"τύπων εκδηλώσεων (boot camps, speed dating events κλπ). Προβλέπεται η "
-"συνδιοργάνωση 6 εκδηλώσεων σε ετήσια\n"
-"βάση.\n"
-"</p>\n"
-"<br>\n"
-"<h4><strong>Εκδηλώσεις ποικίλου χαρακτήρα</strong></h4>\n"
-"<p>\n"
-"Το όλο οικοσύστηµα καινοτοµίας που δηµιουργείται µε επίκεντρο το OK!Thess "
-"πλαισιώνεται από σειρά εκδηλώσεων:\n"
-"επιστηµονικού χαρακτήρα µε προσκεκληµένους διακεκριµένους οµιλητές διεθνούς "
-"φήµης, validation events\n"
-"διαδραστικού χαρακτήρα εκδηλώσεις όπου το κοινό συµµετέχει δίνοντας πολύτιµη "
-"ανάδραση στους διοργανωτές,\n"
-"demo days εκδηλώσεις που δίνουν την ευκαιρία σε νεοφυείς οµάδες να "
-"προσεγγίσουν επενδυτές. Συνολικά προβλέπεται\n"
-"η διοργάνωση 10 εκδηλώσεων ποικίλου χαρακτήρα σε ετήσια βάση.\n"
-"</p>\n"
-msgstr ""
+#: main/templates/main/about.html:31 main/templates/main/layout.html:78
+msgid "Coworking space"
+msgstr "Συνεργατικός Χώρος"
 
-#: main/templates/main/about.html:97
-msgid "Πως συμμετέχω"
-msgstr ""
-
-#: main/templates/main/about.html:100
-msgid ""
-"<p>\n"
-"Γίνονται δεκτές προτάσεις από άτομα ή ομάδες με καινοτόμες ιδέες, ανεξάρτητα "
-"του βαθμού ωρίμανσης, που θα\n"
-"ήθελαν να ωφεληθούν από τις υπηρεσίες της προ-θερμοκοιτίδας του OK!Thess "
-"ώστε να στήσουν μια επιχείρηση\n"
-"(startup) ή να ενισχύσουν μια startup που έχουν ήδη στήσει.\n"
-"</p>\n"
-"<br>\n"
-"<p>\n"
-"Οι αιτήσεις συμμετοχής αξιολογούνται από τετραμελή επιτροπή η οποία αν "
-"χρειαστεί θα ζητήσει την αρωγή εμπειρογνωμόνων\n"
-"στον τομέα του αιτούντος. Τα κριτήρια στα οποία θα βασιστεί η απόφαση της "
-"επιτροπής κατά σειρά σπουδαιότητας\n"
-"είναι:\n"
-"</p>\n"
-"<br>\n"
-"<ul>\n"
-"<li><strong>Η επιχειρηματική ιδέα -</strong> Οι προοπτικές της ιδέας, άμεσα "
-"ή έμμεσα, να δημιουργήσει θέσεις\n"
-"εργασίας σε περίπτωση επιτυχίας, η εμπορευσιμότητα της ιδέας, η πρωτοτυπία / "
-"καινοτομία της επιχειρηματικής\n"
-"ιδέας, το πόσο εφικτή είναι η υλοποίησή της – λαμβάνοντας υπ' όψιν τα "
-"χαρακτηριστικά της αγοράς (μεγάλη/μικρή)\n"
-"και του ανταγωνισμού (μεγάλος/μικρός), η ανάγκη της αγοράς στην οποία "
-"ανταποκρίνεται, ο στόχος στην\n"
-"αγορά, η προστιθέμενη αξία, η σαφήνεια και ο βαθμός ωριμότητας της ιδέας</"
-"li>\n"
-"<li><strong>Τα προσόντα της ομάδας -</strong> Το επίπεδο εκπαίδευσης και η "
-"συνάφεια των σπουδών με την επιχειρηματική\n"
-"ιδέα, η προηγούμενη επιχειρηματική εμπειρία, η συνάφεια της επιχειρηματικής "
-"εμπειρίας με την επιχειρηματική\n"
-"ιδέα, η εμπειρία σε έρευνα και ανάπτυξη, η δομή της ομάδας</li>\n"
-"<li><strong>Το επιχειρηματικό σχέδιο</strong></li>\n"
-"</ul>\n"
-"<br>\n"
-"<p>\n"
-"Όσον αφορά το επιχειρηματικό σχέδιο, δεν είναι υποχρεωτικό να κατατεθεί στην "
-"αίτηση και η απουσία του δεν\n"
-"θα επηρεάσει αρνητικά την αίτηση, καθώς ένας από τους στόχους της εισαγωγής "
-"στο OK!Thess είναι η δημιουργία\n"
-"του. Εάν όμως κατατεθεί μπορεί να επηρεάσει θετικά.\n"
-"</p>\n"
-"<br>\n"
-"<p>\n"
-"Η αποδοχή κάθε ομάδας γίνεται για ένα χρονικό διάστημα που προσδιορίζεται "
-"από την επιτροπή αξιολόγησης και\n"
-"εξαρτάται από τα χαρακτηριστικά της κάθε πρότασης. Όλες οι ομάδες που γίνανε "
-"δεκτές αξιολογούνται για\n"
-"την πρόοδο τους κάθε τρεις μήνες. Σε περίπτωση που αυτή η αξιολόγηση δείχνει "
-"πως οι στόχοι της ομάδας\n"
-"δεν είναι επιτεύξιμοι τότε η συμφωνία συμμετοχής στο ΟΚ!Thess διακόπτεται "
-"ώστε οι διαθέσιμοι πόροι να\n"
-"διατεθούν σε νέες ομάδες.\n"
-"</p>\n"
-"<br>\n"
-"<p>\n"
-"Κάθε ομάδα που γίνεται δεκτή στο ΟΚ!Τhess, πληρώνει προκαταβολικά €150 για "
-"κάθε τριμηνία και για τις υπηρεσίες\n"
-"που αναφέρονται παραπάνω. Άλλες υπηρεσίες, όπως εξειδικευμένη κατάρτιση "
-"μπορεί να έχει πρόσθετη χρέωση.\n"
-"</p>\n"
-msgstr ""
-
-#: main/templates/main/about.html:145
-msgid "Συνεργατικός χώρος"
-msgstr ""
-
-#: main/templates/main/about.html:148
-msgid ""
-"<p>Ο χώρος παρέχει ένα σύγχρονο εργασιακό περιβάλλον με μεγάλες δυνατότητες "
-"λειτουργικής διαμόρφωσης ώστε να\n"
-"προσαρμόζεται στις εκάστοτε απαιτήσεις.\n"
-"</p>\n"
-"<p>Παράλληλα παρέχονται όλες οι σύγχρονες υποδοµές (δίκτυο υψηλών ταχυτήτων, "
-"τραπέζια εργασίας, χώροι συναντήσεων\n"
-"- συνεργασίας, χώροι εστίασης έως και αναψυχής κλπ) σε έναν χώρο µε minimal "
-"αισθητική που µπορεί εύκολα\n"
-"να µεταµορφώνεται ανάλογα µε τις απαιτήσεις και τις ιδιαιτερότητες της "
-"εκάστοτε δράσης που υλοποιείται.\n"
-"</p>\n"
-msgstr ""
-
-#: main/templates/main/about.html:162 main/templates/main/layout.html:73
-#: main/templates/main/program-teams.html:40
+#: main/templates/main/about.html:41 main/templates/main/layout.html:73
+#: main/templates/main/program-teams.html:48
 msgid "About"
-msgstr ""
+msgstr "Σχετικά"
 
-#: main/templates/main/about.html:163
+#: main/templates/main/about.html:43
 msgid "about page sidebar"
 msgstr ""
 
-#: main/templates/main/apply.html:19
+#: main/templates/main/apply.html:20
 msgid ""
 "<p>\n"
 "We accept <strong>proposals</strong> etc\n"
@@ -250,65 +53,95 @@ msgid ""
 "\"_blank\">open call</a> and send it to apply@okthess.gr.\n"
 "</p>\n"
 msgstr ""
+"<p>Γίνονται δεκτές <strong>ανά πάσα στιγμή</strong> προτάσεις από άτομα ή "
+"ομάδες\n"
+"με καινοτόμες ιδέες, ανεξάρτητα του βαθμού ωρίμανσης, που θα\n"
+"ήθελαν να ωφεληθούν από τις υπηρεσίες της προ-θερμοκοιτίδας του\n"
+"OK!Thess ώστε να στήσουν μια επιχείρηση (startup) ή να ενισχύσουν\n"
+"μια startup που έχουν ήδη στήσει.\n"
+"</p>\n"
+"<p>\n"
+"Οι προτάσεις αξιολογούνται σε τακτά χρονικά διαστήματα, οι\n"
+"ακριβείς ημερομηνίες ανακοινώνονται στην παρούσα ιστοσελίδα.\n"
+"Η τρέχουσα περίοδος κατάθεσης προτάσεων κλείνει στις <strong>13 Σεπτεμβρίου</"
+"strong> του 2017.\n"
+"Τα αποτελέσματα της αξιολόγησης θα ανακοινωθούν στις <strong>19 Σεπτεμβρίου</"
+"strong>.\n"
+"Η περίοδος θερμοκοίτησης περιλαμβάνει <strong>υποχρεωτικές παρακολουθήσεις "
+"από τις 2 έως και τις 13 Οκτωβρίου</strong>.\n"
+"</p>\n"
+"<p>\n"
+"Για συμμετοχή, διαβάστε τις <a href='http://okthess.gr/pdf/website-open-call."
+"pdf' target='_blank'>οδηγίες υποβολής</a>\n"
+"και συμπληρώστε την παρακάτω φόρμα συμμετοχής ή\n"
+"απαντήστε τις ερωτήσεις στο σώμα ενός e-mail και στείλτε στο apply@okthess."
+"gr\n"
+"</p>\n"
 
-#: main/templates/main/apply.html:29
+#: main/templates/main/apply.html:30
 msgid "Application form"
 msgstr ""
 
-#: main/templates/main/apply.html:39
+#: main/templates/main/apply.html:40
 msgid "Submit"
-msgstr ""
+msgstr "Υποβολή"
 
-#: main/templates/main/blog-archive.html:19 main/templates/main/blog.html:19
+#: main/templates/main/blog-archive.html:20 main/templates/main/blog.html:20
 #: main/templates/main/post.html:38
 msgid "Posted"
-msgstr ""
+msgstr "Αναρτήθηκε"
 
-#: main/templates/main/blog-archive.html:22 main/templates/main/blog.html:22
+#: main/templates/main/blog-archive.html:23 main/templates/main/blog.html:23
 #: main/templates/main/index.html:73
 msgid "<strong>Read</strong> more »"
 msgstr ""
 
-#: main/templates/main/blog-archive.html:30 main/templates/main/blog.html:30
+#: main/templates/main/blog-archive.html:31 main/templates/main/blog.html:31
 msgid "Resources"
 msgstr ""
 
-#: main/templates/main/blog-archive.html:68 main/templates/main/blog.html:68
+#: main/templates/main/blog-archive.html:69 main/templates/main/blog.html:69
 msgid "Archives"
 msgstr ""
 
-#: main/templates/main/contact.html:21
+#: main/templates/main/contact.html:22
 msgid "Location"
-msgstr ""
+msgstr "Τοποθεσία"
 
-#: main/templates/main/contact.html:27
+#: main/templates/main/contact.html:28
 msgid ""
 "<address>\n"
 "<abbr title=\"Thessaloniki's Innovation Ecosystem\">OK!THESS</abbr><br>\n"
-"<small>Address:</small> Κομοτηνής 2, 54655<br>\n"
-"<small>Entrance from:</small> Kidonion &amp; Maria Kallas<br>Thessaloniki, "
-"Greece.\n"
+"<small>Address:</small> Komotinis 2, 54655<br>\n"
+"<small>Entrance from:</small> Kidonion &amp; Maria Kallas\n"
+"<br>Thessaloniki, Greece.\n"
 "</address>\n"
 msgstr ""
+"<address>\n"
+"<abbr title=\"Οικοσύστημα Καινοτομίας Θεσσαλονίκης\">OK!THESS</abbr><br>\n"
+"<small>Address:</small> Κομοτηνής 2, 54655<br>\n"
+"<small>Είσοδος:</small> Κυδωνιών &amp; Μαρίας Κάλλας<br>Thessaloniki, "
+"Ελλάδα.\n"
+"</address>\n"
 
-#: main/templates/main/contact.html:33
+#: main/templates/main/contact.html:35
 msgid "Email us"
-msgstr ""
+msgstr "Επικοινωνία μέσω e-mail"
 
-#: main/templates/main/contact.html:45
+#: main/templates/main/contact.html:47
 msgid "Send it!"
-msgstr ""
+msgstr "Στείλε!"
 
-#: main/templates/main/events.html:47
+#: main/templates/main/events.html:48
 msgid ""
 "The meetup of OK!Thess is the new thing in town. Click here to learn more"
 msgstr ""
 
-#: main/templates/main/events.html:53
+#: main/templates/main/events.html:54
 msgid "Hosted Meetups"
 msgstr ""
 
-#: main/templates/main/events.html:62
+#: main/templates/main/events.html:63
 msgid "Past Events"
 msgstr ""
 
@@ -344,21 +177,9 @@ msgstr ""
 msgid "<strong>Apply</strong> for Autumn '17"
 msgstr ""
 
-#: main/templates/main/layout.html:75
-msgid "What we do"
-msgstr ""
-
-#: main/templates/main/layout.html:76
-msgid "How do we do it?"
-msgstr ""
-
 #: main/templates/main/layout.html:77
 msgid "How do I participate?"
-msgstr ""
-
-#: main/templates/main/layout.html:78
-msgid "Coworking space"
-msgstr ""
+msgstr "Πώς συμμετέχω;"
 
 #: main/templates/main/layout.html:81
 msgid "Program"
@@ -374,83 +195,83 @@ msgstr ""
 
 #: main/templates/main/layout.html:84
 msgid "Contact"
-msgstr ""
+msgstr "Επικοινωνία"
 
 #: main/templates/main/layout.html:112
 msgid "LOCATION"
-msgstr ""
+msgstr "ΤΟΠΟΘΕΣΙΑ"
 
 #: main/templates/main/layout.html:119
 msgid "MEMBERS"
-msgstr ""
+msgstr "ΣΥΝΕΡΓΑΤΕΣ"
 
 #: main/templates/main/layout.html:146
 msgid "SPONSORS"
-msgstr ""
+msgstr "ΥΠΟΣΤΗΡΙΚΤΕΣ"
 
 #: main/templates/main/layout.html:156
 msgid "DONOR"
-msgstr ""
+msgstr "ΔΩΡΗΤΗΣ"
 
-#: main/templates/main/program-alumni.html:12
-#: main/templates/main/program-alumni.html:41
-#: main/templates/main/program-mentors.html:53
-#: main/templates/main/program-teams.html:52
+#: main/templates/main/program-alumni.html:13
+#: main/templates/main/program-alumni.html:42
+#: main/templates/main/program-mentors.html:54
+#: main/templates/main/program-teams.html:44
 msgid "Alumni"
 msgstr ""
 
-#: main/templates/main/program-alumni.html:29
+#: main/templates/main/program-alumni.html:30
 msgid "About alumni"
 msgstr ""
 
-#: main/templates/main/program-alumni.html:31
+#: main/templates/main/program-alumni.html:32
 msgid ""
 "\n"
 "program alumni sidebar\n"
 msgstr ""
 
-#: main/templates/main/program-alumni.html:39
-#: main/templates/main/program-mentors.html:51
-#: main/templates/main/program-teams.html:50
-msgid "Teams"
-msgstr ""
-
 #: main/templates/main/program-alumni.html:40
-#: main/templates/main/program-mentors.html:12
 #: main/templates/main/program-mentors.html:52
-#: main/templates/main/program-teams.html:51
+#: main/templates/main/program-teams.html:42
+msgid "Teams"
+msgstr "Ομάδες"
+
+#: main/templates/main/program-alumni.html:41
+#: main/templates/main/program-mentors.html:13
+#: main/templates/main/program-mentors.html:53
+#: main/templates/main/program-teams.html:43
 msgid "Mentors"
-msgstr ""
+msgstr "Μέντορες"
 
-#: main/templates/main/program-mentors.html:41
+#: main/templates/main/program-mentors.html:42
 msgid "How you can be a mentor"
-msgstr ""
+msgstr "Πώς μπορείς να γίνεις μέντορας"
 
-#: main/templates/main/program-mentors.html:43
+#: main/templates/main/program-mentors.html:44
 msgid ""
 "\n"
 "program mentors sidebar how to be a mentor\n"
 msgstr ""
 
-#: main/templates/main/program-teams.html:14
+#: main/templates/main/program-teams.html:15
 msgid "Hosted Teams"
 msgstr ""
 
-#: main/templates/main/program-teams.html:17
+#: main/templates/main/program-teams.html:18
 msgid "Filter by industry"
 msgstr ""
 
-#: main/templates/main/program-teams.html:42
+#: main/templates/main/program-teams.html:50
 msgid ""
 "\n"
 "program about sidebar description\n"
 msgstr ""
 
-#: main/templates/main/program-teams.html:57
+#: main/templates/main/program-teams.html:58
 msgid "Internal Regulation"
-msgstr ""
+msgstr "Εσωτερικός Κανονισμός"
 
-#: main/templates/main/program-teams.html:60
+#: main/templates/main/program-teams.html:61
 msgid "Apply now!"
 msgstr ""
 
