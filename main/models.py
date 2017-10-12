@@ -181,3 +181,17 @@ class Application(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class About(models.Model):
+    what_text_en = RichTextField(null=True, blank=True)
+    what_text_el = RichTextField(null=True, blank=True)
+    how_text_en = RichTextField(null=True, blank=True)
+    how_text_el = RichTextField(null=True, blank=True)
+    participate_text_en = RichTextField(null=True, blank=True)
+    participate_text_el = RichTextField(null=True, blank=True)
+    coworking_text_en = RichTextField(null=True, blank=True)
+    coworking_text_el = RichTextField(null=True, blank=True)
+
+    def __str__(self):
+        return 'About page'
