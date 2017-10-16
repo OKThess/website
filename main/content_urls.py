@@ -25,6 +25,9 @@ urlpatterns = [
     # /blog/
     url(r'^blog/$', views.blog, name='blog'),
 
+    # /resources/
+    url(r'^resources/$', views.resources, name='resources'),
+
     # e.g. /blog/sample-post
     url(r'^blog/(?P<post_slug>[^/]*)/$', views.blog_post, name='blog_post'),
 
