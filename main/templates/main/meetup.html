@@ -37,11 +37,23 @@
                                 <div class="meetup-body-content-side">
                                     <div class="meetup-body-content-side-title">
                                         <i class="glyphicon glyphicon-console"></i>
-                                        Next meetup
+                                        {% if latest_meetup.title %}
+                                            {{ latest_meetup.title }}
+                                        {% else %}
+                                            Next meetup
+                                        {% endif %}
                                     </div>
-                                    <div class="meetup-body-content-side-name">Meetup #38</div>
-                                    <div class="meetup-body-content-side-date">Thursday, 25 Oct, 2017</div>
-                                    <div class="meetup-body-content-side-time">6pm</div>
+                                    <div class="meetup-body-content-side-meta">
+                                        <div class="meetup-body-content-side-meta-date">{{ latest_meetup.date }}</div>
+                                        <div class="meetup-body-content-side-meta-time">{{ latest_meetup.time }}</div>
+                                    </div>
+                                    <div class="meetup-body-content-side-agenda">
+                                        <div class="meetup-body-content-side-agenda-title">
+                                            <i class="glyphicon glyphicon-pushpin"></i>
+                                            Agenda
+                                        </div>
+                                        {{ latest_meetup.agenda|safe }}
+                                    </div>
                                 </div>
                             </div>
                         </div>
