@@ -97,7 +97,7 @@ def program_alumni(request):
 
 
 def meetup(request):
-    latest_meetup = OkthessMeetup.objects.latest('date')
+    latest_meetup = OkthessMeetup.objects.order_by('-date').first()
     return render(request, 'main/meetup.html', {
         'latest_meetup': latest_meetup,
     })
