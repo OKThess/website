@@ -35,25 +35,31 @@
                             </div>
                             <div class="col-md-4 col-sm-4">
                                 <div class="meetup-body-content-side">
-                                    <div class="meetup-body-content-side-title">
-                                        <i class="glyphicon glyphicon-console"></i>
-                                        {% if latest_meetup.title %}
-                                            {{ latest_meetup.title }}
-                                        {% else %}
-                                            Next meetup
-                                        {% endif %}
-                                    </div>
-                                    <div class="meetup-body-content-side-meta">
-                                        <div class="meetup-body-content-side-meta-date">{{ latest_meetup.date }}</div>
-                                        <div class="meetup-body-content-side-meta-time">{{ latest_meetup.time }}</div>
-                                    </div>
-                                    <div class="meetup-body-content-side-agenda">
-                                        <div class="meetup-body-content-side-agenda-title">
-                                            <i class="glyphicon glyphicon-pushpin"></i>
-                                            Agenda
+                                    {% if latest_meetup %}
+                                        <div class="meetup-body-content-side-title">
+                                            <i class="glyphicon glyphicon-console"></i>
+                                            {% if latest_meetup.title %}
+                                                {{ latest_meetup.title }}
+                                            {% else %}
+                                                Next meetup
+                                            {% endif %}
                                         </div>
-                                        {{ latest_meetup.agenda|safe }}
-                                    </div>
+                                        <div class="meetup-body-content-side-meta">
+                                            <div class="meetup-body-content-side-meta-date">{{ latest_meetup.date }}</div>
+                                            <div class="meetup-body-content-side-meta-time">{{ latest_meetup.time }}</div>
+                                        </div>
+                                        <div class="meetup-body-content-side-agenda">
+                                            <div class="meetup-body-content-side-agenda-title">
+                                                <i class="glyphicon glyphicon-pushpin"></i>
+                                                Agenda
+                                            </div>
+                                            {{ latest_meetup.agenda|safe }}
+                                        </div>
+                                    {% else %}
+                                        <div class="meetup-body-content-side-title">
+                                            Next meetup loading...
+                                        </div>
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>
