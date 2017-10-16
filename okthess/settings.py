@@ -33,7 +33,7 @@ if helpers.is_ec2_linux():
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    'okthess-prod.ggj4bxeh2q.eu-central-1.elasticbeanstalk.com',
+    '.elasticbeanstalk.com',
     '.okthess.gr',
 ]
 
