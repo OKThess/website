@@ -195,3 +195,13 @@ class About(models.Model):
 
     def __str__(self):
         return 'About page'
+
+
+class OkthessMeetup(models.Model):
+    date = models.DateField()
+    time = models.TimeField()
+    title = models.TextField(null=True, blank=True)
+    agenda = RichTextField(null=True, blank=True)
+
+    def __str__(self):
+        return self.title
