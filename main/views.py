@@ -33,12 +33,7 @@ def index(request):
 
 
 def about(request):
-    try:
-        about_texts = About.objects.all()[0]
-    except IndexError:
-        return render(request, 'main/about.html', {
-            'about_texts': {},
-        })
+    about_texts = About.objects.first()
     if request.LANGUAGE_CODE == 'en':
         about_texts.what_text = about_texts.what_text_en
         about_texts.how_text = about_texts.how_text_en
@@ -101,7 +96,7 @@ def program_alumni(request):
 
 
 def meetup(request):
-    latest_meetup = OkthessMeetup.objects.order_by('-date')[0]
+    latest_meetup = OkthessMeetup.objects.latest('date')
     return render(request, 'main/meetup.html', {
         'latest_meetup': latest_meetup,
     })
