@@ -8,7 +8,7 @@ from django.core.mail import send_mail
 from django.template.loader import render_to_string
 
 from okthess import settings
-from .models import Team, Mentor, Meetup, Coworking, Post, Event, About
+from .models import Team, Mentor, Meetup, Coworking, Post, Event, About, OkthessMeetup
 from .forms import ApplicationForm, ContactForm
 
 
@@ -101,7 +101,10 @@ def program_alumni(request):
 
 
 def meetup(request):
-    return render(request, 'main/meetup.html')
+    latest_meetup = OkthessMeetup.objects.order_by('-date')[0]
+    return render(request, 'main/meetup.html', {
+        'latest_meetup': latest_meetup,
+    })
 
 
 def events(request):
