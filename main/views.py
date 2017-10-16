@@ -206,6 +206,10 @@ def blog_archives(request, archive_year, archive_month):
     })
 
 
+def resources(request):
+    return render(request, 'main/resources.html')
+
+
 def contact(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
