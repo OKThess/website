@@ -691,6 +691,33 @@ ul.share-buttons img{
   width: 32px;
 }
 
+/* resources */
+.resources {
+  width: 90%;
+}
+
+.resources h1 {
+  margin-left: 5px;
+}
+
+.resources h2 {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.resources-item {
+  margin-top: 10px;
+  background: #f5f5f5;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.resources-item-title {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
 /* events */
 .events {
   width: 90%;
@@ -826,7 +853,7 @@ button.accordion.active:after {
 
 .sidebar-module-inset {
   padding: 0px;
-  max-height: 305px;
+  max-height: 330px;
   background-color: #f5f5f5;
   border-radius: 4px;
   margin-bottom: 30px;
