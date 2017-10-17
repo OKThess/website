@@ -378,7 +378,9 @@ address > abbr {
 }
 
 .index-blog-item-img > img {
-  width: 300px;
+  width: auto;
+  max-width: 300px;
+  max-height: 200px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -391,7 +393,9 @@ address > abbr {
 
 @media (min-width: 992px) {
   .index-blog-item-img > img {
-    width: 300px;
+    width: auto;
+    max-width: 300px;
+    max-height: 210px;
   }
 }
 
