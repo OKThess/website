@@ -1,3 +1,5 @@
+import datetime
+
 from collections import OrderedDict
 
 from django.shortcuts import render, redirect
@@ -25,7 +27,7 @@ def index(request):
             post.title = post.title_el
             post.teaser = post.teaser_el
             post.body = post.body_el
-    events_list = Event.objects.order_by('-date')[:3]
+    events_list = Event.objects.order_by('-date').filter(date__gte=datetime.datetime.now())[:3]
     return render(request, 'main/index.html', {
         'featured_posts_list': featured_posts_list,
         'events_list': events_list,

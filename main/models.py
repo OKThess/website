@@ -47,7 +47,7 @@ class Mentor(models.Model):
     name = models.CharField(max_length=100)
     description_en = models.TextField(null=True, default=None)
     description_el = models.TextField(null=True, default=None)
-    image = S3DirectField()
+    image = S3DirectField(dest='uploads')
     email = models.EmailField()
     phone = models.CharField(max_length=20, null=True, default=None)
     current_title = models.CharField(max_length=100, null=True, default=None)
