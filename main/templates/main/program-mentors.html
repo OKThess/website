@@ -16,20 +16,13 @@
                         {% for mentor in mentors_list %}
                             <div class="col-md-4">
                                 <div class="program-main-mentor">
-                                    <img src="{{ mentor.image }}" class="program-main-mentor-image" alt="mentor image">
-                                    <div class="program-main-mentor-name">{{ mentor.name }}</div>
-                                    <p>{{ mentor.description }}</p>
-                                    <div class="program-main-mentor-links">
-                                        {% if mentor.github %}
-                                            <a href="{{ mentor.github }}">GitHub</a>
-                                        {% endif %}
-                                        {% if mentor.website %}
-                                            <a href="{{ mentor.website }}">Website</a>
-                                        {% endif %}
-                                        {% if mentor.linkedin %}
-                                            <a href="{{ mentor.linkedin }}">LinkedIn</a>
-                                        {% endif %}
+                                    <a href="{{ mentor.website }}" target="_blank">
+                                        <img src="{{ mentor.image }}" class="program-main-mentor-image" alt="mentor image">
+                                    </a>
+                                    <div class="program-main-mentor-name">
+                                        <a target="_blank" href="{{ mentor.website }}">{{ mentor.name }}</a>
                                     </div>
+                                    <p>{{ mentor.description }}</p>
                                 </div>
                             </div>
                         {% endfor %}
