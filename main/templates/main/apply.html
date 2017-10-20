@@ -17,16 +17,7 @@
                         {% endfor %}
                     </p>
                 {% endif %}
-{% blocktrans %}<p>
-We accept <strong>proposals</strong> etc
-</p>
-<p>
-Currently <strong>13 Sep</strong> 2017.
-</p>
-<p>
-Read this <a href="http://okthess.gr/pdf/website-open-call.pdf" target="_blank">open call</a> and send it to apply@okthess.gr.
-</p>
-{% endblocktrans %}
+                <p>{{ application_content|safe }}</p>
                 <h3>{% trans 'Application form' %}</h3>
                 <form action="{% url 'main:apply' %}" method="post">
                     {% csrf_token %}
