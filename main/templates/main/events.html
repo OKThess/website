@@ -12,7 +12,7 @@
                 {% for event in events_list %}
                     <div class="events-single {% if event.is_old %} events-single-dimmed {% endif %}">
                         <div class="row">
-                            <div class="col-md-3">
+                            <div class="col-md-3 text-center">
                                 <a href="{{ event.link }}"><img src="{{ event.image }}"></a>
                             </div>
                             <div class="col-md-9">
@@ -23,7 +23,7 @@
                                 <div class="events-single-title">
                                     <a href="{{ event.link }}">{{ event.title }}</a>
                                 </div>
-                                <p>{{ event.description }}</p>
+                                <p class="events-single-para">{{ event.description }}</p>
                                 <div class="events-single-data">
                                     <div class="events-single-data-organizer">Organized by: {{ event.organizer }}</div>
                                     <div class="events-single-data-link">
