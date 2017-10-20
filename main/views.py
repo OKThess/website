@@ -10,7 +10,7 @@ from django.core.mail import send_mail
 from django.template.loader import render_to_string
 
 from okthess import settings
-from .models import Team, Mentor, Meetup, Coworking, Post, Event, About, OkthessMeetup
+from .models import Team, Mentor, Meetup, Coworking, Post, Event, About, OkthessMeetup, ResourceCategory, Resource, ApplyText
 from .forms import ApplicationForm, ContactForm
 
 
@@ -159,9 +159,11 @@ def blog(request):
         post_date = post.date.replace(day=1)
         if not post_date in archives_list:
             archives_list.append(post_date)
+    resources_list = Resource.objects.filter(is_pinned=True)
     return render(request, 'main/blog.html', {
         'posts_list': posts_list,
         'archives_list': archives_list,
+        'resources_list': resources_list,
     })
 
 
@@ -208,7 +210,10 @@ def blog_archives(request, archive_year, archive_month):
 
 
 def resources(request):
-    return render(request, 'main/resources.html')
+    categories_list = ResourceCategory.objects.all()
+    return render(request, 'main/resources.html', {
+        'categories_list': categories_list,
+    })
 
 
 def contact(request):
@@ -245,6 +250,14 @@ def apply(request):
             return HttpResponse('Application form submission is invalid.')
     else:
         form = ApplicationForm()
+        apply_text = ApplyText.objects.first()
+        application_content = ''
+        if apply_text:
+            if request.LANGUAGE_CODE == 'en':
+                application_content = apply_text.content_en
+            else:
+                application_content = apply_text.content_el
         return render(request, 'main/apply.html', {
             'form': form,
+            'application_content': application_content,
         })
