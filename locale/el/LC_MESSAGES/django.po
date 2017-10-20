@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-19 15:48+0300\n"
+"POT-Creation-Date: 2017-10-20 13:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,49 +40,11 @@ msgstr "Σχετικά"
 msgid "about page sidebar"
 msgstr ""
 
-#: .\main\templates\main\apply.html:20
-msgid ""
-"<p>\n"
-"We accept <strong>proposals</strong> etc\n"
-"</p>\n"
-"<p>\n"
-"Currently <strong>13 Sep</strong> 2017.\n"
-"</p>\n"
-"<p>\n"
-"Read this <a href=\"http://okthess.gr/pdf/website-open-call.pdf\" target="
-"\"_blank\">open call</a> and send it to apply@okthess.gr.\n"
-"</p>\n"
-msgstr ""
-"<p>Γίνονται δεκτές <strong>ανά πάσα στιγμή</strong> προτάσεις από άτομα ή "
-"ομάδες\n"
-"με καινοτόμες ιδέες, ανεξάρτητα του βαθμού ωρίμανσης, που θα\n"
-"ήθελαν να ωφεληθούν από τις υπηρεσίες της προ-θερμοκοιτίδας του\n"
-"OK!Thess ώστε να στήσουν μια επιχείρηση (startup) ή να ενισχύσουν\n"
-"μια startup που έχουν ήδη στήσει.\n"
-"</p>\n"
-"<p>\n"
-"Οι προτάσεις αξιολογούνται σε τακτά χρονικά διαστήματα, οι\n"
-"ακριβείς ημερομηνίες ανακοινώνονται στην παρούσα ιστοσελίδα.\n"
-"Η τρέχουσα περίοδος κατάθεσης προτάσεων κλείνει στις <strong>13 Σεπτεμβρίου</"
-"strong> του 2017.\n"
-"Τα αποτελέσματα της αξιολόγησης θα ανακοινωθούν στις <strong>19 Σεπτεμβρίου</"
-"strong>.\n"
-"Η περίοδος θερμοκοίτησης περιλαμβάνει <strong>υποχρεωτικές παρακολουθήσεις "
-"από τις 2 έως και τις 13 Οκτωβρίου</strong>.\n"
-"</p>\n"
-"<p>\n"
-"Για συμμετοχή, διαβάστε τις <a href='http://okthess.gr/pdf/website-open-call."
-"pdf' target='_blank'>οδηγίες υποβολής</a>\n"
-"και συμπληρώστε την παρακάτω φόρμα συμμετοχής ή\n"
-"απαντήστε τις ερωτήσεις στο σώμα ενός e-mail και στείλτε στο apply@okthess."
-"gr\n"
-"</p>\n"
-
-#: .\main\templates\main\apply.html:30
+#: main/templates/main/apply.html:21
 msgid "Application form"
 msgstr ""
 
-#: .\main\templates\main\apply.html:40
+#: main/templates/main/apply.html:31
 msgid "Submit"
 msgstr "Υποβολή"
 
@@ -101,8 +63,7 @@ msgstr ""
 msgid "Resources"
 msgstr ""
 
-#: .\main\templates\main\blog-archive.html:69
-#: .\main\templates\main\blog.html:68
+#: main/templates/main/blog-archive.html:69 main/templates/main/blog.html:41
 msgid "Archives"
 msgstr ""
 
@@ -215,37 +176,37 @@ msgstr "ΥΠΟΣΤΗΡΙΚΤΕΣ"
 msgid "DONOR"
 msgstr "ΔΩΡΗΤΗΣ"
 
-#: .\main\templates\main\program-alumni.html:13
-#: .\main\templates\main\program-alumni.html:33
-#: .\main\templates\main\program-mentors.html:45
-#: .\main\templates\main\program-teams.html:44
+#: main/templates/main/program-alumni.html:13
+#: main/templates/main/program-alumni.html:33
+#: main/templates/main/program-mentors.html:38
+#: main/templates/main/program-teams.html:44
 msgid "Alumni"
 msgstr ""
 
-#: .\main\templates\main\program-alumni.html:31
-#: .\main\templates\main\program-mentors.html:43
-#: .\main\templates\main\program-teams.html:42
+#: main/templates/main/program-alumni.html:31
+#: main/templates/main/program-mentors.html:36
+#: main/templates/main/program-teams.html:42
 msgid "Teams"
 msgstr "Ομάδες"
 
-#: .\main\templates\main\program-alumni.html:32
-#: .\main\templates\main\program-mentors.html:13
-#: .\main\templates\main\program-mentors.html:44
-#: .\main\templates\main\program-teams.html:43
+#: main/templates/main/program-alumni.html:32
+#: main/templates/main/program-mentors.html:13
+#: main/templates/main/program-mentors.html:37
+#: main/templates/main/program-teams.html:43
 msgid "Mentors"
 msgstr "Μέντορες"
 
-#: .\main\templates\main\program-alumni.html:37
+#: main/templates/main/program-alumni.html:37
 msgid "About alumni"
 msgstr ""
 
-#: .\main\templates\main\program-alumni.html:39
+#: main/templates/main/program-alumni.html:39
 msgid ""
 "\n"
 "program alumni sidebar\n"
 msgstr ""
 
-#: .\main\templates\main\program-mentors.html:49
+#: main/templates/main/program-mentors.html:42
 msgid "How you can be a mentor"
 msgstr "Πώς μπορείς να γίνεις μέντορας"
 

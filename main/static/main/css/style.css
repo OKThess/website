@@ -498,6 +498,10 @@ address > abbr {
   margin-right: 5%;
 }
 
+.site-footer-content a:hover {
+  text-decoration: none;
+}
+
 #social {
   margin-bottom: 2px;
   margin-left: 5%;
@@ -737,15 +741,18 @@ ul.share-buttons img{
 }
 
 .events-single img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 185px;
 }
 
-.events-single p {
+.events-single-para {
   font-size: 12px;
+  height: 72px;
+  margin-bottom: 14px;
 }
 
 .events-single-title {
-  margin-top: 10px;
+  margin-top: 16px;
   margin-bottom: 10px;
 }
 
