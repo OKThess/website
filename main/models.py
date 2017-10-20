@@ -205,3 +205,31 @@ class OkthessMeetup(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class ResourceCategory(models.Model):
+    name = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.name
+
+
+class Resource(models.Model):
+    title = models.CharField(max_length=400)
+    url = models.URLField()
+    description = models.TextField(null=True, blank=True)
+    is_pinned = models.BooleanField(default=False)
+    category = models.ForeignKey(
+        ResourceCategory,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+    )
+
+    def __str__(self):
+        return self.title
+
+
+class ApplyText(models.Model):
+    content_en = RichTextField(null=True, blank=True)
+    content_el = RichTextField(null=True, blank=True)
