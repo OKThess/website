@@ -1047,12 +1047,12 @@ button.accordion.active:after {
 }
 
 .program-sidebar-box {
-  background: #ededed;
+  background: #f9f9f9;
   margin-top: 20px;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-left: 20px;
   padding-right: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .program-sidebar-tabs-list > li > a:hover,

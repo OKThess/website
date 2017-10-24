@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-24 16:44+0300\n"
+"POT-Creation-Date: 2017-10-24 16:58+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -226,21 +226,21 @@ msgstr "ΔΩΡΗΤΗΣ"
 
 #: .\main\templates\main\program-alumni.html:13
 #: .\main\templates\main\program-alumni.html:33
-#: .\main\templates\main\program-mentors.html:38
-#: .\main\templates\main\program-teams.html:44
+#: .\main\templates\main\program-mentors.html:37
+#: .\main\templates\main\program-teams.html:43
 msgid "Alumni"
 msgstr "Απόφοιτοι"
 
 #: .\main\templates\main\program-alumni.html:31
 #: .\main\templates\main\program-mentors.html:36
-#: .\main\templates\main\program-teams.html:42
+#: .\main\templates\main\program-teams.html:44
 msgid "Teams"
 msgstr "Ομάδες"
 
 #: .\main\templates\main\program-alumni.html:32
 #: .\main\templates\main\program-mentors.html:13
-#: .\main\templates\main\program-mentors.html:37
-#: .\main\templates\main\program-teams.html:43
+#: .\main\templates\main\program-mentors.html:38
+#: .\main\templates\main\program-teams.html:42
 msgid "Mentors"
 msgstr "Μέντορες"
 
@@ -260,18 +260,15 @@ msgstr ""
 
 #: .\main\templates\main\program-mentors.html:43
 msgid ""
-"\n"
-"                          Experienced professionals who help to guide less "
-"experienced people. The mentors may be older or younger than the people that "
-"are being mentored, but they must have a certain area of expertise. Want to "
-"help our teams as a mentor? Drop us an email at <strong>dimitri@okthess.gr</"
-"strong>. \n"
-"                          "
-msgstr "\n"
-"Επαγγελματίας με εκτεταμένη εμπειρία οι οποίοι βοηθάνε τις ομάδες του προγράμματος."
-"Οι μέντορες μπορεί να είναι ηλικιακά μεγαλύτεροι ή μικρότεροι από τα άτομα που βοηθάνε"
-"και είναι σε θέση να διαμοιράσουν την υψηλή τους εξειδίκευση σε συγκεκριμένο τομέα της αγοράς."
-
+"Experienced professionals who help to guide less experienced people. The "
+"mentors may be older or younger than the people that are being mentored, but "
+"they must have a certain area of expertise. Want to help our teams as a "
+"mentor? Drop us an email at <strong>dimitri@okthess.gr</strong>."
+msgstr ""
+"Επαγγελματίας με εκτεταμένη εμπειρία οι οποίοι βοηθάνε τις ομάδες του "
+"προγράμματος. Οι μέντορες μπορεί να είναι ηλικιακά μεγαλύτεροι ή μικρότεροι "
+"από τα άτομα που βοηθάνεκαι είναι σε θέση να διαμοιράσουν την υψηλή τους "
+"εξειδίκευση σε συγκεκριμένο τομέα της αγοράς."
 
 #: .\main\templates\main\program-teams.html:15
 msgid "Hosted Teams"
