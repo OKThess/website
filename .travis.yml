@@ -5,5 +5,5 @@ services:
   - postgresql
 cache: pip
 install: pip install -r requirements.txt
-script: python manage.py test main.tests.test_index.IndexViewsTest.test_index
+script: python -Wall manage.py test
 after_success: ./deploy.sh
