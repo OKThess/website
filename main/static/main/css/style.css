@@ -273,6 +273,23 @@ address > abbr {
   background: #0f4f92;
 }
 
+.btn-apply {
+  text-decoration: none;
+  color: #000;
+  background: #f9d94f;
+  padding: 3px 13px;
+  font-size: 12px;
+  border: none;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.btn-apply:hover{
+  color: #fff;
+  text-decoration: none;
+  background: #0f4f92;
+}
+
 .form-control {
   box-shadow: none;
   border-color: #ddd;
@@ -325,13 +342,14 @@ address > abbr {
   display: inline-block;
   background: #000;
   color: #fff;
-  font-size: 24px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  font-size: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 300;
   position: relative;
-  top: -52px;
+  top: -62px;
   left: 10px;
 }
 

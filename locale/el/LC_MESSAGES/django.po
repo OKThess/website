@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-20 13:57+0000\n"
+"POT-Creation-Date: 2017-10-24 15:06+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,11 +40,38 @@ msgstr "Σχετικά"
 msgid "about page sidebar"
 msgstr ""
 
-#: main/templates/main/apply.html:21
+#: .\main\templates\main\apply.html:12
+msgid ""
+"\n"
+"              <p>We accept at any time submissions from individuals or "
+"groups with innovative ideas, regardless their stage, who would like to "
+"benefit from the services of the OK!Thess pre-incubator in order to set up a "
+"startup business or accelarate the one that they already have set up.</p>\n"
+"              <p>Proposals shall be evaluated at regular intervals, the "
+"exact dates are being announced on this website.</p>\n"
+"              <p>The current submission period closes on September the 13th "
+"2017. Results will be announced on September the 19th 2017. The incubation "
+"period starts with a compulsory bootcamp that starts on the 2nd and lasts "
+"until the 13th of October.</p>\n"
+"              <p>To participate, you either fill in the following form, or "
+"just answer the questions in the body of an e-mail and send it to "
+"<strong>apply@okthess.gr</strong></p>\n"
+"              "
+msgstr "\n"
+
+"<p>Γίνονται δεκτές ανά πάσα στιγμή προτάσεις από άτομα ή ομάδες με καινοτόμες ιδέες, ανεξάρτητα του βαθμού ωρίμανσης, που θα ήθελαν να ωφεληθούν από τις υπηρεσίες της προ-θερμοκοιτίδας του OK!Thess ώστε να στήσουν μια επιχείρηση (startup) ή να ενισχύσουν μια startup που έχουν ήδη στήσει.</p>"
+
+"<p>Οι προτάσεις αξιολογούνται σε τακτά χρονικά διαστήματα, οι ακριβείς ημερομηνίες ανακοινώνονται στην παρούσα ιστοσελίδα.</p>"
+
+"<p>Η τρέχουσα περίοδος κατάθεσης προτάσεων κλείνει στις 13 Σεπτεμβρίου του 2017. Τα αποτελέσματα της αξιολόγησης θα ανακοινωθούν στις 19 Σεπτεμβρίου. Η περίοδος θερμοκοίτησης περιλαμβάνει υποχρεωτικές παρακολουθήσεις από τις 2 έως και τις 13 Οκτωβρίου.</p>"
+
+"<p>Για συμμετοχή συμπληρώστε την παρακάτω φόρμα συμμετοχής ή απαντήστε τις ερωτήσεις στο σώμα ενός e-mail και στείλτε στο <strong>apply@okthess.gr</strong></p>"
+
+#: .\main\templates\main\apply.html:27
 msgid "Application form"
 msgstr ""
 
-#: main/templates/main/apply.html:31
+#: .\main\templates\main\apply.html:37
 msgid "Submit"
 msgstr "Υποβολή"
 
@@ -63,7 +90,8 @@ msgstr ""
 msgid "Resources"
 msgstr ""
 
-#: main/templates/main/blog-archive.html:69 main/templates/main/blog.html:41
+#: .\main\templates\main\blog-archive.html:69
+#: .\main\templates\main\blog.html:41
 msgid "Archives"
 msgstr ""
 
@@ -110,7 +138,7 @@ msgstr ""
 
 #: .\main\templates\main\index.html:12
 msgid "Your early stage partner"
-msgstr ""
+msgstr "Συνεργάτης στα πρώτα βήματα"
 
 #: .\main\templates\main\index.html:14
 msgid ""
@@ -119,26 +147,31 @@ msgid ""
 "Model Fast</strong>, rather than hastily, and to <strong>Meet,\n"
 "Mix and Connect</strong> with like-minded peers.\n"
 msgstr ""
+"Το ΟΚ!Τhess προσφέρει χώρο και τεχνική υποστήριξη\n"
+"σε ομάδες ανθρώπων με καινοτόμες ιδέες, βοηθώντας τους να\n"
+"αναπτύξουν ένα βιώσιμο επιχειρηματικό μοντέλο και να έρθουν σε επαφή\n"
+"με την πραγματική αγορά καθώς και την δημιουργική επιχειρηματική κοινότητα "
+"της πόλης.\n"
 
 #: .\main\templates\main\index.html:48
 msgid "Community Events"
-msgstr ""
+msgstr "Ανοιχτές Συναντήσεις"
 
 #: .\main\templates\main\index.html:52
 msgid "Mentoring Sessions"
-msgstr ""
+msgstr "Καθοδήγηση"
 
 #: .\main\templates\main\index.html:56
-msgid "Accelerator"
-msgstr ""
+msgid "Pre-incubation"
+msgstr "Προ-θερμοκοίτηση"
 
 #: .\main\templates\main\index.html:83
 msgid "Upcoming Community <strong>Meetups</strong>"
-msgstr ""
+msgstr "Επερχόμενες <strong>Ανοιχτές Συναντήσεις</strong>"
 
 #: .\main\templates\main\layout.html:62
 msgid "<strong>Apply</strong> for Autumn '17"
-msgstr ""
+msgstr "<strong>Aίτηση Συμμετοχής</strong>"
 
 #: .\main\templates\main\layout.html:77
 msgid "How do I participate?"
@@ -176,49 +209,54 @@ msgstr "ΥΠΟΣΤΗΡΙΚΤΕΣ"
 msgid "DONOR"
 msgstr "ΔΩΡΗΤΗΣ"
 
-#: main/templates/main/program-alumni.html:13
-#: main/templates/main/program-alumni.html:33
-#: main/templates/main/program-mentors.html:38
-#: main/templates/main/program-teams.html:44
+#: .\main\templates\main\program-alumni.html:13
+#: .\main\templates\main\program-alumni.html:33
+#: .\main\templates\main\program-mentors.html:38
+#: .\main\templates\main\program-teams.html:44
 msgid "Alumni"
-msgstr ""
+msgstr "Απόφοιτοι"
 
-#: main/templates/main/program-alumni.html:31
-#: main/templates/main/program-mentors.html:36
-#: main/templates/main/program-teams.html:42
+#: .\main\templates\main\program-alumni.html:31
+#: .\main\templates\main\program-mentors.html:36
+#: .\main\templates\main\program-teams.html:42
 msgid "Teams"
 msgstr "Ομάδες"
 
-#: main/templates/main/program-alumni.html:32
-#: main/templates/main/program-mentors.html:13
-#: main/templates/main/program-mentors.html:37
-#: main/templates/main/program-teams.html:43
+#: .\main\templates\main\program-alumni.html:32
+#: .\main\templates\main\program-mentors.html:13
+#: .\main\templates\main\program-mentors.html:37
+#: .\main\templates\main\program-teams.html:43
 msgid "Mentors"
 msgstr "Μέντορες"
 
-#: main/templates/main/program-alumni.html:37
-msgid "About alumni"
-msgstr ""
-
-#: main/templates/main/program-alumni.html:39
+#: .\main\templates\main\program-alumni.html:38
 msgid ""
 "\n"
-"program alumni sidebar\n"
+"                          Our graduates comprise the wider OK!Thess network. "
+"They meet at regular intervals to exchange post OK!Thess views and knowledge "
+"and they are also invited to help our hosted teams as Mentors.\n"
+"                          "
 msgstr ""
+"\n"
+"Οι απόφοιτοι του ΟΚ!Τhess παραμένουν κομμάτι του δικτύου μας. Συναντιόνται "
+"σε τακτά χρονικά διαστήματα για να ανταλλάξουν απόψεις και γνώσεις που έχουν "
+"αποκομίσει στην μετά ΟΚ!Τhess εποχή. Αρκετοί απο από αυτούς καλούνται να "
+"βοηθήσουν τις φιλοξενούμενες ομάδες απο τον ρόλο του Μέντορα."
 
-#: main/templates/main/program-mentors.html:42
-msgid "How you can be a mentor"
-msgstr "Πώς μπορείς να γίνεις μέντορας"
-
-#: .\main\templates\main\program-mentors.html:51
+#: .\main\templates\main\program-mentors.html:43
 msgid ""
 "\n"
-"program mentors sidebar how to be a mentor\n"
+"                          Experienced professionals who help to guide less "
+"experienced people. The mentors may be older or younger than the people that "
+"are being mentored, but they must have a certain area of expertise. Want to "
+"help our teams as a mentor? Drop us an email at <strong>dimitri@okthess.gr</"
+"strong>. \n"
+"                          "
 msgstr ""
 
 #: .\main\templates\main\program-teams.html:15
 msgid "Hosted Teams"
-msgstr ""
+msgstr "Φιλοξενούμενες Ομάδες"
 
 #: .\main\templates\main\program-teams.html:18
 msgid "Filter by industry"
@@ -236,12 +274,12 @@ msgstr "Εσωτερικός Κανονισμός"
 
 #: .\main\templates\main\program-teams.html:61
 msgid "Apply now!"
-msgstr ""
+msgstr "Κάνε Αίτηση"
 
 #: .\okthess\settings.py:181
 msgid "Greek"
-msgstr ""
+msgstr "Ελληνικά"
 
 #: .\okthess\settings.py:182
 msgid "English"
-msgstr ""
+msgstr "Αγγλικά"
