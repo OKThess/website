@@ -1,1 +1,1 @@
-pip install ebawscli
+pip install awsebcli
