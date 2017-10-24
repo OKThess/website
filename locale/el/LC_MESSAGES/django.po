@@ -98,12 +98,12 @@ msgstr "Αναρτήθηκε"
 #: .\main\templates\main\blog-archive.html:23
 #: .\main\templates\main\blog.html:23 .\main\templates\main\index.html:73
 msgid "<strong>Read</strong> more »"
-msgstr ""
+msgstr "Περισσότερα"
 
 #: .\main\templates\main\blog-archive.html:31
 #: .\main\templates\main\blog.html:31
 msgid "Resources"
-msgstr ""
+msgstr "Ενδιαφέροντα"
 
 #: .\main\templates\main\blog-archive.html:69
 #: .\main\templates\main\blog.html:41
