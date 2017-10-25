@@ -59,10 +59,10 @@ Mix and Connect</strong> with like-minded peers.
         </div>
     </div>
     <div class="container index-blog">
+      <a class="btn-black" href="" role="button">
+          <span class="glyphicon glyphicon-pencil"></span>{% trans 'Featured <strong>News</strong>' %}
+      </a>
         <div class="row">
-          <a class="btn-black" href="" role="button">
-              <span class="glyphicon glyphicon-pencil"></span>{% trans 'Featured <strong>News</strong>' %}
-          </a>
             {% for post in featured_posts_list %}
                 <div class="col-md-4 col-sm-4 index-blog-item">
                     <a href="{% url 'main:blog_post' post.slug %}" class="index-blog-item-title">
