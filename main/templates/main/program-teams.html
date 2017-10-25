@@ -28,6 +28,9 @@
                                 <div class="program-main-company-image">
                                     <a href="{{ team.url }}"><img src="{{ team.image }}" alt="{{ team.name }} logo"></a>
                                 </div>
+                                {% if team.name %}
+                                    <div class="program-main-company-name"><a href="{{ team.url }}" >{{ team.name }}</a></div>
+                                {% endif %}
                                 <div class="program-main-company-industry hidden">{{ team.industry }}</div>
                                 <p class="program-main-company-desc">{{ team.description }}</p>
                             </div>
