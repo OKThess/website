@@ -9,6 +9,7 @@
     <div class="container-fluid events">
         <div class="row">
             <div class="col-md-9">
+              <h1>{% trans 'All events' %}</h1>
                 {% for event in events_list %}
                     <div class="events-single {% if event.is_old %} events-single-dimmed {% endif %}">
                         <div class="row">
