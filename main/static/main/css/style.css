@@ -370,6 +370,14 @@ address > abbr {
   margin-bottom: 50px;
 }
 
+.index-blog-header {
+  display: inline;
+  text-align: center;
+  color: #fff;
+  background: #231f20;
+  padding: 10px 20px;
+}
+
 .index-blog {
   margin-top: 100px;
   width: 100%;
