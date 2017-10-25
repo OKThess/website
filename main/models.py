@@ -20,7 +20,7 @@ class Team(models.Model):
     name = models.CharField(max_length=100)
     description_en = models.TextField(null=True, default=None)
     description_el = models.TextField(null=True, default=None)
-    url = models.URLField()
+    url = models.URLField(null=True, default=None)
     industry = models.CharField(max_length=200)
     image = S3DirectField(dest='uploads')
     alumni = models.BooleanField(default=False)
