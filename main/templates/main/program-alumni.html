@@ -18,6 +18,9 @@
                                 <div class="program-main-company-image">
                                     <a href="{{ team.link }}"><img src="{{ team.image }}" alt="team logo"></a>
                                 </div>
+                                {% if team.name %}
+                                    <div class="program-main-company-name"><a href="{{ team.url }}" >{{ team.name }}</a></div>
+                                {% endif %}
                                 <p class="program-main-company-desc">{{ team.description }}</p>
                             </div>
                         {% endfor %}
@@ -43,7 +46,7 @@
                     </div>
                     <div class="program-sidebar-regulation">
                         <div class="separator"></div>
-                        <h4><a href="{% static '/main/files/okthess-internal-regulation.pdf' %}">Internal Regulation</a></h4>
+                        <h4><a href="{% static '/main/files/kanonismos-leitourgias.pdf' %}">Internal Regulation</a></h4>
                         <div class="separator"></div>
                         <br>
                         <a class="btn-red" href="/apply/" role="button">Apply now!</a>
