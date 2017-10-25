@@ -17,10 +17,10 @@ class ElTeamManager(models.Manager):
 
 
 class Team(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100, null=True, blank=True, default=None)
     description_en = models.TextField(null=True, default=None)
     description_el = models.TextField(null=True, default=None)
-    url = models.URLField(null=True, default=None)
+    url = models.URLField(null=True, blank=True, default=None)
     industry = models.CharField(max_length=200)
     image = S3DirectField(dest='uploads')
     alumni = models.BooleanField(default=False)
@@ -30,7 +30,12 @@ class Team(models.Model):
     en_objects = EnTeamManager()
 
     def __str__(self):
-        return self.name
+        if self.name:
+            return self.name
+        elif self.url:
+            return self.url
+        else:
+            return '* Team'
 
 
 class EnMentorManager(models.Manager):
