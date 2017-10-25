@@ -25,41 +25,27 @@
                         <div class="row">
                             <div class="col-md-8 col-sm-8">
                                 <div class="meetup-body-content-body">
-                                    <h2>Description</h2>
-                                    <p>
-                                        Our meetup is awesome and meetups
-                                        every Thursday! Be there!
-                                    </p>
-                                    {% lorem 2 p %}
+                                    <div class="meetup-body-content-body-meta">
+                                        <div class="meetup-body-content-body-meta-title">
+                                            <h1>{{ latest_meetup.title }}</h1>
+                                        </div>
+                                        <div class="meetup-body-content-body-meta-info">
+                                            <div class="meetup-body-content-body-meta-info-date">{{ latest_meetup.date }}</div>
+                                            <div class="meetup-body-content-body-meta-info-time">{{ latest_meetup.time }}</div>
+                                        </div>
+                                    </div>
+                                    <p>{{ latest_meetup.agenda|safe }}</p>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-4">
                                 <div class="meetup-body-content-side">
-                                    {% if latest_meetup %}
-                                        <div class="meetup-body-content-side-title">
-                                            <i class="glyphicon glyphicon-console"></i>
-                                            {% if latest_meetup.title %}
-                                                {{ latest_meetup.title }}
-                                            {% else %}
-                                                Next meetup
-                                            {% endif %}
-                                        </div>
-                                        <div class="meetup-body-content-side-meta">
-                                            <div class="meetup-body-content-side-meta-date">{{ latest_meetup.date }}</div>
-                                            <div class="meetup-body-content-side-meta-time">{{ latest_meetup.time }}</div>
-                                        </div>
-                                        <div class="meetup-body-content-side-agenda">
-                                            <div class="meetup-body-content-side-agenda-title">
-                                                <i class="glyphicon glyphicon-pushpin"></i>
-                                                Agenda
-                                            </div>
-                                            {{ latest_meetup.agenda|safe }}
-                                        </div>
-                                    {% else %}
-                                        <div class="meetup-body-content-side-title">
-                                            Next meetup loading...
-                                        </div>
-                                    {% endif %}
+                                    <div class="meetup-body-content-side-title">
+                                        <i class="glyphicon glyphicon-console"></i>
+                                        OK!Thess Meetup
+                                    </div>
+                                    <div class="meetup-body-content-side-desc">
+                                        This is the OKThess Meetup.
+                                    </div>
                                 </div>
                             </div>
                         </div>
