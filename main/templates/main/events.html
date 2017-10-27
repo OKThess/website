@@ -9,7 +9,7 @@
     <div class="container-fluid events">
         <div class="row">
             <div class="col-md-9">
-              <h1>{% trans 'All events' %}</h1>
+              <h1 class="yellow">{% trans 'Community Events' %}</h1>
                 {% for event in events_list %}
                     <div class="events-single {% if event.is_old %} events-single-dimmed {% endif %}">
                         <div class="row">
@@ -39,20 +39,9 @@
                 {% endfor %}
             </div>
             <div class="col-md-3">
-                <div class="program-sidebar-meetup">
-                    <a href="{% url 'main:meetup' %}">
-                        <h4>
-                            OK!Thess Meetup
-                            <i class="glyphicon glyphicon-console"></i>
-                        </h4>
-                        <div class="program-sidebar-meetup-content">
-                            {% trans 'The meetup of OK!Thess is the new thing in town. Click here to learn more' %}
-                        </div>
-                    </a>
-                </div>
                 <div style="margin-bottom: 30px;"></div>
 
-                <h3>{% trans 'Hosted Meetups' %}</h3>
+                <h3 class="yellow">{% trans 'Hosted Meetups' %}</h3>
                 <div class="sidebar-module sidebar-module-inset sidebar-meetups">
                     <ul>
                         {% for meetup in meetups %}
@@ -60,8 +49,18 @@
                         {% endfor %}
                     </ul>
                 </div>
-
-                <h3>{% trans 'Past Events' %}</h3>
+                <div class="program-sidebar-meetup">
+                    <a href="{% url 'main:meetup' %}">
+                        <h3 class="yellow">
+                            OK!Thess Meetup
+                            <i class="glyphicon glyphicon-circle-arrow-right"></i>
+                        </h3>
+                        <div class="program-sidebar-box">
+                            {% trans 'The meetup of OK!Thess is the new thing in town. Click here to learn more' %}
+                        </div>
+                    </a>
+                </div>
+                <h3 class="yellow">{% trans 'Past Events' %}</h3>
                 <div class="sidebar-module">
                     {% for year, year_obj in events_archive.items %}
                         <h5>{{ year }}</h5>

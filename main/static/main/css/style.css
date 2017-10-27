@@ -29,6 +29,15 @@ h1 {
   padding: 15px 20px;
 }
 
+h1.blue {
+  background: #1c599b;
+}
+
+h1.yellow {
+  background: #f9d94f;
+  color: #000;
+}
+
 h2 {
   font-size: 22px;
   font-weight: 500;
@@ -38,7 +47,7 @@ h3 {
   display: inline-block;
   clear: right;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   color: #fff;
   background: #231f20;
   padding: 10px 20px;
@@ -46,6 +55,15 @@ h3 {
   -webkit-box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
   -moz-box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
   box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
+}
+
+h3.yellow{
+  background: #f9d94f;
+  color: #000;
+}
+
+h3.blue{
+  background: #1c599b;
 }
 
 address {
@@ -259,8 +277,8 @@ address > abbr {
 }
 
 .btn-form {
-  color: #fff;
-  background: #1c599b;
+  color: #000;
+  background: #f9d94f;
   padding: 5px 15px;
   font-size: 14px;
   text-decoration: none;
@@ -268,9 +286,9 @@ address > abbr {
 }
 
 .btn-form:hover {
-  color: #fff;
+  color: #000;
   text-decoration: none;
-  background: #0f4f92;
+  background: #ecc732;
 }
 
 .btn-apply {
@@ -1015,12 +1033,9 @@ button.accordion.active:after {
 }
 
 .program-sidebar-meetup {
-  padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 15px;
-  text-align: center;
-  border: 2px solid #ee4031;
 }
 
 .program-sidebar-meetup:hover {
@@ -1063,12 +1078,17 @@ button.accordion.active:after {
 }
 
 .program-sidebar-tabs-list > li > a:hover,
-.program-sidebar-tabs-list > li > a:focus,
+.program-sidebar-tabs-list > li > a:focus {
+  background: #1c599b;
+  color: #fff;
+  border-radius: 2px;
+}
+
 .program-sidebar-tabs-list > li.active > a:focus,
 .program-sidebar-tabs-list > li.active > a:hover,
 .program-sidebar-tabs-list > li.active > a {
-  background: #f9d94f;
-  color: #000;
+  background: ##1c599b;
+  color: #fff;
   border-radius: 2px;
 }
 

@@ -19,7 +19,7 @@
                 </div>
             {% endif %}
             <div class="col-md-6">
-                <h3>{% trans 'Location' %}</h3>
+                <h3 class="yellow">{% trans 'Location' %}</h3>
                 <div id="contact-map-outer">
                     <div id="contact-map-container"></div>
                 </div>
@@ -32,7 +32,7 @@
 <br>Thessaloniki, Greece.
 </address>
 {% endblocktrans %}
-                <h3>{% trans 'Email us' %}</h3>
+                <h3 class="yellow"><i class="glyphicon glyphicon-envelope">  </i>{% trans 'email us' %}</h3>
                 <form action="{% url 'main:contact' %}" method="post">
                     {% csrf_token %}
                     <div class="form-group">

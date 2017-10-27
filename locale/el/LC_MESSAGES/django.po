@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-25 15:42+0300\n"
+"POT-Creation-Date: 2017-10-25 15:49+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,7 +96,7 @@ msgid "Posted"
 msgstr "Αναρτήθηκε"
 
 #: .\main\templates\main\blog-archive.html:23
-#: .\main\templates\main\blog.html:23 .\main\templates\main\index.html:76
+#: .\main\templates\main\blog.html:23 .\main\templates\main\index.html:77
 msgid "<strong>Read</strong> more »"
 msgstr "Περισσότερα"
 
@@ -172,25 +172,29 @@ msgstr ""
 "με την πραγματική αγορά καθώς και την δημιουργική επιχειρηματική κοινότητα "
 "της πόλης.\n"
 
-#: .\main\templates\main\index.html:48
+#: .\main\templates\main\index.html:20
+msgid "Receive our News via email"
+msgstr ""
+
+#: .\main\templates\main\index.html:49
 msgid "Community Events"
 msgstr "Ανοιχτές Συναντήσεις"
 
-#: .\main\templates\main\index.html:52
+#: .\main\templates\main\index.html:53
 msgid "Mentoring Sessions"
 msgstr "Καθοδήγηση"
 
-#: .\main\templates\main\index.html:56
+#: .\main\templates\main\index.html:57
 msgid "Pre-incubation"
 msgstr "Προ-θερμοκοίτηση"
 
-#: .\main\templates\main\index.html:63
+#: .\main\templates\main\index.html:64
 #, fuzzy
 #| msgid "<strong>Read</strong> more »"
 msgid "Featured <strong>News</strong>"
 msgstr "Περισσότερα"
 
-#: .\main\templates\main\index.html:86
+#: .\main\templates\main\index.html:87
 msgid "Upcoming Community <strong>Meetups</strong>"
 msgstr "Επερχόμενες <strong>Ανοιχτές Συναντήσεις</strong>"
 
