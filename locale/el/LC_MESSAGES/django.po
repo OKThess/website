@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-25 15:49+0300\n"
+"POT-Creation-Date: 2017-10-27 17:55+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,7 @@ msgid "Coworking space"
 msgstr "Συνεργατικός Χώρος"
 
 #: .\main\templates\main\about.html:41 .\main\templates\main\layout.html:73
-#: .\main\templates\main\program-teams.html:48
+#: .\main\templates\main\program-teams.html:51
 msgid "About"
 msgstr "Σχετικά"
 
@@ -91,24 +91,28 @@ msgid "Submit"
 msgstr "Υποβολή"
 
 #: .\main\templates\main\blog-archive.html:20
-#: .\main\templates\main\blog.html:20 .\main\templates\main\post.html:38
+#: .\main\templates\main\blog.html:21 .\main\templates\main\post.html:38
 msgid "Posted"
 msgstr "Αναρτήθηκε"
 
 #: .\main\templates\main\blog-archive.html:23
-#: .\main\templates\main\blog.html:23 .\main\templates\main\index.html:77
+#: .\main\templates\main\blog.html:24 .\main\templates\main\index.html:76
 msgid "<strong>Read</strong> more »"
 msgstr "Περισσότερα"
 
 #: .\main\templates\main\blog-archive.html:31
-#: .\main\templates\main\blog.html:31
+#: .\main\templates\main\blog.html:32
 msgid "Resources"
 msgstr "Ενδιαφέροντα"
 
 #: .\main\templates\main\blog-archive.html:69
-#: .\main\templates\main\blog.html:41
+#: .\main\templates\main\blog.html:42
 msgid "Archives"
 msgstr "Αρχείο"
+
+#: .\main\templates\main\blog.html:12
+msgid "News"
+msgstr ""
 
 #: .\main\templates\main\contact.html:22
 msgid "Location"
@@ -131,27 +135,29 @@ msgstr ""
 "</address>\n"
 
 #: .\main\templates\main\contact.html:35
-msgid "Email us"
+#, fuzzy
+#| msgid "Email us"
+msgid "email us"
 msgstr "Επικοινωνία μέσω e-mail"
 
 #: .\main\templates\main\contact.html:47
 msgid "Send it!"
 msgstr "Στείλε!"
 
-#: .\main\templates\main\events.html:12
-msgid "All events"
-msgstr "Όλες οι συναντήσεις"
+#: .\main\templates\main\events.html:12 .\main\templates\main\index.html:48
+msgid "Community Events"
+msgstr "Ανοιχτές Συναντήσεις"
 
-#: .\main\templates\main\events.html:49
+#: .\main\templates\main\events.html:44
+msgid "Hosted Meetups"
+msgstr "Φιλοξενούμενες Συναντήσεις"
+
+#: .\main\templates\main\events.html:59
 msgid ""
 "The meetup of OK!Thess is the new thing in town. Click here to learn more"
 msgstr ""
 
-#: .\main\templates\main\events.html:55
-msgid "Hosted Meetups"
-msgstr "Φιλοξενούμενες Συναντήσεις"
-
-#: .\main\templates\main\events.html:64
+#: .\main\templates\main\events.html:63
 msgid "Past Events"
 msgstr ""
 
@@ -172,29 +178,21 @@ msgstr ""
 "με την πραγματική αγορά καθώς και την δημιουργική επιχειρηματική κοινότητα "
 "της πόλης.\n"
 
-#: .\main\templates\main\index.html:20
-msgid "Receive our News via email"
-msgstr ""
-
-#: .\main\templates\main\index.html:49
-msgid "Community Events"
-msgstr "Ανοιχτές Συναντήσεις"
-
-#: .\main\templates\main\index.html:53
+#: .\main\templates\main\index.html:52
 msgid "Mentoring Sessions"
 msgstr "Καθοδήγηση"
 
-#: .\main\templates\main\index.html:57
+#: .\main\templates\main\index.html:56
 msgid "Pre-incubation"
 msgstr "Προ-θερμοκοίτηση"
 
-#: .\main\templates\main\index.html:64
+#: .\main\templates\main\index.html:63
 #, fuzzy
 #| msgid "<strong>Read</strong> more »"
 msgid "Featured <strong>News</strong>"
 msgstr "Περισσότερα"
 
-#: .\main\templates\main\index.html:87
+#: .\main\templates\main\index.html:86
 msgid "Upcoming Community <strong>Meetups</strong>"
 msgstr "Επερχόμενες <strong>Ανοιχτές Συναντήσεις</strong>"
 
@@ -207,8 +205,10 @@ msgid "How do I participate?"
 msgstr "Πώς συμμετέχω;"
 
 #: .\main\templates\main\layout.html:81
-msgid "Program"
-msgstr "Πρόγραμμα"
+#, fuzzy
+#| msgid "Pre-incubation"
+msgid "Pre-incubator"
+msgstr "Προ-θερμοκοίτηση"
 
 #: .\main\templates\main\layout.html:82
 msgid "Community"
@@ -239,26 +239,26 @@ msgid "DONOR"
 msgstr "ΔΩΡΗΤΗΣ"
 
 #: .\main\templates\main\program-alumni.html:13
-#: .\main\templates\main\program-alumni.html:33
+#: .\main\templates\main\program-alumni.html:36
 #: .\main\templates\main\program-mentors.html:37
-#: .\main\templates\main\program-teams.html:43
+#: .\main\templates\main\program-teams.html:46
 msgid "Alumni"
 msgstr "Απόφοιτοι"
 
-#: .\main\templates\main\program-alumni.html:31
+#: .\main\templates\main\program-alumni.html:34
 #: .\main\templates\main\program-mentors.html:36
-#: .\main\templates\main\program-teams.html:44
+#: .\main\templates\main\program-teams.html:47
 msgid "Teams"
 msgstr "Ομάδες"
 
-#: .\main\templates\main\program-alumni.html:32
+#: .\main\templates\main\program-alumni.html:35
 #: .\main\templates\main\program-mentors.html:13
 #: .\main\templates\main\program-mentors.html:38
-#: .\main\templates\main\program-teams.html:42
+#: .\main\templates\main\program-teams.html:45
 msgid "Mentors"
 msgstr "Μέντορες"
 
-#: .\main\templates\main\program-alumni.html:38
+#: .\main\templates\main\program-alumni.html:41
 msgid ""
 "\n"
 "                          Our graduates comprise the wider OK!Thess network. "
@@ -292,17 +292,17 @@ msgstr "Φιλοξενούμενες Ομάδες"
 msgid "Filter by industry"
 msgstr ""
 
-#: .\main\templates\main\program-teams.html:50
+#: .\main\templates\main\program-teams.html:53
 msgid ""
 "\n"
 "program about sidebar description\n"
 msgstr ""
 
-#: .\main\templates\main\program-teams.html:58
+#: .\main\templates\main\program-teams.html:61
 msgid "Internal Regulation"
 msgstr "Εσωτερικός Κανονισμός"
 
-#: .\main\templates\main\program-teams.html:61
+#: .\main\templates\main\program-teams.html:64
 msgid "Apply now!"
 msgstr "Κάνε Αίτηση"
 
@@ -313,3 +313,9 @@ msgstr "Ελληνικά"
 #: .\okthess\settings.py:182
 msgid "English"
 msgstr "Αγγλικά"
+
+#~ msgid "Program"
+#~ msgstr "Πρόγραμμα"
+
+#~ msgid "All events"
+#~ msgstr "Όλες οι συναντήσεις"

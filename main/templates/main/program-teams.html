@@ -40,21 +40,19 @@
             </div>
             <div class="col-sm-3">
                 <div class="program-sidebar">
-                    <div class="program-sidebar-tabs">
+                  <div class="program-sidebar-about">
+                    <div class="program-sidebar-box">
+                      {% blocktrans %}
+                       Τeams are selected through an evaluation process that considers the business sustainability of the proposal they submit. Once selected, they are working with the OK!Thess team towards creating a scalable business model. Each pre-incubation cycle terminates with a DEMO DAY.
+                      {% endblocktrans %}
+                    </div>
+                    <br>
+                  </div>
+                  <div class="program-sidebar-tabs">
                         <ul class="nav nav-pills nav-stacked program-sidebar-tabs-list">
                             <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_mentors' %}">{% trans 'Mentors' %}</a></li>
                             <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_alumni' %}">{% trans 'Alumni' %}</a></li>
-                            <li class="program-sidebar-tabs-elem active"><a href="{% url 'main:program_teams' %}">{% trans 'Teams' %}</a></li>
                         </ul>
-                    </div>
-                    <div class="program-sidebar-about">
-                        <h4>{% trans 'About' %}</h4>
-                        <div class="program-sidebar-box">
-{% blocktrans %}
-program about sidebar description
-{% endblocktrans %}
-                        </div>
-                        <br>
                     </div>
                     <div class="program-sidebar-regulation">
                         <div class="separator"></div>

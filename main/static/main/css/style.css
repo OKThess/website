@@ -1074,7 +1074,6 @@ button.accordion.active:after {
 
 .program-sidebar-box {
   background: #f9f9f9;
-  margin-top: 20px;
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 10px;
@@ -1134,7 +1133,7 @@ button.accordion.active:after {
 
 .program-sidebar-about,
 .program-sidebar-contribute {
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 /* meetup */
