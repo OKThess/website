@@ -997,11 +997,15 @@ button.accordion.active:after {
 
 .program-main-company-image {
   height: 200px;
-  overflow-y: hidden;
+}
+
+.program-main-company-image a {
+  margin-top: auto;
 }
 
 .program-main-company-image img {
   max-width: 100%;
+  max-height: 100%;
 }
 
 .program-main-company-desc {
