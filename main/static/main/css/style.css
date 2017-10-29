@@ -173,6 +173,10 @@ address > abbr {
   margin-right: 4px;
 }
 
+.glyphicon-search, .glyphicon-calendar {
+  font-size: 18px;
+}
+
 .navbar-default .navbar-nav > .navbar-language > a {
   background: #c7549c;
   color: #fff;
@@ -249,6 +253,12 @@ address > abbr {
   text-decoration: none;
   background: #0f4f92;
 }
+
+.btn-large{
+  font-size: 18px;
+  padding: 13px 18px;
+}
+
 
 .btn-black {
   color: #fff;
@@ -365,7 +375,7 @@ address > abbr {
   padding-right: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-weight: 300;
+  font-weight: 400;
   position: relative;
   top: -62px;
   left: 10px;
@@ -1066,9 +1076,10 @@ button.accordion.active:after {
 }
 
 .program-sidebar-box {
+  font-size: 15px;
   background: #f9f9f9;
-  padding-top: 20px;
-  padding-left: 20px;
+  padding-top: 17px;
+  padding-left: 15px;
   padding-right: 10px;
   padding-bottom: 20px;
 }
@@ -1083,9 +1094,10 @@ button.accordion.active:after {
 .program-sidebar-tabs-list > li.active > a:focus,
 .program-sidebar-tabs-list > li.active > a:hover,
 .program-sidebar-tabs-list > li.active > a {
-  background: ##1c599b;
+  background: #1c599b;
   color: #fff;
-  border-radius: 2px;
+  border-radius: 0px;
+  margin-top: 4px;
 }
 
 .program-sidebar-tabs-elem > a {

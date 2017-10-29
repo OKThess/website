@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-29 23:44+0200\n"
+"POT-Creation-Date: 2017-10-30 01:05+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -95,7 +95,7 @@ msgid "Posted"
 msgstr "Αναρτήθηκε"
 
 #: .\main\templates\main\blog-archive.html:23
-#: .\main\templates\main\blog.html:24 .\main\templates\main\index.html:76
+#: .\main\templates\main\blog.html:24 .\main\templates\main\index.html:78
 msgid "<strong>Read</strong> more »"
 msgstr "Περισσότερα"
 
@@ -143,20 +143,22 @@ msgstr "Επικοινωνία μέσω e-mail"
 msgid "Send it!"
 msgstr "Στείλε!"
 
-#: .\main\templates\main\events.html:12 .\main\templates\main\index.html:48
-msgid "Community Events"
-msgstr "Ανοιχτές Συναντήσεις"
+#: .\main\templates\main\events.html:12
+#, fuzzy
+#| msgid "All events"
+msgid "Events"
+msgstr "Όλες οι συναντήσεις"
 
 #: .\main\templates\main\events.html:44
 msgid "Hosted Meetups"
 msgstr "Φιλοξενούμενες Συναντήσεις"
 
-#: .\main\templates\main\events.html:59
+#: .\main\templates\main\events.html:58
 msgid ""
 "The meetup of OK!Thess is the new thing in town. Click here to learn more"
 msgstr ""
 
-#: .\main\templates\main\events.html:63
+#: .\main\templates\main\events.html:61
 msgid "Past Events"
 msgstr ""
 
@@ -177,21 +179,25 @@ msgstr ""
 "με την πραγματική αγορά καθώς και την δημιουργική επιχειρηματική κοινότητα "
 "της πόλης.\n"
 
+#: .\main\templates\main\index.html:48
+msgid "Open Workshops"
+msgstr ""
+
 #: .\main\templates\main\index.html:52
+msgid "Community Events"
+msgstr "Ανοιχτές Συναντήσεις"
+
+#: .\main\templates\main\index.html:56
 msgid "Mentoring Sessions"
 msgstr "Καθοδήγηση"
 
-#: .\main\templates\main\index.html:56
-msgid "Pre-incubation"
-msgstr "Προ-θερμοκοίτηση"
-
-#: .\main\templates\main\index.html:63
+#: .\main\templates\main\index.html:64
 #, fuzzy
 #| msgid "<strong>Read</strong> more »"
-msgid "Featured <strong>News</strong>"
+msgid "Read our <strong>News</strong>"
 msgstr "Περισσότερα"
 
-#: .\main\templates\main\index.html:86
+#: .\main\templates\main\index.html:88
 msgid "Upcoming Community <strong>Meetups</strong>"
 msgstr "Επερχόμενες <strong>Ανοιχτές Συναντήσεις</strong>"
 
@@ -204,10 +210,8 @@ msgid "How do I participate?"
 msgstr "Πώς συμμετέχω;"
 
 #: .\main\templates\main\layout.html:81
-#, fuzzy
-#| msgid "Pre-incubation"
-msgid "Pre-Incubator"
-msgstr "Προ-θερμοκοίτηση"
+msgid "<small>pre-</small>Incubator"
+msgstr ""
 
 #: .\main\templates\main\layout.html:82
 msgid "Community"
@@ -240,19 +244,20 @@ msgstr "ΔΩΡΗΤΗΣ"
 #: .\main\templates\main\program-alumni.html:13
 #: .\main\templates\main\program-alumni.html:36
 #: .\main\templates\main\program-mentors.html:37
-#: .\main\templates\main\program-teams.html:54
+#: .\main\templates\main\program-teams.html:56
 msgid "Alumni"
 msgstr "Απόφοιτοι"
 
 #: .\main\templates\main\program-alumni.html:34
 #: .\main\templates\main\program-mentors.html:36
+#: .\main\templates\main\program-teams.html:49
 msgid "Teams"
 msgstr "Ομάδες"
 
 #: .\main\templates\main\program-alumni.html:35
 #: .\main\templates\main\program-mentors.html:13
 #: .\main\templates\main\program-mentors.html:38
-#: .\main\templates\main\program-teams.html:53
+#: .\main\templates\main\program-teams.html:55
 msgid "Mentors"
 msgstr "Μέντορες"
 
@@ -290,22 +295,22 @@ msgstr "Φιλοξενούμενες Ομάδες"
 msgid "Filter by industry"
 msgstr ""
 
-#: .\main\templates\main\program-teams.html:45
+#: .\main\templates\main\program-teams.html:51
 msgid ""
 "\n"
-"                       Τeams are selected through an evaluation process that "
-"considers the business sustainability of the proposal they submit. Once "
-"selected, they are working with the OK!Thess team towards creating a "
-"scalable business model. Each pre-incubation cycle terminates with a DEMO "
-"DAY.\n"
-"                      "
+"                               Τeams are selected through an evaluation "
+"process that considers the business sustainability of the proposal they "
+"submit. Once selected, they are working with the OK!Thess team towards "
+"creating a scalable business model. Each pre-incubation cycle terminates "
+"with a DEMO DAY.\n"
+"                              "
 msgstr ""
 
-#: .\main\templates\main\program-teams.html:59
+#: .\main\templates\main\program-teams.html:61
 msgid "Internal Regulation"
 msgstr "Εσωτερικός Κανονισμός"
 
-#: .\main\templates\main\program-teams.html:62
+#: .\main\templates\main\program-teams.html:64
 msgid "Apply now!"
 msgstr "Κάνε Αίτηση"
 
@@ -317,8 +322,18 @@ msgstr "Ελληνικά"
 msgid "English"
 msgstr "Αγγλικά"
 
+#, fuzzy
+#~| msgid "Mentors"
+#~ msgid "Mentoring"
+#~ msgstr "Μέντορες"
+
+#~ msgid "Pre-incubation"
+#~ msgstr "Προ-θερμοκοίτηση"
+
+#, fuzzy
+#~| msgid "Pre-incubation"
+#~ msgid "Pre-Incubator"
+#~ msgstr "Προ-θερμοκοίτηση"
+
 #~ msgid "Program"
 #~ msgstr "Πρόγραμμα"
-
-#~ msgid "All events"
-#~ msgstr "Όλες οι συναντήσεις"

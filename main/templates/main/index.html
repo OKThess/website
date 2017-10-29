@@ -45,23 +45,23 @@ Mix and Connect</strong> with like-minded peers.
                 </div>
                 <div class="slider">
                     <img src="{% static '/main/img/slider-1.jpg' %}" class="slider-img">
-                    <div class="slider-text">{% trans 'Community Events' %}</div>
+                    <div class="slider-text">{% trans 'Open Workshops' %}</div>
                 </div>
                 <div class="slider">
                     <img src="{% static '/main/img/slider-2.jpg' %}" class="slider-img">
-                    <div class="slider-text">{% trans 'Mentoring Sessions' %}</div>
+                    <div class="slider-text">{% trans 'Community Events' %}</div>
                 </div>
                 <div class="slider">
                     <img src="{% static '/main/img/slider-3.jpg' %}" class="slider-img">
-                    <div class="slider-text">{% trans 'Pre-incubation' %}</div>
+                    <div class="slider-text">{% trans 'Mentoring Sessions' %}</div>
                 </div>
             </div>
         </div>
     </div>
     <div class="container index-blog">
       <div class="text-center">
-        <a class="btn-blue" href="{% url 'main:blog' %}" role="button">
-            <span class="glyphicon glyphicon-search"></span>{% trans 'Read our <strong>News</strong>' %}
+        <a class="btn-blue btn-large" href="{% url 'main:blog' %}" role="button">
+            <span class="glyphicon glyphicon-search"></span>{% trans ' Read our <strong>Blog</strong>' %}
         </a>
     </div>
         <div class="row">
@@ -84,7 +84,7 @@ Mix and Connect</strong> with like-minded peers.
     <div class="container index-events">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <a class="btn-yellow" href="{% url 'main:events' %}" role="button">
+                <a class="btn-yellow btn-large" href="{% url 'main:events' %}" role="button">
                     <span class="glyphicon glyphicon-calendar"></span>{% trans 'Upcoming Community <strong>Meetups</strong>' %}
                 </a>
                 <div class="index-events-content">

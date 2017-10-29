@@ -31,18 +31,15 @@
                 <div class="program-sidebar">
                     <div class="program-sidebar-tabs">
                         <ul class="nav nav-pills nav-stacked program-sidebar-tabs-list">
+                            <li class="program-sidebar-tabs-elem active"><a href="{% url 'main:program_alumni' %}">{% trans 'Alumni' %}</a></li>
+                            <div class="program-sidebar-box">
+                              {% blocktrans %}
+                              Our graduates comprise the wider OK!Thess network. They meet at regular intervals to exchange post OK!Thess views and knowledge and they are also invited to help our hosted teams as Mentors.
+                              {% endblocktrans %}
+                            </div>
                             <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_teams' %}">{% trans 'Teams' %}</a></li>
                             <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_mentors' %}">{% trans 'Mentors' %}</a></li>
-                            <li class="program-sidebar-tabs-elem active"><a href="{% url 'main:program_alumni' %}">{% trans 'Alumni' %}</a></li>
                         </ul>
-                    </div>
-                    <div class="program-sidebar-about">
-                        <div class="program-sidebar-box">
-                          {% blocktrans %}
-                          Our graduates comprise the wider OK!Thess network. They meet at regular intervals to exchange post OK!Thess views and knowledge and they are also invited to help our hosted teams as Mentors.
-                          {% endblocktrans %}
-                        </div>
-                        <br>
                     </div>
                     <div class="program-sidebar-regulation">
                         <div class="separator"></div>
