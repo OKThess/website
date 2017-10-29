@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-27 17:55+0300\n"
+"POT-Creation-Date: 2017-10-29 23:44+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,6 @@ msgid "Coworking space"
 msgstr "Συνεργατικός Χώρος"
 
 #: .\main\templates\main\about.html:41 .\main\templates\main\layout.html:73
-#: .\main\templates\main\program-teams.html:51
 msgid "About"
 msgstr "Σχετικά"
 
@@ -207,7 +206,7 @@ msgstr "Πώς συμμετέχω;"
 #: .\main\templates\main\layout.html:81
 #, fuzzy
 #| msgid "Pre-incubation"
-msgid "Pre-incubator"
+msgid "Pre-Incubator"
 msgstr "Προ-θερμοκοίτηση"
 
 #: .\main\templates\main\layout.html:82
@@ -241,20 +240,19 @@ msgstr "ΔΩΡΗΤΗΣ"
 #: .\main\templates\main\program-alumni.html:13
 #: .\main\templates\main\program-alumni.html:36
 #: .\main\templates\main\program-mentors.html:37
-#: .\main\templates\main\program-teams.html:46
+#: .\main\templates\main\program-teams.html:54
 msgid "Alumni"
 msgstr "Απόφοιτοι"
 
 #: .\main\templates\main\program-alumni.html:34
 #: .\main\templates\main\program-mentors.html:36
-#: .\main\templates\main\program-teams.html:47
 msgid "Teams"
 msgstr "Ομάδες"
 
 #: .\main\templates\main\program-alumni.html:35
 #: .\main\templates\main\program-mentors.html:13
 #: .\main\templates\main\program-mentors.html:38
-#: .\main\templates\main\program-teams.html:45
+#: .\main\templates\main\program-teams.html:53
 msgid "Mentors"
 msgstr "Μέντορες"
 
@@ -292,17 +290,22 @@ msgstr "Φιλοξενούμενες Ομάδες"
 msgid "Filter by industry"
 msgstr ""
 
-#: .\main\templates\main\program-teams.html:53
+#: .\main\templates\main\program-teams.html:45
 msgid ""
 "\n"
-"program about sidebar description\n"
+"                       Τeams are selected through an evaluation process that "
+"considers the business sustainability of the proposal they submit. Once "
+"selected, they are working with the OK!Thess team towards creating a "
+"scalable business model. Each pre-incubation cycle terminates with a DEMO "
+"DAY.\n"
+"                      "
 msgstr ""
 
-#: .\main\templates\main\program-teams.html:61
+#: .\main\templates\main\program-teams.html:59
 msgid "Internal Regulation"
 msgstr "Εσωτερικός Κανονισμός"
 
-#: .\main\templates\main\program-teams.html:64
+#: .\main\templates\main\program-teams.html:62
 msgid "Apply now!"
 msgstr "Κάνε Αίτηση"
 

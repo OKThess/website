@@ -388,22 +388,23 @@ address > abbr {
   margin-bottom: 50px;
 }
 
-.index-blog-header {
-  display: inline;
-  text-align: center;
-  color: #fff;
-  background: #231f20;
-  padding: 10px 20px;
-}
-
 .index-blog {
   margin-top: 100px;
   width: 100%;
   background: #f7f7f7;
-  padding-top: 70px;
+  padding-top: 30px;
   padding-bottom: 20px;
   padding-left: 5%;
   padding-right: 5%;
+}
+
+.index-blog-header {
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+  background: #231f20;
+  padding: 10px 20px;
+  margin-bottom: 30px;
 }
 
 .index-blog-item {
