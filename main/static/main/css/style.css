@@ -24,7 +24,7 @@ h1 {
   margin-top: 0px;
   letter-spacing: .005em;
   font-size: 26px;
-  font-weight: 700;
+  font-weight: 500;
   color: #fff;
   padding: 15px 20px;
 }
@@ -398,14 +398,6 @@ address > abbr {
   padding-right: 5%;
 }
 
-.index-blog-header {
-  display: inline-block;
-  text-align: center;
-  color: #fff;
-  background: #231f20;
-  padding: 10px 20px;
-  margin-bottom: 30px;
-}
 
 .index-blog-item {
   margin-bottom: 50px;

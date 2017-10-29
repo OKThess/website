@@ -9,7 +9,7 @@
     <div class="container-fluid events">
         <div class="row">
             <div class="col-md-9">
-              <h1 class="yellow">{% trans 'Community Events' %}</h1>
+              <h1 class="yellow">{% trans 'Events' %}</h1>
                 {% for event in events_list %}
                     <div class="events-single {% if event.is_old %} events-single-dimmed {% endif %}">
                         <div class="row">
@@ -50,7 +50,6 @@
                     </ul>
                 </div>
                 <div class="program-sidebar-meetup">
-                    <a href="{% url 'main:meetup' %}">
                         <h3 class="yellow">
                             OK!Thess Meetup
                             <i class="glyphicon glyphicon-circle-arrow-right"></i>
@@ -58,7 +57,6 @@
                         <div class="program-sidebar-box">
                             {% trans 'The meetup of OK!Thess is the new thing in town. Click here to learn more' %}
                         </div>
-                    </a>
                 </div>
                 <h3 class="yellow">{% trans 'Past Events' %}</h3>
                 <div class="sidebar-module">

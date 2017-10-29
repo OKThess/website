@@ -60,9 +60,9 @@ Mix and Connect</strong> with like-minded peers.
     </div>
     <div class="container index-blog">
       <div class="text-center">
-      <div class="index-blog-header">
-       <span class="glyphicon glyphicon-pencil"></span>{% trans 'Featured <strong>News</strong>' %}
-      </div>
+        <a class="btn-blue" href="{% url 'main:blog' %}" role="button">
+            <span class="glyphicon glyphicon-search"></span>{% trans 'Read our <strong>News</strong>' %}
+        </a>
     </div>
         <div class="row">
             {% for post in featured_posts_list %}
@@ -84,7 +84,7 @@ Mix and Connect</strong> with like-minded peers.
     <div class="container index-events">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <a class="btn-black" href="{% url 'main:events' %}" role="button">
+                <a class="btn-yellow" href="{% url 'main:events' %}" role="button">
                     <span class="glyphicon glyphicon-calendar"></span>{% trans 'Upcoming Community <strong>Meetups</strong>' %}
                 </a>
                 <div class="index-events-content">
