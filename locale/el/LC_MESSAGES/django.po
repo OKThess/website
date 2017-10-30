@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-30 03:09+0200\n"
+"POT-Creation-Date: 2017-10-30 03:38+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,7 +120,7 @@ msgid "Archives"
 msgstr "Αρχείο"
 
 #: .\main\templates\main\blog.html:12
-msgid "News"
+msgid "Latest News"
 msgstr ""
 
 #: .\main\templates\main\contact.html:22
@@ -160,7 +160,7 @@ msgid "Events"
 msgstr "Όλες οι συναντήσεις"
 
 #: .\main\templates\main\events.html:42
-msgid "Hosted Meetups"
+msgid "Meetups"
 msgstr ""
 
 #: .\main\templates\main\events.html:56
@@ -206,7 +206,7 @@ msgstr "Καθοδήγηση"
 #: .\main\templates\main\index.html:64
 #, fuzzy
 #| msgid "<strong>Read</strong> more »"
-msgid " Read our <strong>Blog</strong>"
+msgid "Featured <strong>Posts</strong>"
 msgstr "Περισσότερα"
 
 #: .\main\templates\main\index.html:88
