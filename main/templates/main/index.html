@@ -67,15 +67,12 @@ Mix and Connect</strong> with like-minded peers.
         <div class="row">
             {% for post in featured_posts_list %}
                 <div class="col-md-4 col-sm-4 index-blog-item">
-                    <div class="index-blog-item-img">
-                        <img src="{{ post.image }}" alt="post image">
-                    </div>
-                    <a href="{% url 'main:blog_post' post.slug %}" class="index-blog-item-title">
+                    <a href="{% url 'main:blog_post' post.slug %}" class="index-blog-item-link">
+                        <div class="index-blog-item-img">
+                            <img src="{{ post.image }}" alt="post image">
+                        </div>
                         <h4>{{ post.title }}</h4>
-                    </a>
-                    <p class="index-blog-item-para">{{ post.teaser }}</p>
-                    <a class="index-blog-item-btn" href="{% url 'main:blog_post' post.slug %}" role="button">
-                        <span class="glyphicon glyphicon-exclamation-sign"></span>{% trans '<strong>Read</strong> »' %}
+                        <p class="index-blog-item-para">{{ post.teaser }}</p>
                     </a>
                 </div>
             {% endfor %}
@@ -89,13 +86,13 @@ Mix and Connect</strong> with like-minded peers.
                 </a>
                 <div class="index-events-content">
                     {% for event in events_list %}
-                        <div class="index-events-content-single">
-                            <a href="{{ event.link }}" class="index-events-content-single-name">{{ event.title }}</a>
+                        <a href="{{ event.link }}" class="index-events-content-single">
+                            <div class="index-events-content-single-name">{{ event.title }}</div>
                             <div class="index-events-content-single-date"><p>{{ event.date }}</p></div>
                             <div class="index-events-content-single-desc">
                                 <p>{{ event.description }}</p>
                             </div>
-                        </div>
+                        </a>
                     {% endfor %}
                 </div>
             </div>

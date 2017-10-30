@@ -421,17 +421,24 @@ address > abbr {
 
 .index-blog-item {
   margin-bottom: 50px;
+  text-align: center;
+}
+
+.index-blog-item-link:hover {
+  text-decoration: none;
 }
 
 .index-blog-item-para {
   min-height: 100px;
   margin-bottom: 20px;
+  color: #000;
 }
 
 .index-blog-item-img {
   height: 228px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .index-blog-item-img > img {
@@ -456,29 +463,6 @@ address > abbr {
   }
 }
 
-.index-blog-item-btn {
-  color: #fff;
-  background: #1c599b;
-  padding: 5px 15px;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-.index-blog-item:nth-child(1) .index-blog-item-btn {
-  color: #fff;
-  background: #1c599b;
-}
-
-.index-blog-item:nth-child(2) .index-blog-item-btn {
-  color: #fff;
-  background: #ee4031;
-}
-
-.index-blog-item:nth-child(3) .index-blog-item-btn {
-  color: #000;
-  background: #ecc732;
-}
-
 .index-events {
   text-align: center;
   margin-top: 100px;
@@ -489,45 +473,26 @@ address > abbr {
 }
 
 .index-events-content-single {
-  border-bottom: 1px solid #eee;
   padding-top: 20px;
   padding-bottom: 15px;
 }
 
+.index-events-content-single:hover {
+  text-decoration: none;
+}
+
 .index-events-content-single-name {
+  display: inline-block;
   font-size: 14px;
   padding: 5px 15px;
   font-weight: 500;
-}
-
-.index-events-content-single:nth-child(1) > .index-events-content-single-name {
+  background: #231f20;
   color: #fff;
-  background: #1c599b;
 }
 
-.index-events-content-single:nth-child(1) > .index-events-content-single-name:hover {
-  background: #0f4f92;
+.index-events-content-single-name:hover {
   text-decoration: none;
-}
-
-.index-events-content-single:nth-child(2) > .index-events-content-single-name {
   color: #fff;
-  background: #ee4031;
-}
-
-.index-events-content-single:nth-child(2) > .index-events-content-single-name:hover {
-  background: #d82c20;
-  text-decoration: none;
-}
-
-.index-events-content-single:nth-child(3) > .index-events-content-single-name {
-  color: #000;
-  background: #f9d94f;
-}
-
-.index-events-content-single:nth-child(3) > .index-events-content-single-name:hover {
-  background: #ecc732;
-  text-decoration: none;
 }
 
 .index-events-content-single-date {
@@ -538,6 +503,8 @@ address > abbr {
 
 .index-events-content-single-desc {
   font-size: 14px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
 }
 
 .site-footer {
