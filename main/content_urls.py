@@ -14,6 +14,7 @@ urlpatterns = [
     url(r'^program/$', views.program_redir, name='program_redir'),
     url(r'^program/teams/$', views.program_teams, name='program_teams'),
     url(r'^program/mentors/$', views.program_mentors, name='program_mentors'),
+    url(r'^program/okthess-team/$', views.program_partners, name='program_partners'),
     url(r'^program/alumni/$', views.program_alumni, name='program_alumni'),
 
     # /meetup/
