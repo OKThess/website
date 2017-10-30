@@ -10,7 +10,7 @@
         <div class="row">
             <div class="col-sm-9">
                 <div class="program-main">
-                    <h1>{% trans 'Alumni' %}</h1>
+                    <h1 class="blue">{% trans 'Graduated Teams' %}</h1>
                     <div style="margin-bottom: 40px;"></div>
                     <div class="row">
                         {% for team in teams_list %}
@@ -37,16 +37,12 @@
                               Our graduates comprise the wider OK!Thess network. They meet at regular intervals to exchange post OK!Thess views and knowledge and they are also invited to help our hosted teams as Mentors.
                               {% endblocktrans %}
                             </div>
-                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_teams' %}">{% trans 'Teams' %}</a></li>
-                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_mentors' %}">{% trans 'Mentors' %}</a></li>
+                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_teams' %}">{% trans 'Selection' %}</a></li>
+                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_mentors' %}">{% trans 'Team' %}</a></li>
                         </ul>
                     </div>
-                    <div class="program-sidebar-regulation">
-                        <div class="separator"></div>
-                        <h4><a href="{% static '/main/files/kanonismos-leitourgias.pdf' %}">Internal Regulation</a></h4>
-                        <div class="separator"></div>
-                        <br>
-                        <a class="btn-red" href="/apply/" role="button">Apply now!</a>
+                    <div class="text-right">
+                     <a class="btn-red alt" href="/apply/" role="button">{% trans 'Apply now!' %}</a>
                     </div>
                 </div>
             </div>

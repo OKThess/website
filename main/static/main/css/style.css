@@ -219,6 +219,12 @@ address > abbr {
   text-decoration: none;
 }
 
+.btn-red.alt {
+  text-align: right;
+  margin-right 5%;
+  margin-top: 15px;
+}
+
 .btn-red:hover {
   color: #fff;
   text-decoration: none;
