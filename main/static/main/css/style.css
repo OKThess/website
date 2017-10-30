@@ -74,6 +74,10 @@ address > abbr {
   font-size: 22px;
 }
 
+.nav-stacked > li+li {
+  margin-top: 0;
+}
+
 .navbar {
   font-weight: 100;
   width: 90%;
