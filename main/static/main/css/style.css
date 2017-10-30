@@ -414,6 +414,10 @@ address > abbr {
   padding-right: 5%;
 }
 
+.index-blog > .row {
+  margin-top: 20px;
+}
+
 
 .index-blog-item {
   margin-bottom: 50px;
