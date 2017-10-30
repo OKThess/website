@@ -10,7 +10,7 @@ from django.core.mail import send_mail
 from django.template.loader import render_to_string
 
 from okthess import settings
-from .models import Team, Mentor, Meetup, Coworking, Post, Event, About, OkthessMeetup, ResourceCategory, Resource, ApplyText
+from .models import Team, Mentor, Meetup, Coworking, Post, Event, About, OkthessMeetup, ResourceCategory, Resource, ApplyText, Partner
 from .forms import ApplicationForm, ContactForm
 
 
@@ -81,6 +81,20 @@ def program_mentors(request):
             mentor.description = mentor.description_el
     return render(request, 'main/program-mentors.html', {
         'mentors_list': mentors_list,
+    })
+
+
+def program_partners(request):
+    if request.LANGUAGE_CODE == 'en':
+        partners_list = Partner.en_objects.order_by('name')
+        for partner in partners_list:
+            partner.description = partner.description_en
+    else:
+        partners_list = Partner.el_objects.order_by('name')
+        for partner in partners_list:
+            partner.description = partner.description_el
+    return render(request, 'main/program-partners.html', {
+        'partners_list': partners_list,
     })
 
 
