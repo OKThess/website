@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-30 01:05+0200\n"
+"POT-Creation-Date: 2017-10-30 02:26+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,13 +31,23 @@ msgstr "Πώς συμμετέχω"
 msgid "Coworking space"
 msgstr "Συνεργατικός Χώρος"
 
-#: .\main\templates\main\about.html:41 .\main\templates\main\layout.html:73
-msgid "About"
-msgstr "Σχετικά"
-
-#: .\main\templates\main\about.html:43
-msgid "about page sidebar"
+#: .\main\templates\main\about.html:41
+msgid "Official Docs<small> - GR</small>"
 msgstr ""
+
+#: .\main\templates\main\about.html:45
+msgid "Concept"
+msgstr ""
+
+#: .\main\templates\main\about.html:50
+msgid "Memorandum"
+msgstr ""
+
+#: .\main\templates\main\about.html:55
+#, fuzzy
+#| msgid "Internal Regulation"
+msgid "Regulation"
+msgstr "Εσωτερικός Κανονισμός"
 
 #: .\main\templates\main\apply.html:12
 msgid ""
@@ -149,16 +159,16 @@ msgstr "Στείλε!"
 msgid "Events"
 msgstr "Όλες οι συναντήσεις"
 
-#: .\main\templates\main\events.html:44
+#: .\main\templates\main\events.html:42
 msgid "Hosted Meetups"
 msgstr "Φιλοξενούμενες Συναντήσεις"
 
-#: .\main\templates\main\events.html:58
+#: .\main\templates\main\events.html:56
 msgid ""
 "The meetup of OK!Thess is the new thing in town. Click here to learn more"
 msgstr ""
 
-#: .\main\templates\main\events.html:61
+#: .\main\templates\main\events.html:59
 msgid "Past Events"
 msgstr ""
 
@@ -194,7 +204,7 @@ msgstr "Καθοδήγηση"
 #: .\main\templates\main\index.html:64
 #, fuzzy
 #| msgid "<strong>Read</strong> more »"
-msgid "Read our <strong>News</strong>"
+msgid " Read our <strong>Blog</strong>"
 msgstr "Περισσότερα"
 
 #: .\main\templates\main\index.html:88
@@ -204,6 +214,10 @@ msgstr "Επερχόμενες <strong>Ανοιχτές Συναντήσεις</
 #: .\main\templates\main\layout.html:62
 msgid "<strong>Apply</strong> for Autumn '17"
 msgstr "<strong>Aίτηση</strong> Συμμετοχής"
+
+#: .\main\templates\main\layout.html:73
+msgid "About"
+msgstr "Σχετικά"
 
 #: .\main\templates\main\layout.html:77
 msgid "How do I participate?"
@@ -242,32 +256,27 @@ msgid "DONOR"
 msgstr "ΔΩΡΗΤΗΣ"
 
 #: .\main\templates\main\program-alumni.html:13
-#: .\main\templates\main\program-alumni.html:36
-#: .\main\templates\main\program-mentors.html:37
-#: .\main\templates\main\program-teams.html:56
+#: .\main\templates\main\program-alumni.html:34
+#: .\main\templates\main\program-mentors.html:40
+#: .\main\templates\main\program-teams.html:52
 msgid "Alumni"
 msgstr "Απόφοιτοι"
 
-#: .\main\templates\main\program-alumni.html:34
-#: .\main\templates\main\program-mentors.html:36
-#: .\main\templates\main\program-teams.html:49
-msgid "Teams"
-msgstr "Ομάδες"
-
-#: .\main\templates\main\program-alumni.html:35
-#: .\main\templates\main\program-mentors.html:13
-#: .\main\templates\main\program-mentors.html:38
-#: .\main\templates\main\program-teams.html:55
-msgid "Mentors"
-msgstr "Μέντορες"
-
-#: .\main\templates\main\program-alumni.html:41
+#: .\main\templates\main\program-alumni.html:36
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "                          Our graduates comprise the wider OK!Thess "
+#| "network. They meet at regular intervals to exchange post OK!Thess views "
+#| "and knowledge and they are also invited to help our hosted teams as "
+#| "Mentors.\n"
+#| "                          "
 msgid ""
 "\n"
-"                          Our graduates comprise the wider OK!Thess network. "
-"They meet at regular intervals to exchange post OK!Thess views and knowledge "
-"and they are also invited to help our hosted teams as Mentors.\n"
-"                          "
+"                              Our graduates comprise the wider OK!Thess "
+"network. They meet at regular intervals to exchange post OK!Thess views and "
+"knowledge and they are also invited to help our hosted teams as Mentors.\n"
+"                              "
 msgstr ""
 "\n"
 "Οι απόφοιτοι του ΟΚ!Τhess παραμένουν κομμάτι του δικτύου μας. Συναντιόνται "
@@ -275,7 +284,20 @@ msgstr ""
 "αποκομίσει στην μετά ΟΚ!Τhess εποχή. Αρκετοί απο από αυτούς καλούνται να "
 "βοηθήσουν τις φιλοξενούμενες ομάδες απο τον ρόλο του Μέντορα."
 
-#: .\main\templates\main\program-mentors.html:43
+#: .\main\templates\main\program-alumni.html:40
+#: .\main\templates\main\program-mentors.html:41
+#: .\main\templates\main\program-teams.html:45
+msgid "Teams"
+msgstr "Ομάδες"
+
+#: .\main\templates\main\program-alumni.html:41
+#: .\main\templates\main\program-mentors.html:13
+#: .\main\templates\main\program-mentors.html:36
+#: .\main\templates\main\program-teams.html:51
+msgid "Mentors"
+msgstr "Μέντορες"
+
+#: .\main\templates\main\program-mentors.html:38
 msgid ""
 "Experienced professionals who help to guide less experienced people. The "
 "mentors may be older or younger than the people that are being mentored, but "
@@ -295,7 +317,7 @@ msgstr "Φιλοξενούμενες Ομάδες"
 msgid "Filter by industry"
 msgstr ""
 
-#: .\main\templates\main\program-teams.html:51
+#: .\main\templates\main\program-teams.html:47
 msgid ""
 "\n"
 "                               Τeams are selected through an evaluation "
@@ -306,11 +328,7 @@ msgid ""
 "                              "
 msgstr ""
 
-#: .\main\templates\main\program-teams.html:61
-msgid "Internal Regulation"
-msgstr "Εσωτερικός Κανονισμός"
-
-#: .\main\templates\main\program-teams.html:64
+#: .\main\templates\main\program-teams.html:55
 msgid "Apply now!"
 msgstr "Κάνε Αίτηση"
 
