@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-30 03:38+0200\n"
+"POT-Creation-Date: 2017-10-30 04:07+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,7 +105,7 @@ msgid "Posted"
 msgstr "Αναρτήθηκε"
 
 #: .\main\templates\main\blog-archive.html:23
-#: .\main\templates\main\blog.html:24 .\main\templates\main\index.html:78
+#: .\main\templates\main\blog.html:24
 msgid "<strong>Read</strong> more »"
 msgstr "Περισσότερα"
 
@@ -209,6 +209,12 @@ msgstr "Καθοδήγηση"
 msgid "Featured <strong>Posts</strong>"
 msgstr "Περισσότερα"
 
+#: .\main\templates\main\index.html:78
+#, fuzzy
+#| msgid "<strong>Read</strong> more »"
+msgid "<strong>Read</strong> »"
+msgstr "Περισσότερα"
+
 #: .\main\templates\main\index.html:88
 msgid "Upcoming Community <strong>Meetups</strong>"
 msgstr "Επερχόμενες <strong>Ανοιχτές Συναντήσεις</strong>"
@@ -295,17 +301,15 @@ msgstr ""
 #: .\main\templates\main\program-mentors.html:41
 #: .\main\templates\main\program-teams.html:45
 #, fuzzy
-#| msgid "Internal Regulation"
-msgid "Selection"
-msgstr "Κανονισμός"
+#| msgid "Hosted Teams"
+msgid "Selected Teams"
+msgstr "Φιλοξενούμενες Ομάδες"
 
 #: .\main\templates\main\program-alumni.html:41
 #: .\main\templates\main\program-mentors.html:36
 #: .\main\templates\main\program-teams.html:51
-#, fuzzy
-#| msgid "Teams"
-msgid "Team"
-msgstr "Ομάδες"
+msgid "OK!Thess Team"
+msgstr ""
 
 #: .\main\templates\main\program-alumni.html:45
 #: .\main\templates\main\program-mentors.html:45
@@ -355,6 +359,16 @@ msgstr "Ελληνικά"
 #: .\okthess\settings.py:182
 msgid "English"
 msgstr "Αγγλικά"
+
+#, fuzzy
+#~| msgid "Internal Regulation"
+#~ msgid "Selection"
+#~ msgstr "Κανονισμός"
+
+#, fuzzy
+#~| msgid "Teams"
+#~ msgid "Team"
+#~ msgstr "Ομάδες"
 
 #~ msgid "Mentors"
 #~ msgstr "Μέντορες"
