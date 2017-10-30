@@ -26,7 +26,11 @@
                         {% for team in teams_list %}
                             <div class="col-md-4 col-sm-6 program-main-company">
                                 <div class="program-main-company-image">
-                                    <a href="{{ team.url }}"><img src="{{ team.image }}" alt="{{ team.name }} logo"></a>
+                                    {% if team.url %}
+                                        <a href="{{ team.url }}"><img src="{{ team.image }}" alt="{{ team.name }} logo"></a>
+                                    {% else %}
+                                        <img src="{{ team.image }}" alt="{{ team.name }} logo">
+                                    {% endif %}
                                 </div>
                                 {% if team.name %}
                                     <div class="program-main-company-name"><a href="{{ team.url }}" >{{ team.name }}</a></div>
