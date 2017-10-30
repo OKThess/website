@@ -86,6 +86,7 @@ class Partner(models.Model):
     name = models.CharField(max_length=100)
     description_en = models.TextField(null=True, blank=True, default=None)
     description_el = models.TextField(null=True, blank=True, default=None)
+    title = models.CharField(max_length=300, null=True, blank=True)
     image = S3DirectField(dest='uploads')
 
     objects = models.Manager()
