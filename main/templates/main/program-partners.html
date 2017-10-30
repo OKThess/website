@@ -1,0 +1,52 @@
+{% extends 'main/layout.html' %}
+
+{% load static %}
+{% load i18n %}
+
+{% block title %}Team & Partners | OK!Thess{% endblock %}
+
+{% block content %}
+    <div class="container program">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="program-main">
+                    <h1 class="blue">{% trans 'OK!Thess Team & Partners' %}</h1>
+                    <div style="margin-bottom: 40px;"></div>
+                    <div class="row">
+                        {% for partner in partners_list %}
+                            <div class="col-md-4">
+                                <div class="program-main-mentor">
+                                    <a href="{{ partner.website }}" target="_blank">
+                                        <img src="{{ partner.image }}" class="program-main-mentor-image" alt="partner image">
+                                    </a>
+                                    <div class="program-main-mentor-name">
+                                        <a target="_blank" href="{{ partner.website }}">{{ partner.name }}</a>
+                                    </div>
+                                    <p>{{ partner.description }}</p>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="program-sidebar">
+                    <div class="program-sidebar-tabs">
+                        <ul class="nav nav-pills nav-stacked program-sidebar-tabs-list">
+                            <li class="program-sidebar-tabs-elem active"><a href="{% url 'main:program_partners' %}">{% trans 'Team & Partners' %}</a></li>
+                            <div class="program-sidebar-box">
+                                {% trans 'Experienced professionals who help to guide less experienced people. The mentors may be older or younger than the people that are being mentored, but they must have a certain area of expertise. Want to help our teams as a mentor? Drop us an email at <strong>dimitri@okthess.gr</strong>.' %}
+                            </div>
+                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_mentors' %}">{% trans 'OK!Thess Team' %}</a></li>
+                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_alumni' %}">{% trans 'Alumni' %}</a></li>
+                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_teams' %}">{% trans 'Selected Teams' %}</a></li>
+                        </ul>
+                    </div>
+                    <div class="text-right">
+                     <a class="btn-red alt" href="/apply/" role="button">{% trans 'Apply now!' %}</a>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
