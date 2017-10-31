@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-30 04:07+0200\n"
+"POT-Creation-Date: 2017-10-31 16:44+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,11 +15,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\main\templates\main\about.html:13 .\main\templates\main\layout.html:75
+#: .\main\templates\main\about.html:13
+#: .\main\templates\main\layout-contact.html:75
+#: .\main\templates\main\layout.html:75
 msgid "What we do"
 msgstr "Τι κάνουμε"
 
-#: .\main\templates\main\about.html:19 .\main\templates\main\layout.html:76
+#: .\main\templates\main\about.html:19
+#: .\main\templates\main\layout-contact.html:76
+#: .\main\templates\main\layout.html:76
 msgid "How we do it"
 msgstr "Πώς το κάνουμε"
 
@@ -27,7 +31,9 @@ msgstr "Πώς το κάνουμε"
 msgid "How I can participate"
 msgstr "Πώς συμμετέχω"
 
-#: .\main\templates\main\about.html:31 .\main\templates\main\layout.html:78
+#: .\main\templates\main\about.html:31
+#: .\main\templates\main\layout-contact.html:78
+#: .\main\templates\main\layout.html:78
 msgid "Coworking space"
 msgstr "Συνεργατικός Χώρος"
 
@@ -203,33 +209,70 @@ msgstr "Ανοιχτές Συναντήσεις"
 msgid "Mentoring Sessions"
 msgstr "Καθοδήγηση"
 
-#: .\main\templates\main\index.html:64
+#: .\main\templates\main\index.html:62
 #, fuzzy
 #| msgid "<strong>Read</strong> more »"
 msgid "Featured <strong>Posts</strong>"
 msgstr "Περισσότερα"
 
-#: .\main\templates\main\index.html:78
-#, fuzzy
-#| msgid "<strong>Read</strong> more »"
-msgid "<strong>Read</strong> »"
-msgstr "Περισσότερα"
-
-#: .\main\templates\main\index.html:88
+#: .\main\templates\main\index.html:80
 msgid "Upcoming Community <strong>Meetups</strong>"
 msgstr "Επερχόμενες <strong>Ανοιχτές Συναντήσεις</strong>"
 
-#: .\main\templates\main\layout.html:62
-msgid "<strong>Apply</strong> for Autumn '17"
+#: .\main\templates\main\layout-contact.html:62
+#, fuzzy
+#| msgid "<strong>Apply</strong> for Autumn '17"
+msgid "<strong>Apply</strong> for Winter '18"
 msgstr "<strong>Aίτηση</strong> Συμμετοχής"
 
+#: .\main\templates\main\layout-contact.html:73
 #: .\main\templates\main\layout.html:73
 msgid "About"
 msgstr "Σχετικά"
 
+#: .\main\templates\main\layout-contact.html:77
 #: .\main\templates\main\layout.html:77
 msgid "How do I participate?"
 msgstr "Πώς συμμετέχω;"
+
+#: .\main\templates\main\layout-contact.html:81
+#, fuzzy
+#| msgid "Teams"
+msgid "Teams"
+msgstr "Ομάδες"
+
+#: .\main\templates\main\layout-contact.html:82
+msgid "Space"
+msgstr ""
+
+#: .\main\templates\main\layout-contact.html:83
+#: .\main\templates\main\layout.html:83
+msgid "Blog"
+msgstr "Νέα"
+
+#: .\main\templates\main\layout-contact.html:84
+#: .\main\templates\main\layout.html:84
+msgid "Contact"
+msgstr "Επικοινωνία"
+
+#: .\main\templates\main\layout-contact.html:112
+#: .\main\templates\main\layout.html:119
+msgid "MEMBERS"
+msgstr "ΣΥΝΕΡΓΑΤΕΣ"
+
+#: .\main\templates\main\layout-contact.html:145
+#: .\main\templates\main\layout.html:152
+msgid "SPONSORS"
+msgstr "ΥΠΟΣΤΗΡΙΚΤΕΣ"
+
+#: .\main\templates\main\layout-contact.html:155
+#: .\main\templates\main\layout.html:162
+msgid "DONOR"
+msgstr "ΔΩΡΗΤΗΣ"
+
+#: .\main\templates\main\layout.html:62
+msgid "<strong>Apply</strong> for Autumn '17"
+msgstr "<strong>Aίτηση</strong> Συμμετοχής"
 
 #: .\main\templates\main\layout.html:81
 msgid "<small>pre-</small>Incubator"
@@ -239,29 +282,9 @@ msgstr ""
 msgid "Community"
 msgstr "Κοινότητα"
 
-#: .\main\templates\main\layout.html:83
-msgid "Blog"
-msgstr "Νέα"
-
-#: .\main\templates\main\layout.html:84
-msgid "Contact"
-msgstr "Επικοινωνία"
-
 #: .\main\templates\main\layout.html:112
 msgid "LOCATION"
 msgstr "ΤΟΠΟΘΕΣΙΑ"
-
-#: .\main\templates\main\layout.html:119
-msgid "MEMBERS"
-msgstr "ΣΥΝΕΡΓΑΤΕΣ"
-
-#: .\main\templates\main\layout.html:146
-msgid "SPONSORS"
-msgstr "ΥΠΟΣΤΗΡΙΚΤΕΣ"
-
-#: .\main\templates\main\layout.html:156
-msgid "DONOR"
-msgstr "ΔΩΡΗΤΗΣ"
 
 #: .\main\templates\main\program-alumni.html:13
 #, fuzzy
@@ -271,7 +294,8 @@ msgstr "Φιλοξενούμενες Ομάδες"
 
 #: .\main\templates\main\program-alumni.html:34
 #: .\main\templates\main\program-mentors.html:40
-#: .\main\templates\main\program-teams.html:52
+#: .\main\templates\main\program-partners.html:42
+#: .\main\templates\main\program-teams.html:56
 msgid "Alumni"
 msgstr "Απόφοιτοι"
 
@@ -299,7 +323,8 @@ msgstr ""
 
 #: .\main\templates\main\program-alumni.html:40
 #: .\main\templates\main\program-mentors.html:41
-#: .\main\templates\main\program-teams.html:45
+#: .\main\templates\main\program-partners.html:43
+#: .\main\templates\main\program-teams.html:49
 #, fuzzy
 #| msgid "Hosted Teams"
 msgid "Selected Teams"
@@ -307,21 +332,33 @@ msgstr "Φιλοξενούμενες Ομάδες"
 
 #: .\main\templates\main\program-alumni.html:41
 #: .\main\templates\main\program-mentors.html:36
-#: .\main\templates\main\program-teams.html:51
-msgid "OK!Thess Team"
+#: .\main\templates\main\program-partners.html:41
+#: .\main\templates\main\program-teams.html:55
+msgid "Mentors"
+msgstr "Μέντορες"
+
+#: .\main\templates\main\program-alumni.html:42
+#: .\main\templates\main\program-mentors.html:42
+#: .\main\templates\main\program-partners.html:37
+#: .\main\templates\main\program-teams.html:57
+msgid "Team &amp; Partners"
 msgstr ""
 
-#: .\main\templates\main\program-alumni.html:45
-#: .\main\templates\main\program-mentors.html:45
-#: .\main\templates\main\program-teams.html:56
+#: .\main\templates\main\program-alumni.html:46
+#: .\main\templates\main\program-mentors.html:46
+#: .\main\templates\main\program-partners.html:47
+#: .\main\templates\main\program-teams.html:61
 msgid "Apply now!"
 msgstr "Κάνε Αίτηση"
 
 #: .\main\templates\main\program-mentors.html:13
-msgid "The OK!Thess Team"
-msgstr ""
+#, fuzzy
+#| msgid "Mentors"
+msgid "Our Mentors"
+msgstr "Μέντορες"
 
 #: .\main\templates\main\program-mentors.html:38
+#: .\main\templates\main\program-partners.html:39
 msgid ""
 "Experienced professionals who help to guide less experienced people. The "
 "mentors may be older or younger than the people that are being mentored, but "
@@ -333,6 +370,10 @@ msgstr ""
 "από τα άτομα που βοηθάνεκαι είναι σε θέση να διαμοιράσουν την υψηλή τους "
 "εξειδίκευση σε συγκεκριμένο τομέα της αγοράς."
 
+#: .\main\templates\main\program-partners.html:13
+msgid "OK!Thess Team &amp; Partners"
+msgstr ""
+
 #: .\main\templates\main\program-teams.html:15
 msgid "Hosted Teams"
 msgstr "Φιλοξενούμενες Ομάδες"
@@ -341,7 +382,7 @@ msgstr "Φιλοξενούμενες Ομάδες"
 msgid "Filter by industry"
 msgstr ""
 
-#: .\main\templates\main\program-teams.html:47
+#: .\main\templates\main\program-teams.html:51
 msgid ""
 "\n"
 "                               Τeams are selected through an evaluation "
@@ -361,17 +402,14 @@ msgid "English"
 msgstr "Αγγλικά"
 
 #, fuzzy
+#~| msgid "<strong>Read</strong> more »"
+#~ msgid "<strong>Read</strong> »"
+#~ msgstr "Περισσότερα"
+
+#, fuzzy
 #~| msgid "Internal Regulation"
 #~ msgid "Selection"
 #~ msgstr "Κανονισμός"
-
-#, fuzzy
-#~| msgid "Teams"
-#~ msgid "Team"
-#~ msgstr "Ομάδες"
-
-#~ msgid "Mentors"
-#~ msgstr "Μέντορες"
 
 #, fuzzy
 #~| msgid "Mentors"

@@ -59,7 +59,7 @@
         <div class="navbar-header">
             <a class="navbar-brand" href="{% url 'main:index' %}"><img src="{% static '/main/img/logo.png' %}" alt="Logo"></a>
             <a class="btn-red btn-header" href="{% url 'main:apply' %}" role="button">
-                <span class="glyphicon glyphicon-exclamation-sign"></span>{% trans "<strong>Apply</strong> for Autumn '17" %}
+                <span class="glyphicon glyphicon-exclamation-sign"></span>{% trans "<strong>Apply</strong> for Winter '18" %}
             </a>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
                 <span class="icon-bar"></span>
@@ -78,8 +78,8 @@
                         <li><a tabindex="-1" href="{% url 'main:about' %}#coworking">{% trans 'Coworking space' %}</a></li>
                    </ul>
                 </li>
-                <li class="{% active 'program' %}"><a href="{% url 'main:program_teams' %}">{% trans '<small>pre-</small>Incubator' %}</a></li>
-                <li class="{% active 'event' %}"><a href="{% url 'main:events' %}">{% trans 'Community' %}</a></li>
+                <li class="{% active 'program' %}"><a href="{% url 'main:program_teams' %}">{% trans 'Teams' %}</a></li>
+                <li class="{% active 'event' %}"><a href="{% url 'main:events' %}">{% trans 'Space' %}</a></li>
                 <li class="{% active 'blog' %}"><a href="{% url 'main:blog' %}">{% trans 'Blog' %}</a></li>
                 <li class="{% active 'contact' %}"><a href="{% url 'main:contact' %}">{% trans 'Contact' %}</a></li>
                 <li class="navbar-language">
