@@ -9,7 +9,7 @@
     <div class="container blog">
         <div class="row">
             <div class="col-md-8">
-              <h1 class="blue">{% trans 'Latest News' %}</h1>
+              <h1>{% trans 'Latest News' %}</h1>
                 {% for post in posts_list %}
                     <div class="blog-post">
                         <div class="col-md-3">
@@ -29,7 +29,7 @@
                 {% endfor %}
             </div>
             <div class="col-md-4">
-                <h3 class="blue">{% trans 'Resources' %}</h3>
+                <h3>{% trans 'Resources' %}</h3>
                 <div class="sidebar-module sidebar-module-inset">
                     <ul>
                         {% for resource in resources_list %}
@@ -39,7 +39,7 @@
                     </ul>
                 </div>
                 <div class="sidebar-module">
-                    <h3 class="blue">{% trans 'Archives' %}</h3>
+                    <h3>{% trans 'Archives' %}</h3>
                     <ol class="list-unstyled">
                         {% for entry in archives_list %}
                             <li><a href="{% url 'main:blog_archives' entry.year entry.month %}">{{ entry|date:"F Y" }}</a></li>

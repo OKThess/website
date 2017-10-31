@@ -1,11 +1,14 @@
-# OKThess Greek language translation strings
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-31 16:44+0200\n"
+"POT-Creation-Date: 2017-10-31 17:54+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,41 +22,39 @@ msgstr ""
 #: .\main\templates\main\layout-contact.html:75
 #: .\main\templates\main\layout.html:75
 msgid "What we do"
-msgstr "Τι κάνουμε"
+msgstr ""
 
 #: .\main\templates\main\about.html:19
 #: .\main\templates\main\layout-contact.html:76
 #: .\main\templates\main\layout.html:76
 msgid "How we do it"
-msgstr "Πώς το κάνουμε"
+msgstr ""
 
 #: .\main\templates\main\about.html:25
 msgid "How I can participate"
-msgstr "Πώς συμμετέχω"
+msgstr ""
 
 #: .\main\templates\main\about.html:31
 #: .\main\templates\main\layout-contact.html:78
 #: .\main\templates\main\layout.html:78
 msgid "Coworking space"
-msgstr "Συνεργατικός Χώρος"
+msgstr ""
 
 #: .\main\templates\main\about.html:41
 msgid "Official Docs<small> - GR</small>"
-msgstr "Έγγραφα"
+msgstr ""
 
 #: .\main\templates\main\about.html:45
 msgid "Concept"
-msgstr "Αρχική Ιδέα"
+msgstr ""
 
 #: .\main\templates\main\about.html:50
 msgid "Memorandum"
-msgstr "Μνημόνιο Συνεργασίας"
+msgstr ""
 
 #: .\main\templates\main\about.html:55
-#, fuzzy
-#| msgid "Internal Regulation"
 msgid "Regulation"
-msgstr "Κανονισμός"
+msgstr ""
 
 #: .\main\templates\main\apply.html:12
 msgid ""
@@ -73,29 +74,14 @@ msgid ""
 "<strong>apply@okthess.gr</strong></p>\n"
 "              "
 msgstr ""
-"\n"
-"<p>Γίνονται δεκτές ανά πάσα στιγμή προτάσεις από άτομα ή ομάδες με "
-"καινοτόμες ιδέες, ανεξάρτητα του βαθμού ωρίμανσης, που θα ήθελαν να "
-"ωφεληθούν από τις υπηρεσίες της προ-θερμοκοιτίδας του OK!Thess ώστε να "
-"στήσουν μια επιχείρηση (startup) ή να ενισχύσουν μια startup που έχουν ήδη "
-"στήσει.</p><p>Οι προτάσεις αξιολογούνται σε τακτά χρονικά διαστήματα, οι "
-"ακριβείς ημερομηνίες ανακοινώνονται στην παρούσα ιστοσελίδα.</p><p>Η "
-"τρέχουσα περίοδος κατάθεσης προτάσεων κλείνει στις 13 Σεπτεμβρίου του 2017. "
-"Τα αποτελέσματα της αξιολόγησης θα ανακοινωθούν στις 19 Σεπτεμβρίου. Η "
-"περίοδος θερμοκοίτησης περιλαμβάνει υποχρεωτικές παρακολουθήσεις από τις 2 "
-"έως και τις 13 Οκτωβρίου.</p><p>Για συμμετοχή συμπληρώστε την παρακάτω φόρμα "
-"συμμετοχής ή απαντήστε τις ερωτήσεις στο σώμα ενός e-mail και στείλτε στο "
-"<strong>apply@okthess.gr</strong></p>"
 
 #: .\main\templates\main\apply.html:18
 msgid "Information - GR"
 msgstr ""
 
 #: .\main\templates\main\apply.html:18
-#, fuzzy
-#| msgid "Internal Regulation"
 msgid "<nobr>Internal Regulation</nobr>"
-msgstr "Εσωτερικός Κανονισμός"
+msgstr ""
 
 #: .\main\templates\main\apply.html:28
 msgid "Application form"
@@ -103,27 +89,27 @@ msgstr ""
 
 #: .\main\templates\main\apply.html:38
 msgid "Submit"
-msgstr "Υποβολή"
+msgstr ""
 
 #: .\main\templates\main\blog-archive.html:20
 #: .\main\templates\main\blog.html:21 .\main\templates\main\post.html:38
 msgid "Posted"
-msgstr "Αναρτήθηκε"
+msgstr ""
 
 #: .\main\templates\main\blog-archive.html:23
 #: .\main\templates\main\blog.html:24
 msgid "<strong>Read</strong> more »"
-msgstr "Περισσότερα"
+msgstr ""
 
 #: .\main\templates\main\blog-archive.html:31
 #: .\main\templates\main\blog.html:32
 msgid "Resources"
-msgstr "Ενδιαφέροντα"
+msgstr ""
 
 #: .\main\templates\main\blog-archive.html:69
 #: .\main\templates\main\blog.html:42
 msgid "Archives"
-msgstr "Αρχείο"
+msgstr ""
 
 #: .\main\templates\main\blog.html:12
 msgid "Latest News"
@@ -131,7 +117,7 @@ msgstr ""
 
 #: .\main\templates\main\contact.html:22
 msgid "Location"
-msgstr "Τοποθεσία"
+msgstr ""
 
 #: .\main\templates\main\contact.html:28
 msgid ""
@@ -142,39 +128,33 @@ msgid ""
 "<br>Thessaloniki, Greece.\n"
 "</address>\n"
 msgstr ""
-"<address>\n"
-"<abbr title=\"Οικοσύστημα Καινοτομίας Θεσσαλονίκης\">OK!THESS</abbr><br>\n"
-"<small>Address:</small> Κομοτηνής 2, 54655<br>\n"
-"<small>Είσοδος:</small> Κυδωνιών &amp; Μαρίας Κάλλας<br>Thessaloniki, "
-"Ελλάδα.\n"
-"</address>\n"
 
 #: .\main\templates\main\contact.html:35
-#, fuzzy
-#| msgid "Email us"
 msgid "email us"
-msgstr "Επικοινωνία μέσω e-mail"
+msgstr ""
 
 #: .\main\templates\main\contact.html:47
 msgid "Send it!"
-msgstr "Στείλε!"
+msgstr ""
 
 #: .\main\templates\main\events.html:12
-#, fuzzy
-#| msgid "All events"
-msgid "Events"
-msgstr "Όλες οι συναντήσεις"
+msgid "Events at OK!Thess"
+msgstr ""
 
 #: .\main\templates\main\events.html:42
 msgid "Meetups"
+msgstr ""
+
+#: .\main\templates\main\events.html:44
+msgid ""
+"Meetings, especially regular meetings of people who share a particular "
+"interest such as a programming language or entrepreneurship"
 msgstr ""
 
 #: .\main\templates\main\events.html:56
 msgid ""
 "The meetup of OK!Thess is the new thing in town. Click here to learn more"
 msgstr ""
-"Μια ανοιχτή συνάντηση που έχει σαν στόχο την ενημέρωση της κοινότητας "
-"σχετικά με το ΟΚ!Τhess και τις δράσεις του."
 
 #: .\main\templates\main\events.html:59
 msgid "Past Events"
@@ -182,7 +162,7 @@ msgstr ""
 
 #: .\main\templates\main\index.html:12
 msgid "Your early stage partner"
-msgstr "Συνεργάτης στα πρώτα βήματα"
+msgstr ""
 
 #: .\main\templates\main\index.html:14
 msgid ""
@@ -191,11 +171,6 @@ msgid ""
 "Model Fast</strong>, rather than hastily, and to <strong>Meet,\n"
 "Mix and Connect</strong> with like-minded peers.\n"
 msgstr ""
-"Το ΟΚ!Τhess προσφέρει χώρο και τεχνική υποστήριξη\n"
-"σε ομάδες ανθρώπων με καινοτόμες ιδέες, βοηθώντας τους να\n"
-"αναπτύξουν ένα βιώσιμο επιχειρηματικό μοντέλο και να έρθουν σε επαφή\n"
-"με την πραγματική αγορά καθώς και την δημιουργική επιχειρηματική κοινότητα "
-"της πόλης.\n"
 
 #: .\main\templates\main\index.html:48
 msgid "Open Workshops"
@@ -203,43 +178,37 @@ msgstr ""
 
 #: .\main\templates\main\index.html:52
 msgid "Community Events"
-msgstr "Ανοιχτές Συναντήσεις"
+msgstr ""
 
 #: .\main\templates\main\index.html:56
 msgid "Mentoring Sessions"
-msgstr "Καθοδήγηση"
+msgstr ""
 
 #: .\main\templates\main\index.html:62
-#, fuzzy
-#| msgid "<strong>Read</strong> more »"
 msgid "Featured <strong>Posts</strong>"
-msgstr "Περισσότερα"
+msgstr ""
 
 #: .\main\templates\main\index.html:80
 msgid "Upcoming Community <strong>Meetups</strong>"
-msgstr "Επερχόμενες <strong>Ανοιχτές Συναντήσεις</strong>"
+msgstr ""
 
 #: .\main\templates\main\layout-contact.html:62
-#, fuzzy
-#| msgid "<strong>Apply</strong> for Autumn '17"
 msgid "<strong>Apply</strong> for Winter '18"
-msgstr "<strong>Aίτηση</strong> Συμμετοχής"
+msgstr ""
 
 #: .\main\templates\main\layout-contact.html:73
 #: .\main\templates\main\layout.html:73
 msgid "About"
-msgstr "Σχετικά"
+msgstr ""
 
 #: .\main\templates\main\layout-contact.html:77
 #: .\main\templates\main\layout.html:77
 msgid "How do I participate?"
-msgstr "Πώς συμμετέχω;"
+msgstr ""
 
 #: .\main\templates\main\layout-contact.html:81
-#, fuzzy
-#| msgid "Teams"
 msgid "Teams"
-msgstr "Ομάδες"
+msgstr ""
 
 #: .\main\templates\main\layout-contact.html:82
 msgid "Space"
@@ -248,31 +217,31 @@ msgstr ""
 #: .\main\templates\main\layout-contact.html:83
 #: .\main\templates\main\layout.html:83
 msgid "Blog"
-msgstr "Νέα"
+msgstr ""
 
 #: .\main\templates\main\layout-contact.html:84
 #: .\main\templates\main\layout.html:84
 msgid "Contact"
-msgstr "Επικοινωνία"
+msgstr ""
 
 #: .\main\templates\main\layout-contact.html:112
 #: .\main\templates\main\layout.html:119
 msgid "MEMBERS"
-msgstr "ΣΥΝΕΡΓΑΤΕΣ"
+msgstr ""
 
 #: .\main\templates\main\layout-contact.html:145
 #: .\main\templates\main\layout.html:152
 msgid "SPONSORS"
-msgstr "ΥΠΟΣΤΗΡΙΚΤΕΣ"
+msgstr ""
 
 #: .\main\templates\main\layout-contact.html:155
 #: .\main\templates\main\layout.html:162
 msgid "DONOR"
-msgstr "ΔΩΡΗΤΗΣ"
+msgstr ""
 
 #: .\main\templates\main\layout.html:62
 msgid "<strong>Apply</strong> for Autumn '17"
-msgstr "<strong>Aίτηση</strong> Συμμετοχής"
+msgstr ""
 
 #: .\main\templates\main\layout.html:81
 msgid "<small>pre-</small>Incubator"
@@ -280,34 +249,24 @@ msgstr ""
 
 #: .\main\templates\main\layout.html:82
 msgid "Community"
-msgstr "Κοινότητα"
+msgstr ""
 
 #: .\main\templates\main\layout.html:112
 msgid "LOCATION"
-msgstr "ΤΟΠΟΘΕΣΙΑ"
+msgstr ""
 
 #: .\main\templates\main\program-alumni.html:13
-#, fuzzy
-#| msgid "Hosted Teams"
 msgid "Graduated Teams"
-msgstr "Φιλοξενούμενες Ομάδες"
+msgstr ""
 
 #: .\main\templates\main\program-alumni.html:34
 #: .\main\templates\main\program-mentors.html:40
 #: .\main\templates\main\program-partners.html:42
 #: .\main\templates\main\program-teams.html:56
 msgid "Alumni"
-msgstr "Απόφοιτοι"
+msgstr ""
 
 #: .\main\templates\main\program-alumni.html:36
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                          Our graduates comprise the wider OK!Thess "
-#| "network. They meet at regular intervals to exchange post OK!Thess views "
-#| "and knowledge and they are also invited to help our hosted teams as "
-#| "Mentors.\n"
-#| "                          "
 msgid ""
 "\n"
 "                              Our graduates comprise the wider OK!Thess "
@@ -315,27 +274,20 @@ msgid ""
 "knowledge and they are also invited to help our hosted teams as Mentors.\n"
 "                              "
 msgstr ""
-"\n"
-"Οι απόφοιτοι του ΟΚ!Τhess παραμένουν κομμάτι του δικτύου μας. Συναντιόνται "
-"σε τακτά χρονικά διαστήματα για να ανταλλάξουν απόψεις και γνώσεις που έχουν "
-"αποκομίσει στην μετά ΟΚ!Τhess εποχή. Αρκετοί απο από αυτούς καλούνται να "
-"βοηθήσουν τις φιλοξενούμενες ομάδες απο τον ρόλο του Μέντορα."
 
 #: .\main\templates\main\program-alumni.html:40
 #: .\main\templates\main\program-mentors.html:41
 #: .\main\templates\main\program-partners.html:43
 #: .\main\templates\main\program-teams.html:49
-#, fuzzy
-#| msgid "Hosted Teams"
 msgid "Selected Teams"
-msgstr "Φιλοξενούμενες Ομάδες"
+msgstr ""
 
 #: .\main\templates\main\program-alumni.html:41
 #: .\main\templates\main\program-mentors.html:36
 #: .\main\templates\main\program-partners.html:41
 #: .\main\templates\main\program-teams.html:55
 msgid "Mentors"
-msgstr "Μέντορες"
+msgstr ""
 
 #: .\main\templates\main\program-alumni.html:42
 #: .\main\templates\main\program-mentors.html:42
@@ -349,13 +301,11 @@ msgstr ""
 #: .\main\templates\main\program-partners.html:47
 #: .\main\templates\main\program-teams.html:61
 msgid "Apply now!"
-msgstr "Κάνε Αίτηση"
+msgstr ""
 
 #: .\main\templates\main\program-mentors.html:13
-#, fuzzy
-#| msgid "Mentors"
 msgid "Our Mentors"
-msgstr "Μέντορες"
+msgstr ""
 
 #: .\main\templates\main\program-mentors.html:38
 #: .\main\templates\main\program-partners.html:39
@@ -365,10 +315,6 @@ msgid ""
 "they must have a certain area of expertise. Want to help our teams as a "
 "mentor? Drop us an email at <strong>dimitri@okthess.gr</strong>."
 msgstr ""
-"Επαγγελματίας με εκτεταμένη εμπειρία οι οποίοι βοηθάνε τις ομάδες του "
-"προγράμματος. Οι μέντορες μπορεί να είναι ηλικιακά μεγαλύτεροι ή μικρότεροι "
-"από τα άτομα που βοηθάνεκαι είναι σε θέση να διαμοιράσουν την υψηλή τους "
-"εξειδίκευση σε συγκεκριμένο τομέα της αγοράς."
 
 #: .\main\templates\main\program-partners.html:13
 msgid "OK!Thess Team &amp; Partners"
@@ -376,7 +322,7 @@ msgstr ""
 
 #: .\main\templates\main\program-teams.html:15
 msgid "Hosted Teams"
-msgstr "Φιλοξενούμενες Ομάδες"
+msgstr ""
 
 #: .\main\templates\main\program-teams.html:18
 msgid "Filter by industry"
@@ -395,34 +341,8 @@ msgstr ""
 
 #: .\okthess\settings.py:181
 msgid "Greek"
-msgstr "Ελληνικά"
+msgstr ""
 
 #: .\okthess\settings.py:182
 msgid "English"
-msgstr "Αγγλικά"
-
-#, fuzzy
-#~| msgid "<strong>Read</strong> more »"
-#~ msgid "<strong>Read</strong> »"
-#~ msgstr "Περισσότερα"
-
-#, fuzzy
-#~| msgid "Internal Regulation"
-#~ msgid "Selection"
-#~ msgstr "Κανονισμός"
-
-#, fuzzy
-#~| msgid "Mentors"
-#~ msgid "Mentoring"
-#~ msgstr "Μέντορες"
-
-#~ msgid "Pre-incubation"
-#~ msgstr "Προ-θερμοκοίτηση"
-
-#, fuzzy
-#~| msgid "Pre-incubation"
-#~ msgid "Pre-Incubator"
-#~ msgstr "Προ-θερμοκοίτηση"
-
-#~ msgid "Program"
-#~ msgstr "Πρόγραμμα"
+msgstr ""

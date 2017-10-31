@@ -120,46 +120,16 @@ address > abbr {
   color: #000;
 }
 
-.navbar-default .navbar-nav > li:nth-child(odd):hover {
-  background-color: #f9d94f;
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #f7f7f7;
 }
 
-.navbar-default .navbar-nav > li:nth-child(even):hover {
-  background-color: #1c599b;
+.navbar-default .navbar-nav > li.active > a {
+  background-color: #f7f7f7;
 }
 
-.navbar-default .navbar-nav > li:nth-child(even) > a:hover {
-  color: #fff
-}
-
-.navbar-default .navbar-nav > li:nth-child(odd).active > a {
-  color: #000;
-  background-color: #f9d94f;
-}
-
-.navbar-default .navbar-nav > li:nth-child(even).active > a {
-  color: #fff;
-  background-color: #1c599b;
-}
-
-.navbar-default .navbar-nav > li:nth-child(odd).active > a:hover {
-  color: #000;
-  background-color: #f9d94f;
-}
-
-.navbar-default .navbar-nav > li:nth-child(even).active > a:hover {
-  color: #fff;
-  background-color: #1c599b;
-}
-
-.navbar-default .navbar-nav > li:nth-child(odd).active > a:focus {
-  color: #000;
-  background-color: #f9d94f;
-}
-
-.navbar-default .navbar-nav > li:nth-child(even).active > a:focus {
-  color: #fff;
-  background-color: #1c599b;
+.navbar-default .navbar-nav > li.active > a:hover {
+  background-color: #f7f7f7;
 }
 
 .dropdown-menu > li > a {
@@ -1091,11 +1061,12 @@ button.accordion.active:after {
 
 .program-sidebar-tabs-list > li {
   border-bottom: 1px solid #cacaca;
+  margin-bottom: 3px;
 }
 
 .program-sidebar-tabs-list > li > a:hover,
 .program-sidebar-tabs-list > li > a:focus {
-  background: #1c599b;
+  background-color: #231f20;
   color: #fff;
   border-radius: 0px;
 }
@@ -1103,7 +1074,7 @@ button.accordion.active:after {
 .program-sidebar-tabs-list > li.active > a:focus,
 .program-sidebar-tabs-list > li.active > a:hover,
 .program-sidebar-tabs-list > li.active > a {
-  background: #1c599b;
+  background-color: #231f20;
   color: #fff;
   border-radius: 0px;
   margin-top: 4px;
