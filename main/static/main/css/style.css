@@ -67,11 +67,18 @@ h3.blue{
 }
 
 h4 {
-color: #fff;
-background: #231f20;
-padding: 10px 20px;
-display: inline-block;
-font-size: 16px;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+h4.blue {
+  background: #1c599b;
+  color: #fff;
+}
+
+h4.yellow {
+  background: #f9d94f;
 }
 
 address {
@@ -416,8 +423,12 @@ address > abbr {
   margin-bottom: 50px;
 }
 
+.index-blog-label {
+  padding-top: 30px;
+  text-align: center;
+}
+
 .index-blog {
-  margin-top: 100px;
   width: 100%;
   background: #f7f7f7;
   padding-top: 30px;

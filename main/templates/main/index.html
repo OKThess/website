@@ -58,10 +58,10 @@ Mix and Connect</strong> with like-minded peers.
             </div>
         </div>
     </div>
-    <div class="container index-blog">
-      <div class="text-center">
-        <h4><span class="glyphicon glyphicon-star"></span>{% trans 'Featured <strong>Posts</strong>' %}</h4>
+    <div class="index-blog-label">
+      <h4 class="blue"><span class="glyphicon glyphicon-star"></span>{% trans 'Featured <strong>Posts</strong>' %}</h4>
     </div>
+    <div class="container index-blog">
         <div class="row">
             {% for post in featured_posts_list %}
                 <div class="col-md-4 col-sm-4 index-blog-item">
@@ -79,9 +79,7 @@ Mix and Connect</strong> with like-minded peers.
     <div class="container index-events">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <h4>
-                    <span class="glyphicon glyphicon-calendar"></span>{% trans 'Upcoming Community <strong>Meetups</strong>' %}
-                </h4>
+                <h4 class="yellow"><span class="glyphicon glyphicon-calendar"></span>{% trans 'Upcoming Community <strong>Meetups</strong>' %}</h4>
                 <div class="index-events-content">
                     {% for event in events_list %}
                         <a href="{{ event.link }}" class="index-events-content-single">
