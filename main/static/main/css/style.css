@@ -418,6 +418,7 @@ address > abbr {
 }
 
 .index-blog-item-link:hover {
+  color: #000;
   text-decoration: none;
 }
 
