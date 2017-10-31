@@ -76,10 +76,12 @@ Mix and Connect</strong> with like-minded peers.
             {% endfor %}
         </div>
     </div>
+    <div class="index-events-label">
+      <h4 class="yellow"><span class="glyphicon glyphicon-calendar"></span>{% trans 'Upcoming Community <strong>Meetups</strong>' %}</h4>
+    </div> 
     <div class="container index-events">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <h4 class="yellow"><span class="glyphicon glyphicon-calendar"></span>{% trans 'Upcoming Community <strong>Meetups</strong>' %}</h4>
                 <div class="index-events-content">
                     {% for event in events_list %}
                         <a href="{{ event.link }}" class="index-events-content-single">

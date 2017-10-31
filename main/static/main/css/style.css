@@ -431,8 +431,8 @@ address > abbr {
 .index-blog {
   width: 100%;
   background: #f7f7f7;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -484,6 +484,11 @@ address > abbr {
     max-width: 300px;
     max-height: 210px;
   }
+}
+
+.index-events-label {
+  text-align: center;
+  margin-top: 30px;
 }
 
 .index-events {
