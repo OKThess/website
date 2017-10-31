@@ -483,13 +483,14 @@ address > abbr {
   font-size: 14px;
   padding: 5px 15px;
   font-weight: 500;
-  background: #231f20;
-  color: #fff;
+  background: #f9d94f;
+  color: #000;
 }
 
 .index-events-content-single-name:hover {
   text-decoration: none;
-  color: #fff;
+  background: #ecc732;
+  color: #000;
 }
 
 .index-events-content-single-date {
