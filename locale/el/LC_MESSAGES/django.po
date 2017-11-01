@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-31 18:27+0200\n"
+"POT-Creation-Date: 2017-11-01 15:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,19 +40,23 @@ msgstr ""
 msgid "Coworking space"
 msgstr ""
 
-#: .\main\templates\main\about.html:41
+#: .\main\templates\main\about.html:37
+msgid "OK!Thess team"
+msgstr ""
+
+#: .\main\templates\main\about.html:62
 msgid "Official Docs<small> - GR</small>"
 msgstr ""
 
-#: .\main\templates\main\about.html:45
+#: .\main\templates\main\about.html:66
 msgid "Concept"
 msgstr ""
 
-#: .\main\templates\main\about.html:50
+#: .\main\templates\main\about.html:71
 msgid "Memorandum"
 msgstr ""
 
-#: .\main\templates\main\about.html:55
+#: .\main\templates\main\about.html:76
 msgid "Regulation"
 msgstr ""
 
@@ -255,7 +259,7 @@ msgstr ""
 
 #: .\main\templates\main\program-alumni.html:34
 #: .\main\templates\main\program-mentors.html:40
-#: .\main\templates\main\program-partners.html:42
+#: .\main\templates\main\program-partners.html:27
 #: .\main\templates\main\program-teams.html:56
 msgid "Alumni"
 msgstr ""
@@ -271,28 +275,28 @@ msgstr ""
 
 #: .\main\templates\main\program-alumni.html:40
 #: .\main\templates\main\program-mentors.html:41
-#: .\main\templates\main\program-partners.html:43
+#: .\main\templates\main\program-partners.html:28
 #: .\main\templates\main\program-teams.html:49
 msgid "Selected Teams"
 msgstr ""
 
 #: .\main\templates\main\program-alumni.html:41
 #: .\main\templates\main\program-mentors.html:36
-#: .\main\templates\main\program-partners.html:41
+#: .\main\templates\main\program-partners.html:26
 #: .\main\templates\main\program-teams.html:55
 msgid "Mentors"
 msgstr ""
 
 #: .\main\templates\main\program-alumni.html:42
 #: .\main\templates\main\program-mentors.html:42
-#: .\main\templates\main\program-partners.html:37
+#: .\main\templates\main\program-partners.html:22
 #: .\main\templates\main\program-teams.html:57
 msgid "Team &amp; Partners"
 msgstr ""
 
 #: .\main\templates\main\program-alumni.html:46
 #: .\main\templates\main\program-mentors.html:46
-#: .\main\templates\main\program-partners.html:47
+#: .\main\templates\main\program-partners.html:32
 #: .\main\templates\main\program-teams.html:61
 msgid "Apply now!"
 msgstr ""
@@ -302,7 +306,7 @@ msgid "Our Mentors"
 msgstr ""
 
 #: .\main\templates\main\program-mentors.html:38
-#: .\main\templates\main\program-partners.html:39
+#: .\main\templates\main\program-partners.html:24
 msgid ""
 "Experienced professionals who help to guide less experienced people. The "
 "mentors may be older or younger than the people that are being mentored, but "

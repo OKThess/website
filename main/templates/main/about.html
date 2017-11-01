@@ -34,6 +34,27 @@
                             {{ about_texts.coworking_text|safe }}
                         </div>
                     </div>
+                    <button class="accordion" id="what">{% trans 'OK!Thess team' %}</button>
+                    <div class="panel">
+                        <div class="panel-inner">
+                          <div class="row">
+                              {% for partner in partners_list %}
+                                  <div class="col-md-4">
+                                      <div class="program-main-mentor">
+                                          <a href="{{ partner.website }}" target="_blank">
+                                              <img src="{{ partner.image }}" class="program-main-mentor-image" alt="partner image">
+                                          </a>
+                                          <div class="program-main-mentor-name">
+                                              <a target="_blank" href="{{ partner.website }}">{{ partner.name }}</a>
+                                          </div>
+                                          <div>{{ partner.title }}</div>
+                                          <p>{{ partner.description }}</p>
+                                      </div>
+                                  </div>
+                              {% endfor %}
+                          </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-md-3">
