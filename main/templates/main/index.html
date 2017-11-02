@@ -66,11 +66,13 @@ Mix and Connect</strong> with like-minded peers.
             {% for post in featured_posts_list %}
                 <div class="col-md-4 col-sm-4 index-blog-item">
                     <a href="{% url 'main:blog_post' post.slug %}" class="index-blog-item-link">
+                      <div>
                         <div class="index-blog-item-img">
                          <img src="{{ post.image }}" alt="post image">
-                         <h3 class="blue">{{ post.title }}</h3>
                         </div>
-                        <p class="index-blog-item-para">{{ post.teaser }}</p>
+                        <h3 class="blue">{{ post.title }}</h3>
+                      </div>
+                      <p class="index-blog-item-para">{{ post.teaser }}</p>
                     </a>
                 </div>
             {% endfor %}
