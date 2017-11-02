@@ -477,7 +477,7 @@ address > abbr {
 }
 
 .index-events-content-single:hover {
-
+  text-decoration: none;
 }
 
 .index-events-content-single-name {
