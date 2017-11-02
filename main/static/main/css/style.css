@@ -432,6 +432,7 @@ address > abbr {
 }
 
 .index-blog-item-img {
+  width: auto;
   height: 228px;
   display: flex;
   align-items: center;
