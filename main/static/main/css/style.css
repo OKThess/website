@@ -65,7 +65,7 @@ h3.yellow{
 
 h3.blue{
   background: #1c599b;
-  width: 90%;
+  width: auto;
   margin-top: 0;
   font-weight: 500;
 }
