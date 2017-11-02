@@ -66,6 +66,8 @@ h3.yellow{
 h3.blue{
   background: #1c599b;
   width: 90%;
+  margin-top: 0;
+  font-weight: 500;
 }
 
 h4 {
@@ -441,7 +443,7 @@ address > abbr {
   max-width: 300px;
   max-height: 200px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 @media (min-width: 768px) {
