@@ -430,6 +430,16 @@ address > abbr {
   color: #000;
 }
 
+.index-blog-item-title {
+  text-align: center;
+  width: 330px;
+  margin: auto;
+}
+
+.index-blog-item-title > h3 {
+  width: 100%;
+}
+
 .index-blog-item-img {
   width: auto;
   height: 228px;
