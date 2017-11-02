@@ -36,19 +36,27 @@ def index(request):
 
 def about(request):
     about_texts = About.objects.first()
-    if about_texts:
-        if request.LANGUAGE_CODE == 'en':
+    if request.LANGUAGE_CODE == 'en':
+        partners_list = Partner.en_objects.order_by('name')
+        for partner in partners_list:
+            partner.description = partner.description_en
+        if about_texts:
             about_texts.what_text = about_texts.what_text_en
             about_texts.how_text = about_texts.how_text_en
             about_texts.participate_text = about_texts.participate_text_en
             about_texts.coworking_text = about_texts.coworking_text_en
-        else:
+    else:
+        partners_list = Partner.el_objects.order_by('name')
+        for partner in partners_list:
+            partner.description = partner.description_el
+        if about_texts:
             about_texts.what_text = about_texts.what_text_el
             about_texts.how_text = about_texts.how_text_el
             about_texts.participate_text = about_texts.participate_text_el
             about_texts.coworking_text = about_texts.coworking_text_el
     return render(request, 'main/about.html', {
         'about_texts': about_texts,
+        'partners_list': partners_list,
     })
 
 
