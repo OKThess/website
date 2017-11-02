@@ -16,6 +16,7 @@ p {
   outline: 0;
   word-break: break-word;
   word-wrap: break-word;
+  color: #000;
 }
 
 h1 {
@@ -476,7 +477,7 @@ address > abbr {
 }
 
 .index-events-content-single:hover {
-  text-decoration: none;
+
 }
 
 .index-events-content-single-name {
