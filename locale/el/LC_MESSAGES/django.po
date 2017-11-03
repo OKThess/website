@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-03 03:25+0200\n"
+"POT-Creation-Date: 2017-11-03 04:38+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,42 +22,41 @@ msgstr ""
 #: .\main\templates\main\layout-contact.html:75
 #: .\main\templates\main\layout.html:75
 msgid "What we do"
-msgstr ""
+msgstr "Τι κάνουμε"
 
 #: .\main\templates\main\about.html:19
 #: .\main\templates\main\layout-contact.html:76
 #: .\main\templates\main\layout.html:76
 msgid "How we do it"
-msgstr ""
+msgstr "Πως το κάνουμε"
 
 #: .\main\templates\main\about.html:25
 msgid "How I can participate"
-msgstr ""
+msgstr "Πως συμμετέχω"
 
-#: .\main\templates\main\about.html:31
-#: .\main\templates\main\layout-contact.html:78
-msgid "Coworking space"
-msgstr ""
+#: .\main\templates\main\about.html:31 .\main\templates\main\layout.html:78
+msgid "Space"
+msgstr "Χώρος"
 
 #: .\main\templates\main\about.html:37
 msgid "OK!Thess team"
-msgstr ""
+msgstr "Η Ομάδα"
 
 #: .\main\templates\main\about.html:62
 msgid "Official Docs<small> - GR</small>"
-msgstr ""
+msgstr "Επίσημα Έγγραφα"
 
 #: .\main\templates\main\about.html:66
 msgid "Concept"
-msgstr ""
+msgstr "Αρχική Ιδέα"
 
 #: .\main\templates\main\about.html:71
 msgid "Memorandum"
-msgstr ""
+msgstr "Μνημόνιο Συνεργασίας"
 
 #: .\main\templates\main\about.html:76
 msgid "Regulation"
-msgstr ""
+msgstr "Κανονισμός"
 
 #: .\main\templates\main\apply.html:12
 msgid ""
@@ -80,47 +79,47 @@ msgstr ""
 
 #: .\main\templates\main\apply.html:18
 msgid "Information - GR"
-msgstr ""
+msgstr "Πληροφορίες"
 
 #: .\main\templates\main\apply.html:18
 msgid "<nobr>Internal Regulation</nobr>"
-msgstr ""
+msgstr "Εσωτερικός Κανονισμός"
 
 #: .\main\templates\main\apply.html:28
 msgid "Application form"
-msgstr ""
+msgstr "Αίτηση Συμμετοχής"
 
 #: .\main\templates\main\apply.html:38
 msgid "Submit"
-msgstr ""
+msgstr "Αποστολή"
 
 #: .\main\templates\main\blog-archive.html:20
 #: .\main\templates\main\blog.html:21 .\main\templates\main\post.html:38
 msgid "Posted"
-msgstr ""
+msgstr "Αναρτήθηκε"
 
 #: .\main\templates\main\blog-archive.html:23
 #: .\main\templates\main\blog.html:24
 msgid "<strong>Read</strong> more »"
-msgstr ""
+msgstr "Περισσότερα"
 
 #: .\main\templates\main\blog-archive.html:31
 #: .\main\templates\main\blog.html:32
 msgid "Resources"
-msgstr ""
+msgstr "Ενδιαφέροντα"
 
 #: .\main\templates\main\blog-archive.html:69
 #: .\main\templates\main\blog.html:42
 msgid "Archives"
-msgstr ""
+msgstr "Αρχείο"
 
 #: .\main\templates\main\blog.html:12
 msgid "Latest News"
-msgstr ""
+msgstr "Τα νέα του ΟΚ!Thess"
 
 #: .\main\templates\main\contact.html:22
 msgid "Location"
-msgstr ""
+msgstr "Τοποθεσία"
 
 #: .\main\templates\main\contact.html:28
 msgid ""
@@ -131,6 +130,12 @@ msgid ""
 "<br>Thessaloniki, Greece.\n"
 "</address>\n"
 msgstr ""
+"<address>\n"
+"<abbr title=\"Οικοσύστημα Καινοτομίας Θεσσαλονίκης\">OK!THESS</abbr><br>\n"
+"<small>Address:</small> Κομοτηνής 2, 54655<br>\n"
+"<small>Είσοδος:</small> Κυδωνιών &amp; Μαρίας Κάλλας<br>Thessaloniki, "
+"Ελλάδα.\n"
+"</address>\n"
 
 #: .\main\templates\main\contact.html:35
 msgid "email us"
@@ -138,15 +143,15 @@ msgstr ""
 
 #: .\main\templates\main\contact.html:47
 msgid "Send it!"
-msgstr ""
+msgstr "Αποστολή"
 
 #: .\main\templates\main\events.html:12
 msgid "Events at OK!Thess"
-msgstr ""
+msgstr "Συναντήσεις στο ΟΚ!Τhess"
 
 #: .\main\templates\main\events.html:42
 msgid "Meetups"
-msgstr ""
+msgstr "Κοινότητες"
 
 #: .\main\templates\main\events.html:44
 msgid ""
@@ -165,7 +170,7 @@ msgstr ""
 
 #: .\main\templates\main\index.html:12
 msgid "Your early stage partner"
-msgstr ""
+msgstr "Συνεργάτης στα πρώτα "
 
 #: .\main\templates\main\index.html:14
 msgid ""
@@ -174,6 +179,12 @@ msgid ""
 "Model Fast</strong>, rather than hastily, and to <strong>Meet,\n"
 "Mix and Connect</strong> with like-minded peers.\n"
 msgstr ""
+"Το ΟΚ!Τhess προσφέρει χώρο και τεχνική υποστήριξη σε ομάδες ανθρώπων\n"
+"με <strong>καινοτόμες επιχειρηματικές ιδέες</strong>, βοηθώντας τους να\n"
+"αναπτύξουν ένα <strong>βιώσιμο επιχειρηματικό μοντέλο</strong> και να έρθουν "
+"σε επαφή\n"
+"με την πραγματική αγορά καθώς και την δημιουργική επιχειρηματική κοινότητα "
+"της πόλης.\n"
 
 #: .\main\templates\main\index.html:48
 msgid "Open Workshops"
@@ -201,12 +212,17 @@ msgstr ""
 
 #: .\main\templates\main\layout-contact.html:73
 #: .\main\templates\main\layout.html:73
+#: .\main\templates\main\program-teams.html:49
 msgid "About"
 msgstr ""
 
 #: .\main\templates\main\layout-contact.html:77
 #: .\main\templates\main\layout.html:77
 msgid "How do I participate?"
+msgstr ""
+
+#: .\main\templates\main\layout-contact.html:78
+msgid "Coworking space"
 msgstr ""
 
 #: .\main\templates\main\layout-contact.html:79
@@ -253,10 +269,6 @@ msgstr ""
 msgid "<strong>Apply</strong> for Autumn '17"
 msgstr ""
 
-#: .\main\templates\main\layout.html:78
-msgid "Space"
-msgstr ""
-
 #: .\main\templates\main\layout.html:113
 msgid "LOCATION"
 msgstr ""
@@ -284,7 +296,6 @@ msgstr ""
 #: .\main\templates\main\program-alumni.html:40
 #: .\main\templates\main\program-mentors.html:41
 #: .\main\templates\main\program-partners.html:28
-#: .\main\templates\main\program-teams.html:49
 msgid "Selected Teams"
 msgstr ""
 
@@ -293,7 +304,7 @@ msgstr ""
 #: .\main\templates\main\program-partners.html:26
 #: .\main\templates\main\program-teams.html:55
 msgid "Mentors"
-msgstr ""
+msgstr "Μέντορες"
 
 #: .\main\templates\main\program-alumni.html:42
 #: .\main\templates\main\program-mentors.html:42
@@ -307,7 +318,7 @@ msgstr ""
 #: .\main\templates\main\program-partners.html:32
 #: .\main\templates\main\program-teams.html:61
 msgid "Apply now!"
-msgstr ""
+msgstr "Kάνε Αίτηση"
 
 #: .\main\templates\main\program-mentors.html:13
 msgid "Our Mentors"
@@ -328,7 +339,7 @@ msgstr ""
 
 #: .\main\templates\main\program-teams.html:15
 msgid "Hosted Teams"
-msgstr ""
+msgstr "Φιλοξενούμενες Ομάδες"
 
 #: .\main\templates\main\program-teams.html:18
 msgid "Filter by industry"
@@ -337,18 +348,26 @@ msgstr ""
 #: .\main\templates\main\program-teams.html:51
 msgid ""
 "\n"
-"                               Τeams are selected through an evaluation "
-"process that considers the business sustainability of the proposal they "
-"submit. Once selected, they are working with the OK!Thess team towards "
+"                               Τeams are selected in consideration of the "
+"sustainability of their submitted proposal, and physical interviews. Once "
+"selected, they enter our Bootcamp and work with OK!Thess team towards "
 "creating a scalable business model. Each pre-incubation cycle terminates "
 "with a DEMO DAY.\n"
 "                              "
 msgstr ""
+"\n"
+"                               Οι ομάδες επιλέγοντε βάση τη βιωσιμότητα της "
+"επιχειρηματικής πρότασης που καταθέτουν, και μετά απο συνεντεύξεις. Άμα τη "
+"επιλογή, παρακόλουθουν μια σύντομη σειρά εκπαιδευτικών εργαστηρίων και "
+"δουλεύουν με την ομάδα τους OK!Thess, για την δημιουργία ενός βιώσιμου "
+"επιχειρηματικού μοντέλου. Κάθε κύκλος τελειώνει με την ημέρα επίδειξηςτων "
+"προιόντων και υπηρεσιών.\n"
+"                              "
 
 #: .\okthess\settings.py:181
 msgid "Greek"
-msgstr ""
+msgstr "Ελληνικά"
 
 #: .\okthess\settings.py:182
 msgid "English"
-msgstr ""
+msgstr "Αγγλικά"
