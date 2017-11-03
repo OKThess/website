@@ -213,10 +213,10 @@ address > abbr {
 
 .btn-red.alt {
   text-align: right;
-  margin-right 5%;
   margin-top: 15px;
 }
 
+.btn-red:focus,
 .btn-red:hover {
   color: #fff;
   text-decoration: none;
@@ -691,8 +691,9 @@ h6.blog-post-meta {
 
 .post-content-image {
   width: 80%;
-  padding-right: 20px;
+  padding-right: 40px;
   padding-bottom: 20px;
+  box-sizing: content-box;
 }
 
 .post-content img {

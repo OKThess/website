@@ -1,4 +1,4 @@
-import datetime
+import datetime, itertools
 
 from collections import OrderedDict
 
@@ -37,7 +37,7 @@ def index(request):
 def about(request):
     about_texts = About.objects.first()
     if request.LANGUAGE_CODE == 'en':
-        partners_list = Partner.en_objects.order_by('name')
+        partners_list = Partner.objects.order_by('name')
         for partner in partners_list:
             partner.description = partner.description_en
         if about_texts:
@@ -46,7 +46,7 @@ def about(request):
             about_texts.participate_text = about_texts.participate_text_en
             about_texts.coworking_text = about_texts.coworking_text_en
     else:
-        partners_list = Partner.el_objects.order_by('name')
+        partners_list = Partner.objects.order_by('name')
         for partner in partners_list:
             partner.description = partner.description_el
         if about_texts:
@@ -128,8 +128,7 @@ def meetup(request):
 
 
 def events(request):
-    events_list = Event.objects.order_by('-date')[:10]
-    events_list_all = Event.objects.all()
+    events_list_all = Event.objects.order_by('-date')
     events_archive = {}
     for event in events_list_all:
         if event.date.year not in events_archive:
@@ -143,11 +142,19 @@ def events(request):
         elif event.date.month >= 10 and event.date.month <= 12:
             events_archive[event.date.year].setdefault('Oct-Nov-Dev', []).append(event)
     events_archive = OrderedDict(reversed(sorted(events_archive.items())))
+    now = datetime.datetime.now()
+    future_events_number = 0
+    for event in events_list_all:
+        if datetime.datetime.combine(event.date, datetime.time(0, 0)) > now:
+            future_events_number += 1
+    events_list_future = reversed(Event.objects.order_by('-date')[:future_events_number])
+    events_list_past = Event.objects.order_by('-date')[future_events_number:10]
+    events_list = itertools.chain(events_list_future, events_list_past)
     meetups = Meetup.objects.order_by('name')
     return render(request, 'main/events.html', {
+        'events_archive': events_archive,
         'events_list': events_list,
         'meetups': meetups,
-        'events_archive': events_archive,
     })
 
 
