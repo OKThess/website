@@ -1,4 +1,4 @@
-import datetime, itertools
+import datetime
 
 from collections import OrderedDict
 
@@ -149,11 +149,11 @@ def events(request):
             future_events_number += 1
     events_list_future = reversed(Event.objects.order_by('-date')[:future_events_number])
     events_list_past = Event.objects.order_by('-date')[future_events_number:10]
-    events_list = itertools.chain(events_list_future, events_list_past)
     meetups = Meetup.objects.order_by('name')
     return render(request, 'main/events.html', {
         'events_archive': events_archive,
-        'events_list': events_list,
+        'events_list_past': events_list_past,
+        'events_list_future': events_list_future,
         'meetups': meetups,
     })
 
