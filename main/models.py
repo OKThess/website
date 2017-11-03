@@ -72,26 +72,12 @@ class Mentor(models.Model):
         return self.name
 
 
-class EnPartnerManager(models.Manager):
-    def get_queryset(self):
-        return super(EnPartnerManager, self).get_queryset().exclude(description_en=u'').exclude(description_en=None)
-
-
-class ElPartnerManager(models.Manager):
-    def get_queryset(self):
-        return super(ElPartnerManager, self).get_queryset().exclude(description_el=u'').exclude(description_el=None)
-
-
 class Partner(models.Model):
     name = models.CharField(max_length=100)
     description_en = models.TextField(null=True, blank=True, default=None)
     description_el = models.TextField(null=True, blank=True, default=None)
     title = models.CharField(max_length=300, null=True, blank=True)
     image = S3DirectField(dest='uploads')
-
-    objects = models.Manager()
-    el_objects = ElPartnerManager()
-    en_objects = EnPartnerManager()
 
     def __str__(self):
         return self.name
