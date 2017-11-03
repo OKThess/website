@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-03 04:38+0200\n"
+"POT-Creation-Date: 2017-11-03 04:47+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -212,6 +212,7 @@ msgstr ""
 
 #: .\main\templates\main\layout-contact.html:73
 #: .\main\templates\main\layout.html:73
+#: .\main\templates\main\program-alumni.html:43
 #: .\main\templates\main\program-teams.html:49
 msgid "About"
 msgstr ""
@@ -280,9 +281,9 @@ msgstr ""
 #: .\main\templates\main\program-alumni.html:34
 #: .\main\templates\main\program-mentors.html:40
 #: .\main\templates\main\program-partners.html:27
-#: .\main\templates\main\program-teams.html:56
+#: .\main\templates\main\program-teams.html:59
 msgid "Alumni"
-msgstr ""
+msgstr "Απόφοιτοι"
 
 #: .\main\templates\main\program-alumni.html:36
 msgid ""
@@ -292,33 +293,32 @@ msgid ""
 "knowledge and they are also invited to help our hosted teams as Mentors.\n"
 "                              "
 msgstr ""
-
-#: .\main\templates\main\program-alumni.html:40
-#: .\main\templates\main\program-mentors.html:41
-#: .\main\templates\main\program-partners.html:28
-msgid "Selected Teams"
-msgstr ""
+"\n"
+"Οι απόφοιτοι του ΟΚ!Τhess παραμένουν κοντά μας"
+"ωστε να ανταλλάζουμε γνώσεις και εμπειρίες που έχουν"
+"αποκομίσει στην μετά ΟΚ!Τhess εποχή. Μερικοί από αυτούς καλούνται να"
+"βοηθήσουν τις φιλοξενούμενες ομάδες απο τον ρόλο του Μέντορα."
 
 #: .\main\templates\main\program-alumni.html:41
+#: .\main\templates\main\program-mentors.html:46
+#: .\main\templates\main\program-partners.html:32
+#: .\main\templates\main\program-teams.html:56
+msgid "Apply now!"
+msgstr "Kάνε Αίτηση"
+
+#: .\main\templates\main\program-alumni.html:44
 #: .\main\templates\main\program-mentors.html:36
 #: .\main\templates\main\program-partners.html:26
-#: .\main\templates\main\program-teams.html:55
+#: .\main\templates\main\program-teams.html:58
 msgid "Mentors"
 msgstr "Μέντορες"
 
-#: .\main\templates\main\program-alumni.html:42
+#: .\main\templates\main\program-alumni.html:45
 #: .\main\templates\main\program-mentors.html:42
 #: .\main\templates\main\program-partners.html:22
-#: .\main\templates\main\program-teams.html:57
+#: .\main\templates\main\program-teams.html:60
 msgid "Team &amp; Partners"
 msgstr ""
-
-#: .\main\templates\main\program-alumni.html:46
-#: .\main\templates\main\program-mentors.html:46
-#: .\main\templates\main\program-partners.html:32
-#: .\main\templates\main\program-teams.html:61
-msgid "Apply now!"
-msgstr "Kάνε Αίτηση"
 
 #: .\main\templates\main\program-mentors.html:13
 msgid "Our Mentors"
@@ -331,6 +331,11 @@ msgid ""
 "mentors may be older or younger than the people that are being mentored, but "
 "they must have a certain area of expertise. Want to help our teams as a "
 "mentor? Drop us an email at <strong>dimitri@okthess.gr</strong>."
+msgstr ""
+
+#: .\main\templates\main\program-mentors.html:41
+#: .\main\templates\main\program-partners.html:28
+msgid "Selected Teams"
 msgstr ""
 
 #: .\main\templates\main\program-partners.html:13
