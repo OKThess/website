@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-01 15:56+0200\n"
+"POT-Creation-Date: 2017-11-03 03:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,6 @@ msgstr ""
 
 #: .\main\templates\main\about.html:31
 #: .\main\templates\main\layout-contact.html:78
-#: .\main\templates\main\layout.html:78
 msgid "Coworking space"
 msgstr ""
 
@@ -192,7 +191,7 @@ msgstr ""
 msgid "Featured <strong>Posts</strong>"
 msgstr ""
 
-#: .\main\templates\main\index.html:80
+#: .\main\templates\main\index.html:84
 msgid "Upcoming Community <strong>Meetups</strong>"
 msgstr ""
 
@@ -210,38 +209,43 @@ msgstr ""
 msgid "How do I participate?"
 msgstr ""
 
-#: .\main\templates\main\layout-contact.html:81
-#: .\main\templates\main\layout.html:81
-msgid "Teams"
+#: .\main\templates\main\layout-contact.html:79
+#: .\main\templates\main\layout.html:79
+msgid "Team"
 msgstr ""
 
 #: .\main\templates\main\layout-contact.html:82
 #: .\main\templates\main\layout.html:82
-msgid "Space"
+msgid "Teams"
 msgstr ""
 
 #: .\main\templates\main\layout-contact.html:83
 #: .\main\templates\main\layout.html:83
-msgid "Blog"
+msgid "Communities"
 msgstr ""
 
 #: .\main\templates\main\layout-contact.html:84
 #: .\main\templates\main\layout.html:84
+msgid "Blog"
+msgstr ""
+
+#: .\main\templates\main\layout-contact.html:85
+#: .\main\templates\main\layout.html:85
 msgid "Contact"
 msgstr ""
 
-#: .\main\templates\main\layout-contact.html:112
-#: .\main\templates\main\layout.html:119
+#: .\main\templates\main\layout-contact.html:113
+#: .\main\templates\main\layout.html:120
 msgid "MEMBERS"
 msgstr ""
 
-#: .\main\templates\main\layout-contact.html:145
-#: .\main\templates\main\layout.html:152
+#: .\main\templates\main\layout-contact.html:146
+#: .\main\templates\main\layout.html:153
 msgid "SPONSORS"
 msgstr ""
 
-#: .\main\templates\main\layout-contact.html:155
-#: .\main\templates\main\layout.html:162
+#: .\main\templates\main\layout-contact.html:156
+#: .\main\templates\main\layout.html:163
 msgid "DONOR"
 msgstr ""
 
@@ -249,7 +253,11 @@ msgstr ""
 msgid "<strong>Apply</strong> for Autumn '17"
 msgstr ""
 
-#: .\main\templates\main\layout.html:112
+#: .\main\templates\main\layout.html:78
+msgid "Space"
+msgstr ""
+
+#: .\main\templates\main\layout.html:113
 msgid "LOCATION"
 msgstr ""
 
