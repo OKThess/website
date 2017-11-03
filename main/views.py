@@ -37,7 +37,7 @@ def index(request):
 def about(request):
     about_texts = About.objects.first()
     if request.LANGUAGE_CODE == 'en':
-        partners_list = Partner.en_objects.order_by('name')
+        partners_list = Partner.objects.order_by('name')
         for partner in partners_list:
             partner.description = partner.description_en
         if about_texts:
@@ -46,7 +46,7 @@ def about(request):
             about_texts.participate_text = about_texts.participate_text_en
             about_texts.coworking_text = about_texts.coworking_text_en
     else:
-        partners_list = Partner.el_objects.order_by('name')
+        partners_list = Partner.objects.order_by('name')
         for partner in partners_list:
             partner.description = partner.description_el
         if about_texts:
