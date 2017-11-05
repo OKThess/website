@@ -791,13 +791,13 @@ ul.share-buttons img{
 }
 
 .events-single-title {
-  margin-top: 16px;
   margin-bottom: 10px;
 }
 
 .events-single-title > a {
   font-size: 20px;
   color: #000;
+  text-decoration: none;
 }
 
 .events-single-data-time,
@@ -805,6 +805,7 @@ ul.share-buttons img{
 .events-single-data-link,
 .events-single-data-organizer {
   display: inline-block;
+  margin-bottom: 3px;
   padding: 1px 4px;
   font-size: 12px;
 }
