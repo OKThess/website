@@ -802,13 +802,14 @@ ul.share-buttons img{
 .events-single-data-organizer {
   background: #000;
   color: #fff;
+  text-align: left;
 }
 
 .events-single-data-link,
 .events-single-data-date {
   background: #bbb;
   color: #000;
-  float: right;
+  text-align: left;
 }
 
 .events-single-data-link > a {
@@ -817,6 +818,7 @@ ul.share-buttons img{
 }
 
 /* about */
+
 .about {
   width: 90%;
 }
