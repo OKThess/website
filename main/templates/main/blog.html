@@ -20,7 +20,7 @@
                                 <h4 class="blog-post-title">{{ post.title }}</h4>
                                 <h6 class="blog-post-meta text-muted">{% trans 'Posted' %} {{ post.date }}</h6>
                                 <p>{{ post.teaser }}</p>
-                                <a class="btn-yellow" href="{% url 'main:blog_post' post.slug %}" role="button">
+                                <a class="btn-blue" href="{% url 'main:blog_post' post.slug %}" role="button">
                                     <span class="glyphicon glyphicon-exclamation-sign"></span>{% trans '<strong>Read</strong> more »' %}
                                 </a>
                             </div>
