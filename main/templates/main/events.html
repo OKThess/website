@@ -40,22 +40,21 @@
                 {% for event in events_list_past %}
                     <div class="events-single events-single-dimmed">
                         <div class="row">
-                            <div class="col-md-3 text-center">
+                            <div class="col-md-3">
+                              <div class="events-single-data">
                                 <div class="events-single-data-date">Date: {{ event.date }}</div>
                                 <div class="events-single-data-time">Time: {{ event.time_start }} to {{ event.time_end }}</div>
                                 <a href="{{ event.link }}"><img src="{{ event.image }}"></a>
+                                <div class="events-single-data-organizer">Organized by: {{ event.organizer }}</div>
+                              </div>
                             </div>
                             <div class="col-md-9">
-                                <div class="events-single-data">
-
-                                    
-                                </div>
                                 <div class="events-single-title">
                                     <a href="{{ event.link }}">{{ event.title }}</a>
                                 </div>
                                 <p class="events-single-para">{{ event.description }}</p>
                                 <div class="events-single-data">
-                                    <div class="events-single-data-organizer">Organized by: {{ event.organizer }}</div>
+
                                     <div class="events-single-data-link">
                                         <a href="{{ event.organizer_link }}" target="_blank">
                                             More <i class="glyphicon glyphicon-chevron-right"></i>
