@@ -11,31 +11,31 @@
             <div class="col-md-9">
                 <div class="about-accordion">
                     <button class="accordion" id="what">{% trans 'What we do' %}</button>
-                    <div class="panel">
+                     <div class="panel">
                         <div class="panel-inner">
                             {{ about_texts.what_text|safe }}
                         </div>
                     </div>
                     <button class="accordion" id="how">{% trans 'How we do it' %}</button>
-                    <div class="panel">
+                     <div class="panel">
                         <div class="panel-inner">
                             {{ about_texts.how_text|safe }}
                         </div>
                     </div>
                     <button class="accordion" id="participate">{% trans 'How I can participate' %}</button>
-                    <div class="panel">
+                     <div class="panel">
                         <div class="panel-inner">
                             {{ about_texts.participate_text|safe }}
                         </div>
                     </div>
-                    <button class="accordion" id="coworking">{% trans 'Coworking space' %}</button>
-                    <div class="panel">
+                    <button class="accordion" id="space">{% trans 'Space' %}</button>
+                     <div class="panel">
                         <div class="panel-inner">
                             {{ about_texts.coworking_text|safe }}
                         </div>
                     </div>
-                    <button class="accordion" id="what">{% trans 'OK!Thess team' %}</button>
-                    <div class="panel">
+                    <button class="accordion" id="team">{% trans 'OK!Thess team' %}</button>
+                     <div class="panel">
                         <div class="panel-inner">
                           <div class="row">
                               {% for partner in partners_list %}

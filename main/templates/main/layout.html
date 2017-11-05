@@ -75,14 +75,15 @@
                         <li><a tabindex="-1" href="{% url 'main:about' %}#what">{% trans 'What we do' %}</a></li>
                         <li><a tabindex="-1" href="{% url 'main:about' %}#how">{% trans 'How we do it' %}</a></li>
                         <li><a tabindex="-1" href="{% url 'main:about' %}#participate">{% trans 'How do I participate?' %}</a></li>
-                        <li><a tabindex="-1" href="{% url 'main:about' %}#coworking">{% trans 'Coworking space' %}</a></li>
+                        <li><a tabindex="-1" href="{% url 'main:about' %}#space">{% trans 'Space' %}</a></li>
+												<li><a tabindex="-1" href="{% url 'main:about' %}#team">{% trans 'Team' %}</a></li>
                    </ul>
                 </li>
                 <li class="{% active 'program' %}"><a href="{% url 'main:program_teams' %}">{% trans 'Teams' %}</a></li>
-                <li class="{% active 'event' %}"><a href="{% url 'main:events' %}">{% trans 'Space' %}</a></li>
+                <li class="{% active 'event' %}"><a href="{% url 'main:events' %}">{% trans 'Communities' %}</a></li>
                 <li class="{% active 'blog' %}"><a href="{% url 'main:blog' %}">{% trans 'Blog' %}</a></li>
                 <li class="{% active 'contact' %}"><a href="{% url 'main:contact' %}">{% trans 'Contact' %}</a></li>
-                <li class="navbar-language">
+	              <li class="navbar-language">
                     {% csrf_token %}
                     <div class="hidden" id="current-language">{{ LANGUAGE_CODE }}</div>
                     {% if LANGUAGE_CODE == 'en' %}
