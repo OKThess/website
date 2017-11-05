@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-03 04:47+0200\n"
+"POT-Creation-Date: 2017-11-05 16:48+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\main\templates\main\about.html:13
-#: .\main\templates\main\layout-contact.html:75
-#: .\main\templates\main\layout.html:75
+#: .\main\templates\main\about.html:13 .\main\templates\main\layout.html:75
 msgid "What we do"
 msgstr "Τι κάνουμε"
 
-#: .\main\templates\main\about.html:19
-#: .\main\templates\main\layout-contact.html:76
-#: .\main\templates\main\layout.html:76
+#: .\main\templates\main\about.html:19 .\main\templates\main\layout.html:76
 msgid "How we do it"
 msgstr "Πως το κάνουμε"
 
@@ -149,9 +145,9 @@ msgstr "Αποστολή"
 msgid "Events at OK!Thess"
 msgstr "Συναντήσεις στο ΟΚ!Τhess"
 
-#: .\main\templates\main\events.html:42
+#: .\main\templates\main\events.html:42 .\main\templates\main\layout.html:83
 msgid "Meetups"
-msgstr "Κοινότητες"
+msgstr "Συναντήσεις"
 
 #: .\main\templates\main\events.html:44
 msgid ""
@@ -188,15 +184,15 @@ msgstr ""
 
 #: .\main\templates\main\index.html:48
 msgid "Open Workshops"
-msgstr ""
+msgstr "Ανοιχτά Εργαστήρια"
 
 #: .\main\templates\main\index.html:52
 msgid "Community Events"
-msgstr ""
+msgstr "Συναντήσεις"
 
 #: .\main\templates\main\index.html:56
 msgid "Mentoring Sessions"
-msgstr ""
+msgstr "Καθοδήγηση"
 
 #: .\main\templates\main\index.html:62
 msgid "Featured <strong>Posts</strong>"
@@ -204,75 +200,53 @@ msgstr ""
 
 #: .\main\templates\main\index.html:84
 msgid "Upcoming Community <strong>Meetups</strong>"
-msgstr ""
-
-#: .\main\templates\main\layout-contact.html:62
-msgid "<strong>Apply</strong> for Winter '18"
-msgstr ""
-
-#: .\main\templates\main\layout-contact.html:73
-#: .\main\templates\main\layout.html:73
-#: .\main\templates\main\program-alumni.html:43
-#: .\main\templates\main\program-teams.html:49
-msgid "About"
-msgstr ""
-
-#: .\main\templates\main\layout-contact.html:77
-#: .\main\templates\main\layout.html:77
-msgid "How do I participate?"
-msgstr ""
-
-#: .\main\templates\main\layout-contact.html:78
-msgid "Coworking space"
-msgstr ""
-
-#: .\main\templates\main\layout-contact.html:79
-#: .\main\templates\main\layout.html:79
-msgid "Team"
-msgstr ""
-
-#: .\main\templates\main\layout-contact.html:82
-#: .\main\templates\main\layout.html:82
-msgid "Teams"
-msgstr ""
-
-#: .\main\templates\main\layout-contact.html:83
-#: .\main\templates\main\layout.html:83
-msgid "Communities"
-msgstr ""
-
-#: .\main\templates\main\layout-contact.html:84
-#: .\main\templates\main\layout.html:84
-msgid "Blog"
-msgstr ""
-
-#: .\main\templates\main\layout-contact.html:85
-#: .\main\templates\main\layout.html:85
-msgid "Contact"
-msgstr ""
-
-#: .\main\templates\main\layout-contact.html:113
-#: .\main\templates\main\layout.html:120
-msgid "MEMBERS"
-msgstr ""
-
-#: .\main\templates\main\layout-contact.html:146
-#: .\main\templates\main\layout.html:153
-msgid "SPONSORS"
-msgstr ""
-
-#: .\main\templates\main\layout-contact.html:156
-#: .\main\templates\main\layout.html:163
-msgid "DONOR"
-msgstr ""
+msgstr "Επερχόμενες <strong>Ανοιχτές Συναντήσεις</strong>"
 
 #: .\main\templates\main\layout.html:62
 msgid "<strong>Apply</strong> for Autumn '17"
 msgstr ""
 
+#: .\main\templates\main\layout.html:73
+#: .\main\templates\main\program-alumni.html:43
+#: .\main\templates\main\program-teams.html:49
+msgid "About"
+msgstr "Σχετικά"
+
+#: .\main\templates\main\layout.html:77
+msgid "How do I participate?"
+msgstr "Πως συμμετέχω"
+
+#: .\main\templates\main\layout.html:79
+msgid "Team"
+msgstr "Ομάδα"
+
+#: .\main\templates\main\layout.html:82
+msgid "Teams"
+msgstr "Ομάδες"
+
+#: .\main\templates\main\layout.html:84
+msgid "Blog"
+msgstr "Νέα"
+
+#: .\main\templates\main\layout.html:85
+msgid "Contact"
+msgstr "Επικοινωνία"
+
 #: .\main\templates\main\layout.html:113
 msgid "LOCATION"
-msgstr ""
+msgstr "ΤΟΠΟΘΕΣΙΑ"
+
+#: .\main\templates\main\layout.html:120
+msgid "MEMBERS"
+msgstr "ΜΕΛΗ"
+
+#: .\main\templates\main\layout.html:153
+msgid "SPONSORS"
+msgstr "ΧΟΡΗΓΟΙ"
+
+#: .\main\templates\main\layout.html:163
+msgid "DONOR"
+msgstr "ΔΩΡΗΤΗΣ"
 
 #: .\main\templates\main\program-alumni.html:13
 msgid "Graduated Teams"
@@ -294,10 +268,10 @@ msgid ""
 "                              "
 msgstr ""
 "\n"
-"Οι απόφοιτοι του ΟΚ!Τhess παραμένουν κοντά μας"
-"ωστε να ανταλλάζουμε γνώσεις και εμπειρίες που έχουν"
-"αποκομίσει στην μετά ΟΚ!Τhess εποχή. Μερικοί από αυτούς καλούνται να"
-"βοηθήσουν τις φιλοξενούμενες ομάδες απο τον ρόλο του Μέντορα."
+"Οι απόφοιτοι του ΟΚ!Τhess παραμένουν κοντά μαςωστε να ανταλλάζουμε γνώσεις "
+"και εμπειρίες που έχουναποκομίσει στην μετά ΟΚ!Τhess εποχή. Μερικοί από "
+"αυτούς καλούνται ναβοηθήσουν τις φιλοξενούμενες ομάδες απο τον ρόλο του "
+"Μέντορα."
 
 #: .\main\templates\main\program-alumni.html:41
 #: .\main\templates\main\program-mentors.html:46
