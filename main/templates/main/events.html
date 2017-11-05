@@ -14,12 +14,14 @@
                     <div class="events-single {% if event.is_old %} events-single-dimmed {% endif %}">
                         <div class="row">
                             <div class="col-md-3 text-center">
+                                <div class="events-single-data-date">Date: {{ event.date }}</div>
+                                <div class="events-single-data-time">Time: {{ event.time_start }} to {{ event.time_end }}</div>
                                 <a href="{{ event.link }}"><img src="{{ event.image }}"></a>
                             </div>
                             <div class="col-md-9">
                                 <div class="events-single-data">
-                                    <div class="events-single-data-time">Time: {{ event.time_start }} to {{ event.time_end }}</div>
-                                    <div class="events-single-data-date">Date: {{ event.date }}</div>
+
+                                    
                                 </div>
                                 <div class="events-single-title">
                                     <a href="{{ event.link }}">{{ event.title }}</a>
