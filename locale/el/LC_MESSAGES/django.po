@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-07 15:51+0200\n"
+"POT-Creation-Date: 2017-11-07 15:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\main\templates\main\about.html:13 .\main\templates\main\layout.html:75
+#: .\main\templates\main\about.html:13 .\main\templates\main\layout.html:72
 msgid "What we do"
 msgstr "Τι κάνουμε"
 
-#: .\main\templates\main\about.html:19 .\main\templates\main\layout.html:76
+#: .\main\templates\main\about.html:19 .\main\templates\main\layout.html:73
 msgid "How we do it"
 msgstr "Πως το κάνουμε"
 
@@ -30,7 +30,7 @@ msgstr "Πως το κάνουμε"
 msgid "How I can participate"
 msgstr "Πως συμμετέχω"
 
-#: .\main\templates\main\about.html:31 .\main\templates\main\layout.html:78
+#: .\main\templates\main\about.html:31 .\main\templates\main\layout.html:75
 msgid "Space"
 msgstr "Χώρος"
 
@@ -210,11 +210,25 @@ msgstr ""
 msgid "Past meetups"
 msgstr "Φιλοξενούμενες Ομάδες"
 
-#: .\main\templates\main\index.html:12
+#: .\main\templates\main\index.html:9
+msgid "Do you need help on executing your business idea?"
+msgstr ""
+
+#: .\main\templates\main\index.html:11
+#, fuzzy
+#| msgid "<strong>Read</strong> more »"
+msgid "<strong>Apply</strong> for Winter '18"
+msgstr "Περισσότερα"
+
+#: .\main\templates\main\index.html:13
+msgid "Want more information? Read about OK!Thess here"
+msgstr ""
+
+#: .\main\templates\main\index.html:19
 msgid "Your early stage partner"
 msgstr "Συνεργάτης στα πρώτα "
 
-#: .\main\templates\main\index.html:14
+#: .\main\templates\main\index.html:21
 #, fuzzy
 #| msgid ""
 #| "OK!Thess provides space and technical support to teams of people\n"
@@ -236,75 +250,69 @@ msgstr ""
 "με την πραγματική αγορά καθώς και την δημιουργική επιχειρηματική κοινότητα "
 "της πόλης.\n"
 
-#: .\main\templates\main\index.html:48
+#: .\main\templates\main\index.html:55
 msgid "Open Workshops"
 msgstr "Ανοιχτά Εργαστήρια"
 
-#: .\main\templates\main\index.html:52
+#: .\main\templates\main\index.html:59
 msgid "Community Events"
 msgstr "Συναντήσεις"
 
-#: .\main\templates\main\index.html:56
+#: .\main\templates\main\index.html:63
 msgid "Mentoring Sessions"
 msgstr "Καθοδήγηση"
 
-#: .\main\templates\main\index.html:62
+#: .\main\templates\main\index.html:69
 msgid "Featured <strong>Posts</strong>"
 msgstr ""
 
-#: .\main\templates\main\index.html:84
+#: .\main\templates\main\index.html:91
 msgid "Upcoming Community <strong>Meetups</strong>"
 msgstr "Επερχόμενες <strong>Ανοιχτές Συναντήσεις</strong>"
 
-#: .\main\templates\main\layout.html:62
-#, fuzzy
-#| msgid "<strong>Read</strong> more »"
-msgid "<strong>Apply</strong> for Winter '18"
-msgstr "Περισσότερα"
-
-#: .\main\templates\main\layout.html:73
+#: .\main\templates\main\layout.html:70
 #: .\main\templates\main\program-alumni.html:43
 #: .\main\templates\main\program-teams.html:49
 msgid "About"
 msgstr "Σχετικά"
 
-#: .\main\templates\main\layout.html:77
+#: .\main\templates\main\layout.html:74
 msgid "How do I participate?"
 msgstr "Πως συμμετέχω"
 
-#: .\main\templates\main\layout.html:79
+#: .\main\templates\main\layout.html:76
 msgid "Team"
 msgstr "Ομάδα"
 
-#: .\main\templates\main\layout.html:82
+#: .\main\templates\main\layout.html:79
 msgid "Teams"
 msgstr "Ομάδες"
 
-#: .\main\templates\main\layout.html:83
+#: .\main\templates\main\layout.html:80
 msgid "Meetups"
 msgstr "Συναντήσεις"
 
-#: .\main\templates\main\layout.html:84
+#: .\main\templates\main\layout.html:81
 msgid "Blog"
 msgstr "Νέα"
 
-#: .\main\templates\main\layout.html:85
+#: .\main\templates\main\layout.html:82
 msgid "Contact"
 msgstr "Επικοινωνία"
 
-#: .\main\templates\main\layout.html:113
+#: .\main\templates\main\layout.html:110
 msgid "LOCATION"
 msgstr "ΤΟΠΟΘΕΣΙΑ"
 
-#: .\main\templates\main\layout.html:120
+#: .\main\templates\main\layout.html:117
 msgid "MEMBERS"
 msgstr "ΜΕΛΗ"
 
-#: .\main\templates\main\layout.html:153
+#: .\main\templates\main\layout.html:150
 msgid "SPONSORS"
 msgstr "ΧΟΡΗΓΟΙ"
 
-#: .\main\templates\main\layout.html:163
+#: .\main\templates\main\layout.html:160
 msgid "DONOR"
 msgstr "ΔΩΡΗΤΗΣ"
 

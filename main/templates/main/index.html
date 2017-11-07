@@ -5,6 +5,13 @@
 
 {% block content %}
     <div class="container index-land">
+        <row>
+          <p>{% trans 'Do you need help on executing your business idea?' %}</p>
+          <a class="btn-red btn-header" href="{% url 'main:apply' %}" role="button">
+              <span class="glyphicon glyphicon-exclamation-sign"></span>{% trans "<strong>Apply</strong> for Winter '18" %}
+          </a>
+          <p>{% trans 'Want more information? Read about OK!Thess here' %}</p>
+        </row>
         <div class="row">
             <div class="col-md-5">
                 <div class="index-land-content">

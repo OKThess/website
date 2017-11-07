@@ -72,8 +72,8 @@
                 <div class="program-sidebar-box">
                     <p>{% trans 'Meetings, especially regular meetings of people who share a particular interest such as a programming language or entrepreneurship' %}</p>
                 </div>
-                <div class="sidebar-module sidebar-module-inset sidebar-meetups">
                 <h3>{% trans 'Hosted meetups' %}</h3>
+                <div class="sidebar-module sidebar-module-inset sidebar-meetups">
                     <ul>
                         {% for meetup in meetups %}
                             <li><a href="{{ meetup.link }}" target="_blank">{{ meetup.name }}</a><i class="glyphicon glyphicon-chevron-right"></i></a></li>
