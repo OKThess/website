@@ -334,14 +334,14 @@ address > abbr {
 
 .slider-text {
   display: inline-block;
-  background: #000;
-  color: #fff;
+  background: #fff;
+  color: #000;
   font-size: 20px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-weight: 400;
+  font-weight: 500;
   position: relative;
   top: -62px;
   left: 10px;
@@ -357,6 +357,7 @@ address > abbr {
 }
 
 .index-land {
+  padding-top: 20px;
   width: 90%;
 }
 
@@ -934,7 +935,7 @@ button.accordion.active:after {
   float: right;
   text-align: right;
   width: 100%;
-  margin-top: -65px;
+  margin-top: -30px;
   margin-bottom: 50px;
 }
 
