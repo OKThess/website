@@ -27,14 +27,6 @@ h1 {
   font-weight: 600;
 }
 
-h1.blue {
-  background: #1c599b;
-}
-
-h1.yellow {
-  background: #f9d94f;
-  color: #000;
-}
 
 h2 {
   font-size: 22px;
