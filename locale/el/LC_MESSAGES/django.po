@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-05 16:48+0200\n"
+"POT-Creation-Date: 2017-11-07 15:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,46 +38,46 @@ msgstr "Χώρος"
 msgid "OK!Thess team"
 msgstr "Η Ομάδα"
 
-#: .\main\templates\main\about.html:62
+#: .\main\templates\main\about.html:60
 msgid "Official Docs<small> - GR</small>"
 msgstr "Επίσημα Έγγραφα"
 
-#: .\main\templates\main\about.html:66
+#: .\main\templates\main\about.html:64
 msgid "Concept"
 msgstr "Αρχική Ιδέα"
 
-#: .\main\templates\main\about.html:71
+#: .\main\templates\main\about.html:69
 msgid "Memorandum"
 msgstr "Μνημόνιο Συνεργασίας"
 
-#: .\main\templates\main\about.html:76
+#: .\main\templates\main\about.html:74
 msgid "Regulation"
 msgstr "Κανονισμός"
 
-#: .\main\templates\main\apply.html:12
+#: .\main\templates\main\apply.html:20
 msgid ""
 "\n"
-"              <p>We accept at any time submissions from individuals or "
+"                <p>We accept at any time submissions from individuals or "
 "groups with innovative ideas, regardless their stage, who would like to "
 "benefit from the services of the OK!Thess pre-incubator in order to set up a "
 "startup business or accelarate the one that they already have set up.</p>\n"
-"              <p>Proposals shall be evaluated at regular intervals, the "
+"                <p>Proposals shall be evaluated at regular intervals, the "
 "exact dates are being announced on this website.</p>\n"
-"              <p>The current submission period closes on September the 13th "
-"2017. Results will be announced on September the 19th 2017. The incubation "
-"period starts with a compulsory bootcamp that starts on the 2nd and lasts "
-"until the 13th of October.</p>\n"
-"              <p>To participate, you either fill in the following form, or "
+"                <p>The current submission period closes on September the "
+"13th 2017. Results will be announced on September the 19th 2017. The "
+"incubation period starts with a compulsory bootcamp that starts on the 2nd "
+"and lasts until the 13th of October.</p>\n"
+"                <p>To participate, you either fill in the following form, or "
 "just answer the questions in the body of an e-mail and send it to "
 "<strong>apply@okthess.gr</strong></p>\n"
-"              "
+"                "
 msgstr ""
 
-#: .\main\templates\main\apply.html:18
+#: .\main\templates\main\apply.html:26
 msgid "Information - GR"
 msgstr "Πληροφορίες"
 
-#: .\main\templates\main\apply.html:18
+#: .\main\templates\main\apply.html:26
 msgid "<nobr>Internal Regulation</nobr>"
 msgstr "Εσωτερικός Κανονισμός"
 
@@ -85,7 +85,41 @@ msgstr "Εσωτερικός Κανονισμός"
 msgid "Application form"
 msgstr "Αίτηση Συμμετοχής"
 
-#: .\main\templates\main\apply.html:38
+#: .\main\templates\main\apply.html:34
+msgid ""
+"Ποιά είναι η επιχειρηματική ιδέα που θέλετε να αναπτύξετε στο OK!Thess (Έως "
+"150 λέξεις);"
+msgstr ""
+
+#: .\main\templates\main\apply.html:40
+msgid ""
+"Σε ποιά αγορά απευθύνεστε (πού βλέπετε τους μελλοντικούς πελάτες) (έως 100 "
+"λέξεις);"
+msgstr ""
+
+#: .\main\templates\main\apply.html:46
+msgid "Γνωρίζετε ποιος είναι ο ανταγωνισμός στην ιδέα σας (έως 100 λέξεις);"
+msgstr ""
+
+#: .\main\templates\main\apply.html:52
+msgid ""
+"Τι περιμένετε να σας προσφέρει το OK!Thess εκτός από χώρο και υποδομή (έως "
+"100 λέξεις);"
+msgstr ""
+
+#: .\main\templates\main\apply.html:58
+msgid "Τηλέφωνο επικοινωνίας"
+msgstr ""
+
+#: .\main\templates\main\apply.html:64
+msgid "Email"
+msgstr ""
+
+#: .\main\templates\main\apply.html:70
+msgid "Ονοματεπώνυμο"
+msgstr ""
+
+#: .\main\templates\main\apply.html:74
 msgid "Submit"
 msgstr "Αποστολή"
 
@@ -145,22 +179,22 @@ msgstr "Αποστολή"
 msgid "Events at OK!Thess"
 msgstr "Συναντήσεις στο ΟΚ!Τhess"
 
-#: .\main\templates\main\events.html:42 .\main\templates\main\layout.html:83
+#: .\main\templates\main\events.html:71 .\main\templates\main\layout.html:83
 msgid "Meetups"
 msgstr "Συναντήσεις"
 
-#: .\main\templates\main\events.html:44
+#: .\main\templates\main\events.html:73
 msgid ""
 "Meetings, especially regular meetings of people who share a particular "
 "interest such as a programming language or entrepreneurship"
 msgstr ""
 
-#: .\main\templates\main\events.html:56
+#: .\main\templates\main\events.html:85
 msgid ""
 "The meetup of OK!Thess is the new thing in town. Click here to learn more"
 msgstr ""
 
-#: .\main\templates\main\events.html:59
+#: .\main\templates\main\events.html:88
 msgid "Past Events"
 msgstr ""
 
@@ -169,11 +203,19 @@ msgid "Your early stage partner"
 msgstr "Συνεργάτης στα πρώτα "
 
 #: .\main\templates\main\index.html:14
+#, fuzzy
+#| msgid ""
+#| "OK!Thess provides space and technical support to teams of people\n"
+#| "with innovative ideas helping them to <strong>Validate a Business\n"
+#| "Model Fast</strong>, rather than hastily, and to <strong>Meet,\n"
+#| "Mix and Connect</strong> with like-minded peers.\n"
 msgid ""
 "OK!Thess provides space and technical support to teams of people\n"
-"with innovative ideas helping them to <strong>Validate a Business\n"
-"Model Fast</strong>, rather than hastily, and to <strong>Meet,\n"
-"Mix and Connect</strong> with like-minded peers.\n"
+"                      with innovative ideas helping them to <strong>Validate "
+"a Business\n"
+"                      Model Fast</strong>, and to <strong>Meet,\n"
+"                      Mix and Connect</strong> with like-minded peers.\n"
+"                      "
 msgstr ""
 "Το ΟΚ!Τhess προσφέρει χώρο και τεχνική υποστήριξη σε ομάδες ανθρώπων\n"
 "με <strong>καινοτόμες επιχειρηματικές ιδέες</strong>, βοηθώντας τους να\n"
@@ -203,8 +245,10 @@ msgid "Upcoming Community <strong>Meetups</strong>"
 msgstr "Επερχόμενες <strong>Ανοιχτές Συναντήσεις</strong>"
 
 #: .\main\templates\main\layout.html:62
-msgid "<strong>Apply</strong> for Autumn '17"
-msgstr ""
+#, fuzzy
+#| msgid "<strong>Read</strong> more »"
+msgid "<strong>Apply</strong> for Winter '18"
+msgstr "Περισσότερα"
 
 #: .\main\templates\main\layout.html:73
 #: .\main\templates\main\program-alumni.html:43

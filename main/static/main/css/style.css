@@ -21,13 +21,10 @@ p {
 
 h1 {
   display: inline-block;
-  background: #231f20;
   margin-top: 0px;
   letter-spacing: .005em;
   font-size: 26px;
   font-weight: 500;
-  color: #fff;
-  padding: 15px 20px;
 }
 
 h1.blue {
@@ -49,9 +46,6 @@ h3 {
   clear: right;
   font-size: 18px;
   font-weight: 400;
-  color: #fff;
-  background: #231f20;
-  padding: 10px 20px;
   margin-top: 10px;
   -webkit-box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
   -moz-box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
@@ -819,7 +813,9 @@ ul.share-buttons img{
 
 .events-single-data-link,
 .events-single-data-date {
-  background: #bbb;
+  padding: 5px 3px;
+  background: #e7e7e7;
+  font-weight: 500;
   color: #000;
   text-align: left;
 }
