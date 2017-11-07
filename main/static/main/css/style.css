@@ -27,47 +27,27 @@ h1 {
   font-weight: 600;
 }
 
-
 h2 {
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: .005em;
 }
 
 h3 {
   display: inline-block;
   clear: right;
   font-size: 18px;
-  font-weight: 400;
-  margin-top: 30px;
+  font-weight: 600;
+  margin-top: 37px;
   -webkit-box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
   -moz-box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
   box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
 }
 
-h3.yellow{
-  background: #f9d94f;
-  color: #000;
-}
-
-h3.blue{
-  background: #1c599b;
-  width: 90%;
-  margin-top: 0;
-  font-weight: 500;
-}
-
 h4 {
   display: inline-block;
   font-size: 16px;
-}
-
-h4.blue {
-  background: #1c599b;
-  color: #fff;
-}
-
-h4.yellow {
-  background: #f9d94f;
+  font-weight: 600;
 }
 
 address {
