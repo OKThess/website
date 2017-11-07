@@ -5,28 +5,20 @@
 
 {% block content %}
     <div class="container index-land">
-        <row id="cta">
-          <p class="text-muted"><strong>{% trans 'Do you need help on executing your business idea?' %}</strong></p>
-          <div>
-            <a class="btn-red" href="{% url 'main:apply' %}" role="button">
-              <span class="glyphicon glyphicon-exclamation-sign"></span>{% trans "<strong>Apply</strong> for Winter '18" %}
-            </a>
-            <p id="more">{% trans 'Want more information? Read about OK!Thess here' %}</p>
-          </div>
-        </row>
         <div class="row">
             <div class="col-md-5">
                 <div class="index-land-content">
                     <h1>ΟΚ!Τhess</h1>
                     <h2>{% trans 'Your early stage partner' %}</h2>
                     <p class="desc">
-                      {% blocktrans %}OK!Thess provides space and technical support to teams of people
+                      {% blocktrans %}Do you need help on executing your business idea? OK!Thess provides space and technical support to teams of people
                       with innovative ideas helping them to <strong>Validate a Business
                       Model Fast</strong>, and to <strong>Meet,
                       Mix and Connect</strong> with like-minded peers.
                       {% endblocktrans %}
                     </p>
-                    <p>{% trans 'Subscribe to get our updates' %}</p>
+                    <br>
+                    <p class="text-muted"> {% trans 'Subscribe to get our updates.' %}
                     <div id="mc_embed_signup">
                         <form action="//okthess.us15.list-manage.com/subscribe/post?u=e5030558dd0a4f89aeed05a0d&amp;id=a3d8e08f2a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                             <div id="mc_embed_signup_scroll">

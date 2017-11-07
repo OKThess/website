@@ -58,6 +58,9 @@
     <nav class="navbar navbar-default">
         <div class="navbar-header">
             <a class="navbar-brand" href="{% url 'main:index' %}"><img src="{% static '/main/img/logo.png' %}" alt="Logo"></a>
+            <a class="btn-red btn-header" href="{% url 'main:apply' %}" role="button">
+                <span class="glyphicon glyphicon-exclamation-sign"></span>{% trans "<strong>Apply</strong> for Winter '18" %}
+            </a>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
