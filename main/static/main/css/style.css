@@ -19,6 +19,30 @@ p {
   color: #000;
 }
 
+#cta {
+  padding: 10px;
+  display: block;
+  text-align: center;
+  background-color: #fafafa;
+  margin-bottom: 10px;
+}
+
+#more {
+  font-size: 12px;
+}
+
+.btn-red {
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+  width: inherit;
+  background: #ee4031;
+  padding: 5px 15px;
+  font-size: 14px;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
 h1 {
   display: inline-block;
   margin-top: 30px;
@@ -67,6 +91,7 @@ address > abbr {
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;
+  margin-bottom: 0px;
   -webkit-border: 0;
   -moz-border: 0;
   border: 0;
@@ -168,14 +193,6 @@ address > abbr {
   background-color: #e8e8e8;
 }
 
-.btn-red {
-  display: inline-block;
-  color: #fff;
-  background: #ee4031;
-  padding: 5px 15px;
-  font-size: 14px;
-  text-decoration: none;
-}
 
 .btn-red.alt {
   text-align: right;
@@ -242,11 +259,6 @@ address > abbr {
   padding: 3px 13px;
   font-size: 12px;
   border: none;
-  margin-top: 10px;
-}
-
-.btn-header {
-  margin-left: 20px;
   margin-top: 10px;
 }
 
