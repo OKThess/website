@@ -93,14 +93,7 @@ def program_mentors(request):
 
 
 def program_partners(request):
-    if request.LANGUAGE_CODE == 'en':
-        partners_list = Partner.en_objects.order_by('name')
-        for partner in partners_list:
-            partner.description = partner.description_en
-    else:
-        partners_list = Partner.el_objects.order_by('name')
-        for partner in partners_list:
-            partner.description = partner.description_el
+    partners_list = Partner.objects.order_by('name')
     return render(request, 'main/program-partners.html', {
         'partners_list': partners_list,
     })
