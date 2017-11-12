@@ -922,9 +922,6 @@ button.accordion.active:after {
   color: #000;
 }
 
-.sidebar-module-inset ul li a,i:hover {
-  color: #cacaca;
-}
 
 .sidebar-module-inset .sidebar-meetups ul li a {
   font-size: 14px;
