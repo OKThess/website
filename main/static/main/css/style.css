@@ -91,15 +91,15 @@ address > abbr {
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-  background-color: #f7f7f7;
+  background-color: #e7e7e7;
 }
 
 .navbar-default .navbar-nav > li.active > a {
-  background-color: #f7f7f7;
+  background-color: #e7e7e7;
 }
 
 .navbar-default .navbar-nav > li.active > a:hover {
-  background-color: #f7f7f7;
+  background-color: #e7e7e7;
 }
 
 .dropdown-menu > li > a {
@@ -112,11 +112,11 @@ address > abbr {
 }
 
 .dropdown-menu > li > a:hover {
-  background-color: #f9d94f;
+  background-color: #e7e7e7;
 }
 
 .navbar-default .navbar-nav > .open > a {
-  background-color: #f9d94f;
+  background-color: #e7e7e7;
 }
 
 .navbar-default .navbar-nav > .open > a:focus {
@@ -124,7 +124,7 @@ address > abbr {
 }
 
 .navbar-default .navbar-nav > .open > a:hover {
-  background-color: #f9d94f;
+  background-color: #e7e7e7;
 }
 
 .glyphicon {
