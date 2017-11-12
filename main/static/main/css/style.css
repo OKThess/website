@@ -919,6 +919,7 @@ button.accordion.active:after {
   font-size: 14px;
   text-decoration: none;
   font-weight: 300;
+  color: #000;
 }
 
 .sidebar-module-inset .sidebar-meetups ul li a {
@@ -1068,10 +1069,12 @@ label {
   margin-top:10px;
   font-weight: 400;
   font-size: 13px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 textarea {
-  margin-top: 5px;
+  margin-top: 0px;
 }
 
 .program-sidebar-tabs-list > li {
