@@ -26,6 +26,7 @@
                 <a class="btn-apply" href="http://ntemposd.me/" target="_blank">{% trans 'Information - GR' %}</a><a class="btn-apply" href="http://ntemposd.me/" target="_blank">{% trans '<nobr>Internal Regulation</nobr>' %}</a>
                 <p>{{ application_content|safe }}</p>
                 <h3>{% trans 'Application form' %}</h3>
+                <br>
                 <form action="{% url 'main:apply' %}" method="post">
                     {% csrf_token %}
                     {{ form.non_field_errors }}

@@ -20,7 +20,6 @@ p {
 }
 
 h1 {
-  display: inline-block;
   margin-top: 0px;
   margin-bottom: 5px;
   letter-spacing: .005em;
@@ -37,10 +36,10 @@ h2 {
 
 h3 {
   display: inline-block;
+  margin-top: 5px;
   clear: right;
   font-size: 18px;
   font-weight: 600;
-  margin-top: 37px;
   -webkit-box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
   -moz-box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
   box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
@@ -267,6 +266,13 @@ address > abbr {
   background: #ecc732;
 }
 
+.apply {
+  width: 80%;
+}
+
+#industry-filter{
+  margin-top: 40px;
+}
 .btn-apply {
   text-decoration: none;
   color: #000;
@@ -1046,8 +1052,20 @@ button.accordion.active:after {
   padding-top: 17px;
   padding-left: 15px;
   padding-right: 10px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #cacaca;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+label {
+  width:80%;
+  color: grey;
+  margin-top:10px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+textarea {
+  margin-top: 5px;
 }
 
 .program-sidebar-tabs-list > li {
