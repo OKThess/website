@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-07 20:07+0200\n"
+"POT-Creation-Date: 2017-11-12 15:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,41 +85,41 @@ msgstr "Εσωτερικός Κανονισμός"
 msgid "Application form"
 msgstr "Αίτηση Συμμετοχής"
 
-#: .\main\templates\main\apply.html:34
+#: .\main\templates\main\apply.html:35
 msgid ""
 "Ποιά είναι η επιχειρηματική ιδέα που θέλετε να αναπτύξετε στο OK!Thess (Έως "
 "150 λέξεις);"
 msgstr ""
 
-#: .\main\templates\main\apply.html:40
+#: .\main\templates\main\apply.html:41
 msgid ""
 "Σε ποιά αγορά απευθύνεστε (πού βλέπετε τους μελλοντικούς πελάτες) (έως 100 "
 "λέξεις);"
 msgstr ""
 
-#: .\main\templates\main\apply.html:46
+#: .\main\templates\main\apply.html:47
 msgid "Γνωρίζετε ποιος είναι ο ανταγωνισμός στην ιδέα σας (έως 100 λέξεις);"
 msgstr ""
 
-#: .\main\templates\main\apply.html:52
+#: .\main\templates\main\apply.html:53
 msgid ""
 "Τι περιμένετε να σας προσφέρει το OK!Thess εκτός από χώρο και υποδομή (έως "
 "100 λέξεις);"
 msgstr ""
 
-#: .\main\templates\main\apply.html:58
+#: .\main\templates\main\apply.html:59
 msgid "Τηλέφωνο επικοινωνίας"
 msgstr ""
 
-#: .\main\templates\main\apply.html:64
+#: .\main\templates\main\apply.html:65
 msgid "Email"
 msgstr ""
 
-#: .\main\templates\main\apply.html:70
+#: .\main\templates\main\apply.html:71
 msgid "Ονοματεπώνυμο"
 msgstr ""
 
-#: .\main\templates\main\apply.html:74
+#: .\main\templates\main\apply.html:75
 msgid "Submit"
 msgstr "Αποστολή"
 
@@ -388,11 +388,11 @@ msgstr "Φιλοξενούμενες Ομάδες"
 msgid "Filter by industry"
 msgstr ""
 
-#: .\main\templates\main\program-teams.html:49
+#: .\main\templates\main\program-teams.html:47
 msgid "The program"
 msgstr ""
 
-#: .\main\templates\main\program-teams.html:51
+#: .\main\templates\main\program-teams.html:49
 #, fuzzy
 #| msgid ""
 #| "\n"
@@ -404,13 +404,13 @@ msgstr ""
 #| "                              "
 msgid ""
 "\n"
-"                               Τeams are selected in consideration of the "
+"                     Τeams are selected in consideration of the "
 "sustainability of their submitted proposal, and physical interviews. Once "
 "selected, they enter our 3-month program starting with a Bootcamp where they "
 "all get at the same page. Thereafter teams are asigned an OK!Thess coach to "
 "work towards creating a scalable business model. Each cycle terminates with "
 "a DEMO DAY.\n"
-"                              "
+"                    "
 msgstr ""
 "\n"
 "                               Οι ομάδες επιλέγοντε βάση τη βιωσιμότητα της "
