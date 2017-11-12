@@ -271,7 +271,13 @@ address > abbr {
 }
 
 #industry-filter{
-  margin-top: 40px;
+  font-size: 12px;
+  background-color: #eee;
+  color: #444;
+  padding: 5px 10px;
+  border: none;
+  outline: 0;
+  margin-top: 38px;
 }
 .btn-apply {
   text-decoration: none;
