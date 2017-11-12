@@ -922,7 +922,7 @@ button.accordion.active:after {
   color: #000;
 }
 
-.sidebar-module-inset ul li a:hover {
+.sidebar-module-inset ul li a,i:hover {
   color: #cacaca;
 }
 
