@@ -922,6 +922,9 @@ button.accordion.active:after {
   color: #000;
 }
 
+.glyphicon-chevron-right {
+  color: #f9d94f;
+}
 
 .sidebar-module-inset .sidebar-meetups ul li a {
   font-size: 14px;
