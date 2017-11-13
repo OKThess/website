@@ -791,6 +791,15 @@ ul.share-buttons img{
   font-size: 12px;
 }
 
+.events-single-data-link{
+  display: inline-block;
+  color: #000;
+  background: #f9d94f;
+  padding: 5px 15px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
 .events-single-data-time,
 .events-single-data-organizer {
   background: #000;
