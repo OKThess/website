@@ -233,7 +233,6 @@ address > abbr {
   padding: 13px 18px;
 }
 
-
 .btn-black {
   color: #fff;
   background: #231f20;
@@ -288,6 +287,7 @@ address > abbr {
   outline: 0;
   margin-top: 38px;
 }
+
 .btn-apply {
   text-decoration: none;
   color: #000;
@@ -409,15 +409,6 @@ address > abbr {
   text-align: center;
 }
 
-.index-blog-item-link {
-  color: #000;
-  text-decoration: none;
-}
-
-.index-blog-item-link:hover {
-  color: #000;
-  text-decoration: none;
-}
 
 .index-blog-item-para {
   min-height: 100px;
@@ -428,7 +419,6 @@ address > abbr {
 .index-blog-item-title {
   color: #000;
   text-align: center;
-  width: 330px;
   margin: auto;
 }
 

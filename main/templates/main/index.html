@@ -67,16 +67,17 @@
         <div class="row">
             {% for post in featured_posts_list %}
                 <div class="col-md-4 col-sm-4 index-blog-item">
-                    <a href="{% url 'main:blog_post' post.slug %}" class="index-blog-item-link">
-                      <div class="index-blog-item-title">
-                          <h3 class="index">{{ post.title }}</h3>
-                      </div>
-                      <div class="index-blog-item-img">
-                          <img src="{{ post.image }}" alt="post image">
-                      </div>
-                      <p class="index-blog-item-para">{{ post.teaser }}</p>
-                    </a>
-                </div>
+                  <div class="index-blog-item-title">
+                      <h3 class="index">{{ post.title }}</h3>
+                  </div>
+                  <div class="index-blog-item-img">
+                      <img src="{{ post.image }}" alt="post image">
+                  </div>
+                  <p class="index-blog-item-para">{{ post.teaser }}</p>
+                  <a class="btn-blue" href="{% url 'main:blog_post' post.slug %}" role="button">
+                      <span class="glyphicon glyphicon-exclamation-sign"></span>{% trans '<strong>Read</strong> more »' %}
+                  </a>
+               </div>
             {% endfor %}
         </div>
     </div>
