@@ -421,6 +421,7 @@ address > abbr {
 }
 
 .index-blog-item-title {
+  color: #000;
   text-align: center;
   width: 330px;
   margin: auto;
