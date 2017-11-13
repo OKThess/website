@@ -922,7 +922,7 @@ button.accordion.active:after {
   color: #000;
 }
 
-.glyphicon-chevron-right {
+.sidebar-module-inset > .glyphicon-chevron-right {
   color: #f9d94f;
 }
 
