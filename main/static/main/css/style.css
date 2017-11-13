@@ -50,7 +50,7 @@ h3.title {
   text-decoration: underline;
   margin-top: 5px;
   clear: right;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 600;
   -webkit-box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
   -moz-box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
@@ -59,8 +59,10 @@ h3.title {
 
 h3.index {
   display: inline-block;
-  font-size: 22px;
-  font-weight: 400;
+  padding-top: 20px;
+  margin-bottom: 0px;
+  font-size: 21px;
+  font-weight: 500;
   -webkit-box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
   -moz-box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
   box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
@@ -401,21 +403,18 @@ address > abbr {
 .index-blog-label {
   padding-top: 40px;
   text-align: center;
+  margin-bottom: 5px;
 }
 
 .index-blog {
   width: 100%;
   background: #f7f7f7;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   padding-left: 5%;
   padding-right: 5%;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
-.index-blog > .row {
-  margin-top: 20px;
-}
 
 .index-blog-item {
   text-align: center;
@@ -423,8 +422,7 @@ address > abbr {
 
 
 .index-blog-item-para {
-  min-height: 100px;
-  margin-bottom: 20px;
+  min-height: 100px; 
   color: #000;
 }
 
@@ -450,7 +448,7 @@ address > abbr {
   width: auto;
   max-width: 300px;
   max-height: 200px;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 

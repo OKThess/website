@@ -83,8 +83,11 @@
                 <div class="program-sidebar-meetup">
                   <h3 class="yellow">OK!Thess Meetup <i class="glyphicon glyphicon-circle-arrow-right"></i></h3>
                   <div class="program-sidebar-box">
-                      {% trans 'The meetup of OK!Thess is the new thing in town. Click here to learn more' %}
+                      <p>{% trans 'The meetup of OK!Thess is the new thing in town. Click here to learn more' %}</p>
                   </div>
+                  <a class="btn-blue" href="{% url 'main:blog_post' post.slug %}" role="button">
+                      <span class="glyphicon glyphicon-exclamation-sign"></span>{% trans '<strong>Read</strong> more »' %}
+                  </a>
                 </div>
                 <h3>{% trans 'Past meetups' %}</h3>
                 <div class="sidebar-module">
