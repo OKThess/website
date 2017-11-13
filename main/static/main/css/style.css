@@ -155,7 +155,7 @@ address > abbr {
   margin-right: 4px;
 }
 
-.glyphicon-search, .glyphicon-calendar {
+.glyphicon-search, .glyphicon-calendar, .glyphicon-star {
   font-size: 18px;
 }
 
@@ -422,7 +422,7 @@ address > abbr {
 
 
 .index-blog-item-para {
-  min-height: 100px; 
+  min-height: 100px;
   color: #000;
 }
 
@@ -775,6 +775,11 @@ ul.share-buttons img{
   opacity: 0.4;
 }
 
+.events-single-data .row{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .events-single img {
   max-width: 100%;
   max-height: 185px;
@@ -809,9 +814,22 @@ ul.share-buttons img{
   display: inline-block;
   color: #000;
   background: #f9d94f;
-  padding: 5px 15px;
-  font-size: 14px;
+  padding: 3px 10px;
+  font-size: 12px;
   text-decoration: none;
+}
+
+.image {
+  padding-left: 0px;
+}
+
+.blog-post-teaser{
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+.events-single-data-link:hover{
+  background: #ecc732;
 }
 
 .events-single-data-time,
@@ -819,6 +837,10 @@ ul.share-buttons img{
   background: #000;
   color: #fff;
   text-align: left;
+}
+
+.events-single-data-organizer{
+  margin-bottom: 10px;
 }
 
 .events-single-data-date {
@@ -832,6 +854,7 @@ ul.share-buttons img{
 .events-single-data-link > a {
   color: #000;
   padding-left: 7px;
+  text-decoration: none;
 }
 
 /* about */
@@ -944,7 +967,11 @@ button.accordion.active:after {
   color: #000;
 }
 
-.sidebar-module .sidebar-module-inset .sidebar-meetups .glyphicon-chevron-right {
+.sidebar-module-inset .glyphicon-chevron-right{
+  color: #f9d94f;
+}
+
+.sidebar-meetups .glyphicon-chevron-right {
   color: #f9d94f;
 }
 
