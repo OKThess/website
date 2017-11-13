@@ -786,6 +786,7 @@ ul.share-buttons img{
 }
 
 .events-single-para {
+  display: inline-block;
   font-size: 12px;
   height: 72px;
   margin-bottom: 14px;
