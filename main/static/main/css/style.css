@@ -409,6 +409,11 @@ address > abbr {
   text-align: center;
 }
 
+.index-blog-item-link {
+  color: #000;
+  text-decoration: none;
+}
+
 .index-blog-item-link:hover {
   color: #000;
   text-decoration: none;
