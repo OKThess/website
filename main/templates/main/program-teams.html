@@ -14,10 +14,10 @@
                         <div class="col-md-12">
                             <h1>{% trans 'Hosted Teams' %}</h1>
                             <div class="program-main-filter">
-                                <button id="industry-filter">
+                                <!--<button id="industry-filter">
                                     {% trans 'Filter by industry' %}
                                     <i class="glyphicon glyphicon-th"></i>
-                                </button>
+                                </button>-->
                                 <div class="program-main-filter-industries hidden" id="industry-filter-container">
                                     <!-- <div class="program-main-filter-industries-item">sample industry</div> -->
                                 </div>
@@ -47,20 +47,19 @@
                   <h2>{% trans 'The program' %}</h2>
                   <div class="program-sidebar-box">
                     {% blocktrans %}
-                     Τeams are selected in consideration of the sustainability of their submitted proposal, and physical interviews. Once selected, they enter our 3-month program starting with a Bootcamp where they all get at the same page. Thereafter teams are asigned an OK!Thess coach to work towards creating a scalable business model. Each cycle terminates with a DEMO DAY.
+                     Τeams are selected in consideration of the sustainability of their submitted proposal, and physical interviews. Once selected, they enter a 3-month program starting with a Bootcamp. Thereafter teams are assigned an OK!Thess coach to work towards creating a scalable business model. Each cycle terminates with a DEMO DAY.
                     {% endblocktrans %}
+                  </div>
+                  <div class="text-right">
+                    <a class="btn-red alt" href="/apply/" role="button">{% trans 'Apply now!' %}</a>
                   </div>
                   <div class="program-sidebar-tabs">
                         <ul class="nav nav-pills nav-stacked program-sidebar-tabs-list">
-                            <div class="text-right">
-                             <a class="btn-red alt" href="/apply/" role="button">{% trans 'Apply now!' %}</a>
-                            </div>
                             <!-- <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_mentors' %}">{% trans 'Mentors' %}</a></li> -->
-                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_alumni' %}">{% trans 'Alumni' %}</a></li>
+                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_alumni' %}">{% trans 'Alumni »' %}</a></li>
                             <!--<li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_partners' %}">{% trans 'Team &amp; Partners' %}</a></li>-->
                         </ul>
-                    </div>
-
+                  </div>
                 </div>
             </div>
         </div>

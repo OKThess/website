@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-03 05:24+0200\n"
+"POT-Creation-Date: 2017-12-03 23:07+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,53 +89,53 @@ msgid ""
 "                "
 msgstr ""
 
-#: .\main\templates\main\apply.html:38
+#: .\main\templates\main\apply.html:39
 msgid "Information - GR"
 msgstr "Πληροφορίες"
 
-#: .\main\templates\main\apply.html:38
+#: .\main\templates\main\apply.html:39
 msgid "<nobr>Internal Regulation</nobr>"
 msgstr "Εσωτερικός Κανονισμός"
 
-#: .\main\templates\main\apply.html:40
+#: .\main\templates\main\apply.html:42
 msgid "Application form"
 msgstr "Αίτηση Συμμετοχής"
 
-#: .\main\templates\main\apply.html:47
+#: .\main\templates\main\apply.html:49
 msgid ""
 "Ποιά είναι η επιχειρηματική ιδέα που θέλετε να αναπτύξετε στο OK!Thess (Έως "
 "150 λέξεις);"
 msgstr ""
 
-#: .\main\templates\main\apply.html:53
+#: .\main\templates\main\apply.html:55
 msgid ""
 "Σε ποιά αγορά απευθύνεστε (πού βλέπετε τους μελλοντικούς πελάτες) (έως 100 "
 "λέξεις);"
 msgstr ""
 
-#: .\main\templates\main\apply.html:59
+#: .\main\templates\main\apply.html:61
 msgid "Γνωρίζετε ποιος είναι ο ανταγωνισμός στην ιδέα σας (έως 100 λέξεις);"
 msgstr ""
 
-#: .\main\templates\main\apply.html:65
+#: .\main\templates\main\apply.html:67
 msgid ""
 "Τι περιμένετε να σας προσφέρει το OK!Thess εκτός από χώρο και υποδομή (έως "
 "100 λέξεις);"
 msgstr ""
 
-#: .\main\templates\main\apply.html:71
+#: .\main\templates\main\apply.html:73
 msgid "Τηλέφωνο επικοινωνίας"
 msgstr ""
 
-#: .\main\templates\main\apply.html:77
+#: .\main\templates\main\apply.html:79
 msgid "Email"
 msgstr ""
 
-#: .\main\templates\main\apply.html:83
+#: .\main\templates\main\apply.html:85
 msgid "Ονοματεπώνυμο"
 msgstr ""
 
-#: .\main\templates\main\apply.html:87
+#: .\main\templates\main\apply.html:89
 msgid "Submit"
 msgstr "Αποστολή"
 
@@ -275,7 +275,6 @@ msgid "<strong>Apply</strong> for Winter '18"
 msgstr "Συμμετοχή"
 
 #: .\main\templates\main\layout.html:73
-#: .\main\templates\main\program-alumni.html:43
 msgid "About"
 msgstr "Σχετικά"
 
@@ -323,20 +322,27 @@ msgstr "ΧΟΡΗΓΟΙ"
 msgid "Graduated Teams"
 msgstr ""
 
-#: .\main\templates\main\program-alumni.html:34
-#: .\main\templates\main\program-mentors.html:40
-#: .\main\templates\main\program-partners.html:27
-#: .\main\templates\main\program-teams.html:59
-msgid "Alumni"
+#: .\main\templates\main\program-alumni.html:32
+#, fuzzy
+#| msgid "Alumni"
+msgid "Alumni network"
 msgstr "Απόφοιτοι"
 
-#: .\main\templates\main\program-alumni.html:36
+#: .\main\templates\main\program-alumni.html:34
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "                              Our graduates comprise the wider OK!Thess "
+#| "network. They meet at regular intervals to exchange post OK!Thess views "
+#| "and knowledge and they are also invited to help our hosted teams as "
+#| "Mentors.\n"
+#| "                              "
 msgid ""
 "\n"
-"                              Our graduates comprise the wider OK!Thess "
-"network. They meet at regular intervals to exchange post OK!Thess views and "
-"knowledge and they are also invited to help our hosted teams as Mentors.\n"
-"                              "
+"                    Our graduates comprise the wider OK!Thess network. They "
+"meet at regular intervals to exchange post OK!Thess views and knowledge and "
+"they are also invited to help our hosted teams as Mentors.\n"
+"                    "
 msgstr ""
 "\n"
 "Οι απόφοιτοι του ΟΚ!Τhess παραμένουν κοντά μας ωστε να ανταλλάζουμε γνώσεις "
@@ -344,12 +350,18 @@ msgstr ""
 "αυτούς καλούνται να βοηθήσουν τις φιλοξενούμενες ομάδες απο τον ρόλο του "
 "Μέντορα."
 
-#: .\main\templates\main\program-alumni.html:41
+#: .\main\templates\main\program-alumni.html:39
 #: .\main\templates\main\program-mentors.html:46
 #: .\main\templates\main\program-partners.html:32
-#: .\main\templates\main\program-teams.html:56
+#: .\main\templates\main\program-teams.html:54
 msgid "Apply now!"
 msgstr "Kάνε Αίτηση"
+
+#: .\main\templates\main\program-alumni.html:43
+#, fuzzy
+#| msgid "Hosted Teams"
+msgid "Hosted Teams >>"
+msgstr "Φιλοξενούμενες Ομάδες"
 
 #: .\main\templates\main\program-alumni.html:44
 #: .\main\templates\main\program-mentors.html:36
@@ -378,6 +390,11 @@ msgid ""
 "mentor? Drop us an email at <strong>dimitri@okthess.gr</strong>."
 msgstr ""
 
+#: .\main\templates\main\program-mentors.html:40
+#: .\main\templates\main\program-partners.html:27
+msgid "Alumni"
+msgstr "Απόφοιτοι"
+
 #: .\main\templates\main\program-mentors.html:41
 #: .\main\templates\main\program-partners.html:28
 msgid "Selected Teams"
@@ -397,27 +414,32 @@ msgstr ""
 
 #: .\main\templates\main\program-teams.html:47
 msgid "The program"
-msgstr ""
+msgstr "Το πρόγραμμα"
 
 #: .\main\templates\main\program-teams.html:49
 msgid ""
 "\n"
 "                     Τeams are selected in consideration of the "
 "sustainability of their submitted proposal, and physical interviews. Once "
-"selected, they enter our 3-month program starting with a Bootcamp where they "
-"all get at the same page. Thereafter teams are asigned an OK!Thess coach to "
-"work towards creating a scalable business model. Each cycle terminates with "
-"a DEMO DAY.\n"
+"selected, they enter a 3-month program starting with a Bootcamp. Thereafter "
+"teams are assigned an OK!Thess coach to work towards creating a scalable "
+"business model. Each cycle terminates with a DEMO DAY.\n"
 "                    "
 msgstr ""
 "\n"
 "                               Οι ομάδες επιλέγοντε βάση τη βιωσιμότητα της "
-"επιχειρηματικής πρότασης που καταθέτουν, και μετά απο συνεντεύξη. Άμα τη "
-"επιλογή, παρακόλουθουν μια σύντομη σειρά εκπαιδευτικών εργαστηρίων και "
-"δουλεύουν με την ομάδα τους OK!Thess, για την δημιουργία ενός βιώσιμου "
-"επιχειρηματικού μοντέλου. Κάθε κύκλος τελειώνει με την ημέρα επίδειξης των "
-"προιόντων και υπηρεσιών.\n"
+"επιχειρηματικής πρότασης που καταθέτουν, και μετά απο συνεντεύξη. Το 3-μηνο "
+"πρόγραμμα ξεκινάει με έναν εντατικό μήνα εργαστηρίων. Τους επόμενους 2 μήνες "
+"οι ομάδες δουλεύουν με τους coach του OK!Thess, για την δημιουργία ενός "
+"βιώσιμου επιχειρηματικού μοντέλου. Κάθε κύκλος τελειώνει με την ημέρα "
+"επίδειξης των προιόντων και υπηρεσιών που έχουν αναπτυχθεί.\n"
 "                              "
+
+#: .\main\templates\main\program-teams.html:59
+#, fuzzy
+#| msgid "Alumni"
+msgid "Alumni >>"
+msgstr "Απόφοιτοι"
 
 #: .\okthess\settings.py:181
 msgid "Greek"

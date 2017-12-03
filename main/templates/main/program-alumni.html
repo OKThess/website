@@ -29,18 +29,18 @@
             </div>
             <div class="col-sm-3">
                 <div class="program-sidebar">
-                    <div class="program-sidebar-tabs">
+                  <h2>{% trans 'Alumni network' %}</h2>
+                  <div class="program-sidebar-box">
+                    {% blocktrans %}
+                    Our graduates comprise the wider OK!Thess network. They meet at regular intervals to exchange post OK!Thess views and knowledge and they are also invited to help our hosted teams as Mentors.
+                    {% endblocktrans %}
+                  </div>
+                  <div class="text-right">
+                   <a class="btn-red alt" href="/apply/" role="button">{% trans 'Apply now!' %}</a>
+                  </div>
+                  <div class="program-sidebar-tabs">
                         <ul class="nav nav-pills nav-stacked program-sidebar-tabs-list">
-                            <li class="program-sidebar-tabs-elem active"><a href="{% url 'main:program_alumni' %}">{% trans 'Alumni' %}</a></li>
-                            <div class="program-sidebar-box">
-                              {% blocktrans %}
-                              Our graduates comprise the wider OK!Thess network. They meet at regular intervals to exchange post OK!Thess views and knowledge and they are also invited to help our hosted teams as Mentors.
-                              {% endblocktrans %}
-                            </div>
-                            <div class="text-right">
-                             <a class="btn-red alt" href="/apply/" role="button">{% trans 'Apply now!' %}</a>
-                            </div>
-                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_teams' %}">{% trans 'About' %}</a></li>
+                            <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_teams' %}">{% trans 'Hosted Teams »' %}</a></li>
                             <!-- <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_mentors' %}">{% trans 'Mentors' %}</a></li> -->
                             <!-- <li class="program-sidebar-tabs-elem"><a href="{% url 'main:program_partners' %}">{% trans 'Team &amp; Partners' %}</a></li> -->
                         </ul>
