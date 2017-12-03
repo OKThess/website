@@ -190,10 +190,43 @@ class Application(models.Model):
     phonenumber = models.CharField(max_length=100)
     email = models.EmailField()
     name = models.CharField(max_length=100)
-    answer_1 = models.TextField()
-    answer_2 = models.TextField()
-    answer_3 = models.TextField()
-    answer_4 = models.TextField()
+    answer_idea_1 = models.TextField(default="default")
+    answer_idea_2 = models.TextField(default="default")
+
+    IDEA = 'idea'
+    PROTOTYPE = 'prototype'
+    USERS = 'users'
+    REVENUE = 'revenue'
+    STAGE_CHOICES = (
+        (IDEA, 'Idea'),
+        (PROTOTYPE, 'Prototype'),
+        (USERS, 'Early users'),
+        (REVENUE, 'Early revenue'),
+    )
+    answer_idea_3 = models.CharField(
+        choices=STAGE_CHOICES,
+        max_length=50,
+        default=IDEA,
+    )
+
+    answer_market_1 = models.TextField(default="default")
+    answer_market_2 = models.TextField(default="default")
+    answer_market_3 = models.TextField(default="default")
+    answer_market_4 = models.TextField(default="default")
+    answer_market_5 = models.TextField(default="default")
+    answer_market_6 = models.TextField(default="default")
+    answer_market_7 = models.TextField(default="default")
+    answer_team_1 = models.TextField(default="default")
+    answer_team_2 = models.TextField(default="default")
+    answer_team_3 = models.TextField(default="default")
+    answer_team_4 = models.TextField(default="default")
+    answer_team_5 = models.TextField(default="default")
+    answer_team_6 = models.TextField(default="default")
+    answer_team_7 = models.TextField(default="default")
+    answer_support_1 = models.TextField(default="default")
+    answer_support_2 = models.TextField(default="default")
+    answer_support_3 = models.TextField(default="default")
+    answer_support_4 = models.TextField(default="default")
 
     def __str__(self):
         return self.name

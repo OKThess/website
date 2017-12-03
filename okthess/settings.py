@@ -223,8 +223,8 @@ EMAIL_HOST = 'email-smtp.eu-west-1.amazonaws.com'
 EMAIL_HOST_USER = os.getenv('OKTHESS_AWS_SES_USER', '')
 EMAIL_HOST_PASSWORD = os.getenv('OKTHESS_AWS_SES_PASSWORD', '')
 EMAIL_PORT = 587
-DEFAULT_FROM_EMAIL = 'webmaster@okthess.gr'
-CONTACT_TO_EMAIL = 'admin@okthess.gr'
+DEFAULT_FROM_EMAIL = 'mail@okthess.gr'
+CONTACT_TO_EMAIL = 'mail@okthess.gr'
 
 
 # Security middleware

@@ -6,7 +6,32 @@ from .models import Application
 class ApplicationForm(forms.ModelForm):
     class Meta:
         model = Application
-        fields = ['answer_1', 'answer_2', 'answer_3', 'answer_4', 'phonenumber', 'email', 'name']
+        fields = [
+            'answer_idea_1',
+            'answer_idea_2',
+            'answer_idea_3',
+            'answer_market_1',
+            'answer_market_2',
+            'answer_market_3',
+            'answer_market_4',
+            'answer_market_5',
+            'answer_market_6',
+            'answer_market_7',
+            'answer_team_1',
+            'answer_team_2',
+            'answer_team_3',
+            'answer_team_4',
+            'answer_team_5',
+            'answer_team_6',
+            'answer_team_7',
+            'answer_support_1',
+            'answer_support_2',
+            'answer_support_3',
+            'answer_support_4',
+            'phonenumber',
+            'email',
+            'name',
+        ]
 
 
 class ContactForm(forms.Form):
