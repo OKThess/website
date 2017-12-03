@@ -11,12 +11,14 @@
                     <h1>ΟΚ!Τhess</h1>
                     <h2>{% trans 'Your early stage partner' %}</h2>
                     <p class="desc">
-{% blocktrans %}OK!Thess provides space and technical support to teams of people
-with innovative ideas helping them to <strong>Validate a Business
-Model Fast</strong>, rather than hastily, and to <strong>Meet,
-Mix and Connect</strong> with like-minded peers.
-{% endblocktrans %}
+                      {% blocktrans %}Do you need help on executing your business idea? OK!Thess provides space and technical support to teams of people
+                      with innovative ideas helping them to <strong>Validate a Business
+                      Model Fast</strong>, and to <strong>Meet,
+                      Mix and Connect</strong> with like-minded peers.
+                      {% endblocktrans %}
                     </p>
+                    <br>
+                    <p class="text-muted"> {% trans 'Subscribe to get our updates!' %}
                     <div id="mc_embed_signup">
                         <form action="//okthess.us15.list-manage.com/subscribe/post?u=e5030558dd0a4f89aeed05a0d&amp;id=a3d8e08f2a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                             <div id="mc_embed_signup_scroll">
@@ -40,9 +42,9 @@ Mix and Connect</strong> with like-minded peers.
                 </div>
             </div>
             <div class="col-md-7">
-                <div onclick="plusDivs(1)" class="slider-arrow-right">
+                <!--<div onclick="plusDivs(1)" class="slider-arrow-right">
                     <i class="glyphicon glyphicon-chevron-right"></i>
-                </div>
+                </div>-->
                 <div class="slider">
                     <img src="{% static '/main/img/slider-1.jpg' %}" class="slider-img">
                     <div class="slider-text">{% trans 'Open Workshops' %}</div>
@@ -59,29 +61,28 @@ Mix and Connect</strong> with like-minded peers.
         </div>
     </div>
     <div class="index-blog-label">
-      <h3><span class="glyphicon glyphicon-star"></span>{% trans 'Featured <strong>Posts</strong>' %}</h3>
+      <h3 class="title"><span class="glyphicon glyphicon-star"></span>{% trans 'Featured <strong>Posts</strong>' %}</h3>
     </div>
     <div class="container index-blog">
         <div class="row">
             {% for post in featured_posts_list %}
                 <div class="col-md-4 col-sm-4 index-blog-item">
-                    <a href="{% url 'main:blog_post' post.slug %}" class="index-blog-item-link">
-                        <div>
-                          <div class="index-blog-item-img">
-                            <img src="{{ post.image }}" alt="post image">
-                          <div class="text-center">
-                            <h3 class="blue">{{ post.title }}</h3>
-                          </div>
-                          </div>
-                        </div>
-                      <p class="index-blog-item-para">{{ post.teaser }}</p>
-                    </a>
-                </div>
+                  <div class="index-blog-item-title">
+                      <h3 class="index">{{ post.title }}</h3>
+                  </div>
+                  <div class="index-blog-item-img">
+                      <img src="{{ post.image }}" alt="post image">
+                  </div>
+                  <p class="index-blog-item-para">{{ post.teaser }}</p>
+                  <a class="btn-blue" href="{% url 'main:blog_post' post.slug %}" role="button">
+                      <span class="glyphicon glyphicon-exclamation-sign"></span>{% trans '<strong>Read</strong> more »' %}
+                  </a>
+               </div>
             {% endfor %}
         </div>
     </div>
     <div class="index-events-label">
-      <h3><span class="glyphicon glyphicon-calendar"></span>{% trans 'Upcoming Community <strong>Meetups</strong>' %}</h3>
+      <h3 class="title"><span class="glyphicon glyphicon-calendar"></span>{% trans 'Upcoming Community <strong>Meetups</strong>' %}</h3>
     </div>
     <div class="container index-events">
         <div class="row">
@@ -123,5 +124,7 @@ Mix and Connect</strong> with like-minded peers.
             }
             x[slideIndex-1].style.display = 'block';
         }
+
+        setInterval(plusDivs, 2000, 1);
     </script>
 {% endblock %}

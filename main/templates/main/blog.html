@@ -12,7 +12,7 @@
               <h1>{% trans 'Latest News' %}</h1>
                 {% for post in posts_list %}
                     <div class="blog-post">
-                        <div class="col-md-3">
+                        <div class="col-md-3 image">
                             <img class="blog-post-image" src="{{ post.image }}">
                         </div>
                         <div class="col-md-9">
@@ -20,7 +20,7 @@
                                 <h4 class="blog-post-title">{{ post.title }}</h4>
                                 <h6 class="blog-post-meta text-muted">{% trans 'Posted' %} {{ post.date }}</h6>
                                 <p>{{ post.teaser }}</p>
-                                <a class="btn-yellow" href="{% url 'main:blog_post' post.slug %}" role="button">
+                                <a class="btn-blue" href="{% url 'main:blog_post' post.slug %}" role="button">
                                     <span class="glyphicon glyphicon-exclamation-sign"></span>{% trans '<strong>Read</strong> more »' %}
                                 </a>
                             </div>
@@ -35,7 +35,7 @@
                         {% for resource in resources_list %}
                             <li><a href="{{ resource.url }}" target="_blank">{{ resource.title }} <i class="glyphicon glyphicon-chevron-right"></i></a></li>
                         {% endfor %}
-                        <li><a href="{% url 'main:resources' %}"><strong>See all resources</strong> <i class="glyphicon glyphicon-chevron-right"></i></a></li>
+                        <!--<li><a href="{% url 'main:resources' %}"><strong>See all resources</strong> <i class="glyphicon glyphicon-chevron-right"></i></a></li>-->
                     </ul>
                 </div>
                 <div class="sidebar-module">

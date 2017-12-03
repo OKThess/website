@@ -14,7 +14,7 @@
                         <div class="col-md-12">
                             <h1>{% trans 'Hosted Teams' %}</h1>
                             <div class="program-main-filter">
-                                <button class="btn-simple" id="industry-filter">
+                                <button id="industry-filter">
                                     {% trans 'Filter by industry' %}
                                     <i class="glyphicon glyphicon-th"></i>
                                 </button>
@@ -44,14 +44,14 @@
             </div>
             <div class="col-sm-3">
                 <div class="program-sidebar">
+                  <h2>{% trans 'The program' %}</h2>
+                  <div class="program-sidebar-box">
+                    {% blocktrans %}
+                     Τeams are selected in consideration of the sustainability of their submitted proposal, and physical interviews. Once selected, they enter our 3-month program starting with a Bootcamp where they all get at the same page. Thereafter teams are asigned an OK!Thess coach to work towards creating a scalable business model. Each cycle terminates with a DEMO DAY.
+                    {% endblocktrans %}
+                  </div>
                   <div class="program-sidebar-tabs">
                         <ul class="nav nav-pills nav-stacked program-sidebar-tabs-list">
-                            <li class="program-sidebar-tabs-elem active"><a href="{}">{% trans 'About' %}</a></li>
-                            <div class="program-sidebar-box">
-                              {% blocktrans %}
-                               Τeams are selected in consideration of the sustainability of their submitted proposal, and physical interviews. Once selected, they enter our Bootcamp and work with OK!Thess team towards creating a scalable business model. Each pre-incubation cycle terminates with a DEMO DAY.
-                              {% endblocktrans %}
-                            </div>
                             <div class="text-right">
                              <a class="btn-red alt" href="/apply/" role="button">{% trans 'Apply now!' %}</a>
                             </div>

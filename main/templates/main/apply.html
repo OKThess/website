@@ -9,13 +9,6 @@
     <section class="container apply">
         <div class="row">
             <div class="col-md-12">
-              {% blocktrans %}
-              <p>We accept at any time submissions from individuals or groups with innovative ideas, regardless their stage, who would like to benefit from the services of the OK!Thess pre-incubator in order to set up a startup business or accelarate the one that they already have set up.</p>
-              <p>Proposals shall be evaluated at regular intervals, the exact dates are being announced on this website.</p>
-              <p>The current submission period closes on September the 13th 2017. Results will be announced on September the 19th 2017. The incubation period starts with a compulsory bootcamp that starts on the 2nd and lasts until the 13th of October.</p>
-              <p>To participate, you either fill in the following form, or just answer the questions in the body of an e-mail and send it to <strong>apply@okthess.gr</strong></p>
-              {% endblocktrans %}
-              <a class="btn-apply" href="http://ntemposd.me/" target="_blank">{% trans 'Information - GR' %}</a><a class="btn-apply" href="http://ntemposd.me/" target="_blank">{% trans '<nobr>Internal Regulation</nobr>' %}</a>
                 {% if messages %}
                     <p class="alert alert-success">
                         {% for message in messages %}
@@ -24,17 +17,61 @@
                         {% endfor %}
                     </p>
                 {% endif %}
+                {% blocktrans %}
+                <p>We accept at any time submissions from individuals or groups with innovative ideas, regardless their stage, who would like to benefit from the services of the OK!Thess pre-incubator in order to set up a startup business or accelarate the one that they already have set up.</p>
+                <p>Proposals shall be evaluated at regular intervals, the exact dates are being announced on this website.</p>
+                <p>The current submission period closes on September the 13th 2017. Results will be announced on September the 19th 2017. The incubation period starts with a compulsory bootcamp that starts on the 2nd and lasts until the 13th of October.</p>
+                <p>To participate, you either fill in the following form, or just answer the questions in the body of an e-mail and send it to <strong>apply@okthess.gr</strong></p>
+                {% endblocktrans %}
+                <a class="btn-apply" href="http://ntemposd.me/" target="_blank">{% trans 'Information - GR' %}</a><a class="btn-apply" href="http://ntemposd.me/" target="_blank">{% trans '<nobr>Internal Regulation</nobr>' %}</a>
                 <p>{{ application_content|safe }}</p>
                 <h3>{% trans 'Application form' %}</h3>
+                <br>
                 <form action="{% url 'main:apply' %}" method="post">
                     {% csrf_token %}
                     {{ form.non_field_errors }}
-                    {% for field in form %}
-                        <div class="form-group">
-                            {{ field.errors }}
-                            {{ field }}
-                        </div>
-                    {% endfor %}
+                    <div class="form-group">
+                        <label for="id_answer_1">
+                            {% trans 'Ποιά είναι η επιχειρηματική ιδέα που θέλετε να αναπτύξετε στο OK!Thess (Έως 150 λέξεις);' %}
+                        </label>
+                        <textarea name="answer_1" cols="50" rows="2" class="form-control" required="" id="id_answer_1"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="id_answer_2">
+                            {% trans 'Σε ποιά αγορά απευθύνεστε (πού βλέπετε τους μελλοντικούς πελάτες) (έως 100 λέξεις);' %}
+                        </label>
+                        <textarea name="answer_2" cols="50" rows="2" class="form-control" required="" id="id_answer_2"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="id_answer_3">
+                            {% trans 'Γνωρίζετε ποιος είναι ο ανταγωνισμός στην ιδέα σας (έως 100 λέξεις);' %}
+                        </label>
+                        <textarea name="answer_3" cols="50" rows="2" class="form-control" required="" id="id_answer_3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="id_answer_4">
+                            {% trans 'Τι περιμένετε να σας προσφέρει το OK!Thess εκτός από χώρο και υποδομή (έως 100 λέξεις);' %}
+                        </label>
+                        <textarea name="answer_4" cols="50" rows="2" class="form-control" required="" id="id_answer_4"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="id_phonenumber">
+                            {% trans 'Τηλέφωνο επικοινωνίας' %}
+                        </label>
+                        <input type="text" name="phonenumber" class="form-control" maxlength="100" required="" id="id_phonenumber">
+                    </div>
+                    <div class="form-group">
+                        <label for="id_email">
+                            {% trans 'Email' %}
+                        </label>
+                        <input type="email" name="email" class="form-control" maxlength="254" required="" id="id_email">
+                    </div>
+                    <div class="form-group">
+                        <label for="id_name">
+                            {% trans 'Ονοματεπώνυμο' %}
+                        </label>
+                        <input type="text" name="name" class="form-control" maxlength="100" required="" id="id_name">
+                    </div>
                     <button type="submit" class="btn-form">{% trans 'Submit' %}</button>
                 </form>
             </div>

@@ -9,55 +9,85 @@
     <div class="container-fluid events">
         <div class="row">
             <div class="col-md-9">
-              <h1>{% trans 'Events at OK!Thess' %}</h1>
-                {% for event in events_list %}
-                    <div class="events-single {% if event.is_old %} events-single-dimmed {% endif %}">
+              <h1>{% trans 'Meetups at OK!Thess' %}</h1>
+                {% for event in events_list_future %}
+                    <div class="events-single">
                         <div class="row">
-                            <div class="col-md-3">
-                              <div class="events-single-data">
-                                <div class="events-single-data-date">Date: {{ event.date }}</div>
-                                <div class="events-single-data-time">Time: {{ event.time_start }} to {{ event.time_end }}</div>
-                                <a href="{{ event.link }}"><img src="{{ event.image }}"></a>
-                                <div class="events-single-data-organizer">Organized by: {{ event.organizer }}</div>
+                          <div class="col-md-3">
+                            <div class="events-single-data">
+                              <div class="row events-single-data-date">{{ event.date }} - {{ event.time_start }}</div>
+                              <div class="row"><a href="{{ event.link }}"><img src="{{ event.image }}"></a></div>
+                              <div class="row events-single-data-organizer">Organized by: {{ event.organizer }}</div>
+                            </div>
+                          </div>
+                          <div class="col-md-9">
+                              <div class="events-single-title">
+                                  <a href="{{ event.link }}">{{ event.title }}</a>
                               </div>
-                            </div>
-                            <div class="col-md-9">
-                                <div class="events-single-title">
-                                    <a href="{{ event.link }}">{{ event.title }}</a>
-                                </div>
-                                <p class="events-single-para">{{ event.description }}</p>
-                                <div class="events-single-data">
-
-                                    <div class="events-single-data-link">
-                                        <a href="{{ event.organizer_link }}" target="_blank">
-                                            More <i class="glyphicon glyphicon-chevron-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                              <p class="events-single-para">{{ event.description }}</p>
+                              <div class="events-single-data">
+                                  <div class="events-single-data-link">
+                                      <a href="{{ event.organizer_link }}" target="_blank">
+                                          More <i class="glyphicon glyphicon-chevron-right"></i>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
                         </div>
+                        <hr>
+                    </div>
+                {% endfor %}
+                {% for event in events_list_past %}
+                    <div class="events-single events-single-dimmed">
+                        <div class="row">
+                          <div class="col-md-3">
+                            <div class="events-single-data">
+                              <div class="row events-single-data-date">{{ event.date }} - {{ event.time_start }}</div>
+                              <div class="row"><a href="{{ event.link }}"><img src="{{ event.image }}"></a></div>
+                              <div class="row events-single-data-organizer">Organized by: {{ event.organizer }}</div>
+                            </div>
+                          </div>
+                          <div class="col-md-9">
+                              <div class="events-single-title">
+                                  <a href="{{ event.link }}">{{ event.title }}</a>
+                              </div>
+                              <p class="events-single-para">{{ event.description }}</p>
+                              <div class="events-single-data">
+                                <div class="events-single-data-link">
+                                    <a href="{{ event.organizer_link }}" target="_blank">
+                                        More <i class="glyphicon glyphicon-chevron-right"></i>
+                                    </a>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                        <hr>
                     </div>
                 {% endfor %}
             </div>
             <div class="col-md-3">
-                <h3>{% trans 'Meetups' %}</h3>
+                <h3>{% trans 'About meetups' %}</h3>
                 <div class="program-sidebar-box">
-                    <p>{% trans 'Meetings, especially regular meetings of people who share a particular interest such as a programming language or entrepreneurship' %}</p>
+                  <p>{% trans 'Meetings, especially regular meetings of people who share a particular interest such as a programming language or entrepreneurship' %}</p>
                 </div>
-                <div class="sidebar-module sidebar-module-inset sidebar-meetups">
-                    <ul>
-                        {% for meetup in meetups %}
-                            <li><a href="{{ meetup.link }}" target="_blank">{{ meetup.name }}</a><i class="glyphicon glyphicon-chevron-right"></i></a></li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="program-sidebar-meetup">
+                <!--<div class="program-sidebar-meetup">
                   <h3 class="yellow">OK!Thess Meetup <i class="glyphicon glyphicon-circle-arrow-right"></i></h3>
                   <div class="program-sidebar-box">
-                      {% trans 'The meetup of OK!Thess is the new thing in town. Click here to learn more' %}
+                    <p>{% trans 'The meetup of OK!Thess is the new thing in town. Click here to learn more' %}</p>
                   </div>
+                  <a class="btn-blue" href="{% url 'main:blog_post' post.slug %}" role="button">
+                    <span class="glyphicon glyphicon-exclamation-sign"></span>{% trans '<strong>Read</strong> more »' %}
+                  </a>
+                </div>-->
+                <h2>{% trans 'Hosted meetups' %}</h2>
+                <div class="sidebar-module sidebar-module-inset sidebar-meetups">
+                  <ul>
+                    {% for meetup in meetups %}
+                      <li><a href="{{ meetup.link }}" target="_blank">{{ meetup.name }} </a><i class="glyphicon glyphicon-chevron-right"></i></a></li>
+                    {% endfor %}
+                  </ul>
                 </div>
-                <h3>{% trans 'Past Events' %}</h3>
+                <h3>{% trans 'Past meetups' %}</h3>
                 <div class="sidebar-module">
                     {% for year, year_obj in events_archive.items %}
                         <h5>{{ year }}</h5>

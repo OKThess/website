@@ -59,7 +59,7 @@
         <div class="navbar-header">
             <a class="navbar-brand" href="{% url 'main:index' %}"><img src="{% static '/main/img/logo.png' %}" alt="Logo"></a>
             <a class="btn-red btn-header" href="{% url 'main:apply' %}" role="button">
-                <span class="glyphicon glyphicon-exclamation-sign"></span>{% trans "<strong>Apply</strong> for Autumn '17" %}
+                <span class="glyphicon glyphicon-exclamation-sign"></span>{% trans "<strong>Apply</strong> for Winter '18" %}
             </a>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
                 <span class="icon-bar"></span>
@@ -109,14 +109,14 @@
             </div>
             <div class="row">
                 <div class="site-footer-content">
-                    <div class="col-md-4 col-sm-4">
+                    <div class="col-sm-4" id="footer-map">
                         <h5>{% trans 'LOCATION' %}</h5>
                         <hr>
                             <div id="map-outer">
                                 <div id="map-container"></div>
                             </div>
                     </div>
-                    <div class="col-md-4 col-sm-4">
+                    <div class="col-sm-4" id="footer-members">
                         <h5>{% trans 'MEMBERS' %}</h5><hr>
                         <a href="https://www.auth.gr/" target="_blank">
                             <img src="{% static '/main/img/footer/auth.jpg' %}" alt="Aristotle University Thessaloniki" class="footer-content-item-img">
@@ -149,7 +149,7 @@
                             <img src="{% static '/main/img/footer/sepve.jpg' %}" alt="SEPVE" class="footer-content-item-img">
                         </a>
                         </div>
-                    <div class="col-md-4 col-sm-4">
+                    <div class="col-sm-4">
                         <h5>{% trans 'SPONSORS' %}</h5><hr>
                         <a href="http://www.hcn.gr/" target="_blank">
                             <img src="{% static '/main/img/footer/hcn.jpg' %}" alt="HCN" class="footer-content-item-img">
@@ -266,6 +266,12 @@
             .fail(function () {
                 languageSwitch.classList.add('hidden');
             });
+    </script>
+    <script>
+        if (document.location.pathname.match(/contact/)) {
+            $('#footer-map').hide();
+            $('#footer-members').attr('class', 'col-sm-6');
+        }
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7E2raajPS5-4vEpx-LBOV0XkItvWQRt8&signed_in=true&callback=initMap"></script>
 </body>
