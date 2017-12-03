@@ -333,7 +333,7 @@ address > abbr {
 .desc {
   margin-top: 5%;
   font-size: 17px;
-  width: 80%;
+  width: 85%;
   line-height: 1.72;
 }
 
@@ -409,7 +409,8 @@ address > abbr {
 .index-blog {
   width: 100%;
   background: #f7f7f7;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 40px;
   padding-left: 5%;
   padding-right: 5%;
   margin-bottom: 60px;

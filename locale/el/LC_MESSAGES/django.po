@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-12 15:28+0200\n"
+"POT-Creation-Date: 2017-12-03 05:24+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,69 +57,85 @@ msgstr "Κανονισμός"
 #: .\main\templates\main\apply.html:20
 msgid ""
 "\n"
+"                <h2>The application process</h2>\n"
 "                <p>We accept at any time submissions from individuals or "
 "groups with innovative ideas, regardless their stage, who would like to "
 "benefit from the services of the OK!Thess pre-incubator in order to set up a "
 "startup business or accelarate the one that they already have set up.</p>\n"
 "                <p>Proposals shall be evaluated at regular intervals, the "
 "exact dates are being announced on this website.</p>\n"
-"                <p>The current submission period closes on September the "
-"13th 2017. Results will be announced on September the 19th 2017. The "
-"incubation period starts with a compulsory bootcamp that starts on the 2nd "
-"and lasts until the 13th of October.</p>\n"
+"                <p>The current submission period closes on December the 31st "
+"2017. Results will be announced on January the 15th. The incubation period "
+"starts with a <strong>compulsory bootcamp</strong> that initiates on the "
+"22nd January and lasts until the 22nd of February.</p>\n"
+"                <p>Bootcamp is comprised of an extended weekend that starts "
+"on Friday morning and ends on Monday night. Thereafter a series of 8-10 "
+"Masterclasses take place each Tuesday and Thursday evening.</p>\n"
+"                <p>Masterclasses are set to facilitate the business "
+"visualisation for participants of any level and include but are not limited "
+"to the following themes:</p>\n"
+"                  <ul>\n"
+"                    <li>Incorporating a business - Accounting</li>\n"
+"                    <li>Market research</li>\n"
+"                    <li>Negotiations</li>\n"
+"                    <li>IPR and Legal</li>\n"
+"                    <li>Digital marketing</li>\n"
+"                    <li>Branding</li>\n"
+"                    <li>Investment readiness</li>\n"
+"                  </ul>\n"
 "                <p>To participate, you either fill in the following form, or "
 "just answer the questions in the body of an e-mail and send it to "
 "<strong>apply@okthess.gr</strong></p>\n"
 "                "
 msgstr ""
 
-#: .\main\templates\main\apply.html:26
+#: .\main\templates\main\apply.html:38
 msgid "Information - GR"
 msgstr "Πληροφορίες"
 
-#: .\main\templates\main\apply.html:26
+#: .\main\templates\main\apply.html:38
 msgid "<nobr>Internal Regulation</nobr>"
 msgstr "Εσωτερικός Κανονισμός"
 
-#: .\main\templates\main\apply.html:28
+#: .\main\templates\main\apply.html:40
 msgid "Application form"
 msgstr "Αίτηση Συμμετοχής"
 
-#: .\main\templates\main\apply.html:35
+#: .\main\templates\main\apply.html:47
 msgid ""
 "Ποιά είναι η επιχειρηματική ιδέα που θέλετε να αναπτύξετε στο OK!Thess (Έως "
 "150 λέξεις);"
 msgstr ""
 
-#: .\main\templates\main\apply.html:41
+#: .\main\templates\main\apply.html:53
 msgid ""
 "Σε ποιά αγορά απευθύνεστε (πού βλέπετε τους μελλοντικούς πελάτες) (έως 100 "
 "λέξεις);"
 msgstr ""
 
-#: .\main\templates\main\apply.html:47
+#: .\main\templates\main\apply.html:59
 msgid "Γνωρίζετε ποιος είναι ο ανταγωνισμός στην ιδέα σας (έως 100 λέξεις);"
 msgstr ""
 
-#: .\main\templates\main\apply.html:53
+#: .\main\templates\main\apply.html:65
 msgid ""
 "Τι περιμένετε να σας προσφέρει το OK!Thess εκτός από χώρο και υποδομή (έως "
 "100 λέξεις);"
 msgstr ""
 
-#: .\main\templates\main\apply.html:59
+#: .\main\templates\main\apply.html:71
 msgid "Τηλέφωνο επικοινωνίας"
 msgstr ""
 
-#: .\main\templates\main\apply.html:65
+#: .\main\templates\main\apply.html:77
 msgid "Email"
 msgstr ""
 
-#: .\main\templates\main\apply.html:71
+#: .\main\templates\main\apply.html:83
 msgid "Ονοματεπώνυμο"
 msgstr ""
 
-#: .\main\templates\main\apply.html:75
+#: .\main\templates\main\apply.html:87
 msgid "Submit"
 msgstr "Αποστολή"
 
@@ -129,7 +145,8 @@ msgid "Posted"
 msgstr "Αναρτήθηκε"
 
 #: .\main\templates\main\blog-archive.html:23
-#: .\main\templates\main\blog.html:24
+#: .\main\templates\main\blog.html:24 .\main\templates\main\events.html:79
+#: .\main\templates\main\index.html:78
 msgid "<strong>Read</strong> more »"
 msgstr "Περισσότερα"
 
@@ -169,103 +186,93 @@ msgstr ""
 
 #: .\main\templates\main\contact.html:35
 msgid "email us"
-msgstr ""
+msgstr "Στείλε email"
 
 #: .\main\templates\main\contact.html:47
 msgid "Send it!"
 msgstr "Αποστολή"
 
 #: .\main\templates\main\events.html:12
-#, fuzzy
-#| msgid "Events at OK!Thess"
 msgid "Meetups at OK!Thess"
 msgstr "Συναντήσεις στο ΟΚ!Τhess"
 
-#: .\main\templates\main\events.html:71
-#, fuzzy
-#| msgid "Meetups"
+#: .\main\templates\main\events.html:69
 msgid "About meetups"
-msgstr "Συναντήσεις"
+msgstr "Σχετικά"
 
-#: .\main\templates\main\events.html:73
+#: .\main\templates\main\events.html:71
 msgid ""
 "Meetings, especially regular meetings of people who share a particular "
 "interest such as a programming language or entrepreneurship"
 msgstr ""
+"Ο χώρος του ΟΚ!Τhess χρησιμοποιείται απο ομάδες της πόλης για τις "
+"συναντήσεις τους. Οι συναντήσεις είναι ανοιχτές και καλούν κάθε "
+"ενδιαφερόμενο να συμμετέχει σε αυτές. Το σύνολο των μελών των συναντήσεων "
+"αποτελούν και την κοινότητα του OK!Thess, μια κοινότητα που ανταλλάσει γνώση "
+"και εμπειρίες με σκοπό την ενδυνάμωση όλων των μελών της."
 
-#: .\main\templates\main\events.html:75
-#, fuzzy
-#| msgid "Hosted Teams"
-msgid "Hosted meetups"
-msgstr "Φιλοξενούμενες Ομάδες"
-
-#: .\main\templates\main\events.html:86
+#: .\main\templates\main\events.html:76
 msgid ""
 "The meetup of OK!Thess is the new thing in town. Click here to learn more"
 msgstr ""
 
-#: .\main\templates\main\events.html:89
-#, fuzzy
-#| msgid "Hosted Teams"
+#: .\main\templates\main\events.html:82
+msgid "Hosted meetups"
+msgstr "Ομάδες συναντήσεων"
+
+#: .\main\templates\main\events.html:90
 msgid "Past meetups"
-msgstr "Φιλοξενούμενες Ομάδες"
+msgstr "Παρελθούσες συναντήσεις"
 
 #: .\main\templates\main\index.html:12
 msgid "Your early stage partner"
-msgstr "Συνεργάτης στα πρώτα "
+msgstr "Συνεργάτης στα πρώτα βήματα"
 
 #: .\main\templates\main\index.html:14
-#, fuzzy
-#| msgid ""
-#| "OK!Thess provides space and technical support to teams of people\n"
-#| "with innovative ideas helping them to <strong>Validate a Business\n"
-#| "Model Fast</strong>, rather than hastily, and to <strong>Meet,\n"
-#| "Mix and Connect</strong> with like-minded peers.\n"
 msgid ""
-"Do you need help on executing your business idea? OK!Thess provides space "
-"and technical support to teams of people\n"
+"OK!Thess provides space and and a technical support program for teams of "
+"people\n"
 "                      with innovative ideas helping them to <strong>Validate "
 "a Business\n"
 "                      Model Fast</strong>, and to <strong>Meet,\n"
 "                      Mix and Connect</strong> with like-minded peers.\n"
 "                      "
 msgstr ""
-"Το ΟΚ!Τhess προσφέρει χώρο και τεχνική υποστήριξη σε ομάδες ανθρώπων\n"
-"με <strong>καινοτόμες επιχειρηματικές ιδέες</strong>, βοηθώντας τους να\n"
-"αναπτύξουν ένα <strong>βιώσιμο επιχειρηματικό μοντέλο</strong> και να έρθουν "
-"σε επαφή\n"
-"με την πραγματική αγορά καθώς και την δημιουργική επιχειρηματική κοινότητα "
-"της πόλης.\n"
+"Το ΟΚ!Τhess προσφέρει χώρο και ένα ολοκληρωμένο πρόγραμμα τεχνικής "
+"υποστήριξη σε ομάδες ανθρώπων\n"
+"με <strong>καινοτόμες ιδέες</strong>, βοηθώντας τους να αναπτύξουν ένα "
+"<strong>βιώσιμο\n"
+"επιχειρηματικό μοντέλο</strong> και να έρθουν σε επαφή\n"
+"με την αγορά καθώς και την δημιουργική επιχειρηματική κοινότητα\n"
+"της πόλης."
 
 #: .\main\templates\main\index.html:21
 msgid "Subscribe to get our updates!"
-msgstr ""
+msgstr "Εγγράψου στις ενημερώσεις μας!"
 
 #: .\main\templates\main\index.html:50
-msgid "Open Workshops"
-msgstr "Ανοιχτά Εργαστήρια"
+msgid "Workshops"
+msgstr "Εργαστήρια"
 
 #: .\main\templates\main\index.html:54
-msgid "Community Events"
+msgid "Events"
 msgstr "Συναντήσεις"
 
 #: .\main\templates\main\index.html:58
-msgid "Mentoring Sessions"
+msgid "Mentoring"
 msgstr "Καθοδήγηση"
 
 #: .\main\templates\main\index.html:64
 msgid "Featured <strong>Posts</strong>"
-msgstr ""
+msgstr "Σημαντικά <strong>Νέα</strong>"
 
-#: .\main\templates\main\index.html:86
+#: .\main\templates\main\index.html:85
 msgid "Upcoming Community <strong>Meetups</strong>"
 msgstr "Επερχόμενες <strong>Ανοιχτές Συναντήσεις</strong>"
 
 #: .\main\templates\main\layout.html:62
-#, fuzzy
-#| msgid "<strong>Read</strong> more »"
 msgid "<strong>Apply</strong> for Winter '18"
-msgstr "Περισσότερα"
+msgstr "Συμμετοχή"
 
 #: .\main\templates\main\layout.html:73
 #: .\main\templates\main\program-alumni.html:43
@@ -305,12 +312,12 @@ msgid "MEMBERS"
 msgstr "ΜΕΛΗ"
 
 #: .\main\templates\main\layout.html:153
-msgid "SPONSORS"
-msgstr "ΧΟΡΗΓΟΙ"
-
-#: .\main\templates\main\layout.html:163
 msgid "DONOR"
 msgstr "ΔΩΡΗΤΗΣ"
+
+#: .\main\templates\main\layout.html:157
+msgid "SPONSORS"
+msgstr "ΧΟΡΗΓΟΙ"
 
 #: .\main\templates\main\program-alumni.html:13
 msgid "Graduated Teams"
@@ -332,9 +339,9 @@ msgid ""
 "                              "
 msgstr ""
 "\n"
-"Οι απόφοιτοι του ΟΚ!Τhess παραμένουν κοντά μαςωστε να ανταλλάζουμε γνώσεις "
-"και εμπειρίες που έχουναποκομίσει στην μετά ΟΚ!Τhess εποχή. Μερικοί από "
-"αυτούς καλούνται ναβοηθήσουν τις φιλοξενούμενες ομάδες απο τον ρόλο του "
+"Οι απόφοιτοι του ΟΚ!Τhess παραμένουν κοντά μας ωστε να ανταλλάζουμε γνώσεις "
+"και εμπειρίες που έχουν αποκομίσει στην μετά ΟΚ!Τhess εποχή. Μερικοί από "
+"αυτούς καλούνται να βοηθήσουν τις φιλοξενούμενες ομάδες απο τον ρόλο του "
 "Μέντορα."
 
 #: .\main\templates\main\program-alumni.html:41
@@ -393,15 +400,6 @@ msgid "The program"
 msgstr ""
 
 #: .\main\templates\main\program-teams.html:49
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                               Τeams are selected in consideration of the "
-#| "sustainability of their submitted proposal, and physical interviews. Once "
-#| "selected, they enter our Bootcamp and work with OK!Thess team towards "
-#| "creating a scalable business model. Each pre-incubation cycle terminates "
-#| "with a DEMO DAY.\n"
-#| "                              "
 msgid ""
 "\n"
 "                     Τeams are selected in consideration of the "
@@ -414,10 +412,10 @@ msgid ""
 msgstr ""
 "\n"
 "                               Οι ομάδες επιλέγοντε βάση τη βιωσιμότητα της "
-"επιχειρηματικής πρότασης που καταθέτουν, και μετά απο συνεντεύξεις. Άμα τη "
+"επιχειρηματικής πρότασης που καταθέτουν, και μετά απο συνεντεύξη. Άμα τη "
 "επιλογή, παρακόλουθουν μια σύντομη σειρά εκπαιδευτικών εργαστηρίων και "
 "δουλεύουν με την ομάδα τους OK!Thess, για την δημιουργία ενός βιώσιμου "
-"επιχειρηματικού μοντέλου. Κάθε κύκλος τελειώνει με την ημέρα επίδειξηςτων "
+"επιχειρηματικού μοντέλου. Κάθε κύκλος τελειώνει με την ημέρα επίδειξης των "
 "προιόντων και υπηρεσιών.\n"
 "                              "
 
