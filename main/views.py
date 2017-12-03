@@ -266,7 +266,7 @@ def apply(request):
         form = ApplicationForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.info(request, 'Thank you for applying!')
+            messages.info(request, 'Your application has been submitted. Thank you!')
             return HttpResponseRedirect(reverse('main:apply'))
         else:
             return HttpResponse('Application form submission is invalid.')
