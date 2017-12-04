@@ -71,3 +71,4 @@ infra/production.tfvars
 
 # Uploads from dev
 main/static/main/uploads/*
+.vscode/
