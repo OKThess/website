@@ -17,74 +17,175 @@
                         {% endfor %}
                     </p>
                 {% endif %}
-                {% blocktrans %}
-                <h2>The application process</h2>
-                <p>We accept at any time submissions from individuals or groups with innovative ideas, regardless their stage, who would like to benefit from the services of the OK!Thess pre-incubator in order to set up a startup business or accelarate the one that they already have set up.</p>
-                <p>Proposals shall be evaluated at regular intervals, the exact dates are being announced on this website.</p>
-                <p>The current submission period closes on December the 31st 2017. Results will be announced on January the 15th. The incubation period starts with a <strong>compulsory bootcamp</strong> that initiates on the 22nd January and lasts until the 22nd of February.</p>
-                <p>Bootcamp is comprised of an extended weekend that starts on Friday morning and ends on Monday night. Thereafter a series of 8-10 Masterclasses take place each Tuesday and Thursday evening.</p>
-                <p>Masterclasses are set to facilitate the business visualisation for participants of any level and include but are not limited to the following themes:</p>
-                  <ul>
-                    <li>Incorporating a business - Accounting</li>
-                    <li>Market research</li>
-                    <li>Negotiations</li>
-                    <li>IPR and Legal</li>
-                    <li>Digital marketing</li>
-                    <li>Branding</li>
-                    <li>Investment readiness</li>
-                  </ul>
-                <p>To participate, you either fill in the following form, or just answer the questions in the body of an e-mail and send it to <strong>apply@okthess.gr</strong></p>
-                {% endblocktrans %}
-                <br>
-                <a class="btn-apply" href="http://ntemposd.me/" target="_blank">{% trans 'Information - GR' %}</a><a class="btn-apply" href="http://ntemposd.me/" target="_blank">{% trans '<nobr>Internal Regulation</nobr>' %}</a>
-                <br><br>
                 <p>{{ application_content|safe }}</p>
-                <h3>{% trans 'Application form' %}</h3>
+                <br>
+                <!--<a class="btn-apply" href="http://dev.okthess.gr/static/main/files/kanonismos-leitourgias.pdf" target="_blank">{% trans 'Information - GR' %}</a><a class="btn-apply" href="http://dev.okthess.gr/static/main/files/kanonismos-leitourgias.pdf" target="_blank">{% trans '<nobr>Internal Regulation</nobr>' %}</a>-->
+                <br>
+                <br>
+                <h2>{% trans 'Application form' %}</h2>
                 <br>
                 <form action="{% url 'main:apply' %}" method="post">
                     {% csrf_token %}
                     {{ form.non_field_errors }}
+
+                    <h4>{% trans 'Idea' %}</h4>
                     <div class="form-group">
-                        <label for="id_answer_1">
-                            {% trans 'Ποιά είναι η επιχειρηματική ιδέα που θέλετε να αναπτύξετε στο OK!Thess (Έως 150 λέξεις);' %}
+                        <label for="id_answer_idea_1">
+                            {% trans 'Please provide your project/company/team name and web address (if available).' %}
                         </label>
-                        <textarea name="answer_1" cols="50" rows="2" class="form-control" required="" id="id_answer_1"></textarea>
+                        <textarea name="answer_idea_1" cols="50" rows="2" class="form-control" required="" id="id_answer_idea_1"></textarea>
                     </div>
                     <div class="form-group">
-                        <label for="id_answer_2">
-                            {% trans 'Σε ποιά αγορά απευθύνεστε (πού βλέπετε τους μελλοντικούς πελάτες) (έως 100 λέξεις);' %}
+                        <label for="id_answer_idea_2">
+                            {% trans 'Please describe your concept with a one-sentence pitch, as follows: "My company, _(insert name of company)_, is developing _(a defined offering)_ to help _(a defined audience)_ _(solve a problem)_ with _(secret sauce)_". (https://fi.co/madlibs)' %}
                         </label>
-                        <textarea name="answer_2" cols="50" rows="2" class="form-control" required="" id="id_answer_2"></textarea>
+                        <textarea name="answer_idea_2" cols="50" rows="2" class="form-control" required="" id="id_answer_idea_2"></textarea>
                     </div>
                     <div class="form-group">
-                        <label for="id_answer_3">
-                            {% trans 'Γνωρίζετε ποιος είναι ο ανταγωνισμός στην ιδέα σας (έως 100 λέξεις);' %}
+                        <label for="id_answer_idea_3">
+                            {% trans 'What stage are you at right now?' %}
                         </label>
-                        <textarea name="answer_3" cols="50" rows="2" class="form-control" required="" id="id_answer_3"></textarea>
+                        <br>
+                        <select name="answer_idea_3" id="id_answer_idea_3">
+                            <option value="idea">Idea</option>
+                            <option value="prototype">Prototype</option>
+                            <option value="users">Early users</option>
+                            <option value="revenue">Early revenue</option>
+                        </select>
+                    </div>
+                    <br>
+                    <h4>{% trans 'Market' %}</h4>
+                    <div class="form-group">
+                        <label for="id_answer_market_1">
+                            {% trans 'Who are your target customers? Briefly describe a typical person who would buy your product/service.' %}
+                        </label>
+                        <textarea name="answer_market_1" cols="50" rows="2" class="form-control" required="required" id="id_answer_market_1"></textarea>
                     </div>
                     <div class="form-group">
-                        <label for="id_answer_4">
-                            {% trans 'Τι περιμένετε να σας προσφέρει το OK!Thess εκτός από χώρο και υποδομή (έως 100 λέξεις);' %}
+                        <label for="id_answer_market_2">
+                            {% trans 'What problem or challenge does your product/service solve for such customers?' %}
                         </label>
-                        <textarea name="answer_4" cols="50" rows="2" class="form-control" required="" id="id_answer_4"></textarea>
+                        <textarea name="answer_market_2" cols="50" rows="2" class="form-control" required="required" id="id_answer_market_2"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="id_answer_market_3">
+                            {% trans 'What kind of solutions, if any, are your target customers using today to solve this problem or challenge?' %}
+                        </label>
+                        <textarea name="answer_market_3" cols="50" rows="2" class="form-control" required="required" id="id_answer_market_3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="id_answer_market_4">
+                            {% trans 'Can you name two or three of your closest competitors, if any exist? Please provide links to their websites.' %}
+                        </label>
+                        <textarea name="answer_market_4" cols="50" rows="4" class="form-control" required="required" id="id_answer_market_4"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="id_answer_market_5">
+                            {% trans 'What is different about your product/service that makes it better than the competition?' %}
+                        </label>
+                        <textarea name="answer_market_5" cols="50" rows="2" class="form-control" required="required" id="id_answer_market_5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="id_answer_market_6">
+                            {% trans 'Please give us your assessment of the market potential. For instance, how large is the total addressable market for this product/service? How many potential customers exist out there? How much money could they possibly spend with your company every year? Is this market going to be growing year over year? What are the trends affecting market growth?' %}
+                        </label>
+                        <textarea name="answer_market_6" cols="50" rows="3" class="form-control" required="required" id="id_answer_market_6"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="id_answer_market_7">
+                            {% trans 'Have you yet taken any steps to validate the demand for your product/service in the market?' %}
+                        </label>
+                        <textarea name="answer_market_7" cols="50" rows="2" class="form-control" required="required" id="id_answer_market_7"></textarea>
+                    </div>
+                    <br>
+                    <h4>{% trans 'Team' %}</h4>
+                    <div class="form-group">
+                        <label for="id_answer_team_1">
+                            {% trans 'How many founders do you have in the team and how many team members in total, including employees (if any)?' %}
+                        </label>
+                        <textarea name="answer_team_1" cols="50" rows="2" class="form-control" required="required" id="id_answer_team_1"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="id_answer_team_2">
+                            {% trans 'What is your team composition and roles? For every team member please give us: 1) name; 2) description of role in the team; 3) full-time or part-time involvement status; 4) relevant professional experience or educational background; 5) links to online profiles if available.' %}
+                        </label>
+                        <textarea name="answer_team_2" cols="50" rows="6" class="form-control" required="required" id="id_answer_team_2"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="id_answer_team_3">
+                            {% trans 'How equipped is your current team to bring this product/service to the market?' %}
+                        </label>
+                        <textarea name="answer_team_3" cols="50" rows="2" class="form-control" required="required" id="id_answer_team_3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="id_answer_team_4">
+                            {% trans 'Will you need to add more core skills to the team? ' %}
+                        </label>
+                        <textarea name="answer_team_4" cols="50" rows="2" class="form-control" required="required" id="id_answer_team_4"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="id_answer_team_5">
+                            {% trans 'Why did the team start working on this idea? What excites you about it?' %}
+                        </label>
+                        <textarea name="answer_team_5" cols="50" rows="2" class="form-control" required="required" id="id_answer_team_5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="id_answer_team_6">
+                            {% trans 'When did you start working on the project and what progress have you made over the past 3 months?' %}
+                        </label>
+                        <textarea name="answer_team_6" cols="50" rows="2" class="form-control" required="required" id="id_answer_team_6"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="id_answer_team_7">
+                            {% trans "What is the founders' 3-year vision for the business? If all goes perfect, what should the business look like in 3 years from now?" %}
+                        </label>
+                        <textarea name="answer_team_7" cols="50" rows="3" class="form-control" required="required" id="id_answer_team_7"></textarea>
+                    </div>
+                    <br>
+                    <h4>{% trans 'Support' %}</h4>
+                    <div class="form-group">
+                        <label for="id_answer_support_1">
+                            {% trans 'What are you hoping to get out of the OK!Thess pre-incubation program? What do you need most help with right now?' %}
+                        </label>
+                        <textarea name="answer_support_1" cols="50" rows="2" class="form-control" required="required" id="id_answer_support_1"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="id_answer_support_2">
+                            {% trans 'Have you been through an accelerator or similar program before?' %}
+                        </label>
+                        <textarea name="answer_support_2" cols="50" rows="2" class="form-control" required="required" id="id_answer_support_2"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="id_answer_support_3">
+                            {% trans 'If accepted, can all founders attend the entirety of the program in person (bootcamp weekend, masterclasses, coaching sessions)? In case any of the founders are not able to be fully committed, please elaborate here.' %}
+                        </label>
+                        <textarea name="answer_support_3" cols="50" rows="2" class="form-control" required="required" id="id_answer_support_3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="id_answer_support_4">
+                            {% trans 'If accepted, how many of your team members would make use of the co-working space at OK!Thess on a daily basis?' %}
+                        </label>
+                        <textarea name="answer_support_4" cols="50" rows="2" class="form-control" required="required" id="id_answer_support_4"></textarea>
+                    </div>
+                    <br>
+                    <h4>{% trans 'Contact info' %}</h4>
+                    <div class="form-group">
+                        <label for="id_name">
+                            {% trans 'Team representative name' %}
+                        </label>
+                        <input type="text" name="name" class="form-control" maxlength="100" required="required" id="id_name">
                     </div>
                     <div class="form-group">
                         <label for="id_phonenumber">
-                            {% trans 'Τηλέφωνο επικοινωνίας' %}
+                            {% trans 'Team representative phone number' %}
                         </label>
-                        <input type="text" name="phonenumber" class="form-control" maxlength="100" required="" id="id_phonenumber">
+                        <input type="text" name="phonenumber" class="form-control" maxlength="100" required="required" id="id_phonenumber">
                     </div>
                     <div class="form-group">
                         <label for="id_email">
-                            {% trans 'Email' %}
+                            {% trans 'Team representative email' %}
                         </label>
-                        <input type="email" name="email" class="form-control" maxlength="254" required="" id="id_email">
-                    </div>
-                    <div class="form-group">
-                        <label for="id_name">
-                            {% trans 'Ονοματεπώνυμο' %}
-                        </label>
-                        <input type="text" name="name" class="form-control" maxlength="100" required="" id="id_name">
+                        <input type="email" name="email" class="form-control" maxlength="254" required="required" id="id_email">
                     </div>
                     <button type="submit" class="btn-form">{% trans 'Submit' %}</button>
                 </form>
