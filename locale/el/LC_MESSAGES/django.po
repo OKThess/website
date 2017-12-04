@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-04 03:36+0200\n"
+"POT-Creation-Date: 2017-12-04 13:05+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,19 +38,19 @@ msgstr "Χώρος"
 msgid "OK!Thess team"
 msgstr "Η Ομάδα"
 
-#: .\main\templates\main\about.html:60
+#: .\main\templates\main\about.html:59
 msgid "Official Docs<small> - GR</small>"
 msgstr "Επίσημα Έγγραφα"
 
-#: .\main\templates\main\about.html:64
+#: .\main\templates\main\about.html:62
 msgid "Concept"
 msgstr "Αρχική Ιδέα"
 
-#: .\main\templates\main\about.html:69
+#: .\main\templates\main\about.html:63
 msgid "Memorandum"
 msgstr "Μνημόνιο Συνεργασίας"
 
-#: .\main\templates\main\about.html:74
+#: .\main\templates\main\about.html:64
 msgid "Regulation"
 msgstr "Κανονισμός"
 
@@ -76,26 +76,26 @@ msgid ""
 msgstr "Όνομα σχεδίου/ομάδας/εταιρείας και ιστοσελίδα (εάν υπάρχει)"
 
 #: .\main\templates\main\apply.html:40
+
 msgid ""
-"Please describe your concept with a one-sentence pitch, as follows: \"My "
-"company, _(insert name of company)_, is developing _(a defined offering)_ to "
-"help _(a defined audience)_ _(solve a problem)_ with _(secret sauce)_\". "
-"(https://fi.co/madlibs)"
+"Please describe your concept with a one-sentence pitch, as follows: \"We "
+"develop _(a defined offering)_ to help _(a defined audience)_ _(solve a "
+"problem)_ with _(secret sauce)_\". (https://fi.co/madlibs)"
 msgstr ""
-"Περιγράψτε την ιδέα σε μία πρόταση με βάση τον παρακάτω σκελέτο: \" Η ομάδα "
-"_(Εισάγεται όνομα ομάδας)_, αναπτύσει _(Η λύση που αναπτύσεται)_ για να "
+"Περιγράψτε την ιδέα σε μία πρόταση με βάση τον παρακάτω σκελέτο: \" "
+"Aναπτύσουμαι _(Η λύση που αναπτύσεται)_ για να "
 "βοηθήσει _(Οι χρήστες της λύσης)_ να _(Το πρόβλημα που λύνουν)_ με _(Η "
-"καινοτομία που εισάγεται)\" "
+"καινοτομία που εισάγεται)\". (https://fi.co/madlibs)"
 
 #: .\main\templates\main\apply.html:46
 msgid "What stage are you at right now?"
 msgstr "Σε ποιό από τα παρακάτω στάδια βρίσκεστε;"
 
-#: .\main\templates\main\apply.html:57
+#: .\main\templates\main\apply.html:58
 msgid "Market"
 msgstr "Αγορά"
 
-#: .\main\templates\main\apply.html:60
+#: .\main\templates\main\apply.html:61
 msgid ""
 "Who are your target customers? Briefly describe a typical person who would "
 "buy your product/service."
@@ -103,19 +103,12 @@ msgstr ""
 "Ποιοί είναι οι πελάτες στόχος; Περιγράψτε συνοπτικά τον τυπικό καταναλωτή "
 "σας."
 
-#: .\main\templates\main\apply.html:66
+#: .\main\templates\main\apply.html:67
 msgid ""
 "What problem or challenge does your product/service solve for such customers?"
 msgstr "Τι πρόβλημα λύνει το προιόν σας, για τον παραπάνω καταναλωτή;"
 
-#: .\main\templates\main\apply.html:72
-msgid ""
-"What kind of solutions, if any, are your target customers using today to "
-"solve this problem or challenge?"
-msgstr ""
-"Πως λύνουν μέχρι σήμερα το παραπάνω πρόβλημα οι μελλοντικοί καταναλωτές σας;"
-
-#: .\main\templates\main\apply.html:78
+#: .\main\templates\main\apply.html:73
 msgid ""
 "Can you name two or three of your closest competitors, if any exist? Please "
 "provide links to their websites."
@@ -123,46 +116,11 @@ msgstr ""
 "Ποιοί είναι οι σημαντικότεροι ανταγωνιστές σας, εάν υπάρχουν; "
 "(Συμπεριλάβεται link για τις ιστοσελίδες τους)"
 
-#: .\main\templates\main\apply.html:84
-msgid ""
-"What is different about your product/service that makes it better than the "
-"competition?"
-msgstr ""
-"Ποιό είναι το συγκριτικό σας πλεονέκτημα; Τι το κάνει διαφορετικό σε σχέση "
-"με τις υπάρχουσες λύσεις;"
-
-#: .\main\templates\main\apply.html:90
-msgid ""
-"Please give us your assessment of the market potential. For instance, how "
-"large is the total addressable market for this product/service? How many "
-"potential customers exist out there? How much money could they possibly "
-"spend with your company every year? Is this market going to be growing year "
-"over year? What are the trends affecting market growth?"
-msgstr ""
-"Δώστε μια εκτίμηση της δυνητικής αγοράς. Για παράδειγμα, πόσο μεγάλη είναι η "
-"αγορά που απεθύνεστε; Πόσοι δυνητικοί καταναλωτές υπάρχουν; Πόσα χρήματα "
-"μπορούν να ξοδέψουν για αυτό που προσφέρεται κάθε χρόνο; Η αγορά στόχος "
-"αναπτύσσεται σε συνάρτηση του χρόνου; Τι επηρεάζει την ανάπτυξη της;"
-
-#: .\main\templates\main\apply.html:96
-msgid ""
-"Have you yet taken any steps to validate the demand for your product/service "
-"in the market?"
-msgstr ""
-"Έχουν γίνει κινήσεις για να επιβεβαωθεί η ζήτηση για την λύση που "
-"προσφέρεται;"
-
-#: .\main\templates\main\apply.html:101 .\main\templates\main\layout.html:79
+#: .\main\templates\main\apply.html:78 .\main\templates\main\layout.html:79
 msgid "Team"
 msgstr "Ομάδα"
 
-#: .\main\templates\main\apply.html:104
-msgid ""
-"How many founders do you have in the team and how many team members in "
-"total, including employees (if any)?"
-msgstr "Πόσα ιδρυτικά μέλη υπάρχουν στην ομάδα; Υπάρχουν επιπλέον μέλη;"
-
-#: .\main\templates\main\apply.html:110
+#: .\main\templates\main\apply.html:81
 msgid ""
 "What is your team composition and roles? For every team member please give "
 "us: 1) name; 2) description of role in the team; 3) full-time or part-time "
@@ -174,54 +132,26 @@ msgstr ""
 "4) Σχετική επαγγελματική ή ακαδημαική εμπειρία 5) Link σε προφιλ (Linkedin, "
 "Github, Facebook etc) εάν υπάρχουν"
 
-#: .\main\templates\main\apply.html:116
-msgid ""
-"How equipped is your current team to bring this product/service to the "
-"market?"
-msgstr ""
-"Ποιές συγκεκριμένες ικανότητες υπάρχουν στην ομάδα ωστε να υλοποιηθεί το "
-"προιόν και να φτάσει μέχρι την αγορά;"
-
-#: .\main\templates\main\apply.html:122
-msgid "Will you need to add more core skills to the team? "
-msgstr "Θα χρειαστείτε επιπλέον δεξιότητες για να ολοκληρωθεί η ομάδα;"
-
-#: .\main\templates\main\apply.html:128
+#: .\main\templates\main\apply.html:87
 msgid "Why did the team start working on this idea? What excites you about it?"
 msgstr "Γιατί η συγκεκριμένη ιδέα; Τι σας ενθουσιάζει;"
 
-#: .\main\templates\main\apply.html:134
-msgid ""
-"When did you start working on the project and what progress have you made "
-"over the past 3 months?"
-msgstr ""
-"Πότε ξεκινήσατε να δουλεύεται στην ιδέα και πως εξελίσεται τους τελευταίους "
-"3 μήνες;"
-
-#: .\main\templates\main\apply.html:140
-msgid ""
-"What is the founders' 3-year vision for the business? If all goes perfect, "
-"what should the business look like in 3 years from now?"
-msgstr ""
-"Ποιό είναι το όραμα σας για τα επόμενα 3 χρόνια; Έαν όλα έρθουν όπως έχουν "
-"σχεδιαστεί, πως θα μοιάζει η εταιρεία σε 3 χρόνια;"
-
-#: .\main\templates\main\apply.html:145
+#: .\main\templates\main\apply.html:92
 msgid "Support"
 msgstr "Υποστήριξη"
 
-#: .\main\templates\main\apply.html:148
+#: .\main\templates\main\apply.html:95
 msgid ""
 "What are you hoping to get out of the OK!Thess pre-incubation program? What "
 "do you need most help with right now?"
 msgstr ""
 "Τι περιμένετε από το OK!Thess; Που χρειάζεστε την περισσότερη υποστήριξη;"
 
-#: .\main\templates\main\apply.html:154
+#: .\main\templates\main\apply.html:101
 msgid "Have you been through an accelerator or similar program before?"
 msgstr "Έχετε θητεύσει σε παρόμοιο πρόγραμμα στο παρελθόν;"
 
-#: .\main\templates\main\apply.html:160
+#: .\main\templates\main\apply.html:107
 msgid ""
 "If accepted, can all founders attend the entirety of the program in person "
 "(bootcamp weekend, masterclasses, coaching sessions)? In case any of the "
@@ -231,7 +161,7 @@ msgstr ""
 "πρόγραμμα(Βοοtcamp και εβδομαδιαίες συναντήσεις); Εάν όχι, παρακαλώ "
 "περιγράψτε τους λόγους."
 
-#: .\main\templates\main\apply.html:166
+#: .\main\templates\main\apply.html:113
 msgid ""
 "If accepted, how many of your team members would make use of the co-working "
 "space at OK!Thess on a daily basis?"
@@ -239,23 +169,23 @@ msgstr ""
 "Εάν επιλεγείτε, πόσα απο τα μέλη της ομάδας σας θα κάνουν χρήση του "
 "συνεργατικού χώρου εργασίας σε καθημερινή βάση;"
 
-#: .\main\templates\main\apply.html:171
+#: .\main\templates\main\apply.html:118
 msgid "Contact info"
 msgstr "Λεπτομέριες επικοινωνίας"
 
-#: .\main\templates\main\apply.html:174
+#: .\main\templates\main\apply.html:121
 msgid "Team representative name"
 msgstr "Όνομα εκπροσώπου ομάδας"
 
-#: .\main\templates\main\apply.html:180
+#: .\main\templates\main\apply.html:127
 msgid "Team representative phone number"
 msgstr "Τηλεφωνικός αριθμός εκπροσώπου ομάδας"
 
-#: .\main\templates\main\apply.html:186
+#: .\main\templates\main\apply.html:133
 msgid "Team representative email"
 msgstr "email εκπροσώπου ομάδας"
 
-#: .\main\templates\main\apply.html:190
+#: .\main\templates\main\apply.html:137
 msgid "Submit"
 msgstr "Αποστολή"
 
@@ -322,14 +252,12 @@ msgstr "Σχετικά"
 
 #: .\main\templates\main\events.html:71
 msgid ""
-"Meetings, especially regular meetings of people who share a particular "
-"interest such as a programming language or entrepreneurship"
+"Our open space is being used by several of the city’s creative teams as a "
+"meeting space and those meetings are open to anyone interested. Meetups’ "
+"participants comprise the wider OK!Thess community, a community that "
+"exchanges knowledge and experiences targeting to create added value for all "
+"of its members."
 msgstr ""
-"Ο χώρος του ΟΚ!Τhess χρησιμοποιείται απο ομάδες της πόλης για τις "
-"συναντήσεις τους. Οι συναντήσεις είναι ανοιχτές και καλούν κάθε "
-"ενδιαφερόμενο να συμμετέχει σε αυτές. Το σύνολο των μελών των συναντήσεων "
-"αποτελούν και την κοινότητα του OK!Thess, μια κοινότητα που ανταλλάσει γνώση "
-"και εμπειρίες με σκοπό την ενδυνάμωση όλων των μελών της."
 
 #: .\main\templates\main\events.html:76
 msgid ""
@@ -466,32 +394,32 @@ msgstr ""
 "αυτούς καλούνται να βοηθήσουν τις φιλοξενούμενες ομάδες απο τον ρόλο του "
 "Μέντορα."
 
-#: .\main\templates\main\program-alumni.html:39
-#: .\main\templates\main\program-mentors.html:46
-#: .\main\templates\main\program-partners.html:32
-#: .\main\templates\main\program-teams.html:54
-msgid "Apply now!"
-msgstr "Kάνε Αίτηση"
-
-#: .\main\templates\main\program-alumni.html:43
+#: .\main\templates\main\program-alumni.html:40
 #, fuzzy
 #| msgid "Hosted Teams"
 msgid "Hosted Teams »"
 msgstr "Φιλοξενούμενες Ομάδες"
 
-#: .\main\templates\main\program-alumni.html:44
+#: .\main\templates\main\program-alumni.html:41
 #: .\main\templates\main\program-mentors.html:36
 #: .\main\templates\main\program-partners.html:26
 #: .\main\templates\main\program-teams.html:58
 msgid "Mentors"
 msgstr "Μέντορες"
 
-#: .\main\templates\main\program-alumni.html:45
+#: .\main\templates\main\program-alumni.html:42
 #: .\main\templates\main\program-mentors.html:42
 #: .\main\templates\main\program-partners.html:22
 #: .\main\templates\main\program-teams.html:60
 msgid "Team &amp; Partners"
 msgstr ""
+
+#: .\main\templates\main\program-alumni.html:46
+#: .\main\templates\main\program-mentors.html:46
+#: .\main\templates\main\program-partners.html:32
+#: .\main\templates\main\program-teams.html:54
+msgid "Apply now!"
+msgstr "Kάνε Αίτηση"
 
 #: .\main\templates\main\program-mentors.html:13
 msgid "Our Mentors"
@@ -564,6 +492,79 @@ msgstr "Ελληνικά"
 #: .\okthess\settings.py:182
 msgid "English"
 msgstr "Αγγλικά"
+
+#~ msgid ""
+#~ "How many founders do you have in the team and how many team members in "
+#~ "total, including employees (if any)?"
+#~ msgstr "Πόσα ιδρυτικά μέλη υπάρχουν στην ομάδα; Υπάρχουν επιπλέον μέλη;"
+
+#~ msgid ""
+#~ "How equipped is your current team to bring this product/service to the "
+#~ "market?"
+#~ msgstr ""
+#~ "Ποιές συγκεκριμένες ικανότητες υπάρχουν στην ομάδα ωστε να υλοποιηθεί το "
+#~ "προιόν και να φτάσει μέχρι την αγορά;"
+
+#~ msgid "Will you need to add more core skills to the team? "
+#~ msgstr "Θα χρειαστείτε επιπλέον δεξιότητες για να ολοκληρωθεί η ομάδα;"
+
+#~ msgid ""
+#~ "When did you start working on the project and what progress have you made "
+#~ "over the past 3 months?"
+#~ msgstr ""
+#~ "Πότε ξεκινήσατε να δουλεύεται στην ιδέα και πως εξελίσεται τους "
+#~ "τελευταίους 3 μήνες;"
+
+#~ msgid ""
+#~ "What is the founders' 3-year vision for the business? If all goes "
+#~ "perfect, what should the business look like in 3 years from now?"
+#~ msgstr ""
+#~ "Ποιό είναι το όραμα σας για τα επόμενα 3 χρόνια; Έαν όλα έρθουν όπως "
+#~ "έχουν σχεδιαστεί, πως θα μοιάζει η εταιρεία σε 3 χρόνια;"
+
+#~ msgid ""
+#~ "What kind of solutions, if any, are your target customers using today to "
+#~ "solve this problem or challenge?"
+#~ msgstr ""
+#~ "Πως λύνουν μέχρι σήμερα το παραπάνω πρόβλημα οι μελλοντικοί καταναλωτές "
+#~ "σας;"
+
+#~ msgid ""
+#~ "What is different about your product/service that makes it better than "
+#~ "the competition?"
+#~ msgstr ""
+#~ "Ποιό είναι το συγκριτικό σας πλεονέκτημα; Τι το κάνει διαφορετικό σε "
+#~ "σχέση με τις υπάρχουσες λύσεις;"
+
+#~ msgid ""
+#~ "Please give us your assessment of the market potential. For instance, how "
+#~ "large is the total addressable market for this product/service? How many "
+#~ "potential customers exist out there? How much money could they possibly "
+#~ "spend with your company every year? Is this market going to be growing "
+#~ "year over year? What are the trends affecting market growth?"
+#~ msgstr ""
+#~ "Δώστε μια εκτίμηση της δυνητικής αγοράς. Για παράδειγμα, πόσο μεγάλη "
+#~ "είναι η αγορά που απεθύνεστε; Πόσοι δυνητικοί καταναλωτές υπάρχουν; Πόσα "
+#~ "χρήματα μπορούν να ξοδέψουν για αυτό που προσφέρεται κάθε χρόνο; Η αγορά "
+#~ "στόχος αναπτύσσεται σε συνάρτηση του χρόνου; Τι επηρεάζει την ανάπτυξη "
+#~ "της;"
+
+#~ msgid ""
+#~ "Have you yet taken any steps to validate the demand for your product/"
+#~ "service in the market?"
+#~ msgstr ""
+#~ "Έχουν γίνει κινήσεις για να επιβεβαωθεί η ζήτηση για την λύση που "
+#~ "προσφέρεται;"
+
+#~ msgid ""
+#~ "Meetings, especially regular meetings of people who share a particular "
+#~ "interest such as a programming language or entrepreneurship"
+#~ msgstr ""
+#~ "Ο χώρος του ΟΚ!Τhess χρησιμοποιείται απο ομάδες της πόλης για τις "
+#~ "συναντήσεις τους. Οι συναντήσεις είναι ανοιχτές και καλούν κάθε "
+#~ "ενδιαφερόμενο να συμμετέχει σε αυτές. Το σύνολο των μελών των συναντήσεων "
+#~ "αποτελούν και την κοινότητα του OK!Thess, μια κοινότητα που ανταλλάσει "
+#~ "γνώση και εμπειρίες με σκοπό την ενδυνάμωση όλων των μελών της."
 
 #, fuzzy
 #~| msgid "Hosted Teams"
