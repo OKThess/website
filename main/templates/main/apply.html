@@ -19,15 +19,16 @@
                 {% endif %}
                 <p>{{ application_content|safe }}</p>
                 <br>
-                <a class="btn-apply" href="http://dev.okthess.gr/static/main/files/kanonismos-leitourgias.pdf" target="_blank">{% trans 'Information - GR' %}</a><a class="btn-apply" href="http://dev.okthess.gr/static/main/files/kanonismos-leitourgias.pdf" target="_blank">{% trans '<nobr>Internal Regulation</nobr>' %}</a>
+                <!--<a class="btn-apply" href="http://dev.okthess.gr/static/main/files/kanonismos-leitourgias.pdf" target="_blank">{% trans 'Information - GR' %}</a><a class="btn-apply" href="http://dev.okthess.gr/static/main/files/kanonismos-leitourgias.pdf" target="_blank">{% trans '<nobr>Internal Regulation</nobr>' %}</a>-->
                 <br>
                 <br>
                 <h2>{% trans 'Application form' %}</h2>
+                <br>
                 <form action="{% url 'main:apply' %}" method="post">
                     {% csrf_token %}
                     {{ form.non_field_errors }}
 
-                    <h4>Idea</h4>
+                    <h4>{% trans 'Idea' %}</h4>
                     <div class="form-group">
                         <label for="id_answer_idea_1">
                             {% trans 'Please provide your project/company/team name and web address (if available).' %}
@@ -52,8 +53,8 @@
                             <option value="revenue">Early revenue</option>
                         </select>
                     </div>
-
-                    <h4>Market</h4>
+                    <br>
+                    <h4>{% trans 'Market' %}</h4>
                     <div class="form-group">
                         <label for="id_answer_market_1">
                             {% trans 'Who are your target customers? Briefly describe a typical person who would buy your product/service.' %}
@@ -96,8 +97,8 @@
                         </label>
                         <textarea name="answer_market_7" cols="50" rows="2" class="form-control" required="required" id="id_answer_market_7"></textarea>
                     </div>
-
-                    <h4>Team</h4>
+                    <br>
+                    <h4>{% trans 'Team' %}</h4>
                     <div class="form-group">
                         <label for="id_answer_team_1">
                             {% trans 'How many founders do you have in the team and how many team members in total, including employees (if any)?' %}
@@ -140,8 +141,8 @@
                         </label>
                         <textarea name="answer_team_7" cols="50" rows="3" class="form-control" required="required" id="id_answer_team_7"></textarea>
                     </div>
-
-                    <h4>Support</h4>
+                    <br>
+                    <h4>{% trans 'Support' %}</h4>
                     <div class="form-group">
                         <label for="id_answer_support_1">
                             {% trans 'What are you hoping to get out of the OK!Thess pre-incubation program? What do you need most help with right now?' %}
@@ -166,8 +167,8 @@
                         </label>
                         <textarea name="answer_support_4" cols="50" rows="2" class="form-control" required="required" id="id_answer_support_4"></textarea>
                     </div>
-
-                    <h4>Contact info</h4>
+                    <br>
+                    <h4>{% trans 'Contact info' %}</h4>
                     <div class="form-group">
                         <label for="id_name">
                             {% trans 'Team representative name' %}
