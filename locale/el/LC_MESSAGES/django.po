@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-04 13:05+0200\n"
+"POT-Creation-Date: 2017-12-05 03:26+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,16 +76,14 @@ msgid ""
 msgstr "Όνομα σχεδίου/ομάδας/εταιρείας και ιστοσελίδα (εάν υπάρχει)"
 
 #: .\main\templates\main\apply.html:40
-
 msgid ""
 "Please describe your concept with a one-sentence pitch, as follows: \"We "
 "develop _(a defined offering)_ to help _(a defined audience)_ _(solve a "
-"problem)_ with _(secret sauce)_\". (https://fi.co/madlibs)"
+"problem)_ with _(secret sauce)_\"."
 msgstr ""
 "Περιγράψτε την ιδέα σε μία πρόταση με βάση τον παρακάτω σκελέτο: \" "
-"Aναπτύσουμαι _(Η λύση που αναπτύσεται)_ για να "
-"βοηθήσει _(Οι χρήστες της λύσης)_ να _(Το πρόβλημα που λύνουν)_ με _(Η "
-"καινοτομία που εισάγεται)\". (https://fi.co/madlibs)"
+"Αναπτύσουμε _(Η λύση που αναπτύσεται)_ για να βοηθήσει _(Οι χρήστες της "
+"λύσης)_ να _(Το πρόβλημα που λύνουν)_ με _(Η καινοτομία που εισάγεται)\"."
 
 #: .\main\templates\main\apply.html:46
 msgid "What stage are you at right now?"
@@ -164,10 +162,10 @@ msgstr ""
 #: .\main\templates\main\apply.html:113
 msgid ""
 "If accepted, how many of your team members would make use of the co-working "
-"space at OK!Thess on a daily basis?"
+"space at OK!Thess on a daily or weekly basis?"
 msgstr ""
 "Εάν επιλεγείτε, πόσα απο τα μέλη της ομάδας σας θα κάνουν χρήση του "
-"συνεργατικού χώρου εργασίας σε καθημερινή βάση;"
+"συνεργατικού χώρου εργασίας σε καθημερινή ή εβδομαδιαία βάση;"
 
 #: .\main\templates\main\apply.html:118
 msgid "Contact info"
@@ -485,11 +483,11 @@ msgstr ""
 msgid "Alumni »"
 msgstr "Απόφοιτοι"
 
-#: .\okthess\settings.py:181
+#: .\okthess\settings.py:182
 msgid "Greek"
 msgstr "Ελληνικά"
 
-#: .\okthess\settings.py:182
+#: .\okthess\settings.py:183
 msgid "English"
 msgstr "Αγγλικά"
 
