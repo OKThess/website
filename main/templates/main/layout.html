@@ -44,6 +44,12 @@
     <link rel="stylesheet" href="{% static '/main/css/style.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=greek" rel="stylesheet">
 
+    <script>
+        if (document.location.host.substring(0,3) === 'www') {
+            document.location.href = 'https://okthess.gr/'
+        }
+    </script>
+
 	<script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -57,7 +63,7 @@
 <body>
     <nav class="navbar navbar-default">
         <div class="navbar-header">
-            <a class="navbar-brand" href="{% url 'main:index' %}"><img src="{% static '/main/img/cover.png' %}" alt="Logo"></a>
+            <a class="navbar-brand" href="{% url 'main:index' %}"><img src="{% static '/main/img/logo.png' %}" alt="Logo"></a>
             <a class="btn-red btn-header" href="{% url 'main:apply' %}" role="button">
                 <span class="glyphicon glyphicon-exclamation-sign"></span>{% trans "<strong>Apply</strong> for Winter '18" %}
             </a>
