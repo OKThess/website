@@ -190,8 +190,8 @@ class Application(models.Model):
     phonenumber = models.CharField(max_length=100)
     email = models.EmailField()
     name = models.CharField(max_length=100)
-    answer_idea_1 = models.TextField(null=True, blank=True)
-    answer_idea_2 = models.TextField(null=True, blank=True)
+    answer_idea_1 = models.TextField(default='default')
+    answer_idea_2 = models.TextField(default='default')
 
     IDEA = 'idea'
     PROTOTYPE = 'prototype'
@@ -206,28 +206,27 @@ class Application(models.Model):
     answer_idea_3 = models.CharField(
         choices=STAGE_CHOICES,
         max_length=50,
-        null=True,
-        blank=True,
+        default=IDEA,
     )
 
-    answer_market_1 = models.TextField(null=True, blank=True)
-    answer_market_2 = models.TextField(null=True, blank=True)
-    answer_market_3 = models.TextField(null=True, blank=True)
-    answer_market_4 = models.TextField(null=True, blank=True)
-    answer_market_5 = models.TextField(null=True, blank=True)
-    answer_market_6 = models.TextField(null=True, blank=True)
-    answer_market_7 = models.TextField(null=True, blank=True)
-    answer_team_1 = models.TextField(null=True, blank=True)
-    answer_team_2 = models.TextField(null=True, blank=True)
-    answer_team_3 = models.TextField(null=True, blank=True)
-    answer_team_4 = models.TextField(null=True, blank=True)
-    answer_team_5 = models.TextField(null=True, blank=True)
-    answer_team_6 = models.TextField(null=True, blank=True)
-    answer_team_7 = models.TextField(null=True, blank=True)
-    answer_support_1 = models.TextField(default="default")
-    answer_support_2 = models.TextField(default="default")
-    answer_support_3 = models.TextField(default="default")
-    answer_support_4 = models.TextField(default="default")
+    answer_market_1 = models.TextField(default='default')
+    answer_market_2 = models.TextField(default='default')
+    answer_market_3 = models.TextField(default='default')
+    answer_market_4 = models.TextField(default='default')
+    answer_market_5 = models.TextField(default='default')
+    answer_market_6 = models.TextField(default='default')
+    answer_market_7 = models.TextField(default='default')
+    answer_team_1 = models.TextField(default='default')
+    answer_team_2 = models.TextField(default='default')
+    answer_team_3 = models.TextField(default='default')
+    answer_team_4 = models.TextField(default='default')
+    answer_team_5 = models.TextField(default='default')
+    answer_team_6 = models.TextField(default='default')
+    answer_team_7 = models.TextField(default='default')
+    answer_support_1 = models.TextField(default='default')
+    answer_support_2 = models.TextField(default='default')
+    answer_support_3 = models.TextField(default='default')
+    answer_support_4 = models.TextField(default='default')
 
     def __str__(self):
         return self.name
