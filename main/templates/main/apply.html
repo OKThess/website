@@ -33,20 +33,20 @@
                         <label for="id_answer_idea_1">
                             {% trans 'Please provide your project/company/team name and web address (if available).' %}
                         </label>
-                        <textarea name="answer_idea_1" cols="50" rows="2" class="form-control" id="id_answer_idea_1"></textarea>
+                        <textarea name="answer_idea_1" cols="50" rows="2" class="form-control" required="required" id="id_answer_idea_1"></textarea>
                     </div>
                     <div class="form-group">
                         <label for="id_answer_idea_2">
                             {% trans 'Please describe your concept with a one-sentence pitch, as follows: "We develop _(a defined offering)_ to help _(a defined audience)_ _(solve a problem)_ with _(secret sauce)_".' %}
                         </label>
-                        <textarea name="answer_idea_2" cols="50" rows="2" class="form-control" id="id_answer_idea_2"></textarea>
+                        <textarea name="answer_idea_2" cols="50" rows="2" class="form-control" required="required" id="id_answer_idea_2"></textarea>
                     </div>
                     <div class="form-group">
                         <label for="id_answer_idea_3">
                             {% trans 'What stage are you at right now?' %}
                         </label>
                         <br>
-                        <select name="answer_idea_3" id="id_answer_idea_3">
+                        <select name="answer_idea_3" id="id_answer_idea_3" required="required">
                             <option value="idea">Idea</option>
                             <option value="idea">Idea under development</option>
                             <option value="prototype">Prototype</option>
@@ -60,19 +60,19 @@
                         <label for="id_answer_market_1">
                             {% trans 'Who are your target customers? Briefly describe a typical person who would buy your product/service.' %}
                         </label>
-                        <textarea name="answer_market_1" cols="50" rows="2" class="form-control" id="id_answer_market_1"></textarea>
+                        <textarea name="answer_market_1" cols="50" rows="2" class="form-control" required="required" id="id_answer_market_1"></textarea>
                     </div>
                     <div class="form-group">
                         <label for="id_answer_market_2">
                             {% trans 'What problem or challenge does your product/service solve for such customers?' %}
                         </label>
-                        <textarea name="answer_market_2" cols="50" rows="2" class="form-control" id="id_answer_market_2"></textarea>
+                        <textarea name="answer_market_2" cols="50" rows="2" class="form-control" required="required" id="id_answer_market_2"></textarea>
                     </div>
                     <div class="form-group">
                         <label for="id_answer_market_3">
                             {% trans 'Can you name two or three of your closest competitors, if any exist? Please provide links to their websites.' %}
                         </label>
-                        <textarea name="answer_market_3" cols="50" rows="4" class="form-control" id="id_answer_market_4"></textarea>
+                        <textarea name="answer_market_3" cols="50" rows="4" class="form-control" required="required" id="id_answer_market_4"></textarea>
                     </div>
                     <br>
                     <h4>{% trans 'Team' %}</h4>
@@ -80,13 +80,13 @@
                         <label for="id_answer_team_1">
                             {% trans 'What is your team composition and roles? For every team member please give us: 1) name; 2) description of role in the team; 3) full-time or part-time involvement status; 4) relevant professional experience or educational background; 5) links to online profiles if available.' %}
                         </label>
-                        <textarea name="answer_team_1" cols="50" rows="6" class="form-control" id="id_answer_team_2"></textarea>
+                        <textarea name="answer_team_1" cols="50" rows="6" class="form-control" required="required" id="id_answer_team_2"></textarea>
                     </div>
                     <div class="form-group">
                         <label for="id_answer_team_2">
                             {% trans 'Why did the team start working on this idea? What excites you about it?' %}
                         </label>
-                        <textarea name="answer_team_2" cols="50" rows="2" class="form-control" id="id_answer_team_5"></textarea>
+                        <textarea name="answer_team_2" cols="50" rows="2" class="form-control" required="required" id="id_answer_team_5"></textarea>
                     </div>
                     <br>
                     <h4>{% trans 'Support' %}</h4>
