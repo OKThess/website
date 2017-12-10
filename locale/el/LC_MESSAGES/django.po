@@ -255,7 +255,7 @@ msgid ""
 "participants comprise the wider OK!Thess community, a community that "
 "exchanges knowledge and experiences targeting to create added value for all "
 "of its members."
-msgstr ""
+msgstr "O χώρος του ΟΚ!Τhess χρησιμοποιείται ως χώρος συνάντησης από δημιουργικές ομάδες της πόλης. Οι συναντήσεις των ομάδων είναι ανοιχτές σε κάθε ενδιαφερόμενο που θέλει να παρακολουθήσει. Το σύνολο των μελών των ομάδων αυτών αποτελούν την κοινότητα του ΟΚ!Τhess, μια κοινότητα που ανταλλάσει ανοιχτά γνώσεις και εμπειρίες με στόχο την δημιουργία προστιθέμενης αξίας για όλα τα μέλη της."
 
 #: .\main\templates\main\events.html:76
 msgid ""
