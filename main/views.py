@@ -135,7 +135,7 @@ def events(request):
         elif event.date.month >= 10 and event.date.month <= 12:
             events_archive[event.date.year].setdefault('Oct-Nov-Dev', []).append(event)
     events_archive = OrderedDict(reversed(sorted(events_archive.items())))
-    now = datetime.datetime.now()
+    now = datetime.datetime.now() - datetime.timedelta(1)
     future_events_number = 0
     for event in events_list_all:
         if datetime.datetime.combine(event.date, datetime.time(0, 0)) >= now:
