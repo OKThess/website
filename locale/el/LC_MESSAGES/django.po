@@ -276,7 +276,7 @@ msgstr "Συνεργάτης στα πρώτα βήματα"
 
 #: .\main\templates\main\index.html:14
 msgid ""
-"OK!Thess provides space and and a technical support program for teams of "
+"OK!Thess provides space and technical support program for teams of "
 "people\n"
 "                      with innovative ideas helping them to <strong>Validate "
 "a Business\n"
