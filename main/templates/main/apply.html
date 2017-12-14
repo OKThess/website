@@ -135,6 +135,11 @@
                         <input type="email" name="email" class="form-control" maxlength="254" required="required" id="id_email">
                     </div>
                     <button type="submit" class="btn-form">{% trans 'Submit' %}</button>
+                    <script type="text/javascript">
+                        $( '#$submitButton' ).click(function() {
+                           fbq('track', 'CompleteRegistration');
+                        }
+                    </script>
                 </form>
             </div>
         </div>
