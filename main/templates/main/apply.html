@@ -137,7 +137,9 @@
                     <button type="submit" id="submitButton" class="btn-form">{% trans 'Submit' %}</button>
                     <script type="text/javascript">
                         $( '#$submitButton' ).click(function() {
-                           fbq('track', 'CompleteRegistration');
+                            <script>
+                                fbq('track', 'CompleteRegistration');
+                            </script>
                         }
                     </script>
                 </form>
