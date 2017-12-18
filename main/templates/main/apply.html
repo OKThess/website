@@ -134,7 +134,12 @@
                         </label>
                         <input type="email" name="email" class="form-control" maxlength="254" required="required" id="id_email">
                     </div>
-                    <button type="submit" class="btn-form">{% trans 'Submit' %}</button>
+                    <button type="submit" onClick="fbq('track', 'CompleteRegistration');" class="btn-form">{% trans 'Submit' %}</button>
+                    <script>
+                        function onClick() {
+                        fbq('track', 'CompleteRegistration');
+                        };
+                    </script>
                 </form>
             </div>
         </div>
