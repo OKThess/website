@@ -16,13 +16,13 @@ from .forms import ApplicationForm, ContactForm
 
 def index(request):
     if request.LANGUAGE_CODE == 'en':
-        featured_posts_list = Post.en_objects.filter(is_featured=True)
+        featured_posts_list = Post.en_objects.filter(is_featured=True).order_by('-date')
         for post in featured_posts_list:
             post.title = post.title_en
             post.teaser = post.teaser_en
             post.body = post.body_en
     else:
-        featured_posts_list = Post.el_objects.filter(is_featured=True)
+        featured_posts_list = Post.el_objects.filter(is_featured=True).order_by('-date')
         for post in featured_posts_list:
             post.title = post.title_el
             post.teaser = post.teaser_el
