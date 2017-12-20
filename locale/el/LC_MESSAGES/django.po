@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-05 03:26+0200\n"
+"POT-Creation-Date: 2017-12-20 20:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\main\templates\main\about.html:13 .\main\templates\main\layout.html:75
+#: .\main\templates\main\about.html:13 .\main\templates\main\layout.html:102
 msgid "What we do"
 msgstr "Τι κάνουμε"
 
-#: .\main\templates\main\about.html:19 .\main\templates\main\layout.html:76
+#: .\main\templates\main\about.html:19 .\main\templates\main\layout.html:103
 msgid "How we do it"
 msgstr "Πως το κάνουμε"
 
@@ -30,7 +30,7 @@ msgstr "Πως το κάνουμε"
 msgid "How I can participate"
 msgstr "Πως συμμετέχω"
 
-#: .\main\templates\main\about.html:31 .\main\templates\main\layout.html:78
+#: .\main\templates\main\about.html:31 .\main\templates\main\layout.html:105
 msgid "Space"
 msgstr "Χώρος"
 
@@ -114,7 +114,7 @@ msgstr ""
 "Ποιοί είναι οι σημαντικότεροι ανταγωνιστές σας, εάν υπάρχουν; "
 "(Συμπεριλάβεται link για τις ιστοσελίδες τους)"
 
-#: .\main\templates\main\apply.html:78 .\main\templates\main\layout.html:79
+#: .\main\templates\main\apply.html:78 .\main\templates\main\layout.html:106
 msgid "Team"
 msgstr "Ομάδα"
 
@@ -255,7 +255,13 @@ msgid ""
 "participants comprise the wider OK!Thess community, a community that "
 "exchanges knowledge and experiences targeting to create added value for all "
 "of its members."
-msgstr "O χώρος του ΟΚ!Τhess χρησιμοποιείται ως χώρος συνάντησης από δημιουργικές ομάδες της πόλης. Οι συναντήσεις των ομάδων είναι ανοιχτές σε κάθε ενδιαφερόμενο που θέλει να παρακολουθήσει. Το σύνολο των μελών των ομάδων αυτών αποτελούν την κοινότητα του ΟΚ!Τhess, μια κοινότητα που ανταλλάσει ανοιχτά γνώσεις και εμπειρίες με στόχο την δημιουργία προστιθέμενης αξίας για όλα τα μέλη της."
+msgstr ""
+"O χώρος του ΟΚ!Τhess χρησιμοποιείται ως χώρος συνάντησης από δημιουργικές "
+"ομάδες της πόλης. Οι συναντήσεις των ομάδων είναι ανοιχτές σε κάθε "
+"ενδιαφερόμενο που θέλει να παρακολουθήσει. Το σύνολο των μελών των ομάδων "
+"αυτών αποτελούν την κοινότητα του ΟΚ!Τhess, μια κοινότητα που ανταλλάσει "
+"ανοιχτά γνώσεις και εμπειρίες με στόχο την δημιουργία προστιθέμενης αξίας "
+"για όλα τα μέλη της."
 
 #: .\main\templates\main\events.html:76
 msgid ""
@@ -276,8 +282,7 @@ msgstr "Συνεργάτης στα πρώτα βήματα"
 
 #: .\main\templates\main\index.html:14
 msgid ""
-"OK!Thess provides space and technical support to teams of "
-"people\n"
+"OK!Thess provides space and technical support to teams of people\n"
 "                      with innovative ideas helping them to <strong>Validate "
 "a Business\n"
 "                      Model Fast</strong>, and to <strong>Meet,\n"
@@ -316,47 +321,47 @@ msgstr "Σημαντικά <strong>Νέα</strong>"
 msgid "Upcoming Community <strong>Meetups</strong>"
 msgstr "Επερχόμενες <strong>Ανοιχτές Συναντήσεις</strong>"
 
-#: .\main\templates\main\layout.html:62
+#: .\main\templates\main\layout.html:88
 msgid "<strong>Apply</strong> for Winter '18"
 msgstr "Συμμετοχή"
 
-#: .\main\templates\main\layout.html:73
+#: .\main\templates\main\layout.html:100
 msgid "About"
 msgstr "Σχετικά"
 
-#: .\main\templates\main\layout.html:77
+#: .\main\templates\main\layout.html:104
 msgid "How do I participate?"
 msgstr "Πως συμμετέχω"
 
-#: .\main\templates\main\layout.html:82
+#: .\main\templates\main\layout.html:109
 msgid "Teams"
 msgstr "Ομάδες"
 
-#: .\main\templates\main\layout.html:83
+#: .\main\templates\main\layout.html:110
 msgid "Meetups"
 msgstr "Συναντήσεις"
 
-#: .\main\templates\main\layout.html:84
+#: .\main\templates\main\layout.html:111
 msgid "Blog"
 msgstr "Νέα"
 
-#: .\main\templates\main\layout.html:85
+#: .\main\templates\main\layout.html:112
 msgid "Contact"
 msgstr "Επικοινωνία"
 
-#: .\main\templates\main\layout.html:113
+#: .\main\templates\main\layout.html:140
 msgid "LOCATION"
 msgstr "ΤΟΠΟΘΕΣΙΑ"
 
-#: .\main\templates\main\layout.html:120
+#: .\main\templates\main\layout.html:147
 msgid "MEMBERS"
 msgstr "ΜΕΛΗ"
 
-#: .\main\templates\main\layout.html:153
+#: .\main\templates\main\layout.html:180
 msgid "DONOR"
 msgstr "ΔΩΡΗΤΗΣ"
 
-#: .\main\templates\main\layout.html:157
+#: .\main\templates\main\layout.html:184
 msgid "SPONSORS"
 msgstr "ΧΟΡΗΓΟΙ"
 
@@ -371,14 +376,6 @@ msgid "Alumni network"
 msgstr "Απόφοιτοι"
 
 #: .\main\templates\main\program-alumni.html:34
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                              Our graduates comprise the wider OK!Thess "
-#| "network. They meet at regular intervals to exchange post OK!Thess views "
-#| "and knowledge and they are also invited to help our hosted teams as "
-#| "Mentors.\n"
-#| "                              "
 msgid ""
 "\n"
 "                    Our graduates comprise the wider OK!Thess network. They "
@@ -393,8 +390,6 @@ msgstr ""
 "Μέντορα."
 
 #: .\main\templates\main\program-alumni.html:40
-#, fuzzy
-#| msgid "Hosted Teams"
 msgid "Hosted Teams »"
 msgstr "Φιλοξενούμενες Ομάδες"
 
@@ -469,17 +464,15 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"                               Οι ομάδες επιλέγονται με βάση τη βιωσιμότητα της "
-"επιχειρηματικής πρότασης που καταθέτουν, και μετά απο συνεντεύξη. Το 3-μηνο "
-"πρόγραμμα ξεκινάει με έναν εντατικό μήνα εργαστηρίων. Τους επόμενους 2 μήνες "
-"οι ομάδες δουλεύουν με τους coach του OK!Thess, για την δημιουργία ενός "
-"βιώσιμου επιχειρηματικού μοντέλου. Κάθε κύκλος τελειώνει με την ημέρα "
+"                               Οι ομάδες επιλέγονται με βάση τη βιωσιμότητα "
+"της επιχειρηματικής πρότασης που καταθέτουν, και μετά απο συνεντεύξη. Το 3-"
+"μηνο πρόγραμμα ξεκινάει με έναν εντατικό μήνα εργαστηρίων. Τους επόμενους 2 "
+"μήνες οι ομάδες δουλεύουν με τους coach του OK!Thess, για την δημιουργία "
+"ενός βιώσιμου επιχειρηματικού μοντέλου. Κάθε κύκλος τελειώνει με την ημέρα "
 "επίδειξης των προιόντων και υπηρεσιών που έχουν αναπτυχθεί.\n"
 "                              "
 
 #: .\main\templates\main\program-teams.html:59
-#, fuzzy
-#| msgid "Alumni"
 msgid "Alumni »"
 msgstr "Απόφοιτοι"
 
