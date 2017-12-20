@@ -196,7 +196,7 @@ msgstr "Αναρτήθηκε"
 #: .\main\templates\main\blog.html:24 .\main\templates\main\events.html:79
 #: .\main\templates\main\index.html:78
 msgid "<strong>Read</strong> more »"
-msgstr "Περισσότερα"
+msgstr "Περισσότερα »"
 
 #: .\main\templates\main\blog-archive.html:31
 #: .\main\templates\main\blog.html:32
