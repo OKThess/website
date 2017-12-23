@@ -98,13 +98,13 @@ msgid ""
 "Who are your target customers? Briefly describe a typical person who would "
 "buy your product/service."
 msgstr ""
-"Ποιοί είναι οι πελάτες στόχος; Περιγράψτε συνοπτικά τον τυπικό καταναλωτή "
+"Ποιοί είναι οι πελάτες στόχος; Περιγράψτε συνοπτικά τον τυπικό αγοραστή του προιόντος ή της υπηρεσίας"
 "σας."
 
 #: .\main\templates\main\apply.html:67
 msgid ""
 "What problem or challenge does your product/service solve for such customers?"
-msgstr "Τι πρόβλημα λύνει το προιόν σας, για τον παραπάνω καταναλωτή;"
+msgstr "Τι πρόβλημα λύνει το προιόν σας, για τον παραπάνω αγοραστή;"
 
 #: .\main\templates\main\apply.html:73
 msgid ""
@@ -112,7 +112,7 @@ msgid ""
 "provide links to their websites."
 msgstr ""
 "Ποιοί είναι οι σημαντικότεροι ανταγωνιστές σας, εάν υπάρχουν; "
-"(Συμπεριλάβεται link για τις ιστοσελίδες τους)"
+"(Συμπεριλάβετε link για τις ιστοσελίδες τους)"
 
 #: .\main\templates\main\apply.html:78 .\main\templates\main\layout.html:106
 msgid "Team"
@@ -147,7 +147,7 @@ msgstr ""
 
 #: .\main\templates\main\apply.html:101
 msgid "Have you been through an accelerator or similar program before?"
-msgstr "Έχετε θητεύσει σε παρόμοιο πρόγραμμα στο παρελθόν;"
+msgstr "Έχετε συμμετάσχει σε παρόμοιο πρόγραμμα στο παρελθόν;"
 
 #: .\main\templates\main\apply.html:107
 msgid ""
@@ -181,7 +181,7 @@ msgstr "Τηλεφωνικός αριθμός εκπροσώπου ομάδας"
 
 #: .\main\templates\main\apply.html:133
 msgid "Team representative email"
-msgstr "email εκπροσώπου ομάδας"
+msgstr "Εmail εκπροσώπου ομάδας"
 
 #: .\main\templates\main\apply.html:137
 msgid "Submit"
