@@ -16,17 +16,8 @@ class ApplicationFormTests(TestCase):
             'answer_market_1': fake.sentence(nb_words=3, ext_word_list=None),
             'answer_market_2': fake.sentence(nb_words=3, ext_word_list=None),
             'answer_market_3': fake.sentence(nb_words=3, ext_word_list=None),
-            'answer_market_4': fake.sentence(nb_words=3, ext_word_list=None),
-            'answer_market_5': fake.sentence(nb_words=3, ext_word_list=None),
-            'answer_market_6': fake.sentence(nb_words=3, ext_word_list=None),
-            'answer_market_7': fake.sentence(nb_words=3, ext_word_list=None),
             'answer_team_1': fake.sentence(nb_words=3, ext_word_list=None),
             'answer_team_2': fake.sentence(nb_words=3, ext_word_list=None),
-            'answer_team_3': fake.sentence(nb_words=3, ext_word_list=None),
-            'answer_team_4': fake.sentence(nb_words=3, ext_word_list=None),
-            'answer_team_5': fake.sentence(nb_words=3, ext_word_list=None),
-            'answer_team_6': fake.sentence(nb_words=3, ext_word_list=None),
-            'answer_team_7': fake.sentence(nb_words=3, ext_word_list=None),
             'answer_support_1': fake.sentence(nb_words=3, ext_word_list=None),
             'answer_support_2': fake.sentence(nb_words=3, ext_word_list=None),
             'answer_support_3': fake.sentence(nb_words=3, ext_word_list=None),
@@ -43,17 +34,8 @@ class ApplicationFormTests(TestCase):
         self.assertEqual(form.cleaned_data['answer_market_1'], form_data['answer_market_1'])
         self.assertEqual(form.cleaned_data['answer_market_2'], form_data['answer_market_2'])
         self.assertEqual(form.cleaned_data['answer_market_3'], form_data['answer_market_3'])
-        self.assertEqual(form.cleaned_data['answer_market_4'], form_data['answer_market_4'])
-        self.assertEqual(form.cleaned_data['answer_market_5'], form_data['answer_market_5'])
-        self.assertEqual(form.cleaned_data['answer_market_6'], form_data['answer_market_6'])
-        self.assertEqual(form.cleaned_data['answer_market_7'], form_data['answer_market_7'])
         self.assertEqual(form.cleaned_data['answer_team_1'], form_data['answer_team_1'])
         self.assertEqual(form.cleaned_data['answer_team_2'], form_data['answer_team_2'])
-        self.assertEqual(form.cleaned_data['answer_team_3'], form_data['answer_team_3'])
-        self.assertEqual(form.cleaned_data['answer_team_4'], form_data['answer_team_4'])
-        self.assertEqual(form.cleaned_data['answer_team_5'], form_data['answer_team_5'])
-        self.assertEqual(form.cleaned_data['answer_team_6'], form_data['answer_team_6'])
-        self.assertEqual(form.cleaned_data['answer_team_7'], form_data['answer_team_7'])
         self.assertEqual(form.cleaned_data['answer_support_1'], form_data['answer_support_1'])
         self.assertEqual(form.cleaned_data['answer_support_2'], form_data['answer_support_2'])
         self.assertEqual(form.cleaned_data['answer_support_3'], form_data['answer_support_3'])
@@ -72,17 +54,8 @@ class ApplicationFormTests(TestCase):
             'answer_market_1': fake.sentence(nb_words=3, ext_word_list=None),
             'answer_market_2': fake.sentence(nb_words=3, ext_word_list=None),
             'answer_market_3': fake.sentence(nb_words=3, ext_word_list=None),
-            'answer_market_4': fake.sentence(nb_words=3, ext_word_list=None),
-            'answer_market_5': fake.sentence(nb_words=3, ext_word_list=None),
-            'answer_market_6': fake.sentence(nb_words=3, ext_word_list=None),
-            'answer_market_7': fake.sentence(nb_words=3, ext_word_list=None),
             'answer_team_1': fake.sentence(nb_words=3, ext_word_list=None),
             'answer_team_2': fake.sentence(nb_words=3, ext_word_list=None),
-            'answer_team_3': fake.sentence(nb_words=3, ext_word_list=None),
-            'answer_team_4': fake.sentence(nb_words=3, ext_word_list=None),
-            'answer_team_5': fake.sentence(nb_words=3, ext_word_list=None),
-            'answer_team_6': fake.sentence(nb_words=3, ext_word_list=None),
-            'answer_team_7': fake.sentence(nb_words=3, ext_word_list=None),
             'answer_support_1': fake.sentence(nb_words=3, ext_word_list=None),
             'answer_support_2': fake.sentence(nb_words=3, ext_word_list=None),
             'answer_support_3': fake.sentence(nb_words=3, ext_word_list=None),
@@ -104,17 +77,8 @@ class ApplicationFormTests(TestCase):
             'answer_market_1': fake.sentence(nb_words=3, ext_word_list=None),
             'answer_market_2': fake.sentence(nb_words=3, ext_word_list=None),
             'answer_market_3': fake.sentence(nb_words=3, ext_word_list=None),
-            'answer_market_4': fake.sentence(nb_words=3, ext_word_list=None),
-            'answer_market_5': fake.sentence(nb_words=3, ext_word_list=None),
-            'answer_market_6': fake.sentence(nb_words=3, ext_word_list=None),
-            'answer_market_7': fake.sentence(nb_words=3, ext_word_list=None),
             'answer_team_1': fake.sentence(nb_words=3, ext_word_list=None),
             'answer_team_2': fake.sentence(nb_words=3, ext_word_list=None),
-            'answer_team_3': fake.sentence(nb_words=3, ext_word_list=None),
-            'answer_team_4': fake.sentence(nb_words=3, ext_word_list=None),
-            'answer_team_5': fake.sentence(nb_words=3, ext_word_list=None),
-            'answer_team_6': fake.sentence(nb_words=3, ext_word_list=None),
-            'answer_team_7': fake.sentence(nb_words=3, ext_word_list=None),
             'answer_support_1': fake.sentence(nb_words=3, ext_word_list=None),
             'answer_support_2': fake.sentence(nb_words=3, ext_word_list=None),
             'answer_support_3': fake.sentence(nb_words=3, ext_word_list=None),
