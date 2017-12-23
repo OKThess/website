@@ -264,6 +264,7 @@ def contact(request):
 def apply(request):
     if request.method == 'POST':
         form = ApplicationForm(request.POST)
+        print('error:', form.errors)
         if form.is_valid():
             form.save()
             messages.info(request, 'Your application has been submitted. Thank you!')
