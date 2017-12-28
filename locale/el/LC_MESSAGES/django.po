@@ -367,13 +367,11 @@ msgstr "ΧΟΡΗΓΟΙ"
 
 #: .\main\templates\main\program-alumni.html:13
 msgid "Graduated Teams"
-msgstr ""
+msgstr "Απόφοιτοι"
 
 #: .\main\templates\main\program-alumni.html:32
-#, fuzzy
-#| msgid "Alumni"
 msgid "Alumni network"
-msgstr "Απόφοιτοι"
+msgstr "Δίκτυο αποφοίτων"
 
 #: .\main\templates\main\program-alumni.html:34
 msgid ""
