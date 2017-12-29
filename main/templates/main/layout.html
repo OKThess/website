@@ -48,6 +48,9 @@
         if (document.location.host.substring(0,3) === 'www') {
             document.location.href = 'https://okthess.gr/'
         }
+        if (document.location.protocol === 'http:') {
+            document.location.href = 'https://okthess.gr' + document.location.pathname;
+        }
     </script>
 
 	<script>
@@ -58,7 +61,7 @@
         ga('create', 'UA-49294327-5', 'auto');
         ga('send', 'pageview');
     </script>
-    
+
     <!-- Facebook Pixel Code -->
     <script>
       !function(f,b,e,v,n,t,s)
@@ -201,7 +204,7 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <script>
         // show footer and contact map
