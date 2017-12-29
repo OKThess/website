@@ -19,6 +19,8 @@ class ProgramViewTests(TestCase):
         activate('en')
         url = reverse('main:program_teams')
         response = self.client.get(url)
+        print('response:', response)
+        print('response:', response.__dict__)
         self.assertContains(response, 'OK!Thess')
         self.assertContains(response, new_team.name)
         self.assertContains(response, new_team.description_en)
