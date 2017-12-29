@@ -264,9 +264,15 @@ def contact(request):
 def apply(request):
     if request.method == 'POST':
         form = ApplicationForm(request.POST)
-        print('error:', form.errors)
         if form.is_valid():
             form.save()
+            applicant_email = form.cleaned_data['email']
+            send_mail(
+                'OK!Thess application submission',
+                render_to_string('main/application-email.txt'),
+                settings.DEFAULT_FROM_EMAIL,
+                [applicant_email],
+            )
             messages.info(request, 'Your application has been submitted. Thank you!')
             return HttpResponseRedirect(reverse('main:apply'))
         else:

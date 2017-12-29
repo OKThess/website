@@ -10,7 +10,7 @@ class IndexViewsTest(TestCase):
         """
         activate('en')
         url = reverse('main:index')
-        response = self.client.get(url)
+        response = self.client.get(url, follow=True)
         self.assertContains(response, 'OK!Thess')
 
     def test_about(self):
@@ -19,7 +19,7 @@ class IndexViewsTest(TestCase):
         """
         activate('en')
         url = reverse('main:about')
-        response = self.client.get(url)
+        response = self.client.get(url, follow=True)
         self.assertContains(response, 'OK!Thess')
 
     def test_contact(self):
@@ -28,5 +28,5 @@ class IndexViewsTest(TestCase):
         """
         activate('en')
         url = reverse('main:contact')
-        response = self.client.get(url)
+        response = self.client.get(url, follow=True)
         self.assertContains(response, 'OK!Thess')
