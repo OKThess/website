@@ -237,7 +237,7 @@ if not DEBUG:
     X_FRAME_OPTIONS = 'DENY'
     SESSION_COOKIE_SECURE = True
     CSRF_COOKIE_SECURE = True
-    SECURE_SSL_REDIRECT = True
+    # SECURE_SSL_REDIRECT = True
 
 
 # Internationalization and Translation
