@@ -38,7 +38,7 @@ class ProgramViewTests(TestCase):
         )
         activate('en')
         url = reverse('main:program_mentors')
-        response = self.client.get(url)
+        response = self.client.get(url, follow=True)
         self.assertContains(response, 'OK!Thess')
         self.assertContains(response, new_mentor.name)
         self.assertContains(response, new_mentor.description_en)
