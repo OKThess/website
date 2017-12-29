@@ -90,5 +90,7 @@ class ApplicationFormTests(TestCase):
         activate('en')
         url = reverse('main:apply')
         response = self.client.post(url, form_data, follow=True)
+        print('response:', response)
+        print('response:', response.__dict__)
         self.assertEquals(response.status_code, 200)
         self.assertContains(response, 'Your application has been submitted. Thank you!')
