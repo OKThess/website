@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-20 20:09+0200\n"
+"POT-Creation-Date: 2018-01-09 03:10+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\main\templates\main\about.html:13 .\main\templates\main\layout.html:102
+#: .\main\templates\main\about.html:13 .\main\templates\main\layout.html:105
 msgid "What we do"
 msgstr "Τι κάνουμε"
 
-#: .\main\templates\main\about.html:19 .\main\templates\main\layout.html:103
+#: .\main\templates\main\about.html:19 .\main\templates\main\layout.html:106
 msgid "How we do it"
 msgstr "Πως το κάνουμε"
 
@@ -30,7 +30,7 @@ msgstr "Πως το κάνουμε"
 msgid "How I can participate"
 msgstr "Πως συμμετέχω"
 
-#: .\main\templates\main\about.html:31 .\main\templates\main\layout.html:105
+#: .\main\templates\main\about.html:31 .\main\templates\main\layout.html:108
 msgid "Space"
 msgstr "Χώρος"
 
@@ -98,8 +98,8 @@ msgid ""
 "Who are your target customers? Briefly describe a typical person who would "
 "buy your product/service."
 msgstr ""
-"Ποιοί είναι οι πελάτες στόχος; Περιγράψτε συνοπτικά τον τυπικό αγοραστή του προιόντος ή της υπηρεσίας"
-"σας."
+"Ποιοί είναι οι πελάτες στόχος; Περιγράψτε συνοπτικά τον τυπικό αγοραστή του "
+"προιόντος ή της υπηρεσίαςσας."
 
 #: .\main\templates\main\apply.html:67
 msgid ""
@@ -111,10 +111,10 @@ msgid ""
 "Can you name two or three of your closest competitors, if any exist? Please "
 "provide links to their websites."
 msgstr ""
-"Ποιοί είναι οι σημαντικότεροι ανταγωνιστές σας, εάν υπάρχουν; "
-"(Συμπεριλάβετε link για τις ιστοσελίδες τους)"
+"Ποιοί είναι οι σημαντικότεροι ανταγωνιστές σας, εάν υπάρχουν; (Συμπεριλάβετε "
+"link για τις ιστοσελίδες τους)"
 
-#: .\main\templates\main\apply.html:78 .\main\templates\main\layout.html:106
+#: .\main\templates\main\apply.html:78 .\main\templates\main\layout.html:109
 msgid "Team"
 msgstr "Ομάδα"
 
@@ -321,47 +321,47 @@ msgstr "Σημαντικά <strong>Νέα</strong>"
 msgid "Upcoming Community <strong>Meetups</strong>"
 msgstr "Επερχόμενες <strong>Ανοιχτές Συναντήσεις</strong>"
 
-#: .\main\templates\main\layout.html:88
-msgid "<strong>Apply</strong> for Winter '18"
+#: .\main\templates\main\layout.html:91
+msgid "<strong>Apply</strong> for Spring '18"
 msgstr "Συμμετοχή"
 
-#: .\main\templates\main\layout.html:100
+#: .\main\templates\main\layout.html:103
 msgid "About"
 msgstr "Σχετικά"
 
-#: .\main\templates\main\layout.html:104
+#: .\main\templates\main\layout.html:107
 msgid "How do I participate?"
 msgstr "Πως συμμετέχω"
 
-#: .\main\templates\main\layout.html:109
+#: .\main\templates\main\layout.html:112
 msgid "Teams"
 msgstr "Ομάδες"
 
-#: .\main\templates\main\layout.html:110
+#: .\main\templates\main\layout.html:113
 msgid "Meetups"
 msgstr "Συναντήσεις"
 
-#: .\main\templates\main\layout.html:111
+#: .\main\templates\main\layout.html:114
 msgid "Blog"
 msgstr "Νέα"
 
-#: .\main\templates\main\layout.html:112
+#: .\main\templates\main\layout.html:115
 msgid "Contact"
 msgstr "Επικοινωνία"
 
-#: .\main\templates\main\layout.html:140
+#: .\main\templates\main\layout.html:143
 msgid "LOCATION"
 msgstr "ΤΟΠΟΘΕΣΙΑ"
 
-#: .\main\templates\main\layout.html:147
+#: .\main\templates\main\layout.html:150
 msgid "MEMBERS"
 msgstr "ΜΕΛΗ"
 
-#: .\main\templates\main\layout.html:180
+#: .\main\templates\main\layout.html:183
 msgid "DONOR"
 msgstr "ΔΩΡΗΤΗΣ"
 
-#: .\main\templates\main\layout.html:184
+#: .\main\templates\main\layout.html:187
 msgid "SPONSORS"
 msgstr "ΧΟΡΗΓΟΙ"
 
