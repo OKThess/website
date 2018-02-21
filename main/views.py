@@ -31,6 +31,7 @@ def index(request):
     return render(request, 'main/index.html', {
         'featured_posts_list': featured_posts_list,
         'events_list': events_list,
+        'debug': settings.DEBUG,
     })
 
 
