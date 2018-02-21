@@ -38,6 +38,10 @@ ALLOWED_HOSTS = [
     '35.158.123.45',
 ]
 
+INTERNAL_IPS = (
+    '127.0.0.1',
+)
+
 # ElasticBeanstalk healthcheck sends requests with host header = internal ip
 # So we detect if we are in elastic beanstalk, and add the instances private ip address
 private_ip = helpers.get_linux_ec2_private_ip()
