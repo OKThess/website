@@ -134,11 +134,16 @@
                         </label>
                         <input type="email" name="email" class="form-control" maxlength="254" required="required" id="id_email">
                     </div>
-                    <button type="submit" onClick="fbq('track', 'CompleteRegistration');" class="btn-form">{% trans 'Submit' %}</button>
-                    <script>
-                        function onClick() {
-                        fbq('track', 'CompleteRegistration');
-                        };
+                    <button id="register" type="submit" class="btn-form">{% trans 'Submit' %}</button>
+                    <script type="text/javascript">
+                        var button = document.getElementById('register');
+                        button.addEventListener(
+                        'click', 
+                        function() { 
+                          fbq('track', 'CompleteRegistration');          
+                        },
+                        false
+                        );
                     </script>
                 </form>
             </div>
