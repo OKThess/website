@@ -165,13 +165,13 @@ def blog(request):
             post.teaser = post.teaser_el
             post.body = post.body_el
     if request.LANGUAGE_CODE == 'en':
-        posts_list_all = Post.en_objects.all()
+        posts_list_all = Post.en_objects.all().order_by('-date')
         for post in posts_list_all:
             post.title = post.title_en
             post.teaser = post.teaser_en
             post.body = post.body_en
     else:
-        posts_list_all = Post.el_objects.all()
+        posts_list_all = Post.el_objects.all().order_by('-date')
         for post in posts_list_all:
             post.title = post.title_el
             post.teaser = post.teaser_el
