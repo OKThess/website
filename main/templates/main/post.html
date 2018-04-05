@@ -9,7 +9,7 @@
     {% get_current_language as LANGUAGE_CODE %}
     <meta property="og:title" content="{{ post.title }} | OK!Thess blog">
     <meta property="og:description" content="{{ post.teaser }}">
-    <meta property="og:url" content="{% url 'main:blog_post' post.slug %}">
+    <meta property="og:url" content="https://okthess.gr{% url 'main:blog_post' post.slug %}">
     <meta property="og:image" content="{{ post.image }}">
     <meta property="og:type" content="article">
     <meta property="article:published_time" content="2017-08-17T22:03:38+00:00">
