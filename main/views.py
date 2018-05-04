@@ -224,10 +224,12 @@ def blog_archives(request, archive_year, archive_month):
         post_date = post.date.replace(day=1)
         if not post_date in archives_list:
             archives_list.append(post_date)
+    resources_list = Resource.objects.filter(is_pinned=True)
     return render(request, 'main/blog-archive.html', {
         'posts_list': posts_list,
         'archives_list': archives_list,
         'archive_year': archive_year,
+        'resources_list': resources_list,
     })
 
 
