@@ -15,7 +15,11 @@
                         <div class="row">
                           <div class="col-md-3">
                             <div class="events-single-data">
+                              {% if event.date_end %}
+                              <div class="row events-single-data-date">{{ event.date }} - {{ event.date_end }}</div>
+                              {% else %}
                               <div class="row events-single-data-date">{{ event.date }} - {{ event.time_start }}</div>
+                              {% endif %}
                               <div class="row"><a href="{{ event.link }}"><img src="{{ event.image }}"></a></div>
                               <div class="row events-single-data-organizer">Organized by: {{ event.organizer }}</div>
                             </div>
