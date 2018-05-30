@@ -98,6 +98,7 @@ class Event(models.Model):
     link = models.URLField()
     time_start = models.TimeField()
     time_end = models.TimeField()
+    date_end = models.DateField(null=True, blank=True, default=None)
     organizer = models.CharField(max_length=200)
     organizer_link = models.URLField()
     description = models.TextField(blank=True)
