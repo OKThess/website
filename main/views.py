@@ -292,3 +292,7 @@ def apply(request):
             'form': form,
             'application_content': application_content,
         })
+
+
+def weekends(request):
+    return render(request, 'main/weekends.html')

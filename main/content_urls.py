@@ -23,6 +23,9 @@ urlpatterns = [
     # /events/
     url(r'^events/$', views.events, name='events'),
 
+    # /weekends/
+    url(r'^weekends/$', views.weekends, name='weekends'),
+
     # /blog/
     url(r'^blog/$', views.blog, name='blog'),
 
