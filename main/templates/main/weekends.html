@@ -1,0 +1,137 @@
+{% extends 'main/layout.html' %}
+
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+    <div class="container weekends">
+        <div class="row">
+            <div class="col-md-3 weekends-sidebar">
+                <div>
+                    <ol>
+                        <li><a href="#overview">Overview</a></li>
+                        <li><a href="#speakers">Speakers</a></li>
+                        <li><a href="#schedule">Schedule</a></li>
+                        <li><a href="#judges">Judges</a></li>
+                        <li><a href="#prizes">Prizes</a></li>
+                        <li><a href="#sponsors">Sponsors</a></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h1>«Βιώσιμη αστική μετακίνηση / Εργαλεία & λύσεις»</h1>
+                <div class="weekends-subtitle">15 - 17 Ιουνίου 2018</div>
+                <div id="overview">
+                    <h3>
+                        Start Now
+                    </h3>
+                    <p>
+                        Do you have a transport related idea you'd like to pursue or a problem you'd like to solve but
+                        don't know where to start or who to start with?
+                    </p>
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48457.26875562999!2d22.9594983!3d40.61710485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x82bc16c6e0e18389!2sOK*21Thess!5e0!3m2!1sen!2sgr!4v1528134327069" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                    <p>
+                        Startup Weekend is the place to look for a team, create a prototype of your idea, validate your
+                        business idea, and receive feedback from experienced coming from transport and business
+                        entrepreneurs, all in one weekend.
+                    </p>
+
+                    <strong>What do you need to bring?</strong>
+                    <p>
+                        Lots of energy! You'll pitch your own idea or listen to others, then vote on the most interesting
+                        ideas and form teams with diverse skill sets. You can come with friends, but you’ll get the full
+                        experience if you participate in separate teams. Remember, it’s all about the team.
+                    </p>
+
+                    <p>
+                        Your idea should be something you have not previously worked on. The idea you pitch and the
+                        problem you set out to solve can span transport related issued. Over the course of the weekend
+                        you'll be challenged to create a prototype of your MVP, or minimum viable product, that fits the
+                        needs of your target customer. You'll get feedback, iterate, and likely pivot your approach
+                        entirely! Important: You cannot have worked previously on your idea.
+                    </p>
+
+                    <p>
+                        SUMPs Up Startup Weekend is a full weekend long experience. Your ticket includes:
+                    </p>
+                    <ul>
+                        <li>7 full (and delicious) meals over the course of the weekend</li>
+                        <li>Benefits and discounts from our global partners</li>
+                        <li>One-on-one time with amazing mentors</li>
+                        <li>A new network of  transport planners,developers, designers, and entrepreneurs eager, like you, to change the world.</li>
+                        <li>All the internet and coffee you can consume.</li>
+                    </ul>
+
+                    <p>
+                        Don’t wait any longer and join the SUMPs Up Startup Weekend movement!
+                        No talk, all action!
+                    </p>
+                </div>
+                <div id="speakers">
+                    <h2>Speakers</h2>
+                </div>
+                <div id="schedule">
+                    <h2>Schedule</h2>
+                    <div class="weekends-schedule-header">Friday February 23rd</div>
+                    <div class="weekends-schedule-content">
+                        <div class="weekends-schedule-content-item">
+                            <div class="weekends-schedule-content-item-time">6:30pm</div>
+                            <div class="weekends-schedule-content-item-what">Registration</div>
+                            <div class="weekends-schedule-content-item-text">Προσέλευση (welcome pack) – επεξήγηση προγράμματος</div>
+                        </div>
+                        <div class="weekends-schedule-content-item">
+                            <div class="weekends-schedule-content-item-time">6:30pm</div>
+                            <div class="weekends-schedule-content-item-what">Dinner & Networking</div>
+                            <div class="weekends-schedule-content-item-text">Εναρκτήρια ομιλία που θέτει τα προβλήματα και τα κριτήρια αξιολόγησης</div>
+                        </div>
+                        <div class="weekends-schedule-content-item">
+                            <div class="weekends-schedule-content-item-time">6:30pm</div>
+                            <div class="weekends-schedule-content-item-what">Welcome & Speakers</div>
+                            <div class="weekends-schedule-content-item-text">1’ pitching ιδεών (+ ανάγκες στελέχωσης)</div>
+                        </div>
+                        <div class="weekends-schedule-content-item">
+                            <div class="weekends-schedule-content-item-time">6:30pm</div>
+                            <div class="weekends-schedule-content-item-what">Pitches Start</div>
+                            <div class="weekends-schedule-content-item-text">Form teams - Teams announcement</div>
+                        </div>
+                        <div class="weekends-schedule-content-item">
+                            <div class="weekends-schedule-content-item-time">6:30pm</div>
+                            <div class="weekends-schedule-content-item-what">Voting</div>
+                            <div class="weekends-schedule-content-item-text">Mentoring (Appointments)</div>
+                        </div>
+                        <div class="weekends-schedule-content-item">
+                            <div class="weekends-schedule-content-item-time">6:30pm</div>
+                            <div class="weekends-schedule-content-item-what">Form Teams</div>
+                            <div class="weekends-schedule-content-item-text">Dinner</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="judges">
+                    <h2>Judges</h2>
+                </div>
+                <div id="prizes">
+                    <h2>Prizes</h2>
+                    <ul>
+                        <li>1<sup>ο</sup> Βραβείο – 1000€</li>
+                        <li>2<sup>ο</sup> Βραβείο – 500€</li>
+                        <li>3<sup>ο</sup> Βραβείο – 200€</li>
+                    </ul>
+                    <h2>Κριτήρια αξιολόγησης</h2>
+                    <ul>
+                        <li>Feasibility</li>
+                        <li>Usability</li>
+                        <li>Prototype</li>
+                        <li>Complexity</li>
+                        <li>Interoperability</li>
+                        <li>Maintainability</li>
+                    </ul>
+                </div>
+                <div id="sponsors">
+                    <h2>Sponsors</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
