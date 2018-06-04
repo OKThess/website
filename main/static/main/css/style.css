@@ -1326,3 +1326,43 @@ textarea {
 #contact-map-container {
   height: 500px;
 }
+
+/* weekends */
+.weekends-sidebar {
+  position: sticky;
+  top: 40px;
+}
+
+.weekends-schedule-header {
+  background: #d82c20;
+  padding: 17px 30px 15px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.weekends-schedule-content-item {
+  padding: 12px 30px;
+  display: flex;
+}
+
+.weekends-schedule-content-item:first-child {
+  margin-top: 10px;
+}
+
+.weekends-schedule-content-item-time {
+  display: flex;
+  font-weight: 500;
+  width: 15%;
+}
+
+.weekends-schedule-content-item-what {
+  display: flex;
+  width: 20%;
+  color: #4a4a4a;
+}
+
+.weekends-schedule-content-item-text {
+  display: flex;
+  width: 55%;
+  color: #767676;
+}
