@@ -138,8 +138,12 @@ def events(request):
     now = datetime.datetime.now() - datetime.timedelta(1)
     future_events_number = 0
     for event in events_list_all:
-        if datetime.datetime.combine(event.date, datetime.time(0, 0)) >= now:
-            future_events_number += 1
+        if event.date_end:
+            if datetime.datetime.combine(event.date_end, datetime.time(0, 0)) >= now:
+                future_events_number += 1
+        else:
+            if datetime.datetime.combine(event.date, datetime.time(0, 0)) >= now:
+                future_events_number += 1
     events_list_future = reversed(Event.objects.order_by('-date')[:future_events_number])
     events_list_past = Event.objects.order_by('-date')[future_events_number:10]
     meetups = Meetup.objects.order_by('name')
