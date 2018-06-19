@@ -1328,9 +1328,29 @@ textarea {
 }
 
 /* weekends */
+
 .weekends-sidebar {
   position: sticky;
   top: 40px;
+}
+
+.weekends-mentor {
+  padding-left: 0px;
+  margin: 0px;
+}
+
+.weekends-mentor-pic {
+  float: left;
+  max-width: 100%;
+  height: auto;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.weekends-mentor-bio {
+  float: right;
+  padding: 0;
+  margin: 0;
 }
 
 .weekends-schedule-header {
