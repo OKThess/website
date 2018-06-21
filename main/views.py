@@ -11,7 +11,7 @@ from django.template.loader import render_to_string
 
 from okthess import settings
 from .models import Team, Mentor, Meetup, Coworking, Post, Event, About, OkthessMeetup, ResourceCategory, Resource, ApplyText, Partner
-from .forms import ApplicationForm, ContactForm
+from .forms import ApplicationForm, ContactForm, WeekendApplicationForm
 
 
 def index(request):
@@ -82,7 +82,8 @@ def program_mentors(request):
     if request.LANGUAGE_CODE == 'en':
         mentors_list = Mentor.en_objects.order_by('name')
         for mentor in mentors_list:
-            mentor.description = mentor.description_en
+            if request.LANGUAGE_CODE == 'en':
+                mentor.description = mentor.description_en
     else:
         mentors_list = Mentor.el_objects.order_by('name')
         for mentor in mentors_list:
@@ -299,4 +300,23 @@ def apply(request):
 
 
 def weekends(request):
-    return render(request, 'main/weekends.html')
+    if request.method == 'POST':
+        form = WeekendApplicationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            applicant_email = form.cleaned_data['email']
+            send_mail(
+                'Your application was received succesfully',
+                render_to_string('main/application-email.txt'),
+                settings.DEFAULT_FROM_EMAIL,
+                [applicant_email],
+            )
+            messages.info(request, 'Your application has been submitted. Thank you!')
+            return HttpResponseRedirect(reverse('main:weekends'))
+        else:
+            return HttpResponse('Application form submission is invalid.')
+    else:
+        form = WeekendApplicationForm()
+        return render(request, 'main/weekends.html', {
+            'form': form,
+        })

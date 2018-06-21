@@ -18,7 +18,7 @@
                     </ol>
                 </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-9">
                 <h1>Ξεκίνα τώρα</h1>
                 <div class="weekends-subtitle">15 - 17 Ιουνίου 2018</div>
                 <div id="overview">
@@ -119,7 +119,57 @@
                 <div id="sponsors">
                     <h2>Sponsors</h2>
                 </div>
+                <div class="form">
+                  <form action="{% url 'main:weekends' %}" method="post">
+                      {% csrf_token %}
+                      {{ form.non_field_errors }}
+
+                      <h4>{% trans 'Application Form' %}</h4>
+                      <div class="form-group">
+                          <label for="id_first_name">
+                              {% trans 'First Name' %}
+                          </label>
+                          <textarea name="first_name" cols="50" rows="2" class="form-control" required="required" id="id_first_name"></textarea>
+                      </div>
+                      <div class="form-group">
+                          <label for="id_last_name">
+                              {% trans 'Last Name' %}
+                          </label>
+                          <textarea name="last_name" cols="50" rows="2" class="form-control" required="required" id="id_last_name"></textarea>
+                      </div>
+                      <div class="form-group">
+                          <label for="id_email">
+                              {% trans 'Your contact email' %}
+                          </label>
+                          <input type="email" name="email" class="form-control" maxlength="100" required="required" id="id_email">
+                      </div>
+                      <div class="form-group">
+                          <label for="id_specialization">
+                              {% trans 'What\'s your field of specialization i.e. Transport engineer, developer etc' %}
+                          </label>
+                          <textarea name="specialization" cols="50" rows="2" class="form-control" required="required" id="specialization"></textarea>
+                      </div>
+                      <div class="form-group">
+                          <label for="id_accept_terms">
+                              {% trans 'Read and accept the weekend\'s terms before booking' %}
+                          </label>
+                          <input type="checkbox" name="accept_terms" class="form-control" required="required" id="id_accept_terms">
+                      </div>
+                      <button id="register" type="submit" class="btn-form" onclick="ga('send', 'event', 'weekend', 'submission', {'NonInteraction': 1});">{% trans 'Submit' %}</button>
+                      <script type="text/javascript">
+                          var button = document.getElementById('register');
+                          button.addEventListener(
+                          'click',
+                          function() {
+                            fbq('track', 'WeekendRegistration');
+                          },
+                          false
+                          );
+                      </script>
+                  </form>
+                </div>
             </div>
+
         </div>
     </div>
 {% endblock %}

@@ -1,6 +1,6 @@
 from django import forms
 
-from .models import Application
+from .models import Application, WeekendApplication
 
 
 class ApplicationForm(forms.ModelForm):
@@ -29,3 +29,14 @@ class ContactForm(forms.Form):
     name = forms.CharField(max_length=200)
     message = forms.CharField(max_length=20000)
     email = forms.EmailField()
+
+class WeekendApplicationForm(forms.ModelForm):
+    class Meta:
+        model = WeekendApplication
+        fields = [
+            'first_name',
+            'last_name',
+            'email',
+            'specialization',
+            'accept_terms',
+        ]
