@@ -228,7 +228,7 @@ msgstr ""
 "<address>\n"
 "<abbr title=\"Οικοσύστημα Καινοτομίας Θεσσαλονίκης\">OK!THESS</abbr><br>\n"
 "<small>Διεύθυνση:</small> Κομοτηνής 2, 54655<br>\n"
-"<small>Είσοδος:</small> Κυδωνιών &amp; Μαρίας Κάλλας<br>Thessaloniki, "
+"<small>Είσοδος:</small> Κυδωνιών &amp; Μαρίας Κάλλας<br>Θεσσαλονίκη, "
 "Ελλάδα.\n"
 "</address>\n"
 
