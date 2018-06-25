@@ -99,12 +99,12 @@ msgid ""
 "buy your product/service."
 msgstr ""
 "Ποιοί είναι οι πελάτες στόχος; Περιγράψτε συνοπτικά τον τυπικό αγοραστή του "
-"προιόντος ή της υπηρεσίαςσας."
+"προϊόντος ή της υπηρεσίας σας."
 
 #: .\main\templates\main\apply.html:67
 msgid ""
 "What problem or challenge does your product/service solve for such customers?"
-msgstr "Τι πρόβλημα λύνει το προιόν σας, για τον παραπάνω αγοραστή;"
+msgstr "Τι πρόβλημα λύνει το προϊόν σας, για τον παραπάνω αγοραστή;"
 
 #: .\main\templates\main\apply.html:73
 msgid ""
@@ -227,7 +227,7 @@ msgid ""
 msgstr ""
 "<address>\n"
 "<abbr title=\"Οικοσύστημα Καινοτομίας Θεσσαλονίκης\">OK!THESS</abbr><br>\n"
-"<small>Address:</small> Κομοτηνής 2, 54655<br>\n"
+"<small>Διεύθυνση:</small> Κομοτηνής 2, 54655<br>\n"
 "<small>Είσοδος:</small> Κυδωνιών &amp; Μαρίας Κάλλας<br>Thessaloniki, "
 "Ελλάδα.\n"
 "</address>\n"
