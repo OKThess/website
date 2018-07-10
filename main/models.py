@@ -2,6 +2,7 @@ from datetime import date
 
 from django.db import models
 from django.contrib.auth.models import User
+from django.utils import timezone
 from s3direct.fields import S3DirectField
 from ckeditor.fields import RichTextField
 
@@ -188,6 +189,7 @@ class ImageMedia(models.Model):
 
 
 class Application(models.Model):
+    date_applied = models.DateField(default=timezone.now, null=True, blank=True)
     phonenumber = models.CharField(max_length=100)
     email = models.EmailField()
     name = models.CharField(max_length=100)

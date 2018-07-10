@@ -24,7 +24,7 @@ admin.site.register(Post, PostAdmin)
 
 # Application
 class ApplicationAdmin(admin.ModelAdmin):
-    list_display = ('name', 'email', 'answer_idea_3')
+    list_display = ('name', 'email', 'answer_idea_3', 'date_applied')
 
 admin.site.register(Application, ApplicationAdmin)
 
