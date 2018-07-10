@@ -169,7 +169,7 @@ msgstr ""
 
 #: .\main\templates\main\apply.html:118
 msgid "Contact info"
-msgstr "Λεπτομέριες επικοινωνίας"
+msgstr "Λεπτομέρειες επικοινωνίας"
 
 #: .\main\templates\main\apply.html:121
 msgid "Team representative name"
