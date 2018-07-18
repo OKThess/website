@@ -1334,10 +1334,17 @@ textarea {
   top: 40px;
 }
 
+.weekends-mentor-container{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.weekends-mentor-container h3 {
+  margin-top: 0px;
+}
 
 .weekends-mentor {
   padding-left: 0px;
-  margin: 0px;
 }
 
 .weekends-mentor-pic {
