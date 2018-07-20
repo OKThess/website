@@ -9,17 +9,18 @@
             <div class="col-md-3 weekends-sidebar">
                 <div>
                     <ol>
-                        <li><a href="#overview">Overview</a></li>
-                        <li><a href="#mentors">Mentors</a></li>
-                        <li><a href="#schedule">Schedule</a></li>
-                        <li><a href="#judges">Judges</a></li>
-                        <li><a href="#prizes">Prizes</a></li>
-                        <li><a href="#sponsors">Sponsors</a></li>
+                        <li><a href="#overview">Σχετικά</a></li>
+                        <li><a href="#mentors">Μέντορες</a></li>
+                        <li><a href="#schedule">Πρόγραμμα</a></li>
+                        <li><a href="#judges">Κριτές</a></li>
+                        <li><a href="#prizes">Έπαθλα</a></li>
+                        <li><a href="#sponsors">Σπόνσορες</a></li>
+                        <li><a href="#register">Εγγραφή</a></li>
                     </ol>
                 </div>
             </div>
             <div class="col-md-9">
-                <h1>Σαββατοκύριακο Αστικών Μεταφορών</h1>
+              <h1>Σαββατοκύριακο Καινοτομίας στις Αστικές Μεταφορές</h1>
                 <div class="weekends-subtitle">28 - 30 Σεπτεμβρίου 2018</div>
                 <div id="overview">
                     <p><strong>Έχετε μια ιδέα σχετικά με τις βιώσιμες αστικές μεταφορές  που θέλετε να προωθήσετε ή ένα πρόβλημα που θέλετε να λύσετε, αλλά δεν ξέρετε από πού να ξεκινήσετε ή από ποιον να ξεκινήσετε;</strong></p>
@@ -41,7 +42,8 @@
                     <p>Καμία άλλη συζήτηση, τώρα μόνο δράση!</p>
                 </div>
                 <br>
-                <h2>Mentors</h2>
+              <div id="mentors">
+               <h2>Mentors</h2>
                  <div class="weekends-mentor-container">
                     <div class="col-md-2 weekends-mentor">
                      <img class="weekends-mentor-pic" src="/static/main/img/weekends/mobility/jmsalanova.jpg">
@@ -117,7 +119,8 @@
                       οργανώνοντας διεθνείς κοινοπραξίες για Ευρωπαϊκά έργα.</p>
                     </div>
                 </div>
-                <div id="schedule">
+              </div>
+              <div id="schedule">
                     <h2>Πρόγραμμα</h2>
                     <button class="accordion weekends-schedule-header" id="red">Παρασκευή 28 Σεπτεμβρίου</button>
                      <div class="panel">
@@ -226,11 +229,11 @@
                       </div>
                     </div>
                 </div>
-                <div id="judges">
-                    <h2>Judges</h2>
-                </div>
-                <div id="prizes">
-                    <h2>Prizes</h2>
+              <div id="judges">
+               <h2>Judges</h2>
+              </div>
+              <div id="prizes">
+               <h2>Prizes</h2>
                     <ul>
                         <li>1<sup>ο</sup> Βραβείο – 1000€</li>
                         <li>2<sup>ο</sup> Βραβείο – 500€</li>
@@ -246,10 +249,10 @@
                         <li>Maintainability</li>
                     </ul>
                 </div>
-                <div id="sponsors">
-                    <h2>Sponsors</h2>
-                </div>
-                <div class="form">
+              <div id="sponsors">
+               <h2>Sponsors</h2>
+              </div>
+              <div class="form" id="register">
                   <form action="{% url 'main:weekends' %}" method="post">
                       {% csrf_token %}
                       {{ form.non_field_errors }}
