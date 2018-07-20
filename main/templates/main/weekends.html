@@ -260,34 +260,34 @@
                       {% csrf_token %}
                       {{ form.non_field_errors }}
 
-                      <h4>{% trans 'Application Form' %}</h4>
+                      <h4>Αίτηση συμμετοχής</h4>
                       <div class="form-group">
                           <label for="id_first_name">
-                              {% trans 'First Name' %}
+                              Όνομα
                           </label>
                           <textarea name="first_name" cols="50" rows="2" class="form-control" required="required" id="id_first_name"></textarea>
                       </div>
                       <div class="form-group">
                           <label for="id_last_name">
-                              {% trans 'Last Name' %}
+                              Επώνυμο
                           </label>
                           <textarea name="last_name" cols="50" rows="2" class="form-control" required="required" id="id_last_name"></textarea>
                       </div>
                       <div class="form-group">
                           <label for="id_email">
-                              {% trans 'Your contact email' %}
+                              email επικοινωνίας
                           </label>
                           <input type="email" name="email" class="form-control" maxlength="100" required="required" id="id_email">
                       </div>
                       <div class="form-group">
                           <label for="id_specialization">
-                              {% trans 'What\'s your field of specialization i.e. Transport engineer, developer etc' %}
+                              Εξειδίκευση π.χ. Transport engineer, developer κτλ
                           </label>
                           <textarea name="specialization" cols="50" rows="2" class="form-control" required="required" id="specialization"></textarea>
                       </div>
                       <div class="form-group">
                           <label for="id_accept_terms">
-                              {% trans 'Read and accept the weekend\'s terms before booking' %}
+                              Αποδέχομαι τους όρους των διοργανωτών
                           </label>
                           <input type="checkbox" name="accept_terms" class="form-control" required="required" id="id_accept_terms">
                       </div>
