@@ -1334,6 +1334,10 @@ textarea {
   top: 40px;
 }
 
+.weekends-sidebar a {
+  color: black;
+}
+
 .weekends-mentor-container{
   display: flex;
   margin-bottom: 20px;
