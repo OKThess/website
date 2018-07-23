@@ -278,7 +278,7 @@ class ApplyText(models.Model):
     content_el = RichTextField(null=True, blank=True)
 
 class WeekendApplication(models.Model):
-    weekend_date_applied = models.DateField(default=timezone.now, null=True, blank=True)
+    date_applied = models.DateField(default=timezone.now, null=True, blank=True)
     first_name= models.TextField()
     last_name= models.TextField()
     email= models.EmailField()
