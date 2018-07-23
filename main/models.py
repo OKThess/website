@@ -277,10 +277,11 @@ class ApplyText(models.Model):
     content_en = RichTextField(null=True, blank=True)
     content_el = RichTextField(null=True, blank=True)
 
+
 class WeekendApplication(models.Model):
     date_applied = models.DateField(default=timezone.now, null=True, blank=True)
-    first_name= models.TextField()
-    last_name= models.TextField()
-    email= models.EmailField()
-    specialization= models.TextField()
-    accept_terms= models.BooleanField(default=False)
+    first_name = models.TextField()
+    last_name = models.TextField()
+    email = models.EmailField()
+    specialization = models.TextField()
+    accept_terms = models.BooleanField(default=False)
