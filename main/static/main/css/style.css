@@ -1376,6 +1376,7 @@ textarea {
   background-color: #1c599b;
   color: #fff;
   margin-top: 5px;
+  margin-bottom: 5px;
   font-size: 12px;
   padding: 3px;
   border: none;
@@ -1384,13 +1385,6 @@ textarea {
 
 .btn-mentor:hover,.btn-mentor:focus {
   text-decoration: none;
-  background-color: #1c599b;
-  color: #fff;
-  margin-top: 5px;
-  font-size: 12px;
-  padding: 3px;
-  border: none;
-  outline: 0;
 }
 
 .weekends-schedule-header {

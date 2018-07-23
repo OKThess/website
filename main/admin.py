@@ -14,7 +14,6 @@ admin.site.register(OkthessMeetup)
 admin.site.register(ResourceCategory)
 admin.site.register(Resource)
 admin.site.register(ApplyText)
-admin.site.register(WeekendApplication)
 
 # Post
 class PostAdmin(admin.ModelAdmin):
@@ -36,6 +35,6 @@ admin.site.register(Partner, PartnerAdmin)
 
 # Weekend Application
 class WeekendApplicationAdmin(admin.ModelAdmin):
-    list_display = ('last_name', 'email', 'specialization' 'date_applied')
+    list_display = ('last_name', 'email', 'specialization')
 
 admin.site.register(WeekendApplication, WeekendApplicationAdmin)
