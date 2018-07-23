@@ -1345,6 +1345,14 @@ textarea {
 
 .weekends-mentor-container h3 {
   margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.weekends-mentor-container h4 {
+  font-weight: 400;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  color: grey;
 }
 
 .weekends-mentor {
@@ -1361,6 +1369,28 @@ textarea {
 
 .weekends-mentor-bio {
   max-width: 100%;
+}
+
+
+.btn-mentor {
+  background-color: #1c599b;
+  color: #fff;
+  margin-top: 5px;
+  font-size: 12px;
+  padding: 3px;
+  border: none;
+  outline: 0;
+}
+
+.btn-mentor:hover,.btn-mentor:focus {
+  text-decoration: none;
+  background-color: #1c599b;
+  color: #fff;
+  margin-top: 5px;
+  font-size: 12px;
+  padding: 3px;
+  border: none;
+  outline: 0;
 }
 
 .weekends-schedule-header {
@@ -1414,6 +1444,10 @@ button.accordion#blue:after{
   display: flex;
   width: 75%;
   color: #4a4a4a;
+}
+
+.form-control#id_accept_terms {
+  text-align: left !important;
 }
 
 /*.weekends-schedule-content-item-text {
