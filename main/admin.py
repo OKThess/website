@@ -33,3 +33,9 @@ class PartnerAdmin(admin.ModelAdmin):
     list_display = ('name', 'title')
 
 admin.site.register(Partner, PartnerAdmin)
+
+# Weekend Application
+class ApplicationAdmin(admin.ModelAdmin):
+    list_display = ('name', 'email')
+
+admin.site.register(WeekendApplication, WeekendApplicationAdmin)
