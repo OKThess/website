@@ -275,7 +275,7 @@
                       {% csrf_token %}
                       {{ form.non_field_errors }}
                       </br></br>
-                      <h4>Αίτηση συμμετοχής</h4>
+                      <h2>Αίτηση συμμετοχής</h2>
                       <div class="form-group">
                           <label for="id_first_name">
                               Όνομα
@@ -302,9 +302,9 @@
                       </div>
                       <div class="form-group">
                           <label for="id_accept_terms">
-                              Αποδέχομαι τους όρους των διοργανωτών
+                              Έχω διαβάσει και αποδέχομαι τους <a href="#" target="_blank">όρους</a> των διοργανωτών. <input type="checkbox" name="accept_terms" class="regular-chackbox" required="required" id="id_accept_terms">
                           </label>
-                        <input type="checkbox" name="accept_terms" class="form-control" required="required" id="id_accept_terms">
+
                       </div>
                       <button id="register" type="submit" class="btn-form" onclick="ga('send', 'event', 'weekend', 'submission', {'NonInteraction': 1});">{% trans 'Submit' %}</button>
                       <script type="text/javascript">
