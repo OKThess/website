@@ -132,8 +132,9 @@
                 </div>
               </div>
               <div id="schedule">
-               </br></br>
+              </br></br>
                     <h2>Πρόγραμμα</h2>
+                    </br>
                     <button class="accordion weekends-schedule-header" id="red">Παρασκευή 28 Σεπτεμβρίου</button>
                      <div class="panel">
                         <div class="panel-inner">
@@ -255,7 +256,8 @@
                       <li>3<sup>ο</sup> Βραβείο – €300 Μετρητά</li>
                     </ul>
                   </br>
-                <h3>Κριτήρια αξιολόγησης</h3></br>
+                <h3>Κριτήρια αξιολόγησης</h3>
+                </br></br>
                     <ul>
                         <li><strong>Εφικτότητα</strong> (Feasibility):<small>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet</small></li>
                         <li><strong>Περιβαλλοντική Βιωσιμότητα</strong> (Sustainability):<small>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet</small></li>
@@ -275,6 +277,7 @@
                       {{ form.non_field_errors }}
                       </br></br>
                       <h2>Αίτηση συμμετοχής</h2>
+                    </br>
                       <div class="form-group">
                           <label for="id_first_name">
                               Όνομα
@@ -301,8 +304,37 @@
                       </div>
                       <div class="form-group">
                           <label for="id_accept_terms">
-                              Έχω διαβάσει και αποδέχομαι τους <a href="#" target="_blank">όρους</a> των διοργανωτών. <input type="checkbox" name="accept_terms" class="regular-chackbox" required="required" id="id_accept_terms">
+                              Έχω διαβάσει και αποδέχομαι τους <a data-toggle="modal" href="#myModal">όρους</a> των διοργανωτών. <input type="checkbox" name="accept_terms" class="regular-chackbox" required="required" id="id_accept_terms">
                           </label>
+                          <div id="myModal" class="modal fade" role="dialog">
+                            <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Όροι Συμμετοχής</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><strong>1.</strong> Δικαίωμα συμμετοχής έχουν όλοι όσοι ενδιαφέρονται. Προτείνεται η συμμετοχή σε όσους είναι σχετικοί με το αντικείμενο των μεταφορών</p>
+                                <p><strong>2.</strong> Οι συμμετέχοντες θα μετέχουν σε ομάδες με μέγιστο αριθμό τα έξι (6) άτομα.</p>
+                                <p><strong>3.</strong> Η προτεινόμενη λύση θα πρέπει να αναπτυχθεί κατά τη διάρκεια του διαγωνισμού και μόνο ενόσω τα μέλη της ομάδας βρίσκονται στο χώρο διενέργειας του διαγωνισμού.</p>
+                                <p><strong>4.</strong> Σε περίπτωση που η λύση περιλαμβάνει κώδικα εφαρμογής, αυτός θα πρέπει να ανεβαίνει σταδιακά σε repository της Ομάδας στο GitHub. Σε περίπτωση που το έργο είναι πακέτο λογισμικού που προέρχεται από compilation (πχ Mobile App, Software κτλ) εκτός από τον πηγαίο κώδικα που δημιουργεί το compiled αρχείο θα πρέπει στο GitHub να ανέβει και το ίδιο το compiled αρχείο. Εφαρμογές που θα έχουν γίνει με ελάχιστα μόνο commits δύναται να ακυρωθούν από την επιτροπή.</p>
+                                <p><strong>5.</strong> Παρουσίαση κώδικα που δεν έχει αναπτυχθεί από την ομάδα ως κώδικα της ομάδας θα καταλήγει σε αποκλεισμό της ομάδας από το διαγωνισμό.</p>
+                                <p><strong>6.</strong> Η πρωτοτυπία της εφαρμογής και της λύσης, η αλγοριθμική προσέγγιση στο πρόβλημα και η ποιότητα του κώδικα θα ληφθούν υπόψη στην τελική αξιολόγηση.</p>
+                                <p><strong>7.</strong> Ενθαρρύνεται και θα αξιολογηθεί θετικά η χρήση ανοιχτών δεδομένων (Open Data).</p>
+                                <p><strong>8.</strong> Ενθαρρύνεται και θα αξιολογηθεί θετικά η χρήση Web Services (πχ REST APIs) που προσφέρονται δωρεάν από διάφορους παρόχους.</p>
+                                <p><strong>9.</strong> Η νικήτριες ομάδες θα αποφασιστούν από επιτροπή, η σύνθεση της οποίας θα ανακοινωθεί αργότερα.</p>
+                                <p><strong>10.</strong> Ενστάσεις για την απόφαση της επιτροπής δε γίνονται δεκτές.</p>
+                                <p><strong>11.</strong> Συμμετέχοντας στον διαγωνισμό δηλώνετε ότι αποδέχεστε το δικαίωμα των διοργανωτών να προωθήσουν ή να εκμεταλλευτούν εικόνες, βίντεο, ηχητικό υλικό και γενικά multimedia υλικό που θα ληφθεί κατά τη διάρκεια του hackathon στο οποίο ενδέχεται να εμφανίζονται τα μέλη των ομάδων.</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Κλείσιμο</button>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
 
                       </div>
                       <button id="register" type="submit" class="btn-form" onclick="ga('send', 'event', 'weekend', 'submission', {'NonInteraction': 1});">{% trans 'Submit' %}</button>

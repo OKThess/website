@@ -1442,6 +1442,10 @@ button.accordion#blue:after{
   color: #4a4a4a;
 }
 
+p > .modal-body {
+  font-size: 8px;
+}
+
 .regular-checkbox {
 	-webkit-appearance: none;
 	background-color: #fafafa;
