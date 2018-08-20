@@ -1338,6 +1338,11 @@ textarea {
   color: black;
 }
 
+.weekends-subtitle{
+  margin-top: 10px;
+  font-size: 22px;
+}
+
 .weekends-mentor-container{
   display: flex;
   margin-bottom: 20px;
