@@ -1343,6 +1343,11 @@ textarea {
   font-size: 22px;
 }
 
+.modal-body{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .weekends-mentor-container{
   display: flex;
   margin-bottom: 20px;
