@@ -1343,6 +1343,10 @@ textarea {
   font-size: 22px;
 }
 
+#subject a {
+  color: black;
+}
+
 .modal-body{
   margin-left: 10px;
   margin-right: 10px;
