@@ -323,9 +323,8 @@ msgstr "Επερχόμενες <strong>Ανοιχτές Συναντήσεις</
 
 #: .\main\templates\main\layout.html:93
 #, fuzzy
-#| msgid "<strong>Apply</strong> for Spring '18"
 msgid "<strong>Apply</strong> for Autumn '18"
-msgstr "Συμμετοχή"
+msgstr "Αίτηση Συμμετοχής"
 
 #: .\main\templates\main\layout.html:105
 msgid "About"
