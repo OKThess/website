@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-25 15:38+0300\n"
+"POT-Creation-Date: 2018-09-08 20:02+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\main\templates\main\about.html:13 .\main\templates\main\layout.html:107
+#: .\main\templates\main\about.html:13 .\main\templates\main\layout.html:116
 msgid "What we do"
 msgstr "Τι κάνουμε"
 
-#: .\main\templates\main\about.html:19 .\main\templates\main\layout.html:108
+#: .\main\templates\main\about.html:19 .\main\templates\main\layout.html:117
 msgid "How we do it"
 msgstr "Πως το κάνουμε"
 
@@ -30,7 +30,7 @@ msgstr "Πως το κάνουμε"
 msgid "How I can participate"
 msgstr "Πως συμμετέχω"
 
-#: .\main\templates\main\about.html:31 .\main\templates\main\layout.html:110
+#: .\main\templates\main\about.html:31 .\main\templates\main\layout.html:119
 msgid "Space"
 msgstr "Χώρος"
 
@@ -114,7 +114,7 @@ msgstr ""
 "Ποιοί είναι οι σημαντικότεροι ανταγωνιστές σας, εάν υπάρχουν; (Συμπεριλάβετε "
 "link για τις ιστοσελίδες τους)"
 
-#: .\main\templates\main\apply.html:78 .\main\templates\main\layout.html:111
+#: .\main\templates\main\apply.html:78 .\main\templates\main\layout.html:120
 msgid "Team"
 msgstr "Ομάδα"
 
@@ -183,7 +183,7 @@ msgstr "Τηλεφωνικός αριθμός εκπροσώπου ομάδας"
 msgid "Team representative email"
 msgstr "Εmail εκπροσώπου ομάδας"
 
-#: .\main\templates\main\apply.html:137
+#: .\main\templates\main\apply.html:137 .\main\templates\main\weekends.html:518
 msgid "Submit"
 msgstr "Αποστολή"
 
@@ -193,7 +193,7 @@ msgid "Posted"
 msgstr "Αναρτήθηκε"
 
 #: .\main\templates\main\blog-archive.html:23
-#: .\main\templates\main\blog.html:24 .\main\templates\main\events.html:79
+#: .\main\templates\main\blog.html:24 .\main\templates\main\events.html:83
 #: .\main\templates\main\index.html:78
 msgid "<strong>Read</strong> more »"
 msgstr "Περισσότερα »"
@@ -203,7 +203,7 @@ msgstr "Περισσότερα »"
 msgid "Resources"
 msgstr "Ενδιαφέροντα"
 
-#: .\main\templates\main\blog-archive.html:69
+#: .\main\templates\main\blog-archive.html:41
 #: .\main\templates\main\blog.html:42
 msgid "Archives"
 msgstr "Αρχείο"
@@ -244,11 +244,11 @@ msgstr "Αποστολή"
 msgid "Meetups at OK!Thess"
 msgstr "Συναντήσεις στο ΟΚ!Τhess"
 
-#: .\main\templates\main\events.html:69
+#: .\main\templates\main\events.html:73
 msgid "About meetups"
 msgstr "Σχετικά"
 
-#: .\main\templates\main\events.html:71
+#: .\main\templates\main\events.html:75
 msgid ""
 "Our open space is being used by several of the city’s creative teams as a "
 "meeting space and those meetings are open to anyone interested. Meetups’ "
@@ -263,16 +263,16 @@ msgstr ""
 "ανοιχτά γνώσεις και εμπειρίες με στόχο την δημιουργία προστιθέμενης αξίας "
 "για όλα τα μέλη της."
 
-#: .\main\templates\main\events.html:76
+#: .\main\templates\main\events.html:80
 msgid ""
 "The meetup of OK!Thess is the new thing in town. Click here to learn more"
 msgstr ""
 
-#: .\main\templates\main\events.html:82
+#: .\main\templates\main\events.html:86
 msgid "Hosted meetups"
 msgstr "Ομάδες συναντήσεων"
 
-#: .\main\templates\main\events.html:90
+#: .\main\templates\main\events.html:94
 msgid "Past meetups"
 msgstr "Παρελθούσες συναντήσεις"
 
@@ -321,52 +321,51 @@ msgstr "Σημαντικά <strong>Νέα</strong>"
 msgid "Upcoming Community <strong>Meetups</strong>"
 msgstr "Επερχόμενες <strong>Ανοιχτές Συναντήσεις</strong>"
 
-#: .\main\templates\main\layout.html:93
-#, fuzzy
+#: .\main\templates\main\layout.html:102
 msgid "<strong>Apply</strong> for Autumn '18"
 msgstr "Αίτηση Συμμετοχής"
 
-#: .\main\templates\main\layout.html:105
+#: .\main\templates\main\layout.html:114
 msgid "About"
 msgstr "Σχετικά"
 
-#: .\main\templates\main\layout.html:109
+#: .\main\templates\main\layout.html:118
 msgid "How do I participate?"
 msgstr "Πως συμμετέχω"
 
-#: .\main\templates\main\layout.html:114
+#: .\main\templates\main\layout.html:123
 msgid "Teams"
 msgstr "Ομάδες"
 
-#: .\main\templates\main\layout.html:115
+#: .\main\templates\main\layout.html:124
 msgid "Meetups"
 msgstr "Συναντήσεις"
 
-#: .\main\templates\main\layout.html:116
+#: .\main\templates\main\layout.html:125
 msgid "Blog"
 msgstr "Νέα"
 
-#: .\main\templates\main\layout.html:117
+#: .\main\templates\main\layout.html:126
 msgid "Contact"
 msgstr "Επικοινωνία"
 
-#: .\main\templates\main\layout.html:145
+#: .\main\templates\main\layout.html:154
 msgid "LOCATION"
 msgstr "ΤΟΠΟΘΕΣΙΑ"
 
-#: .\main\templates\main\layout.html:152
+#: .\main\templates\main\layout.html:161
 msgid "MEMBERS"
 msgstr "ΜΕΛΗ"
 
-#: .\main\templates\main\layout.html:185
+#: .\main\templates\main\layout.html:194
 msgid "DONOR"
 msgstr "ΔΩΡΗΤΗΣ"
 
-#: .\main\templates\main\layout.html:189
+#: .\main\templates\main\layout.html:198
 msgid "SPONSORS"
 msgstr "ΧΟΡΗΓΟΙ"
 
-#: .\main\templates\main\layout.html:199
+#: .\main\templates\main\layout.html:208
 msgid "PARTNERS"
 msgstr "ΣΥΝΕΡΓΑΤΕΣ"
 
