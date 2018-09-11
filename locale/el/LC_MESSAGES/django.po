@@ -358,8 +358,8 @@ msgid "MEMBERS"
 msgstr "ΜΕΛΗ"
 
 #: .\main\templates\main\layout.html:194
-msgid "DONOR"
-msgstr "ΔΩΡΗΤΗΣ"
+msgid "EXCLUSIVE DONOR"
+msgstr "ΑΠΟΚΛΕΙΣΤΙΚΟΣ ΔΩΡΗΤΗΣ"
 
 #: .\main\templates\main\layout.html:198
 msgid "SPONSORS"
