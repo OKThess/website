@@ -39,5 +39,7 @@ six==1.11.0               # via blessed, docker-py, dockerpty, faker, python-dat
 tabulate==0.7.5           # via awsebcli
 termcolor==1.1.0          # via awsebcli
 text-unidecode==1.1       # via faker
+uwsgi==2.0.17.1
 wcwidth==0.1.7            # via blessed
 websocket-client==0.44.0  # via awsebcli, docker-py
+whitenoise==4.1
