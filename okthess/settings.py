@@ -35,6 +35,7 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
     '.elasticbeanstalk.com',
     '.okthess.gr',
+    '.staging.okthess.gr',
     '35.158.123.45',
     '138.68.74.50',
 ]
