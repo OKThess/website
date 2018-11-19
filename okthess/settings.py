@@ -36,6 +36,7 @@ ALLOWED_HOSTS = [
     '.elasticbeanstalk.com',
     '.okthess.gr',
     '35.158.123.45',
+    '138.68.74.50',
 ]
 
 INTERNAL_IPS = (
