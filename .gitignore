@@ -21,3 +21,5 @@ infra/production.tfvars
 # Uploads from dev
 main/static/main/uploads/*
 .vscode/
+id_rsa_okthess_travis
+id_rsa_okthess_travis.pub
