@@ -18,3 +18,5 @@ deploy:
   on:
     repo: OKThess/website
     branch: master
+after_deploy:
+  - ./staging.sh
