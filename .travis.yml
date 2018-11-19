@@ -6,8 +6,7 @@ services:
 cache: pip
 install: pip install -r requirements.txt
 script: python -Wall manage.py test
-before_deploy:
-  - ./staging.sh
+script: ./staging.sh
 deploy:
   provider: elasticbeanstalk
   access_key_id: AKIAIPDDJZXQPR23E5BQ
