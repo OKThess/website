@@ -45,14 +45,14 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=greek" rel="stylesheet">
 
     {% if not debug %}
-    <!-- <script>
-        if (document.location.host.substring(0,3) === 'www') {
+    <script>
+        if ((document.location.host.substring(0,3) === 'www') && document.location.host !== 'staging.okthess.gr') {
             document.location.href = 'https://okthess.gr/'
         }
-        if (document.location.protocol === 'http:') {
+        if ((document.location.protocol === 'http:') && document.location.host !== 'staging.okthess.gr') {
             document.location.href = 'https://okthess.gr' + document.location.pathname;
         }
-    </script> -->
+    </script>
     {% endif %}
 
 	<script>
