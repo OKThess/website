@@ -46,10 +46,10 @@
 
     {% if not debug %}
     <script>
-        if ((document.location.host.substring(0,3) === 'www') && document.location.host !== 'staging.okthess.gr') {
+        if (document.location.host.substring(0,3) === 'www') {
             document.location.href = 'https://okthess.gr/'
         }
-        if ((document.location.protocol === 'http:') && document.location.host !== 'staging.okthess.gr') {
+        if (document.location.protocol === 'http:') {
             document.location.href = 'https://okthess.gr' + document.location.pathname;
         }
     </script>
@@ -322,5 +322,15 @@
         }
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7E2raajPS5-4vEpx-LBOV0XkItvWQRt8&signed_in=true&callback=initMap"></script>
+		<!-- Twitter universal website tag code -->
+		<script>
+			!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+			},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+			a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+			// Insert Twitter Pixel ID and Standard Event data below
+			twq('init','o10hz');
+			twq('track','PageView');
+		</script>
+		<!-- End Twitter universal website tag code -->
 </body>
 </html>
