@@ -322,7 +322,7 @@ msgid "Upcoming Community <strong>Meetups</strong>"
 msgstr "Επερχόμενες <strong>Ανοιχτές Συναντήσεις</strong>"
 
 #: .\main\templates\main\layout.html:102
-msgid "<strong>Apply</strong> for Winter '19"
+msgid "Application form"
 msgstr "Αίτηση Συμμετοχής"
 
 #: .\main\templates\main\layout.html:114
