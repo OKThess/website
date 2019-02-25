@@ -32,8 +32,12 @@
                                         <img src="{{ team.image }}" alt="{{ team.name }} logo">
                                     {% endif %}
                                 </div>
-                                {% if team.name %}
-                                    <div class="program-main-company-name"><a href="{{ team.url }}" >{{ team.name }}</a></div>
+                                {% if team.name %} 
+                                    {% if team.url %}
+                                        <div class="program-main-company-name"><a href="{{ team.url }}" >{{ team.name }}</a></div>
+                                    {% else %}
+                                        <div class="program-main-company-name">{{ team.name }}</div>
+                                    {% endif %}
                                 {% endif %}
                                 <div class="program-main-company-industry hidden">{{ team.industry }}</div>
                                 <p class="program-main-company-desc">{{ team.description }}</p>
