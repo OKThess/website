@@ -99,7 +99,7 @@
             <a class="navbar-brand" href="{% url 'main:index' %}"><img src="{% static '/main/img/logo.png' %}" alt="Logo"></a>
             {% if not application_content %}
                 <a class="btn-red btn-header" href="{% url 'main:apply' %}" role="button">
-                    <span class="glyphicon glyphicon-exclamation-sign"></span>{% trans "<strong>Apply</strong> for Winter '19" %}
+                    <span class="glyphicon glyphicon-exclamation-sign"></span>{% trans "Application form" %}
                 </a>
             {% endif %}
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
