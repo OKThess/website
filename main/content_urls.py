@@ -43,4 +43,7 @@ urlpatterns = [
 
     # /apply/
     url(r'^apply/$', views.apply, name='apply'),
+
+    # /demoday/
+    url(r'^demoday/$', views.demoday, name='demoday'),
 ]
