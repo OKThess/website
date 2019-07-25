@@ -66,11 +66,11 @@ def program_redir(request):
 
 def program_teams(request):
     if request.LANGUAGE_CODE == 'en':
-        teams_list = Team.en_objects.filter(alumni=False).order_by('name')
+        teams_list = Team.en_objects.filter(alumni=False).order_by('-id',)
         for team in teams_list:
             team.description = team.description_en
     else:
-        teams_list = Team.el_objects.filter(alumni=False).order_by('name')
+        teams_list = Team.el_objects.filter(alumni=False).order_by('-id')
         for team in teams_list:
             team.description = team.description_el
     return render(request, 'main/program-teams.html', {
@@ -320,3 +320,9 @@ def weekends(request):
         return render(request, 'main/weekends.html', {
             'form': form,
         })
+
+def demoday(request):
+    if request.LANGUAGE_CODE == 'en':
+        return render(request, 'main/demoday_en.html',)
+    else: 
+        return render(request, 'main/demoday_el.html',)
