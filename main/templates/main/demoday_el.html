@@ -3,6 +3,14 @@
 {% load static %}
 {% load i18n %}
 
+{% block og %}
+    <meta property="og:title" content="OK!Thess Demo Day">
+    <meta property="og:description" content="5th Thessaloniki Demo Day, 12 September 2019">
+    <meta property="og:url" content="http://okthess.gr/demoday">
+    <meta property="og:image" content="https://s3-eu-central-1.amazonaws.com/okthess-static/uploads/skgdemoday.jpg">
+    <meta property="og:type" content="website">
+{% endblock %}
+
 {% block content %}
     <div class="container contact">
         <div class="row">
