@@ -382,6 +382,24 @@ address > abbr {
   left: 10px;
 }
 
+.slider-video {
+    width:100%;
+}
+
+.slider-video{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.slider-video iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
 .input-small {
   margin-top: 7px;
   width: 70%;
